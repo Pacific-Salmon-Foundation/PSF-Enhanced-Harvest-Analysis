@@ -1,0 +1,220 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(here)
+
+mark_mort <- read_csv(here("raw", "chum_mark_mort.csv"))
+chum_pre <- read_csv(here("raw", "chum_catch_80-89.csv")) %>%
+  rename(stock = Stock, recY = Year, area = "Statistical Area(s)", expcatch = "Enhanced Catch", totcatch = "Total Catch By Area", enhanced_prop = "% Enhanced Contribution")
+chum_post <- read_csv(here("raw", "chum_catch_90+.csv")) %>%
+  rename(stock = Stock, recY = Year, area = "Statistical Area(s)", expcatch = "Expanded Catch", totcatch = "Total Catch By Area", enhanced_prop = "Enhanced % Catch")
+chum_age_dat <- read_csv(here("raw", "chum_catch_ages.csv")) %>%
+  rename(stock = Stock, recY = Year, type = "Recovery Type")
+
+# Bring in release data from EPAD
+all_rel <- read_csv(here("raw", "All_SEP_releases.csv"))
+
+# Escapement data from NuSEDS by stream
+Esc <- read_csv(here("raw", "escapement/esc_WCVI_PSE.csv")) %>%
+  select(-1)
+
+```
+```{r Data Prep}
+mark_mort <- mark_mort %>%
+  pivot_longer(!Stock, names_to = "recY", values_to = "mort_rate" ) %>%
+  mutate(recY = as.numeric(recY)) %>%
+  rename(stock = Stock)
+
+# Applying the mark-mortality rates to the post-1989 data as suggested by Cheryl (pre-1990 data already have it included)
+options(scipen = 999)
+chum_post_mort <- left_join(chum_post, mark_mort, by = c("stock", "recY")) %>%
+  mutate(mort_rate = mort_rate/100) %>%
+  mutate(adj_catch = expcatch/(1-mort_rate))
+
+chum_all <- full_join(chum_pre, chum_post_mort) %>%
+  mutate(adj_catch = ifelse(is.na(mort_rate), paste(expcatch), paste(adj_catch))) %>%
+  mutate(adj_catch = as.numeric(adj_catch),
+         enhanced_prop = adj_catch/totcatch) %>%
+  group_by(stock, recY) %>%
+  mutate(annual_adj_catch = sum(adj_catch))
+
+#write_csv(chum_all, "../processed/harvest/CU/chum_all.csv")
+
+chum_ages <- chum_age_dat %>%
+  select(-c(2, 4:9)) %>%
+  pivot_longer(cols = 3:7, names_to = 'age', names_prefix = "% Age", values_to = 'percent', values_drop_na = TRUE) %>%
+  mutate(age = as.numeric(age)) %>%
+  mutate(stock = case_when(stock == "Deserted R" ~ "Deserted R/NWVI",
+                           TRUE ~ stock)) %>%
+  distinct()
+
+chum_catch <- chum_all %>%
+  select(stock, recY, area, adj_catch) %>%
+  distinct()
+
+# Combining catch and age data
+chum_catch_age <- left_join(chum_ages, chum_catch, by = c("stock", "recY")) %>%
+  mutate(stock = case_when(stock == "Deserted R" ~ "Deserted R/NWVI",
+                           TRUE ~ stock))
+
+# pulling chum releases out of all release file
+chum_rel <- all_rel %>%
+  select(species = SPECIES_NAME, BY = BROOD_YEAR, stock = STOCK_NAME, totrelease = TotalRelease) %>%
+  filter(species == "Chum") %>%
+  select(-species) %>%
+  group_by(stock, BY) %>%
+  mutate(totrelease = sum(totrelease)) %>%
+  distinct()
+
+Nitinat <- all_rel %>%
+  filter(SPECIES_NAME == "Chum", STOCK_NAME == "Nitinat R") %>%
+  select(-c(9:21))
+  
+```
+
+```{r}
+# Combining catch from Cheryl and escapement from NuSEDS to calculate ERs
+WCVI_CM_esc <- Esc %>%
+  filter(SPP == "CM") %>%
+  select(SYS_NM, TE = escapement, recY = Year) %>%
+  distinct() %>%
+  drop_na() %>%
+  mutate(obj = case_when(SYS_NM %in% c('SUCWOA RIVER', 'TLUPANA RIVER', 'CANTON CREEK') ~ 'Rebuild',
+                         SYS_NM %in% c('CONUMA RIVER', 'NITINAT RIVER') ~ 'Harvest',
+                         SYS_NM == 'DESERTED CREEK' ~ 'Unknown',
+                         TRUE ~ 'NA')) %>%
+  mutate(stock = case_when(SYS_NM == 'DESERTED CREEK' ~ 'Deserted R/NWVI',
+                            SYS_NM == 'CANTON CREEK' ~ 'Canton Cr',
+                            SYS_NM == 'SUCWOA RIVER' ~ 'Sucwoa R', 
+                            SYS_NM == 'TLUPANA RIVER' ~ 'Tlupana R',
+                            SYS_NM == 'CONUMA RIVER' ~ 'Conuma R',
+                            SYS_NM == 'NITINAT RIVER' ~ 'Nitinat R')) %>%
+  select(5, 3, 4, 2) %>%
+  filter(obj != 'NA', recY > 1979) %>%
+  mutate(stock = as.factor(stock))
+```
+
+
+
+```{r Chum mapping}
+chum_dist <- chum_all %>%
+  mutate(region = case_when(area %in% c("2W,2E", "3,4,5", "1", "1,2W") ~ "NCST",
+                            area %in% c("7,8,9", "6",  "8,9,10",  "9,10", "10", "6,7") ~ "CCST",
+                            area %in% c("11", "14", "17", "18,19", "17,18", "15,16", "29") ~ "SOG",
+                            TRUE ~ "WCVI")) %>%
+  group_by(stock, recY, region) %>%
+  mutate(h_catch = sum(adj_catch))
+
+# Create summary table of catch by region
+chum_tab <- chum_dist %>%
+  ungroup() %>%
+  select(region, recY, adj_catch, totcatch) %>%
+  group_by(region, recY) %>%
+  mutate(annual_adj_catch = sum(adj_catch)) %>%
+  select(region, recY, annual_adj_catch, totcatch) %>%
+  distinct() %>%
+  group_by(region, recY) %>%
+  mutate(totcatch = sum(totcatch)) %>%
+  distinct() %>%
+  mutate(enh_contr = (annual_adj_catch/totcatch)*100)
+write_csv(chum_tab, "../processed/harvest/CU/chum_annual_catch_byregion.csv")
+  
+
+# To get the median annual catch by region
+chum_sum <- chum_dist %>%
+  mutate(tperiod = case_when(recY < 1996 ~ "Pre-96",
+                             recY > 1995 ~ "Post-95")) %>%
+  group_by(region, recY, tperiod) %>%
+  summarise(totcatch = sum(h_catch)) %>%
+  group_by(region, tperiod) %>%
+  summarise(medcatch = median(totcatch))
+
+
+WCVI_chum_catch <- chum_dist %>%
+  filter(stock %in% c("Nitinat R", "Canton Cr", "Conuma R", "Deserted R/NWVI", "Sucwoa R", "Tlupana R")) %>%
+  select(stock, recY, region, h_catch, totcatch, enhanced_prop) %>%
+  mutate(non_h_catch = totcatch - h_catch) %>%
+  distinct()
+
+WCVI_chum_dist <- WCVI_chum_catch %>%
+  mutate(tperiod = case_when(recY < 1994 ~ "Pre-1994",
+                            recY > 1993 ~ "Post-1993")) %>%
+  mutate(tperiod = factor(tperiod, levels = c("Pre-1994", "Post-1993"))) %>%
+  group_by(stock, tperiod, region) %>%
+  mutate(med_h_catch = median(h_catch), med_nonhatcherycatch = median(non_h_catch), regional_catch = med_h_catch + med_nonhatcherycatch) %>%
+  select(stock, region, tperiod, med_h_catch, med_nonhatcherycatch, regional_catch) %>%
+  distinct() %>%
+  group_by(tperiod, stock) %>%
+  mutate(total_catch = sum(regional_catch))
+write_csv(WCVI_chum_dist, "../processed/harvest/CU/WCVI_Chum_dist.csv")
+  
+Nitinat_bub <- WCVI_chum_dist %>%
+  filter(stock == "Nitinat R") %>%
+  rename(hatchery = med_h_catch, nonhatchery = med_nonhatcherycatch) %>%
+  pivot_longer(cols = 4:5, names_to = "catch_type", values_to = "catch") %>%
+  select(1:3, 6:7)
+  
+
+ggplot(Nitinat_bub, aes(x = tperiod, y = region, size = catch, colour = catch_type )) +
+  geom_point(alpha = 0.6) +
+  theme_bw() +
+  theme(axis.title.y = element_blank()) +
+  labs(x = "Recovery Year")
+
+# Now adding in the escapement data
+WCVI_chum <- full_join(WCVI_chum_catch, WCVI_CM_esc, by = c("stock", "recY")) %>%
+  select(1, 7, 2:6, 8) %>%
+  mutate(TR = h_catch + TE, ER = (h_catch/TR)*100)
+
+regional_ER <- WCVI_chum %>%
+  group_by(stock, recY) %>%
+  mutate(totcatch = sum(h_catch), TR = totcatch + TE, ER = (totcatch/TR)*100) %>%
+  select(stock, recY, obj, totcatch, TE, TR, ER) %>%
+  distinct()
+  
+
+NWVI_CM <- WCVI_chum %>%
+  filter(stock == "Deserted R/NWVI") 
+
+SWVI_CM <- WCVI_chum %>%
+  filter(stock != "Deserted R/NWVI")
+
+ggplot(NWVI_CM, aes(x = recY, y = tot_h_catch)) +
+  geom_point() + 
+  geom_line() + 
+  facet_wrap(~region)
+
+ggplot(SWVI_CM, aes(x = recY, y = tot_h_catch, group = stock, colour = stock)) +
+  geom_point() + 
+  geom_line() + 
+  facet_wrap(~region, scales = "free_y")
+
+ggplot(regional_ER, aes(x = recY, y = ER, group = stock, colour = stock)) +
+  geom_point() + 
+  geom_line() +
+  facet_wrap(~stock)
+
+```
+
+```{r catch by broodyear}
+chum_BYs <- chum_catch_age %>%
+  group_by(stock, recY, age) %>%
+  mutate(BY = recY - age) %>%
+  mutate(catch_by_age = (percent/100)*adj_catch) %>%
+  select(1, 7, 2, 5, 3:4, 6, 8)
+  
+chum_rel_recov <- left_join(chum_BYs, chum_rel, by = c("stock", "BY")) %>%
+  select(1:3, 9, 4:8)
+write_csv(chum_rel_recov, "../processed/harvest/CU/chum_rel_recovs.csv")  
+
+WCVI_chum_relrecov <- chum_rel_recov %>%
+  filter(stock %in% c("Nitinat R", "Canton Cr", "Conuma R", "Deserted R/NWVI", "Sucwoa R", "Tlupana R"))
+write_csv(WCVI_chum_relrecov, "../processed/harvest/CU/WCVI_chum_relrecov.csv")  
+
+
+```

@@ -1,0 +1,922 @@
+Project,Species,Run,Recovery Year,RETURN_SITE_CODE,Return Site,CU Index,CU Name,Composite Type,Composite Descr,Sex/Maturity,Total Count,Total Examined,Expanded Enh,Enh Contr %
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H5,Total Adults,779,358,1656.687,212.668
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H3,Total Adults,36560,10482,47292.766,129.357
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H4,Total Adults,5372,1152,8107.931,150.929
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,1123,1123,2388.266,212.668
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,20615,20615,24372.862,118.229
+Big Qualicum R,Chum,Fall,1990,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,976,976,2075.644,212.668
+Big Qualicum R,Chum,Fall,1991,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H2,Total Adults,601,601,566.004,94.177
+Big Qualicum R,Chum,Fall,1991,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,21734,21734,16015.036,73.687
+Big Qualicum R,Chum,Fall,1991,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H3,Total Adults,60778,9744,51271.45,84.359
+Big Qualicum R,Chum,Fall,1992,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H3,Total Adults,44719,9428,18066.282,40.4
+Big Qualicum R,Chum,Fall,1992,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H5,Total Adults,12092,1361,2009.364,16.617
+Big Qualicum R,Chum,Fall,1992,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B4,Total Adults,618,618,411.889,66.649
+Big Qualicum R,Chum,Fall,1992,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,28727,28727,23113.932,80.461
+Big Qualicum R,Chum,Fall,1992,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,7815,7815,5208.595,66.649
+Big Qualicum R,Chum,Fall,1993,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H3,Total Adults,46740,6689,23538.39,50.36
+Big Qualicum R,Chum,Fall,1993,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H4,Total Adults,16323,379,9739.762,59.669
+Big Qualicum R,Chum,Fall,1993,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,540,540,333.301,61.722
+Big Qualicum R,Chum,Fall,1993,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,44070,44070,28722.217,65.174
+Big Qualicum R,Chum,Fall,1993,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,53531,53531,33040.559,61.722
+Big Qualicum R,Chum,Fall,1994,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H2,Total Adults,58022,10931,7346.164,12.661
+Big Qualicum R,Chum,Fall,1994,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H3,Total Adults,10054,2796,8518.73,84.73
+Big Qualicum R,Chum,Fall,1994,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B4,Total Adults,301,301,215.372,71.552
+Big Qualicum R,Chum,Fall,1994,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,29109,29109,16114.265,55.358
+Big Qualicum R,Chum,Fall,1994,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,21464,21464,15358.002,71.552
+Big Qualicum R,Chum,Fall,1995,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,10599,10599,8720.947,82.281
+Big Qualicum R,Chum,Fall,1995,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H2,Total Adults,35470,2610,10346.621,29.17
+Big Qualicum R,Chum,Fall,1996,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,4420,4420,5050.533,114.265
+Big Qualicum R,Chum,Fall,1996,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H2,Total Adults,41004,12743,43754.655,106.708
+Big Qualicum R,Chum,Fall,1997,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,21681,21681,23060.514,106.363
+Big Qualicum R,Chum,Fall,1997,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,728,728,599.559,82.357
+Big Qualicum R,Chum,Fall,1997,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H2,Total Adults,63401,16391,65038.569,102.583
+Big Qualicum R,Chum,Fall,1998,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,564,564,360.985,64.004
+Big Qualicum R,Chum,Fall,1998,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,37222,37222,13504.921,36.282
+Big Qualicum R,Chum,Fall,1998,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,33754,22063,21604.049,64.004
+Big Qualicum R,Chum,Fall,1998,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H3,Total Adults,170785,48596,64360.01,37.685
+Big Qualicum R,Chum,Fall,1999,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,667,667,402.84,60.396
+Big Qualicum R,Chum,Fall,1999,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,16168,16168,10204.408,63.115
+Big Qualicum R,Chum,Fall,1999,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,1787,1787,1079.275,60.396
+Big Qualicum R,Chum,Fall,1999,100,Big Qualicum R,CM-4,GEORGIA STRAIT,River (BQ Chum),H3,Total Adults,45298,7683,20591.965,45.459
+Big Qualicum R,Chum,Fall,2000,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence (BQ Chum),H3,Total Adults,10589,5777,4891.877,46.198
+Big Qualicum R,Chum,Fall,2000,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H4,Total Adults,1377,1377,619.451,44.986
+Big Qualicum R,Chum,Fall,2000,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,2123,2123,1093.569,51.511
+Big Qualicum R,Chum,Fall,2000,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,1368,1368,545.363,39.866
+Big Qualicum R,Chum,Fall,2000,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,120,120,61.812,51.51
+Big Qualicum R,Chum,Fall,2001,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,123106,8574,50522.999,41.04
+Big Qualicum R,Chum,Fall,2001,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence (BQ Chum),H3,Total Adults,13023,592,405.558,3.114
+Big Qualicum R,Chum,Fall,2001,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,928,928,587.395,63.297
+Big Qualicum R,Chum,Fall,2001,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,5877,5877,3719.952,63.297
+Big Qualicum R,Chum,Fall,2001,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Natural Channel,N1,Total Adults,26262,26262,15711.321,59.825
+Big Qualicum R,Chum,Fall,2002,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,129473,18826,27899.619,21.549
+Big Qualicum R,Chum,Fall,2002,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,18062,0,3892.108,21.549
+Big Qualicum R,Chum,Fall,2002,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,587,587,392.439,66.855
+Big Qualicum R,Chum,Fall,2002,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,19671,13455,13151.066,66.855
+Big Qualicum R,Chum,Fall,2002,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Natural Channel,N3,Total Adults,32719,32719,13118.541,40.095
+Big Qualicum R,Chum,Fall,2003,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,29933,258,8702.252,29.072
+Big Qualicum R,Chum,Fall,2003,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,4503,0,1309.132,29.072
+Big Qualicum R,Chum,Fall,2003,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,196,196,90.112,45.976
+Big Qualicum R,Chum,Fall,2003,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,5411,5397,2487.739,45.976
+Big Qualicum R,Chum,Fall,2003,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Natural Channel,N3,Total Adults,19348,19348,5699.885,29.46
+Big Qualicum R,Chum,Fall,2004,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,51867,3075,15578.416,30.035
+Big Qualicum R,Chum,Fall,2004,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,6365,0,1911.747,30.035
+Big Qualicum R,Chum,Fall,2004,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,908,908,200.617,22.094
+Big Qualicum R,Chum,Fall,2004,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H2,Total Adults,20272,20272,6285.602,31.006
+Big Qualicum R,Chum,Fall,2004,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,2242,1949,495.355,22.094
+Big Qualicum R,Chum,Fall,2005,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,23349,18722,15428.431,66.077
+Big Qualicum R,Chum,Fall,2005,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,3369,0,2226.15,66.077
+Big Qualicum R,Chum,Fall,2005,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,1086,1086,590.443,54.369
+Big Qualicum R,Chum,Fall,2005,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H2,Total Adults,10578,10578,7586.258,71.717
+Big Qualicum R,Chum,Fall,2005,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,4438,4438,2412.882,54.369
+Big Qualicum R,Chum,Fall,2006,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,63949,29964,22518.229,35.213
+Big Qualicum R,Chum,Fall,2006,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,8065,0,2839.911,35.213
+Big Qualicum R,Chum,Fall,2006,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,230,230,161.499,70.217
+Big Qualicum R,Chum,Fall,2006,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H2,Total Adults,21861,21861,5026.494,22.993
+Big Qualicum R,Chum,Fall,2006,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,7249,6744,5090.01,70.217
+Big Qualicum R,Chum,Fall,2007,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,18609,3065,6871.542,36.926
+Big Qualicum R,Chum,Fall,2007,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,3000,0,1107.777,36.926
+Big Qualicum R,Chum,Fall,2007,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,31,31,14.919,48.126
+Big Qualicum R,Chum,Fall,2007,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H2,Total Adults,18355,18355,3321.588,18.096
+Big Qualicum R,Chum,Fall,2008,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,4753,4753,4192.554,88.209
+Big Qualicum R,Chum,Fall,2008,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,1969,0,1736.827,88.209
+Big Qualicum R,Chum,Fall,2008,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H2,Total Adults,67,67,66.205,98.813
+Big Qualicum R,Chum,Fall,2008,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,19345,19345,3963.03,20.486
+Big Qualicum R,Chum,Fall,2009,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,12813,1386,6410.597,50.032
+Big Qualicum R,Chum,Fall,2009,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,2000,0,1000.64,50.032
+Big Qualicum R,Chum,Fall,2009,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H2,Total Adults,68,68,41.688,61.306
+Big Qualicum R,Chum,Fall,2009,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,20355,9492,9996.09,49.109
+Big Qualicum R,Chum,Fall,2010,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,11722,3083,7173.553,61.197
+Big Qualicum R,Chum,Fall,2010,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N3,Total Adults,2173,0,855.876,39.387
+Big Qualicum R,Chum,Fall,2010,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,979,979,599.122,61.197
+Big Qualicum R,Chum,Fall,2010,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,N1,Total Adults,11646,5816,4920.644,42.252
+Big Qualicum R,Chum,Fall,2011,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,Above fence,Total Adults,109708,35486,16211.323,14.777
+Big Qualicum R,Chum,Fall,2011,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,Below fence,Total Adults,10277,0,1518.61,14.777
+Big Qualicum R,Chum,Fall,2011,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,Swim ins,Total Adults,8378,8378,3302.005,39.413
+Big Qualicum R,Chum,Fall,2012,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,79857,5187,16274.723,20.38
+Big Qualicum R,Chum,Fall,2012,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,10169,0,1841.766,18.112
+Big Qualicum R,Chum,Fall,2012,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,28289,23102,4052.417,14.325
+Big Qualicum R,Chum,Fall,2012,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Morts from swimins,Total Adults,283,283,91.244,32.242
+Big Qualicum R,Chum,Fall,2012,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,FN1,Total Adults,2485,2485,801.205,32.242
+Big Qualicum R,Chum,Fall,2013,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,53552,6501,1205.312,2.251
+Big Qualicum R,Chum,Fall,2013,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,10000,0,1535.492,15.355
+Big Qualicum R,Chum,Fall,2013,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,Morts from swim ins.,Total Adults,119,119,45.55,38.277
+Big Qualicum R,Chum,Fall,2013,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,23093,16592,4731.631,20.489
+Big Qualicum R,Chum,Fall,2014,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,9294,3866,1995.909,21.475
+Big Qualicum R,Chum,Fall,2014,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N1,Total Adults,6000,0,1282.511,21.375
+Big Qualicum R,Chum,Fall,2014,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,Swim in removals,Total Adults,275,275,87.902,31.964
+Big Qualicum R,Chum,Fall,2014,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,18385,7678,2951.984,16.056
+Big Qualicum R,Chum,Fall,2015,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,55112,598,108108.757,196.162
+Big Qualicum R,Chum,Fall,2015,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,8000,0,824.241,10.303
+Big Qualicum R,Chum,Fall,2015,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,Swim ins removed.,Total Adults,655,655,1921.985,293.433
+Big Qualicum R,Chum,Fall,2015,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,23008,20955,2312.776,10.052
+Big Qualicum R,Chum,Fall,2016,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,124034,662,36525.39,29.448
+Big Qualicum R,Chum,Fall,2016,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N1,Total Adults,50000,0,14723.942,29.448
+Big Qualicum R,Chum,Fall,2016,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,29992,18211,2357.561,7.861
+Big Qualicum R,Chum,Fall,2016,100,Big Qualicum R,CM-4,GEORGIA STRAIT,First Nations Rack,ESSR plus 12 other removals/morts,Total Adults,44198,44198,16876.399,38.184
+Big Qualicum R,Chum,Fall,2017,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,6090,0,6828.268,112.123
+Big Qualicum R,Chum,Fall,2017,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,1500,0,1681.839,112.123
+Big Qualicum R,Chum,Fall,2017,100,Big Qualicum R,CM-4,GEORGIA STRAIT,Channel,Channel,Total Adults,14373,303,16115.384,112.123
+Chehalis R,Chum,Fall,1990,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,10976,10976,10772.598,98.147
+Chehalis R,Chum,Fall,1990,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,120000,6626,44477.951,37.065
+Chehalis R,Chum,Fall,1990,154,Chehalis R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,73954,73954,72583.528,98.147
+Chehalis R,Chum,Fall,1991,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,10802,10802,8705.887,80.595
+Chehalis R,Chum,Fall,1991,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,529480,125867,29588.3,5.588
+Chehalis R,Chum,Fall,1991,154,Chehalis R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,41277,41277,33267.254,80.595
+Chehalis R,Chum,Fall,1992,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,9618,9618,9764.636,101.525
+Chehalis R,Chum,Fall,1992,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,13317,13317,13520.02,101.525
+Chehalis R,Chum,Fall,1992,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,114000,0,23248.854,20.394
+Chehalis R,Chum,Fall,1992,154,Chehalis R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,25275,25275,25660.33,101.525
+Chehalis R,Chum,Fall,1993,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,12405,12405,11813.796,95.234
+Chehalis R,Chum,Fall,1993,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,22800,22800,21713.385,95.234
+Chehalis R,Chum,Fall,1993,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,72500,5876,10285.256,14.187
+Chehalis R,Chum,Fall,1994,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,8216,8216,8230.479,100.176
+Chehalis R,Chum,Fall,1994,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,20194,12142,20229.59,100.176
+Chehalis R,Chum,Fall,1994,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,100000,17476,20749.927,20.75
+Chehalis R,Chum,Fall,1995,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,8656,8656,7609.12,87.906
+Chehalis R,Chum,Fall,1995,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,38839,38839,34141.709,87.906
+Chehalis R,Chum,Fall,1995,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,588,0,516.884,87.905
+Chehalis R,Chum,Fall,1995,154,Chehalis R,CM-2,LOWER FRASER,River,N2,Total Adults,75000,0,13243.503,17.658
+Chehalis R,Chum,Fall,1996,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,9078,9078,5508.814,60.683
+Chehalis R,Chum,Fall,1996,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,47698,47698,28944.633,60.683
+Chehalis R,Chum,Fall,1996,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,75000,0,9142.798,12.19
+Chehalis R,Chum,Fall,1997,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,7364,7364,5461.889,74.17
+Chehalis R,Chum,Fall,1997,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,42826,42826,31764.108,74.17
+Chehalis R,Chum,Fall,1997,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,312,312,231.41,74.17
+Chehalis R,Chum,Fall,1997,154,Chehalis R,CM-2,LOWER FRASER,River,N2,Total Adults,75000,0,11174.787,14.9
+Chehalis R,Chum,Fall,1998,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,H1,Total Adults,4160,4160,3315.092,79.69
+Chehalis R,Chum,Fall,1998,154,Chehalis R,CM-2,LOWER FRASER,First Nations Harvest,I1,Total Adults,10000,10000,1600.846,16.008
+Chehalis R,Chum,Fall,1998,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,71697,71697,57135.146,79.69
+Chehalis R,Chum,Fall,1998,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,200000,0,32016.917,16.008
+Chehalis R,Chum,Fall,1999,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1317,1317,1113.281,84.532
+Chehalis R,Chum,Fall,1999,154,Chehalis R,CM-2,LOWER FRASER,First Nations Harvest,I1,Total Adults,10000,10000,1698.046,16.98
+Chehalis R,Chum,Fall,1999,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,100092,100092,84609.495,84.532
+Chehalis R,Chum,Fall,1999,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,175000,101448,29715.79,16.98
+Chehalis R,Chum,Fall,2000,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,3174,3174,2478.453,78.086
+Chehalis R,Chum,Fall,2000,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,14659,14659,11446.641,78.086
+Chehalis R,Chum,Fall,2000,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,27000,17833,4235.134,15.686
+Chehalis R,Chum,Fall,2001,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,5855,5855,2144.752,36.631
+Chehalis R,Chum,Fall,2001,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,63564,63564,23284.227,36.631
+Chehalis R,Chum,Fall,2001,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,81000,69419,5960.304,7.358
+Chehalis R,Chum,Fall,2002,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4883,4883,3555.653,72.817
+Chehalis R,Chum,Fall,2002,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,26338,13091,19178.541,72.817
+Chehalis R,Chum,Fall,2002,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,30045,0,4394.805,14.627
+Chehalis R,Chum,Fall,2003,154,Chehalis R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,5985,5985,53.585,0.895
+Chehalis R,Chum,Fall,2003,154,Chehalis R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,17341,17341,155.26,0.895
+Chehalis R,Chum,Fall,2003,154,Chehalis R,CM-2,LOWER FRASER,River,N1,Total Adults,20000,0,179.066,0.895
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,2978,2978,3364.016,112.962
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N3,Total Adults,9427,2831,370.572,3.931
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N4,Total Adults,13387,5516,1134.325,8.473
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,76550,4593,1854.666,2.423
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,6201,6201,7004.79,112.962
+Chilliwack R,Chum,Fall,1990,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N2,Total Adults,44800,6723,2076.366,4.635
+Chilliwack R,Chum,Fall,1991,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4545,4545,3583.631,78.848
+Chilliwack R,Chum,Fall,1991,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,147983,17758,13230.546,8.941
+Chilliwack R,Chum,Fall,1991,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,3273,3273,2580.688,78.848
+Chilliwack R,Chum,Fall,1991,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N2,Total Adults,14665,4404,885.675,6.039
+Chilliwack R,Chum,Fall,1992,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,3714,3714,1941.62,52.278
+Chilliwack R,Chum,Fall,1992,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N3,Total Adults,7149,5935,64.642,0.904
+Chilliwack R,Chum,Fall,1992,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,210083,25210,13833.459,6.585
+Chilliwack R,Chum,Fall,1992,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,6542,6542,3420.054,52.278
+Chilliwack R,Chum,Fall,1992,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N2,Total Adults,10897,3269,543.583,4.988
+Chilliwack R,Chum,Fall,1993,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4445,4445,3097.917,69.694
+Chilliwack R,Chum,Fall,1993,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,26939,26939,18774.987,69.694
+Chilliwack R,Chum,Fall,1993,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N3,Total Adults,12428,9716,193.314,1.555
+Chilliwack R,Chum,Fall,1993,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,176533,21191,44782.531,25.368
+Chilliwack R,Chum,Fall,1993,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N2,Total Adults,38360,11511,2662.588,6.941
+Chilliwack R,Chum,Fall,1994,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4109,4109,3598.024,87.564
+Chilliwack R,Chum,Fall,1994,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N1,Total Adults,10823,8579,1551.139,14.332
+Chilliwack R,Chum,Fall,1994,107,Chilliwack R,CM-2,LOWER FRASER,River,N2,Total Adults,182074,21849,42927.359,23.577
+Chilliwack R,Chum,Fall,1994,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,24690,24570,21619.676,87.565
+Chilliwack R,Chum,Fall,1994,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N3,Total Adults,54733,16420,5795.792,10.589
+Chilliwack R,Chum,Fall,1995,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4334,4334,2524.923,58.258
+Chilliwack R,Chum,Fall,1995,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,6421,6421,3740.78,58.259
+Chilliwack R,Chum,Fall,1995,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N2,Total Adults,13207,9245,1171.252,8.868
+Chilliwack R,Chum,Fall,1995,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,135268,7975,10812.671,7.994
+Chilliwack R,Chum,Fall,1995,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N3,Total Adults,43020,8604,6685.894,15.541
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,2053,2053,1394.47,67.924
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,2489,2489,1690.618,67.924
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N2,Total Adults,4488,3152,547.622,12.202
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,140445,15449,14046.48,10.001
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,2488,2488,1689.94,67.924
+Chilliwack R,Chum,Fall,1996,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N3,Total Adults,15900,4774,1426.332,8.971
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,2783,2783,2408.552,86.545
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,9226,9226,7984.662,86.545
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N3,Total Adults,9019,6239,89.386,0.991
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N4,Total Adults,760,229,70.608,9.291
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,River,N2,Total Adults,167108,38906,5590.98,3.346
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,8804,8804,7619.443,86.545
+Chilliwack R,Chum,Fall,1997,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N1,Total Adults,17813,5060,691.047,3.879
+Chilliwack R,Chum,Fall,1998,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,3660,3660,3339.529,91.244
+Chilliwack R,Chum,Fall,1998,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,41707,41707,38055.116,91.244
+Chilliwack R,Chum,Fall,1998,107,Chilliwack R,CM-2,LOWER FRASER,River,N1,Total Adults,321983,38641,22829.89,7.09
+Chilliwack R,Chum,Fall,1998,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N2,Total Adults,34570,10373,3136.226,9.072
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1563,1563,1249.084,79.916
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,40438,40438,32316.404,79.916
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N1,Total Adults,5842,3351,1317.015,22.544
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N2,Total Adults,16600,11620,55.995,0.337
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,River,N3,Total Adults,299526,21466,38905.132,12.989
+Chilliwack R,Chum,Fall,1999,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N4,Total Adults,62703,18811,4738.61,7.557
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,Above Fence,N3,Total Adults,7884,7884,109.769,1.392
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,Below Fence,N4,Total Adults,71878,10237,2624.778,3.652
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1683,1683,926.966,55.078
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,9912,9912,5459.357,55.078
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N2,Total Adults,5411,3788,35.729,0.66
+Chilliwack R,Chum,Fall,2000,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N5,Total Adults,7520,2256,83.378,1.109
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,Above Fence,N4,Total Adults,22089,4703,1441.93,6.528
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1679,1679,938.747,55.911
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,16761,16761,9371.261,55.911
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,Natural Channel,N1,Total Adults,12001,4713,239.337,1.994
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,River,N3,Total Adults,183568,18038,8928.273,4.864
+Chilliwack R,Chum,Fall,2001,107,Chilliwack R,CM-2,LOWER FRASER,Tributary,N5,Total Adults,23770,7131,208.908,0.879
+Conuma R,Chum,Fall,1990,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1250,1250,150.801,12.064
+Conuma R,Chum,Fall,1990,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,4197,4197,35.982,0.857
+Conuma R,Chum,Fall,1990,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,H1,Total Adults,3166,3166,1284.043,40.557
+Conuma R,Chum,Fall,1990,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,3024,3024,759.661,25.121
+Conuma R,Chum,Fall,1990,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1075,1075,54.504,5.07
+Conuma R,Chum,Fall,1990,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,5732,5732,2477.313,43.219
+Conuma R,Chum,Fall,1990,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,4700,1250,567.011,12.064
+Conuma R,Chum,Fall,1990,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,10600,4197,90.875,0.857
+Conuma R,Chum,Fall,1990,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,23350,3024,5865.765,25.121
+Conuma R,Chum,Fall,1990,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,8100,5732,3500.738,43.219
+Conuma R,Chum,Fall,1990,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,3200,0,162.245,5.07
+Conuma R,Chum,Fall,1991,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2822,2822,404.338,14.328
+Conuma R,Chum,Fall,1991,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,2702,2702,858.35,31.767
+Conuma R,Chum,Fall,1991,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,3760,3760,1376.622,36.612
+Conuma R,Chum,Fall,1991,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,509,509,415.851,81.7
+Conuma R,Chum,Fall,1991,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,176,176,38.591,21.927
+Conuma R,Chum,Fall,1991,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2722,2722,996.794,36.62
+Conuma R,Chum,Fall,1991,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,782,782,196.328,25.106
+Conuma R,Chum,Fall,1991,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,402,402,338.636,84.238
+Conuma R,Chum,Fall,1991,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20000,0,2865.614,14.328
+Conuma R,Chum,Fall,1991,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,12000,6462,4150.363,34.586
+Conuma R,Chum,Fall,1991,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,8000,2898,2858.2,35.728
+Conuma R,Chum,Fall,1991,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,10000,1184,4518.27,45.183
+Conuma R,Chum,Fall,1991,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,5000,0,4084.977,81.7
+Conuma R,Chum,Fall,1992,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,527,527,144.87,27.49
+Conuma R,Chum,Fall,1992,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2719,2719,1086.663,39.966
+Conuma R,Chum,Fall,1992,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,5761,5761,1905.097,33.069
+Conuma R,Chum,Fall,1992,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1499,1499,318.903,21.274
+Conuma R,Chum,Fall,1992,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,1356,1356,28.156,2.076
+Conuma R,Chum,Fall,1992,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1440,1440,550.915,38.258
+Conuma R,Chum,Fall,1992,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,479,479,5.959,1.244
+Conuma R,Chum,Fall,1992,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,13000,2796,2692.393,20.711
+Conuma R,Chum,Fall,1992,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,30000,2369,9395.035,31.317
+Conuma R,Chum,Fall,1992,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,22000,0,8346.789,37.94
+Conuma R,Chum,Fall,1992,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,10000,1311,45.452,0.455
+Conuma R,Chum,Fall,1992,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,5900,0,1255.19,21.274
+Conuma R,Chum,Fall,1992,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,5280,5280,1746.035,33.069
+Conuma R,Chum,Fall,1993,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1374,1374,342.488,24.926
+Conuma R,Chum,Fall,1993,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,3078,3078,2262.216,73.496
+Conuma R,Chum,Fall,1993,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1530,1530,174.333,11.394
+Conuma R,Chum,Fall,1993,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2891,2891,1842.409,63.729
+Conuma R,Chum,Fall,1993,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1345,1345,23.003,1.71
+Conuma R,Chum,Fall,1993,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,3196,3196,1614.684,50.522
+Conuma R,Chum,Fall,1993,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,28256,400,12962.623,45.876
+Conuma R,Chum,Fall,1993,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,35000,1374,8724.212,24.926
+Conuma R,Chum,Fall,1993,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,28000,3196,14146.168,50.522
+Conuma R,Chum,Fall,1993,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,30000,1530,3418.29,11.394
+Conuma R,Chum,Fall,1993,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,12000,0,205.227,1.71
+Conuma R,Chum,Fall,1993,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,17000,2891,10833.939,63.729
+Conuma R,Chum,Fall,1993,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,5880,5880,4321.582,73.496
+Conuma R,Chum,Fall,1994,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1574,1574,358.284,22.763
+Conuma R,Chum,Fall,1994,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1990,1990,666.63,33.499
+Conuma R,Chum,Fall,1994,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1251,1251,877.898,70.176
+Conuma R,Chum,Fall,1994,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,12068,12068,3602.965,29.856
+Conuma R,Chum,Fall,1994,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1691,1691,65.676,3.884
+Conuma R,Chum,Fall,1994,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,18136,0,5414.599,29.856
+Conuma R,Chum,Fall,1994,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,26207,0,5965.39,22.763
+Conuma R,Chum,Fall,1994,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,9523,0,369.861,3.884
+Conuma R,Chum,Fall,1994,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,15000,0,10526.366,70.176
+Conuma R,Chum,Fall,1994,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,9832,832,381.861,3.884
+Conuma R,Chum,Fall,1994,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,40000,0,11942.212,29.856
+Conuma R,Chum,Fall,1994,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20347,1153,6816.022,33.499
+Conuma R,Chum,Fall,1994,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20000,1806,4552.516,22.763
+Conuma R,Chum,Fall,1994,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,8220,8220,2454.124,29.856
+Conuma R,Chum,Fall,1995,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1110,1110,341.905,30.802
+Conuma R,Chum,Fall,1995,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1056,1056,72.49,6.865
+Conuma R,Chum,Fall,1995,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,4763,4753,3330.114,69.916
+Conuma R,Chum,Fall,1995,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1528,1528,390.474,25.555
+Conuma R,Chum,Fall,1995,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,261,261,145.548,55.766
+Conuma R,Chum,Fall,1995,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,1927,0,132.282,6.865
+Conuma R,Chum,Fall,1995,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,25010,643,14643.553,58.551
+Conuma R,Chum,Fall,1995,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,7561,0,2328.96,30.802
+Conuma R,Chum,Fall,1995,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,3035,0,775.582,25.555
+Conuma R,Chum,Fall,1995,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,4070,60,2269.65,55.765
+Conuma R,Chum,Fall,1996,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2202,2202,25.162,1.143
+Conuma R,Chum,Fall,1996,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,3227,3227,766.101,23.74
+Conuma R,Chum,Fall,1996,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1104,1104,201.625,18.263
+Conuma R,Chum,Fall,1996,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,8503,8503,4894.861,57.566
+Conuma R,Chum,Fall,1996,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,1200,1200,962.511,80.209
+Conuma R,Chum,Fall,1996,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,35000,0,28073.241,80.209
+Conuma R,Chum,Fall,1996,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,10061,0,2388.516,23.74
+Conuma R,Chum,Fall,1996,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,8000,0,1461.046,18.263
+Conuma R,Chum,Fall,1996,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20000,2202,228.54,1.143
+Conuma R,Chum,Fall,1997,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1841,1841,663.235,36.026
+Conuma R,Chum,Fall,1997,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,10765,10765,8710.664,80.917
+Conuma R,Chum,Fall,1997,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,1042,1042,133.888,12.849
+Conuma R,Chum,Fall,1997,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,207,207,27.421,13.247
+Conuma R,Chum,Fall,1997,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1226,1226,381.167,31.09
+Conuma R,Chum,Fall,1997,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,15000,615,4324.92,28.833
+Conuma R,Chum,Fall,1997,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,15000,895,7855.345,52.369
+Conuma R,Chum,Fall,1997,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,30000,1249,3874.473,12.915
+Conuma R,Chum,Fall,1997,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,65000,0,49314.021,75.868
+Conuma R,Chum,Fall,1997,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,800,0,288.207,36.026
+Conuma R,Chum,Fall,1997,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,471,0,146.435,31.09
+Conuma R,Chum,Fall,1997,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,4288,3574,3469.7,80.917
+Conuma R,Chum,Fall,1998,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,553,553,207.967,37.607
+Conuma R,Chum,Fall,1998,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2072,1948,44.237,2.135
+Conuma R,Chum,Fall,1998,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,11415,11252,11366.304,99.573
+Conuma R,Chum,Fall,1998,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,559,559,114.281,20.444
+Conuma R,Chum,Fall,1998,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1474,1474,426.968,28.967
+Conuma R,Chum,Fall,1998,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,3231,1632,193.894,6.001
+Conuma R,Chum,Fall,1998,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,831,831,177.407,21.349
+Conuma R,Chum,Fall,1998,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,250000,0,248933.528,99.573
+Conuma R,Chum,Fall,1998,1091,Deserted R/NWVI,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,30000,0,640.496,2.135
+Conuma R,Chum,Fall,1998,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,45000,2027,14095.697,31.324
+Conuma R,Chum,Fall,1998,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,80000,0,4800.835,6.001
+Conuma R,Chum,Fall,1998,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,40000,1390,8393.89,20.985
+Conuma R,Chum,Fall,1998,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,7162,5018,7131.447,99.573
+Conuma R,Chum,Fall,1999,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,3292,3292,2253.442,68.452
+Conuma R,Chum,Fall,1999,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,996,996,172.236,17.293
+Conuma R,Chum,Fall,1999,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1752,1752,333.115,19.013
+Conuma R,Chum,Fall,1999,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,980,980,350.514,35.767
+Conuma R,Chum,Fall,1999,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,2380,2380,1629.159,68.452
+Conuma R,Chum,Fall,1999,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20000,980,7153.358,35.767
+Conuma R,Chum,Fall,1999,87,Sucwoa R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,7000,1752,1330.945,19.014
+Conuma R,Chum,Fall,1999,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,12000,996,2075.162,17.293
+Conuma R,Chum,Fall,1999,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,28000,0,19166.591,68.452
+Conuma R,Chum,Fall,2000,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,896,896,193.83,21.633
+Conuma R,Chum,Fall,2000,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,1706,1706,952.009,55.804
+Conuma R,Chum,Fall,2000,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,231,231,91.242,39.499
+Conuma R,Chum,Fall,2000,85,Deserted Lk,,,Broodstock,B1,Total Adults,896,896,8.488,0.947
+Conuma R,Chum,Fall,2000,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,753,753,498.883,66.253
+Conuma R,Chum,Fall,2000,85,Deserted Lk,,,River,N1,Total Adults,1800,0,17.053,0.947
+Conuma R,Chum,Fall,2000,86,Tlupana R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,8986,544,6728.308,74.875
+Conuma R,Chum,Fall,2000,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,10000,1937,5385.941,53.859
+Conuma R,Chum,Fall,2001,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,2881,2881,915.959,31.793
+Conuma R,Chum,Fall,2001,85,Deserted Lk,,,Broodstock,B1,Total Adults,472,472,64.597,13.686
+Conuma R,Chum,Fall,2001,88,Canton Cr,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,1222,921,368.046,30.118
+Conuma R,Chum,Fall,2001,85,Deserted Lk,,,River,N1,Total Adults,2500,0,342.148,13.686
+Conuma R,Chum,Fall,2001,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,70000,0,22255.169,31.793
+Conuma R,Chum,Fall,2001,117,Conuma R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,2335,2335,742.369,31.793
+Heiltsuk,Chum,Fall,1995,214,McLoughlin Bay Cr,CM-15,SPILLER-FITZ HUGH-BURKE,Broodstock,B1,Total Adults,1192,1192,190.639,15.993
+Heiltsuk,Chum,Fall,1995,214,McLoughlin Bay Cr,CM-15,SPILLER-FITZ HUGH-BURKE,River,N1,Total Adults,2193,2193,377.685,17.222
+Heiltsuk,Chum,Fall,1996,214,McLoughlin Bay Cr,CM-15,SPILLER-FITZ HUGH-BURKE,Broodstock,B1,Total Adults,1616,1616,29.557,1.829
+Heiltsuk,Chum,Fall,2015,214,McLoughlin Bay Cr,CM-15,SPILLER-FITZ HUGH-BURKE,River,Broodstock,Total Adults,2145,2145,974.637,45.438
+Heiltsuk,Chum,Fall,2015,214,McLoughlin Bay Cr,CM-15,SPILLER-FITZ HUGH-BURKE,River,Dead-pitch,Total Adults,4414,2987,1214.975,27.525
+Inch Cr,Chum,Fall,1985,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,5018,5018,1960.237,39.064
+Inch Cr,Chum,Fall,1985,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,107982,0,12798.126,11.852
+Inch Cr,Chum,Fall,1986,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,7879,7879,3697.487,46.928
+Inch Cr,Chum,Fall,1986,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,87121,0,12404.066,14.238
+Inch Cr,Chum,Fall,1987,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,3748,3748,246.46,6.576
+Inch Cr,Chum,Fall,1987,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,36252,0,723.321,1.995
+Inch Cr,Chum,Fall,1988,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4499,4499,5331.034,118.494
+Inch Cr,Chum,Fall,1988,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,65501,0,23547.587,35.95
+Inch Cr,Chum,Fall,1989,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4378,4378,5668.734,129.482
+Inch Cr,Chum,Fall,1989,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,114325,16593,61208.494,53.539
+Inch Cr,Chum,Fall,1990,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,798,798,428.011,53.635
+Inch Cr,Chum,Fall,1990,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4454,3814,2959.229,66.44
+Inch Cr,Chum,Fall,1990,243,Blaney Cr/LWFR,CM-2,LOWER FRASER,River,N1,Total Adults,4770,2093,1000.528,20.975
+Inch Cr,Chum,Fall,1990,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,6274,5975,951.747,15.17
+Inch Cr,Chum,Fall,1990,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,244696,16617,38402.098,15.694
+Inch Cr,Chum,Fall,1990,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,2017,2017,1081.831,53.636
+Inch Cr,Chum,Fall,1991,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1108,1108,774.24,69.877
+Inch Cr,Chum,Fall,1991,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4583,4583,2347.698,51.226
+Inch Cr,Chum,Fall,1991,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,5662,5662,437.936,7.735
+Inch Cr,Chum,Fall,1991,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,230277,22315,32993.11,14.328
+Inch Cr,Chum,Fall,1991,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,3958,3958,2765.746,69.877
+Inch Cr,Chum,Fall,1992,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4412,4412,2129.887,48.275
+Inch Cr,Chum,Fall,1992,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1265,1265,710.926,56.2
+Inch Cr,Chum,Fall,1992,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,4135,4135,262.941,6.359
+Inch Cr,Chum,Fall,1992,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,376384,0,55117.294,14.644
+Inch Cr,Chum,Fall,1992,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,8091,8091,4547.12,56.2
+Inch Cr,Chum,Fall,1993,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,5993,5993,5208.134,86.904
+Inch Cr,Chum,Fall,1993,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1040,1040,190.71,18.338
+Inch Cr,Chum,Fall,1993,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,4699,4699,296.124,6.302
+Inch Cr,Chum,Fall,1993,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,350000,34277,80731.229,23.066
+Inch Cr,Chum,Fall,1993,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,7783,7783,1427.207,18.337
+Inch Cr,Chum,Fall,1994,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1104,1104,1154.632,104.586
+Inch Cr,Chum,Fall,1994,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4475,4475,2796.141,62.484
+Inch Cr,Chum,Fall,1994,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,7602,7602,1604.19,21.102
+Inch Cr,Chum,Fall,1994,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,400000,43092,24850.922,6.213
+Inch Cr,Chum,Fall,1994,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,10435,10435,10913.57,104.586
+Inch Cr,Chum,Fall,1995,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,4978,4978,1876.732,37.701
+Inch Cr,Chum,Fall,1995,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1064,1064,796.644,74.873
+Inch Cr,Chum,Fall,1995,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,4397,3998,1483.17,33.731
+Inch Cr,Chum,Fall,1995,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,175000,3230,13643.624,7.796
+Inch Cr,Chum,Fall,1995,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,3105,3105,2324.795,74.873
+Inch Cr,Chum,Fall,1996,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,2957,2957,1688.248,57.093
+Inch Cr,Chum,Fall,1996,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1213,1213,432.654,35.668
+Inch Cr,Chum,Fall,1996,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,150000,2957,25979.939,17.32
+Inch Cr,Chum,Fall,1996,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,6680,6073,576.805,8.635
+Inch Cr,Chum,Fall,1996,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,8850,8850,3156.633,35.668
+Inch Cr,Chum,Fall,1997,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1883,1883,1559.381,82.814
+Inch Cr,Chum,Fall,1997,244,Stave R,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1663,1663,724.812,43.585
+Inch Cr,Chum,Fall,1997,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,8215,8215,1549.319,18.86
+Inch Cr,Chum,Fall,1997,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,200000,9732,18011.62,9.006
+Inch Cr,Chum,Fall,1997,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,10022,10022,8299.588,82.814
+Inch Cr,Chum,Fall,1998,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1851,1851,1249.158,67.486
+Inch Cr,Chum,Fall,1998,150,Inch Cr,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,25656,25656,17314.109,67.486
+Inch Cr,Chum,Fall,1998,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,500000,35205,23106.717,4.621
+Inch Cr,Chum,Fall,1998,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,14892,14892,5907.521,39.669
+Inch Cr,Chum,Fall,1999,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,976,976,909.89,93.226
+Inch Cr,Chum,Fall,1999,150,Inch Cr,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,14882,14882,13873.964,93.226
+Inch Cr,Chum,Fall,1999,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,7324,7324,2151.266,29.373
+Inch Cr,Chum,Fall,1999,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,320000,26274,13987.986,4.371
+Inch Cr,Chum,Fall,2000,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1864,1864,1346.255,72.224
+Inch Cr,Chum,Fall,2000,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,4362,4362,2173.823,49.835
+Inch Cr,Chum,Fall,2000,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,105000,21790,7698.286,7.332
+Inch Cr,Chum,Fall,2000,150,Inch Cr,CM-2,LOWER FRASER,Tendered Sale,Z1,Total Adults,3376,3376,2438.283,72.224
+Inch Cr,Chum,Fall,2001,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1703,1703,1345.483,79.007
+Inch Cr,Chum,Fall,2001,150,Inch Cr,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,10914,10914,8622.783,79.007
+Inch Cr,Chum,Fall,2001,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,12177,12177,4272.51,35.087
+Inch Cr,Chum,Fall,2001,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,625000,26291,6574.507,1.052
+Inch Cr,Chum,Fall,2002,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1602,1602,1180.195,73.67
+Inch Cr,Chum,Fall,2002,150,Inch Cr,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,11822,11379,8709.278,73.67
+Inch Cr,Chum,Fall,2002,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,12593,12593,2014.033,15.993
+Inch Cr,Chum,Fall,2002,244,Stave R,CM-2,LOWER FRASER,River,N1,Total Adults,475000,22090,432.633,0.091
+Inch Cr,Chum,Fall,2003,150,Inch Cr,CM-2,LOWER FRASER,Broodstock,B1,Total Adults,1443,1443,1185.009,82.121
+Inch Cr,Chum,Fall,2003,150,Inch Cr,CM-2,LOWER FRASER,First Nations Rack,S1,Total Adults,10433,10433,8567.704,82.121
+Inch Cr,Chum,Fall,2003,150,Inch Cr,CM-2,LOWER FRASER,River,N1,Total Adults,13069,13069,1788.002,13.681
+Kitasoo Cr,Chum,Fall,1995,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Above Fence,N1,Total Adults,5075,387,785.033,15.469
+Kitasoo Cr,Chum,Fall,1995,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Broodstock,B1,Total Adults,588,588,90.956,15.469
+Kitasoo Cr,Chum,Fall,1995,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,First Nations Harvest,I1,Total Adults,550,0,85.076,15.468
+Kitasoo Cr,Chum,Fall,1996,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Above Fence,N1,Total Adults,6036,6036,1091.4,18.082
+Kitasoo Cr,Chum,Fall,1996,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Below Fence,N2,Total Adults,1100,1100,198.895,18.081
+Kitasoo Cr,Chum,Fall,1996,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Broodstock,B1,Total Adults,899,899,162.552,18.081
+Kitasoo Cr,Chum,Fall,1997,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Above Fence,N1,Total Adults,6077,6045,2051.601,33.76
+Kitasoo Cr,Chum,Fall,1997,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Below Fence,N2,Total Adults,1300,1300,438.881,33.76
+Kitasoo Cr,Chum,Fall,1997,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Broodstock,B1,Total Adults,750,750,253.2,33.76
+Kitasoo Cr,Chum,Fall,1997,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,First Nations Harvest,I1,Total Adults,600,600,202.561,33.76
+Kitasoo Cr,Chum,Fall,1998,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Above Fence,N1,Total Adults,6000,6000,1111.381,18.523
+Kitasoo Cr,Chum,Fall,1998,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Below Fence,N2,Total Adults,800,800,148.184,18.523
+Kitasoo Cr,Chum,Fall,1998,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Broodstock,B1,Total Adults,1160,1160,214.867,18.523
+Kitasoo Cr,Chum,Fall,1999,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Above Fence,N1,Total Adults,7293,6502,1578.732,21.647
+Kitasoo Cr,Chum,Fall,1999,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Below Fence,N2,Total Adults,800,800,173.179,21.647
+Kitasoo Cr,Chum,Fall,1999,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,Broodstock,B1,Total Adults,982,982,212.575,21.647
+Kitasoo Cr,Chum,Fall,1999,409,Kitasoo Cr,CM-18,HECATE LOWLANDS,First Nations Harvest,I1,Total Adults,400,400,86.588,21.647
+Kitimat R,Chum,Summer,1990,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,622,622,286.073,45.992
+Kitimat R,Chum,Summer,1990,255,Dala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,625,625,7.536,1.206
+Kitimat R,Chum,Summer,1990,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,4615,4615,2077.877,45.024
+Kitimat R,Chum,Summer,1990,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,22230,0,10008.931,45.024
+Kitimat R,Chum,Summer,1990,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,4000,0,1839.709,45.993
+Kitimat R,Chum,Summer,1990,255,Dala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,8000,0,96.451,1.206
+Kitimat R,Chum,Summer,1991,255,Dala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,1449,1449,23.264,1.606
+Kitimat R,Chum,Summer,1991,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,6263,6263,1677.703,26.788
+Kitimat R,Chum,Summer,1991,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2854,2854,132.551,4.644
+Kitimat R,Chum,Summer,1991,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,830,830,316.607,38.145
+Kitimat R,Chum,Summer,1991,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,8000,0,3051.639,38.145
+Kitimat R,Chum,Summer,1991,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,0,6696.879,26.788
+Kitimat R,Chum,Summer,1991,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,5000,0,232.217,4.644
+Kitimat R,Chum,Summer,1991,255,Dala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,7000,0,112.384,1.605
+Kitimat R,Chum,Summer,1992,255,Dala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,915,915,80.466,8.794
+Kitimat R,Chum,Summer,1992,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,890,890,387.867,43.581
+Kitimat R,Chum,Summer,1992,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2267,2267,1293.784,57.07
+Kitimat R,Chum,Summer,1992,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,786,786,382.575,48.674
+Kitimat R,Chum,Summer,1992,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,20000,0,9734.753,48.674
+Kitimat R,Chum,Summer,1992,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,100000,0,57070.303,57.07
+Kitimat R,Chum,Summer,1992,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,15000,0,6537.068,43.58
+Kitimat R,Chum,Summer,1992,255,Dala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,6000,0,527.645,8.794
+Kitimat R,Chum,Summer,1993,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,4563,4563,1484.199,32.527
+Kitimat R,Chum,Summer,1993,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,873,873,250.754,28.723
+Kitimat R,Chum,Summer,1993,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,1413,1413,239.752,16.968
+Kitimat R,Chum,Summer,1993,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,0,4241.908,16.968
+Kitimat R,Chum,Summer,1993,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,100000,0,32526.841,32.527
+Kitimat R,Chum,Summer,1993,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,15000,0,4308.483,28.723
+Kitimat R,Chum,Summer,1994,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,921,921,438.22,47.581
+Kitimat R,Chum,Summer,1994,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,652,652,13.862,2.126
+Kitimat R,Chum,Summer,1994,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,3177,3177,1520.187,47.85
+Kitimat R,Chum,Summer,1994,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,1877,11895.235,47.581
+Kitimat R,Chum,Summer,1994,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,250000,6236,119624.506,47.85
+Kitimat R,Chum,Summer,1994,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,0,531.512,2.126
+Kitimat R,Chum,Summer,1995,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2947,2947,1194.342,40.527
+Kitimat R,Chum,Summer,1995,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2564,2564,1056.516,41.206
+Kitimat R,Chum,Summer,1995,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,12436,163,5124.352,41.206
+Kitimat R,Chum,Summer,1995,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,222053,2419,89992.368,40.527
+Kitimat R,Chum,Summer,1996,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,1099,1099,523.133,47.601
+Kitimat R,Chum,Summer,1996,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,3395,3395,1895.961,55.846
+Kitimat R,Chum,Summer,1996,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,1805,11900.198,47.601
+Kitimat R,Chum,Summer,1996,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,81000,1024,45235.01,55.846
+Kitimat R,Chum,Summer,1997,166,Kildala R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,568,568,21.604,3.804
+Kitimat R,Chum,Summer,1997,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,1014,1014,458.164,45.184
+Kitimat R,Chum,Summer,1997,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2963,2963,2212.963,74.687
+Kitimat R,Chum,Summer,1997,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,165000,1689,123232.89,74.687
+Kitimat R,Chum,Summer,1997,166,Kildala R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,25000,0,950.886,3.804
+Kitimat R,Chum,Summer,1998,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,1232,1232,528.233,42.876
+Kitimat R,Chum,Summer,1998,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,3311,3311,1686.666,50.941
+Kitimat R,Chum,Summer,1998,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,500000,0,254706.496,50.941
+Kitimat R,Chum,Summer,1998,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,30000,0,12862.807,42.876
+Kitimat R,Chum,Summer,1999,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,813,813,16.914,2.08
+Kitimat R,Chum,Summer,1999,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2763,2763,1488.869,53.886
+Kitimat R,Chum,Summer,1999,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,20000,2080,416.077,2.08
+Kitimat R,Chum,Summer,1999,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,100000,748,53885.967,53.886
+Kitimat R,Chum,Summer,2000,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2716,2716,1438.963,52.981
+Kitimat R,Chum,Summer,2000,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,75000,144,39735.732,52.981
+Kitimat R,Chum,Summer,2001,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,990,990,50.799,5.131
+Kitimat R,Chum,Summer,2001,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,2710,2710,1059.233,39.086
+Kitimat R,Chum,Summer,2001,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,5000,1250,256.563,5.131
+Kitimat R,Chum,Summer,2001,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,100000,1320,39086.1,39.086
+Kitimat R,Chum,Summer,2002,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,943,943,172.017,18.241
+Kitimat R,Chum,Summer,2002,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,3794,3794,1915.754,50.494
+Kitimat R,Chum,Summer,2002,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,6151,1151,1122.035,18.242
+Kitimat R,Chum,Summer,2002,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,160567,567,81077.194,50.494
+Kitimat R,Chum,Summer,2003,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,862,862,168.078,19.499
+Kitimat R,Chum,Summer,2003,146,Kitimat R,CM-20,DOUGLAS-GARDNER,Broodstock,B1,Total Adults,3273,3273,743.656,22.721
+Kitimat R,Chum,Summer,2003,146,Kitimat R,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,566,566,128.601,22.721
+Kitimat R,Chum,Summer,2003,64,Hirsch Cr,CM-20,DOUGLAS-GARDNER,River,N1,Total Adults,661,661,128.886,19.499
+L Qualicum R,Chum,Fall,1989,102,L Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,33110,33110,39106.677,118.111
+L Qualicum R,Chum,Fall,1989,102,L Qualicum R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,16000,4860,825.251,5.158
+L Qualicum R,Chum,Fall,1990,102,L Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,49013,49013,57835.413,118
+L Qualicum R,Chum,Fall,1990,102,L Qualicum R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,70000,14756,6853.066,9.79
+L Qualicum R,Chum,Fall,1991,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,35000,7838,2155.846,6.16
+L Qualicum R,Chum,Fall,1991,102,L Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N1,Total Adults,32500,6375,9047.802,27.839
+L Qualicum R,Chum,Fall,1991,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,47518,47518,36041.073,75.847
+L Qualicum R,Chum,Fall,1992,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,60000,10043,4664.065,7.773
+L Qualicum R,Chum,Fall,1992,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,56706,56706,34531.111,60.895
+L Qualicum R,Chum,Fall,1993,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N2,Total Adults,87000,2878,23685.118,27.224
+L Qualicum R,Chum,Fall,1993,102,L Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N1,Total Adults,68000,6501,12293.128,18.078
+L Qualicum R,Chum,Fall,1993,102,L Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,47737,47737,36260.808,75.96
+L Qualicum R,Chum,Fall,1994,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,60000,13654,38595.421,64.326
+L Qualicum R,Chum,Fall,1994,102,L Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,55000,6513,11861.378,21.566
+L Qualicum R,Chum,Fall,1994,102,L Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,52200,52200,41776.756,80.032
+L Qualicum R,Chum,Fall,1995,102,L Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N1,Total Adults,18000,517,4666.409,25.924
+L Qualicum R,Chum,Fall,1995,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,29400,29400,26064.426,88.655
+L Qualicum R,Chum,Fall,1996,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,5000,1751,872.285,17.446
+L Qualicum R,Chum,Fall,1996,102,L Qualicum R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,15000,1395,3284.701,21.898
+L Qualicum R,Chum,Fall,1996,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,21605,21605,1487.66,6.886
+L Qualicum R,Chum,Fall,1997,102,L Qualicum R,CM-4,GEORGIA STRAIT,Above & Below Fence,N1,Total Adults,28000,3758,3781.637,13.506
+L Qualicum R,Chum,Fall,1997,102,L Qualicum R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,36497,36497,253.778,0.695
+L Qualicum R,Chum,Fall,2002,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,33354,33354,1166.978,3.499
+L Qualicum R,Chum,Fall,2003,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,44279,44279,9269.808,20.935
+L Qualicum R,Chum,Fall,2005,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,18446,18446,10252.018,55.579
+L Qualicum R,Chum,Fall,2006,102,L Qualicum R,CM-4,GEORGIA STRAIT,Channel,H1,Total Adults,33313,33313,217.974,0.654
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,12849,12849,11848.728,92.215
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,2444,2444,610.394,24.975
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B3,Total Adults,10713,10111,7753.934,72.379
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,500,0,351.692,70.338
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,228878,0,160990.001,70.339
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z3,Total Adults,13830,0,10009.979,72.379
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,1057,1057,263.987,24.975
+Nitinat R,Chum,Fall,1990,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,30229,28237,27875.728,92.215
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,10957,10957,6164.123,56.257
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,12524,12524,3861.528,30.833
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B3,Total Adults,4375,4375,2046.618,46.78
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,1500,0,622.922,41.528
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,350000,0,107915.65,30.833
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,71244,10966,33327.809,46.78
+Nitinat R,Chum,Fall,1991,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,8093,6939,4552.911,56.257
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,18364,18364,9028.31,49.163
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,10986,10986,1808.021,16.458
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,150000,0,24686.254,16.458
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,7988,7988,3927.143,49.163
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,10000,0,1645.749,16.457
+Nitinat R,Chum,Fall,1992,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z3,Total Adults,22601,4166,3719.559,16.457
+Nitinat R,Chum,Fall,1993,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,28249,28249,14873.836,52.653
+Nitinat R,Chum,Fall,1993,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,33657,0,17721.287,52.653
+Nitinat R,Chum,Fall,1993,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N2,Total Adults,242000,0,127419.358,52.653
+Nitinat R,Chum,Fall,1993,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,154543,58194,81370.946,52.653
+Nitinat R,Chum,Fall,1994,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,23860,23860,10793.826,45.238
+Nitinat R,Chum,Fall,1994,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,15407,0,6969.843,45.238
+Nitinat R,Chum,Fall,1994,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,160000,0,42576.72,26.61
+Nitinat R,Chum,Fall,1994,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,135962,43479,61506.749,45.238
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,4125,4125,3008.644,72.937
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,14772,14772,2605.29,17.637
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,5000,0,680.33,13.607
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,119319,0,21043.931,17.637
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,7876,7876,1071.657,13.607
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z3,Total Adults,4162,4162,734.033,17.637
+Nitinat R,Chum,Fall,1995,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,4746,4746,3461.58,72.937
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,8410,8410,2819.693,33.528
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,13952,13952,8428.995,60.414
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,1200,0,402.331,33.528
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,2150,2150,720.847,33.528
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,330000,0,105256.322,31.896
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,42979,34346,25965.443,60.414
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,36475,0,12229.293,33.528
+Nitinat R,Chum,Fall,1996,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z3,Total Adults,100204,33284,33596.274,33.528
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,19957,19957,15724.565,78.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,H3,Total Adults,22500,0,13003.207,57.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,3589,3589,2074.153,57.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,17067,0,9863.365,57.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,2648,2648,2086.418,78.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,438442,0,248213.281,56.613
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,27369,27369,21564.645,78.792
+Nitinat R,Chum,Fall,1997,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,156828,21374,90634.096,57.792
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,2565,2565,1099.278,42.857
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,H1,Total Adults,25575,25575,20012.586,78.251
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,42073,0,14826.298,35.239
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,1008,1008,788.763,78.25
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,183545,0,70679.237,38.508
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,26619,0,20829.523,78.251
+Nitinat R,Chum,Fall,1998,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,251613,27672,107833.571,42.857
+Nitinat R,Chum,Fall,1999,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,15875,15875,10015.574,63.09
+Nitinat R,Chum,Fall,1999,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,12085,0,7624.454,63.09
+Nitinat R,Chum,Fall,1999,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,1100,1100,693.989,63.09
+Nitinat R,Chum,Fall,1999,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,126681,0,79923.353,63.09
+Nitinat R,Chum,Fall,1999,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,59970,12394,37835.219,63.09
+Nitinat R,Chum,Fall,2000,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,5116,5116,4060.184,79.362
+Nitinat R,Chum,Fall,2000,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,707,0,300.929,42.564
+Nitinat R,Chum,Fall,2000,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,20838,0,7988.75,38.337
+Nitinat R,Chum,Fall,2000,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,4772,3147,3787.178,79.362
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B1,Total Adults,27104,27104,31081.154,114.674
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Broodstock,B2,Total Adults,9769,9769,6368.565,65.192
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Harvest,I1,Total Adults,25477,0,16608.862,65.192
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,First Nations Rack,S1,Total Adults,1050,1050,1204.072,114.674
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,River,N1,Total Adults,300000,0,166196.582,55.399
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z1,Total Adults,28747,1446,32965.245,114.674
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Tendered Sale,Z2,Total Adults,53773,10279,35055.479,65.192
+Nitinat R,Chum,Fall,2001,114,Nitinat R,CM-10,SOUTHWEST VANCOUVER ISLAND,Terminal Other,T1,Total Adults,100,100,65.191,65.191
+Pallant Cr,Chum,Fall,1990,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,30458,4621,7509.032,24.654
+Pallant Cr,Chum,Fall,1990,149,Mathers Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,6261,4096,3658.735,58.437
+Pallant Cr,Chum,Fall,1990,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,7439,7439,1833.982,24.654
+Pallant Cr,Chum,Fall,1990,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,3322,3322,1941.277,58.437
+Pallant Cr,Chum,Fall,1991,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,27873,8453,16834.844,60.398
+Pallant Cr,Chum,Fall,1991,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,9731,9731,5877.363,60.398
+Pallant Cr,Chum,Fall,1991,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,925,925,810.446,87.616
+Pallant Cr,Chum,Fall,1991,149,Mathers Cr,CM-21,EAST HG,River,N1,Total Adults,1381,946,1209.973,87.616
+Pallant Cr,Chum,Fall,1992,149,Mathers Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,2960,2618,1779.152,60.106
+Pallant Cr,Chum,Fall,1992,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,28429,2049,24244.115,85.28
+Pallant Cr,Chum,Fall,1992,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,8918,8918,7605.224,85.279
+Pallant Cr,Chum,Fall,1992,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,2632,2632,1582.003,60.106
+Pallant Cr,Chum,Fall,1993,148,Pallant Cr,CM-21,EAST HG,Above & Below Fence,N1,Total Adults,29023,8511,15339.327,52.852
+Pallant Cr,Chum,Fall,1993,149,Mathers Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,14892,14782,5590.246,37.539
+Pallant Cr,Chum,Fall,1993,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,4241,4241,1592.012,37.539
+Pallant Cr,Chum,Fall,1993,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,9136,9136,4828.586,52.852
+Pallant Cr,Chum,Fall,1994,148,Pallant Cr,CM-21,EAST HG,Above & Below Fence,N1,Total Adults,28953,5399,19820.37,68.457
+Pallant Cr,Chum,Fall,1994,149,Mathers Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,7083,4839,2179.919,30.777
+Pallant Cr,Chum,Fall,1994,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,4440,4440,1366.489,30.777
+Pallant Cr,Chum,Fall,1994,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,11014,11014,7539.86,68.457
+Pallant Cr,Chum,Fall,1995,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,44248,10608,27080.892,61.203
+Pallant Cr,Chum,Fall,1995,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,10802,10802,6611.092,61.202
+Pallant Cr,Chum,Fall,1995,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,3481,3481,997.07,28.643
+Pallant Cr,Chum,Fall,1995,149,Mathers Cr,CM-21,EAST HG,River,N1,Total Adults,5883,5878,1685.079,28.643
+Pallant Cr,Chum,Fall,1996,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,35968,9900,20205.018,56.175
+Pallant Cr,Chum,Fall,1996,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,9748,9748,5475.934,56.175
+Pallant Cr,Chum,Fall,1996,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,3256,3256,1238.63,38.041
+Pallant Cr,Chum,Fall,1996,149,Mathers Cr,CM-21,EAST HG,River,N1,Total Adults,4041,4041,1537.255,38.041
+Pallant Cr,Chum,Fall,1997,148,Pallant Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,26213,6290,19788.619,75.492
+Pallant Cr,Chum,Fall,1997,149,Mathers Cr,CM-21,EAST HG,Above Fence,N1,Total Adults,3487,1987,1703.439,48.851
+Pallant Cr,Chum,Fall,1997,148,Pallant Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,8860,8860,6688.559,75.492
+Pallant Cr,Chum,Fall,1997,149,Mathers Cr,CM-21,EAST HG,Broodstock,B1,Total Adults,4355,4355,2127.467,48.851
+Pitt R Up,Sockeye,Summer,1993,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,4398,4398,663.756,15.092
+Pitt R Up,Sockeye,Summer,1993,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,18752,5159,650.167,3.467
+Pitt R Up,Sockeye,Summer,1994,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,3506,3506,1967.048,56.105
+Pitt R Up,Sockeye,Summer,1994,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,5684,1060,1729.609,30.429
+Pitt R Up,Sockeye,Summer,1995,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,1947,1947,529.511,27.196
+Pitt R Up,Sockeye,Summer,1995,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,5500,1947,678.581,12.338
+Pitt R Up,Sockeye,Summer,1996,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,4366,4366,3021.405,69.203
+Pitt R Up,Sockeye,Summer,1996,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,50100,16988,16892.731,33.718
+Pitt R Up,Sockeye,Summer,1997,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,4241,4241,3774.633,89.003
+Pitt R Up,Sockeye,Summer,1997,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,36000,3906,13162.001,36.561
+Pitt R Up,Sockeye,Summer,1998,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,B1,Total Adults,5067,5067,4367.472,86.194
+Pitt R Up,Sockeye,Summer,1998,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,N1,Total Adults,76888,7111,8986.555,11.688
+Pitt R Up,Sockeye,Summer,1999,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,Hatchery removals,Total Adults,3657,3657,4314.293,117.974
+Pitt R Up,Sockeye,Summer,1999,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,Natural spawners,Total Adults,35961,3899,10153.356,28.234
+Pitt R Up,Sockeye,Summer,2000,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,.,Total Adults,4045,4045,2488.762,61.527
+Pitt R Up,Sockeye,Summer,2000,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,.,Total Adults,42638,6566,16887.186,39.606
+Pitt R Up,Sockeye,Summer,2001,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,Broodstock,Brood removals,Total Adults,3314,3314,1890.187,57.036
+Pitt R Up,Sockeye,Summer,2001,249,Pitt R Up,SEL-03-05,PITT-EARLY SUMMER TIMING,River,Natural spawners,Total Adults,131481,17019,7662.816,5.828
+Powell R,Chum,Fall,1997,444,Lang Cr,CM-4,GEORGIA STRAIT,Above Fence,N1,Total Adults,1386,986,172.553,12.45
+Powell R,Chum,Fall,1997,444,Lang Cr,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,80,0,9.959,12.449
+Powell R,Chum,Fall,1997,444,Lang Cr,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,654,654,81.421,12.45
+Puntledge R,Chum,Fall,1990,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,5752,5752,1870.471,32.519
+Puntledge R,Chum,Fall,1990,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,70000,2536,20849.384,29.785
+Puntledge R,Chum,Fall,1991,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,3403,3403,2072.987,60.916
+Puntledge R,Chum,Fall,1991,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,H2,Total Adults,2409,2409,381.413,15.833
+Puntledge R,Chum,Fall,1991,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N2,Total Adults,60000,10242,2257.737,3.763
+Puntledge R,Chum,Fall,1992,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,6016,6016,3320.906,55.201
+Puntledge R,Chum,Fall,1992,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,70000,764,12345.047,17.636
+Puntledge R,Chum,Fall,1993,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,3390,3390,1820.236,53.694
+Puntledge R,Chum,Fall,1993,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,80000,9506,4121.248,5.152
+Puntledge R,Chum,Fall,1994,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,919,919,159.178,17.321
+Puntledge R,Chum,Fall,1994,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,5079,5079,3922.847,77.237
+Puntledge R,Chum,Fall,1994,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,99081,2565,17161.629,17.321
+Puntledge R,Chum,Fall,1995,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,8514,8514,5107.899,59.994
+Puntledge R,Chum,Fall,1995,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,50000,8514,7349.93,14.7
+Puntledge R,Chum,Fall,1996,105,Puntledge R,CM-4,GEORGIA STRAIT,Below Fence,N2,Total Adults,791,791,447.953,56.631
+Puntledge R,Chum,Fall,1996,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,2587,2587,101.595,3.927
+Puntledge R,Chum,Fall,1996,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B2,Total Adults,5058,5058,2864.418,56.631
+Puntledge R,Chum,Fall,1996,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,33922,5822,1332.184,3.927
+Puntledge R,Chum,Fall,1997,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,9077,9077,3974.52,43.787
+Puntledge R,Chum,Fall,1997,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,100000,6586,14790.135,14.79
+Puntledge R,Chum,Fall,1998,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,H1,Total Adults,16514,16514,5182.255,31.381
+Puntledge R,Chum,Fall,1998,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,150000,0,18536.553,12.358
+Puntledge R,Chum,Fall,1999,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,3494,3494,1714.119,49.059
+Puntledge R,Chum,Fall,1999,105,Puntledge R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,1020,1020,500.402,49.059
+Puntledge R,Chum,Fall,1999,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,70000,0,12490.24,17.843
+Puntledge R,Chum,Fall,2000,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,7900,7106,1689.882,21.391
+Puntledge R,Chum,Fall,2000,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,40500,7106,3127.052,7.721
+Puntledge R,Chum,Fall,2001,105,Puntledge R,CM-4,GEORGIA STRAIT,Broodstock,B1,Total Adults,6455,6455,583.17,9.034
+Puntledge R,Chum,Fall,2001,105,Puntledge R,CM-4,GEORGIA STRAIT,First Nations Rack,S1,Total Adults,3636,3636,328.49,9.034
+Puntledge R,Chum,Fall,2001,105,Puntledge R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,55250,10310,1815.414,3.286
+Sliammon R,Chum,Fall,1996,124,Sliammon R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,7745,2071,718.727,9.28
+Sliammon R,Chum,Fall,1997,124,Sliammon R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,8503,805,3530.471,41.52
+Sliammon R,Chum,Fall,1998,124,Sliammon R,CM-4,GEORGIA STRAIT,River,N1,Total Adults,29732,3142,3599.3,12.106
+Sliammon R,Chum,Fall,2004,124,Sliammon R,CM-4,GEORGIA STRAIT,Broodstock,Swim ins,Total Adults,13002,1620,2954.274,22.722
+Sliammon R,Chum,Fall,2004,124,Sliammon R,CM-4,GEORGIA STRAIT,River,Channel and river,Total Adults,27399,3419,1289.845,4.708
+Snootli Cr,Chum,Summer,1990,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1283,1283,11.999,0.935
+Snootli Cr,Chum,Summer,1990,77,Necleetsconnay R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,570,570,63.509,11.142
+Snootli Cr,Chum,Summer,1990,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,656,656,278.35,42.431
+Snootli Cr,Chum,Summer,1990,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1309,1309,447.036,34.151
+Snootli Cr,Chum,Summer,1990,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1281,1281,225.49,17.603
+Snootli Cr,Chum,Summer,1990,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2022,1766,13.987,0.692
+Snootli Cr,Chum,Summer,1990,375,Noohalk Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,618,143,307.416,49.744
+Snootli Cr,Chum,Summer,1990,77,Necleetsconnay R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,7500,1082,1268.209,16.909
+Snootli Cr,Chum,Summer,1990,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,3712,2167,1267.69,34.151
+Snootli Cr,Chum,Summer,1990,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1740,0,220.603,12.678
+Snootli Cr,Chum,Summer,1990,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4586,1717,1347.102,29.374
+Snootli Cr,Chum,Summer,1991,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1295,1295,242.769,18.747
+Snootli Cr,Chum,Summer,1991,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,685,685,84.701,12.365
+Snootli Cr,Chum,Summer,1991,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1143,1143,244.525,21.393
+Snootli Cr,Chum,Summer,1991,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1246,1246,188.515,15.13
+Snootli Cr,Chum,Summer,1991,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1305,0,279.181,21.393
+Snootli Cr,Chum,Summer,1991,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1400,0,262.453,18.747
+Snootli Cr,Chum,Summer,1991,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,550,0,83.211,15.129
+Snootli Cr,Chum,Summer,1991,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1612,584,199.329,12.365
+Snootli Cr,Chum,Summer,1992,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1262,1262,68.906,5.46
+Snootli Cr,Chum,Summer,1992,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1372,1372,631.173,46.004
+Snootli Cr,Chum,Summer,1992,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1421,1421,96.557,6.795
+Snootli Cr,Chum,Summer,1992,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1246,1246,28.077,2.253
+Snootli Cr,Chum,Summer,1992,2425,Nooklikonnik Cr,,,River,N1,Total Adults,4629,1288,284.912,6.155
+Snootli Cr,Chum,Summer,1992,375,Noohalk Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,905,169,31.257,3.454
+Snootli Cr,Chum,Summer,1992,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,10206,3362,4695.168,46.004
+Snootli Cr,Chum,Summer,1992,84,Fish Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2546,1131,123.792,4.862
+Snootli Cr,Chum,Summer,1992,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,3543,2807,240.745,6.795
+Snootli Cr,Chum,Summer,1992,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4606,1643,103.789,2.253
+Snootli Cr,Chum,Summer,1992,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1000,0,54.6,5.46
+Snootli Cr,Chum,Summer,1992,77,Necleetsconnay R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6000,404,290.622,4.844
+Snootli Cr,Chum,Summer,1993,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1387,1387,24.381,1.758
+Snootli Cr,Chum,Summer,1993,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1397,1397,87.323,6.251
+Snootli Cr,Chum,Summer,1993,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1457,1457,39.377,2.703
+Snootli Cr,Chum,Summer,1993,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1400,1400,498.839,35.631
+Snootli Cr,Chum,Summer,1993,77,Necleetsconnay R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,17304,102,629.984,3.641
+Snootli Cr,Chum,Summer,1993,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,8340,1850,521.319,6.251
+Snootli Cr,Chum,Summer,1993,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4254,1756,74.778,1.758
+Snootli Cr,Chum,Summer,1993,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,6632,1627,179.239,2.703
+Snootli Cr,Chum,Summer,1993,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,6662,4132,2373.768,35.631
+Snootli Cr,Chum,Summer,1994,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1165,1165,24.906,2.138
+Snootli Cr,Chum,Summer,1994,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1218,1218,1.765,0.145
+Snootli Cr,Chum,Summer,1994,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1133,1133,29.595,2.612
+Snootli Cr,Chum,Summer,1994,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1247,1247,369.169,29.605
+Snootli Cr,Chum,Summer,1994,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,10768,5612,3187.808,29.604
+Snootli Cr,Chum,Summer,1994,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,5499,1249,143.645,2.612
+Snootli Cr,Chum,Summer,1994,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,3410,1592,72.901,2.138
+Snootli Cr,Chum,Summer,1994,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6243,2995,9.047,0.145
+Snootli Cr,Chum,Summer,1995,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1064,1064,44.826,4.213
+Snootli Cr,Chum,Summer,1995,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B2,Total Adults,1233,1233,22.222,1.802
+Snootli Cr,Chum,Summer,1995,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1146,1146,151.58,13.227
+Snootli Cr,Chum,Summer,1995,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1021,1021,446.8,43.761
+Snootli Cr,Chum,Summer,1995,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,6593,3779,2885.169,43.761
+Snootli Cr,Chum,Summer,1995,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,3755,1006,496.674,13.227
+Snootli Cr,Chum,Summer,1995,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2957,0,124.575,4.213
+Snootli Cr,Chum,Summer,1995,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,2680,754,48.301,1.802
+Snootli Cr,Chum,Summer,1996,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1005,1005,68.658,6.832
+Snootli Cr,Chum,Summer,1996,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1049,1049,282.24,26.906
+Snootli Cr,Chum,Summer,1996,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,994,994,17.194,1.73
+Snootli Cr,Chum,Summer,1996,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,985,985,59.855,6.077
+Snootli Cr,Chum,Summer,1996,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1980,699,120.317,6.077
+Snootli Cr,Chum,Summer,1996,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,5696,2153,98.53,1.73
+Snootli Cr,Chum,Summer,1996,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4175,1571,285.223,6.832
+Snootli Cr,Chum,Summer,1996,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,12671,6827,3409.214,26.906
+Snootli Cr,Chum,Summer,1997,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1098,1098,594.781,54.169
+Snootli Cr,Chum,Summer,1997,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1152,1152,608.238,52.798
+Snootli Cr,Chum,Summer,1997,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1077,1077,187.339,17.395
+Snootli Cr,Chum,Summer,1997,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1118,1118,99.824,8.929
+Snootli Cr,Chum,Summer,1997,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4036,1218,330.78,8.196
+Snootli Cr,Chum,Summer,1997,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,8857,4942,3021.174,34.111
+Snootli Cr,Chum,Summer,1997,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,5263,1599,2730.014,51.872
+Snootli Cr,Chum,Summer,1997,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,3080,1122,514.263,16.697
+Snootli Cr,Chum,Summer,1998,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1104,1104,135.761,12.297
+Snootli Cr,Chum,Summer,1998,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1040,1040,804.47,77.353
+Snootli Cr,Chum,Summer,1998,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1134,1134,123.753,10.913
+Snootli Cr,Chum,Summer,1998,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1097,1097,848.874,77.381
+Snootli Cr,Chum,Summer,1998,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,27133,10812,8173.031,30.122
+Snootli Cr,Chum,Summer,1998,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,7060,2116,586.055,8.301
+Snootli Cr,Chum,Summer,1998,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,4300,1403,468.095,10.886
+Snootli Cr,Chum,Summer,1998,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,7000,2147,3515.785,50.226
+Snootli Cr,Chum,Summer,1999,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,997,997,811.813,81.426
+Snootli Cr,Chum,Summer,1999,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1057,1057,672.511,63.625
+Snootli Cr,Chum,Summer,1999,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,824,824,98.309,11.931
+Snootli Cr,Chum,Summer,1999,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,975,975,214.08,21.957
+Snootli Cr,Chum,Summer,1999,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2105,2105,297.597,14.138
+Snootli Cr,Chum,Summer,1999,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,2687,1935,169.07,6.292
+Snootli Cr,Chum,Summer,1999,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4470,1420,3194.993,71.476
+Snootli Cr,Chum,Summer,1999,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,5227,1908,1520.793,29.095
+Snootli Cr,Chum,Summer,2000,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1002,1002,378.366,37.761
+Snootli Cr,Chum,Summer,2000,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,976,976,376.107,38.536
+Snootli Cr,Chum,Summer,2000,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,990,990,162.378,16.402
+Snootli Cr,Chum,Summer,2000,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,822,822,35.591,4.33
+Snootli Cr,Chum,Summer,2000,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,8395,3543,1821.829,21.701
+Snootli Cr,Chum,Summer,2000,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N,Total Adults,3590,1212,550.663,15.339
+Snootli Cr,Chum,Summer,2000,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,2075,1041,139.85,6.74
+Snootli Cr,Chum,Summer,2000,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6555,1615,2310.709,35.251
+Snootli Cr,Chum,Summer,2001,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1014,1014,556.091,54.841
+Snootli Cr,Chum,Summer,2001,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1176,1176,415.515,35.333
+Snootli Cr,Chum,Summer,2001,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1007,1007,23.436,2.327
+Snootli Cr,Chum,Summer,2001,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1084,1084,179.536,16.562
+Snootli Cr,Chum,Summer,2001,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6080,2368,2524.263,41.517
+Snootli Cr,Chum,Summer,2001,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,6680,2950,1271.228,19.03
+Snootli Cr,Chum,Summer,2001,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2930,1304,403.405,13.768
+Snootli Cr,Chum,Summer,2001,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,3240,1504,50.488,1.558
+Snootli Cr,Chum,Summer,2002,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1120,1120,135.335,12.083
+Snootli Cr,Chum,Summer,2002,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1014,1014,143.129,14.115
+Snootli Cr,Chum,Summer,2002,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1027,1027,376.138,36.625
+Snootli Cr,Chum,Summer,2002,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2053,1307,751.909,36.625
+Snootli Cr,Chum,Summer,2002,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6210,707,898.491,14.468
+Snootli Cr,Chum,Summer,2002,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,8905,5183,1402.008,15.744
+Snootli Cr,Chum,Summer,2003,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1250,1250,62.963,5.037
+Snootli Cr,Chum,Summer,2003,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1163,1163,631.447,54.295
+Snootli Cr,Chum,Summer,2003,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1306,1306,684.011,52.375
+Snootli Cr,Chum,Summer,2003,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1251,1251,14.027,1.121
+Snootli Cr,Chum,Summer,2003,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,35269,15905,9639.065,27.33
+Snootli Cr,Chum,Summer,2003,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,7100,1214,1777.386,25.034
+Snootli Cr,Chum,Summer,2003,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6670,1619,57.789,0.866
+Snootli Cr,Chum,Summer,2003,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,9340,1460,492.528,5.273
+Snootli Cr,Chum,Summer,2004,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1042,1042,794.816,76.278
+Snootli Cr,Chum,Summer,2004,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1133,1133,121.565,10.729
+Snootli Cr,Chum,Summer,2004,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1197,1197,112.041,9.36
+Snootli Cr,Chum,Summer,2004,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1083,1083,693.999,64.081
+Snootli Cr,Chum,Summer,2004,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4550,1289,395.495,8.692
+Snootli Cr,Chum,Summer,2004,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,12000,1073,9084.216,75.702
+Snootli Cr,Chum,Summer,2004,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,5560,1263,3901.887,70.178
+Snootli Cr,Chum,Summer,2004,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,10400,1362,1564.145,15.04
+Snootli Cr,Chum,Summer,2005,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1308,1308,57.836,4.422
+Snootli Cr,Chum,Summer,2005,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1315,1315,716.002,54.449
+Snootli Cr,Chum,Summer,2005,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1227,1227,461.925,37.647
+Snootli Cr,Chum,Summer,2005,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1281,1281,240.682,18.789
+Snootli Cr,Chum,Summer,2005,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1150,1150,186.006,16.174
+Snootli Cr,Chum,Summer,2005,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1370,320,379.686,27.714
+Snootli Cr,Chum,Summer,2005,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,5100,1574,322.315,6.32
+Snootli Cr,Chum,Summer,2005,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,4993,2208,936.875,18.764
+Snootli Cr,Chum,Summer,2006,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1162,1162,54.273,4.671
+Snootli Cr,Chum,Summer,2006,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1039,1039,513.707,49.442
+Snootli Cr,Chum,Summer,2006,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1085,1085,55.652,5.129
+Snootli Cr,Chum,Summer,2006,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1087,1087,840.63,77.335
+Snootli Cr,Chum,Summer,2006,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1395,382,261.805,18.767
+Snootli Cr,Chum,Summer,2006,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,835,520,428.973,51.374
+Snootli Cr,Chum,Summer,2006,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,6165,590,380.13,6.166
+Snootli Cr,Chum,Summer,2006,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,3234,3234,1390.536,42.997
+Snootli Cr,Chum,Summer,2007,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1157,1157,542.283,46.87
+Snootli Cr,Chum,Summer,2007,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1176,1176,466.155,39.639
+Snootli Cr,Chum,Summer,2007,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1285,1285,171.146,13.319
+Snootli Cr,Chum,Summer,2007,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1190,1190,51.513,4.329
+Snootli Cr,Chum,Summer,2007,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1000,537,33.931,3.393
+Snootli Cr,Chum,Summer,2007,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1105,271,670.742,60.701
+Snootli Cr,Chum,Summer,2007,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,4300,1385,266.555,6.199
+Snootli Cr,Chum,Summer,2007,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,6223,2522,930.148,14.947
+Snootli Cr,Chum,Summer,2008,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1267,1267,96.581,7.623
+Snootli Cr,Chum,Summer,2008,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1254,1254,482.396,38.469
+Snootli Cr,Chum,Summer,2008,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1411,1411,95.78,6.788
+Snootli Cr,Chum,Summer,2008,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1353,1353,437.634,32.345
+Snootli Cr,Chum,Summer,2008,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1666,202,123.901,7.437
+Snootli Cr,Chum,Summer,2008,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2244,558,310.711,13.846
+Snootli Cr,Chum,Summer,2008,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,200,82,32.317,16.158
+Snootli Cr,Chum,Summer,2008,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1553,1553,95.78,6.167
+Snootli Cr,Chum,Summer,2009,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1346,1346,223.279,16.588
+Snootli Cr,Chum,Summer,2009,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,1264,1264,60.092,4.754
+Snootli Cr,Chum,Summer,2009,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1165,1165,505.618,43.401
+Snootli Cr,Chum,Summer,2009,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,1335,513,39.094,2.928
+Snootli Cr,Chum,Summer,2009,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,2062,537,1038.334,50.356
+Snootli Cr,Chum,Summer,2009,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,1500,439,51.33,3.422
+Snootli Cr,Chum,Summer,2010,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Above Fence,N1,Total Adults,412,58,99.39,24.124
+Snootli Cr,Chum,Summer,2010,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,B1,Total Adults,771,771,41.976,5.444
+Snootli Cr,Chum,Summer,2010,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,1320,1320,646.72,48.994
+Snootli Cr,Chum,Summer,2010,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,B1,Total Adults,795,795,45.111,5.674
+Snootli Cr,Chum,Summer,2010,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,N1,Total Adults,170,170,8.149,4.794
+Snootli Cr,Chum,Summer,2010,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,N1,Total Adults,700,291,146.544,20.935
+Snootli Cr,Chum,Summer,2011,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Broodstock,Total Adults,1289,1289,34.255,2.657
+Snootli Cr,Chum,Summer,2011,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Broodstock,Total Adults,1371,1371,65.374,4.768
+Snootli Cr,Chum,Summer,2011,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood,Total Adults,1326,1326,675.516,50.944
+Snootli Cr,Chum,Summer,2011,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood from weir,Total Adults,1350,1350,270.901,20.067
+Snootli Cr,Chum,Summer,2011,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,Natural spawners,Total Adults,15058,4966,3823.767,25.394
+Snootli Cr,Chum,Summer,2011,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,Natural spawners,Total Adults,1300,0,260.868,20.067
+Snootli Cr,Chum,Summer,2011,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,Natural spawners,Total Adults,4400,0,116.928,2.657
+Snootli Cr,Chum,Summer,2011,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,Natural spawners,Total Adults,6000,0,286.1,4.768
+Snootli Cr,Chum,Summer,2012,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Above Fence,Natural spawners,Total Adults,700,38,45.515,6.502
+Snootli Cr,Chum,Summer,2012,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Above Fence,Natural spawners,Total Adults,3200,0,204.482,6.39
+Snootli Cr,Chum,Summer,2012,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood from weir,Total Adults,1006,1006,200.477,19.928
+Snootli Cr,Chum,Summer,2012,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Live river,Total Adults,415,415,14.727,3.549
+Snootli Cr,Chum,Summer,2012,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Brood,Total Adults,997,997,63.709,6.39
+Snootli Cr,Chum,Summer,2012,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood removals,Total Adults,1029,1029,935.41,90.905
+Snootli Cr,Chum,Summer,2012,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,Natural spawners above fence,Total Adults,6965,2781,4360.669,62.608
+Snootli Cr,Chum,Summer,2012,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,Natural Spawners,Total Adults,1120,0,223.194,19.928
+Snootli Cr,Chum,Summer,2013,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Above Fence,Total Adults,Total Adults,7800,1126,190.813,2.446
+Snootli Cr,Chum,Summer,2013,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood removal,Total Adults,1086,1086,1156.262,106.47
+Snootli Cr,Chum,Summer,2013,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood collection,Total Adults,1608,1608,589.711,36.674
+Snootli Cr,Chum,Summer,2013,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,Natural spawners above,Total Adults,11091,6980,8211.169,74.035
+Snootli Cr,Chum,Summer,2013,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,Broodstock,Total Adults,1126,1126,27.546,2.446
+Snootli Cr,Chum,Summer,2013,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,deadpitch,Total Adults,1119,1119,306.183,27.362
+Snootli Cr,Chum,Summer,2014,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Brood,Total Adults,1180,1180,984.501,83.432
+Snootli Cr,Chum,Summer,2014,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,Broodstock,none,Total Adults,1935,1935,725.339,37.485
+Snootli Cr,Chum,Summer,2014,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Brood,Total Adults,1236,1236,112.354,9.09
+Snootli Cr,Chum,Summer,2014,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,.,Total Adults,703,679,112.931,16.064
+Snootli Cr,Chum,Summer,2014,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,Total River,Total Adults,1300,0,118.171,9.09
+Snootli Cr,Chum,Summer,2014,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,Total River,Total Adults,711,116,561.884,79.027
+Snootli Cr,Chum,Summer,2014,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,Total River,Total Adults,625,0,100.402,16.064
+Snootli Cr,Chum,Summer,2014,62,Fish Cr+Airport Ch,CM-17,BELLA COOLA RIVER-LATE,River,none,Total Adults,2100,0,787.189,37.485
+Snootli Cr,Chum,Summer,2015,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Broodstock,Total Adults,1395,1395,63.714,4.567
+Snootli Cr,Chum,Summer,2015,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,Broodstock,Broodstock,Total Adults,1357,1357,88.948,6.555
+Snootli Cr,Chum,Summer,2015,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,Broodstock,Live River,Total Adults,1263,1263,567.96,44.969
+Snootli Cr,Chum,Summer,2015,140,Snootli Cr,CM-17,BELLA COOLA RIVER-LATE,River,Total River,Total Adults,16676,8519,6055.537,36.313
+Snootli Cr,Chum,Summer,2015,72,Saloompt R,CM-16,BELLA COOLA-DEAN RIVERS,River,Dead-pitch,Total Adults,588,588,38.479,6.544
+Snootli Cr,Chum,Summer,2015,73,Thorsen Cr/CCST,CM-16,BELLA COOLA-DEAN RIVERS,River,Dead-ptich,Total Adults,447,447,25.653,5.739

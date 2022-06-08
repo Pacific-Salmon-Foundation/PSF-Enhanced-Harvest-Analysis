@@ -1,0 +1,1024 @@
+---
+title: "Enhanced Contribution Analyses"
+output: html_notebook
+---
+
+This Notebook contains the code for PSF's estimations of enhanced contribution to harvest as they've been presented in our Harvest Report. Total catch data was compiled for commercial and recreational fisheries in the 'catch_data_wrangle.Rmd' and are used here to look at total catch. Hatchery catch information was obtained from expanded CWT recoveries from EPAD, which were then _extended_ to account for ALL hatchery production (ie. including releases that were not associated with a CWT). 
+
+Chum enhanced contribution data were provided by Cheryl Lynch from the 2020 Chum Assessment (Lynch et al. 2020).
+
+See report for full description of methods.
+
+An alternate approach using CTC data is explored at the bottom, however this method was not pursued/included for the final report due to issues in properly assigning fisheries to catch.
+
+```{r}
+library(tidyverse)
+library(here)
+library(RColorBrewer)
+library(ggpubr)
+library(scales)
+
+# Read in data (data files generated in the 'catch_data_wrangle.Rmd' script)
+total_catch <- read_csv(here("processed", "harvest/totcatch/total_catch.csv"))
+CN_all_catch <- read_csv(here("processed", "harvest/totcatch/CN_ALL_catch.csv"))
+CO_all_catch <- read_csv(here("processed", "harvest/totcatch/CO_ALL_catch.csv"))
+
+# Chum dat from Lynch et al. 2020 (raw data processed in the 'chum_wrangle.Rmd' script)
+CM_dat <- read_csv(here("processed", "harvest/CU/chum_all.csv"))
+
+```
+
+
+
+```{r Total Catch}
+# Generate plots of total salmon catches by fishery for each stat area for each species
+# Plot all as bar charts
+ggplot(subset(total_catch, species == "Chinook"), aes(x = year, y = catch, fill = fishery)) +
+  geom_bar(stat = "identity", position = "stack", colour = "black", size = 0.2) +
+  facet_wrap(~area, scales = "free_y", ncol = 4) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        legend.position = "top",
+        legend.justification = "right",
+        legend.key.size = unit(0.8, "line")) +
+  labs(y = "Total Catch", fill = "Fishery") +
+  scale_y_continuous(labels = comma)
+#ggsave("../figs/harvest/totcatch/AllBC_CN_totcatch_bar.png", width = 20, height = 22, units = "cm")
+
+
+ggplot(subset(total_catch, species == "Coho"), aes(x = year, y = catch, fill = fishery)) +
+  geom_bar(stat = "identity", position = "stack", colour = "black", size = 0.2) +
+  facet_wrap(~area, scales = "free_y", ncol = 4) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        legend.position = "top",
+        legend.justification = "right",
+        legend.key.size = unit(0.8, "line")) +
+  labs(y = "Total Catch", fill = "Fishery") +
+  scale_y_continuous(labels = comma)
+#ggsave("../figs/harvest/totcatch/AllBC_CO_totcatch_bar.png", width = 20, height = 22, units = "cm")
+
+ggplot(subset(total_catch, species == "Chum"), aes(x = year, y = catch, fill = fishery)) +
+  geom_bar(stat = "identity", position = "stack", colour = "black", size = 0.2) +
+  facet_wrap(~area, scales = "free_y", ncol = 4) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        legend.position = "top",
+        legend.justification = "right",
+        legend.key.size = unit(0.8, "line")) +
+  labs(y = "Total Catch", fill = "Fishery") +
+  scale_y_continuous(labels = comma)
+#ggsave("../figs/harvest/totcatch/AllBC_CM_totcatch_bar.png", width = 20, height = 22, units = "cm")
+
+# Get summaries of the mean total annual catch for different time periods and regions
+avg_catch_time <- total_catch %>%
+  filter(year > 2009) %>% # filter to look at Commercial only when looking at NCBC data
+  mutate(region = case_when(area %in% c(1:10) ~ "NCBC",
+                            TRUE ~ "SBC")) %>%
+  group_by(year, region) %>%
+  summarise(totcatch = sum(catch, na.rm = T)) %>%
+  group_by(region) %>%
+  mutate(meancatch = mean(totcatch), sdcatch = sd(totcatch))
+
+
+```
+
+```{r Appendix A Total Catch tables}
+# Create summary tables of total catch by fishery type by region for Tables in Appendix A of Harvest Report
+CN_totcatch <- total_catch %>%
+  ungroup() %>%
+  filter(species == "Chinook") %>%
+  select(year, area, catch, fishery) %>%
+  mutate(region = case_when(area %in% c(1:5) ~ "NCST",
+                            area %in% c(6:10, 130) ~ "CCST",
+                            area %in% c(11:19, 28:29) ~ "ISC",
+                            area %in% c(20:27) ~ "WCVI")) %>%
+  select(-area) %>%
+  mutate(fishery = as.character(fishery)) %>%
+  mutate(fishery = case_when(fishery %in% c("GN", "SN") ~ "Net",
+                            fishery == "T" ~ "Troll",
+                            fishery == "rec" ~ "Rec",
+                            TRUE ~ fishery)) %>%
+  select(year, region, fishery, catch) %>%
+  group_by(year, region, fishery) %>%
+  summarise(catch = sum(catch, na.rm = T)) %>%
+  unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
+  pivot_wider(names_from = region_fishery, values_from = catch) %>%
+  select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
+#write_csv(CN_totcatch, "../processed/harvest/totcatch/CN_totcatch.csv")
+
+
+CO_totcatch <- total_catch %>%
+  ungroup() %>%
+  filter(species == "Coho") %>%
+  select(year, area, catch, fishery) %>%
+  mutate(region = case_when(area %in% c(1:5) ~ "NCST",
+                            area %in% c(6:10, 130) ~ "CCST",
+                            area %in% c(11:19, 28:29) ~ "ISC",
+                            area %in% c(20:27) ~ "WCVI")) %>%
+  select(-area) %>%
+  mutate(fishery = as.character(fishery)) %>%
+  mutate(fishery = case_when(fishery %in% c("GN", "SN") ~ "Net",
+                            fishery == "T" ~ "Troll",
+                            fishery == "rec" ~ "Rec",
+                            TRUE ~ fishery)) %>%
+  select(year, region, fishery, catch) %>%
+  group_by(year, region, fishery) %>%
+  summarise(catch = sum(catch, na.rm = T)) %>%
+  unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
+  pivot_wider(names_from = region_fishery, values_from = catch) %>%
+  select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
+#write_csv(CO_totcatch, "../processed/harvest/totcatch/CO_totcatch.csv")
+
+CM_totcatch <- all_catch %>%
+  ungroup() %>%
+  filter(species == "Chum") %>%
+  select(year, area, catch, fishery) %>%
+  mutate(region = case_when(area %in% c(1:5) ~ "NCST",
+                            area %in% c(6:10, 130) ~ "CCST",
+                            area %in% c(11:19, 28:29) ~ "ISC",
+                            area %in% c(20:27) ~ "WCVI")) %>%
+  select(-area) %>%
+  mutate(fishery = as.character(fishery)) %>%
+  mutate(fishery = case_when(fishery %in% c("GN", "SN") ~ "Net",
+                            fishery == "T" ~ "Troll",
+                            fishery == "rec" ~ "Rec",
+                            TRUE ~ fishery)) %>%
+  select(year, region, fishery, catch) %>%
+  group_by(year, region, fishery) %>%
+  summarise(catch = sum(catch, na.rm = T)) %>%
+  unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
+  pivot_wider(names_from = region_fishery, values_from = catch) %>%
+  select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
+#write_csv(CM_totcatch, "../processed/harvest/totcatch/CM_totcatch.csv")
+
+
+# To get annual total and median catch by region
+CN_hatch_sum <- CN_hatch %>%
+  mutate(tperiod = case_when(year < 1996 ~ "Pre-96",
+                             year > 1995 ~ "Post-95")) %>%
+  group_by(region, year, tperiod) %>%
+  summarise(totcatch = sum(CWT_catch)) %>%
+  group_by(region, tperiod) %>%
+  summarise(medcatch = median(totcatch))
+    
+
+
+# To get annual total and median catch by region
+CO_hatch_sum <- CO_hatch %>%
+  ungroup() %>%
+  mutate(tperiod = case_when(year < 1996 ~ "Pre-96",
+                             year > 1995 ~ "Post-95")) %>%
+  group_by(region, year, tperiod) %>%
+  summarise(totcatch = sum(CWT_catch, na.rm = T)) %>%
+  group_by(region, tperiod) %>%
+  summarise(medcatch = median(totcatch))
+
+```
+
+The following code calculates epxanded cWT catch, our extended hatchery catch, and enhanced contribution to total catch based on these values. 
+Generates Appendix A Tables for CN
+
+
+```{r Tot Hatch Catch and Enhanced contr Tables}
+# Look at enhanced contribution to overall catch by region and expand by the mark rate (calculated in the unmarked.Rmd by comparing CWT releases to non-CWT releases for each year and region)
+
+#---- Chinook ----
+# Read in the CWT-mark rates - adjust year by 3 years to convert from release year to recovery year of 4-yr olds
+mark_props <- read_csv(here("processed", "mark_props.csv")) %>%
+  filter(species == "Chinook") %>%
+  mutate(year = relY+3) %>%
+  select(-c(species, relY)) %>%
+  filter(CWT_rate > 0)
+
+# Add mark rates (proportion associated with CWT) to SBC catch data to expand to all hatchery fish
+Ext_catch_CN <- left_join(CN_all_catch, mark_props, by = c("year", "region"))
+
+# Calculate extended hatchery catch and enhanced contributions on a regional scale (** NOTE: Total catch for NCST and CCST is based on commercial catch data only and thus enhanced contribution calcs are not accurate. Fill these 2 columns with NA for report tables)
+# Produces data for TAbles A.4, A.7, A.10, and A.13 in Appendix A of Harvest report)
+regional_enhctr_CN <- Ext_catch_CN %>%
+  # filter(year > 1980) %>% # Need to filter to only look at 1981 onwards for enh contribution calcs since only commercial data prior to 1981, but show all data for hatchery plots in next code chunk
+  group_by(year, region) %>%
+  mutate(`Exp CWT` = sum(CWT_catch, na.rm = T), `Total Hatchery` = `Exp CWT`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T), `Enhanced Contribution` = `Total Hatchery`/`Total Catch`) %>%
+  select(1:2, 8:11) %>%
+  distinct() %>%
+  mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
+  arrange(region)
+#write_csv(regional_enhctr_CN, "../processed/harvest/totcatch/CN_enhctr.csv")
+
+# Calculate the overall mean enhanced contribution per region
+mean_enhctr <- regional_enhctr_CN %>%
+  group_by(region) %>%
+  summarise(mean_enhctr = mean(`Enhanced Contribution`, na.rm = T), sd = sd(`Enhanced Contribution`, na.rm = T))
+
+
+# ---- COHO ----
+# Read in the CWT-mark rates - adjusted by 2 years to convert release year to recovery year of 3-yr olds
+mark_props_CO <- read_csv(here("processed", "mark_props.csv")) %>%
+  filter(species == "Coho") %>%
+  mutate(year = relY+2) %>%
+  select(-c(species, relY))
+
+# Add mark rates (proportion associated with CWT) to SBC catch data to expand to all hatchery fish
+Ext_catch_CO <- left_join(CO_all_catch, mark_props_CO, by = c("year", "region"))
+
+# Calculate extended hatchery catch and enhanced contributions on a regional scale (** NOTE: Total catch for NCST and CCST is based on commercial catch data only and thus enhanced contribution calcs are not accurate. Fill these 2 columns with NA for report tables)
+# Produces data for TAbles A.5, A.8, A.11, and A.14 in Appendix A of Harvest report)
+regional_enhctr_CO <- Ext_catch_CO %>%
+  #filter(year > 1980) %>% # Need to filter to only look at 1981 onwards for enh contribution calcs since only commercial data prior to 1981, but show all data for hatchery plots in next code chunk
+  group_by(year, region) %>%
+  mutate(`Exp CWT` = sum(CWT_catch, na.rm = T), `Total Hatchery` = `Exp CWT`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T), `Enhanced Contribution` = `Total Hatchery`/`Total Catch`) %>%
+  select(1:2, 8:11) %>%
+  distinct() %>%
+  mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
+  arrange(region) 
+#write_csv(SBC_regional_enhctr_CO, "../processed/harvest/totcatch/CO_enhctr.csv")
+
+# Calculate the overall mean enhanced contribution per region
+mean_enhctr_CO <- SBC_regional_enhctr_CO %>%
+  group_by(region) %>%
+  summarise(mean_enhctr = mean(exp_prop, na.rm = T), sd = sd(exp_prop, na.rm = T))
+  
+```
+
+The following code generates Figures 9-11 in the Harvest report showing expanded CWT catch, extended hatchery catch, and total catch
+
+```{r Hatchery Catch}
+# First plot expanded CWT hatchery catch vs our extended hatchery catch vs total catch (Figures 9-10 in report)
+
+# ---- CN ----
+# Convert to long format for plotting
+hatch_catch_CN <- regional_enhctr_CN %>%
+  pivot_longer(cols = 3:4, names_to = "type", values_to = "catch")
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot expanded CWT recoveries, total hatchery catch, and total overall catch in same plot. Only add in total catch line for SBC areas as NCST and CCST data are commercial catch data only and not equivalent
+ggplot(hatch_catch_CN, aes(x = year, y = catch)) +
+  geom_bar(aes(fill = type), stat = "identity", position = "dodge", color = "black", size = 0.1) +
+  geom_line(data = subset(hatch_catch_CN, region %in% c("WCVI", "ISC") & year > 1980), aes(x = year, y = `Total Catch`, color = "Total Catch"), size = 0.4) +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(0.7, "line"),
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = comma) +
+  scale_color_manual(values = "#000000") +
+  scale_fill_manual(values = cols) +
+  labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
+#ggsave("../figs/harvest/CN/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+
+
+# ---- CO -----
+hatch_catch_CO <- regional_enhctr_CO %>%
+  pivot_longer(cols = 3:4, names_to = "type", values_to = "catch")
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot expanded CWT recoveries, total hatchery catch, and total overall catch in same plot
+ggplot(hatch_catch_CO, aes(x = year, y = catch)) +
+  geom_bar(aes(fill = type), stat = "identity", position = "dodge", color = "black", size = 0.1) +
+  geom_line(data = subset(hatch_catch_CO, region %in% c("WCVI", "ISC") & year > 1980), aes(x = year, y = `Total Catch`, color = "Total Catch"), size = 0.4) +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(0.7, "line"),
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = comma) +
+  scale_color_manual(values = "#000000") +
+  scale_fill_manual(values = cols) +
+  labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
+#ggsave("../figs/harvest/CO/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+
+```
+
+The following code generates Figures 12-13 in the Harvest Report showing enhanced contributions to catch in WCVI and ISC for CN and CO
+
+```{r Enhanced contribution}
+# Create bar chart of total catch with proportion of BC hatchery fish shown in plot below - focused on SBC since we don't have total catch for NBC
+# Identify hatchery vs non-hatchery catch
+
+# ---- CN ----
+SBC_regional_enhctr_CN <- Ext_catch_CN %>%
+  select(1:2, 5:7) %>%
+  distinct() %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980) %>%
+  group_by(year, region) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Catch` = sum(tot_catch, na.rm = T)) %>%
+  select(-c(3:4)) %>%
+  distinct() %>%
+  mutate(`BC Hatchery` = `CWT Catch`/CWT_rate, Other = `Total Catch` - `BC Hatchery`) %>%
+  pivot_longer(6:7, names_to = "source", values_to = "catch") %>%
+  mutate(source = factor(source, levels = c("Other", "BC Hatchery")), region = factor(region, levels = c("WCVI", "ISC"))) %>%
+  filter(catch > 0) 
+
+# Plot of total CN catch
+totcatch_SBC_CN <- ggplot(subset(regional_enhctr_CN, region %in% c("WCVI", "ISC")), aes(x = year, y = `Total Catch`)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_SBC_CN
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_SBC_CN <- ggplot(SBC_regional_enhctr_CN, aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_SBC_CN
+
+# Combine the two plots to make Figure 12
+ggarrange(totcatch_SBC_CN, hatch_props_SBC_CN, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CN/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+
+
+
+# ---- CO ----
+SBC_regional_enhctr_CO <- Ext_catch_CO %>%
+  select(1:2, 5:7) %>%
+  distinct() %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980) %>%
+  group_by(year, region) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Catch` = sum(tot_catch, na.rm = T)) %>%
+  select(-c(3:4)) %>%
+  distinct() %>%
+  mutate(`BC Hatchery` = `CWT Catch`/CWT_rate, Other = `Total Catch` - `BC Hatchery`) %>%
+  pivot_longer(6:7, names_to = "source", values_to = "catch") %>%
+  mutate(source = factor(source, levels = c("Other", "BC Hatchery")), region = factor(region, levels = c("WCVI", "ISC"))) %>%
+  filter(catch > 0) 
+
+# Plot of total CN catch
+totcatch_SBC_CO <- ggplot(SBC_regional_enhctr_CO, aes(x = year, y = `Total Catch`)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_SBC_CO
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_SBC_CO <- ggplot(SBC_regional_enhctr_CO, aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_SBC_CO
+
+# Combine the two plots to make Figure 13 from Harvest Report
+ggarrange(totcatch_SBC_CO, hatch_props_SBC_CO, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CO/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+
+
+
+# Plot annual enhanced contribution by region for CN (Note NCST and CCST plots inaccurate - only based on commercial catch but all CWT recoveries - do not use)
+ggplot(regional_enhctr_CN, aes(x = year, y = `Enhanced Contribution`)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(axis.title.x = element_blank()) +
+  labs(y = "Enhanced Contribution to Catch") +
+  scale_y_continuous(expand = c(0.01,0), limits = c(0, 1))
+ggsave("../figs/harvest/totcatch/SBC_enhctr_byregion_CN.png", width = 20, height = 12, units = "cm")
+
+```
+
+The following code generates Figures 16-19 in the Harvest Report
+
+```{r Enhanced Contribution by Fishery by Region}
+
+# ---- CN ----
+
+## Look at enhanced contribution to each FISHERY in each region
+# Get the numbers for a table first, then prepare data for plotting
+mean_enhctr_fishery_CN <- Ext_catch_CN %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  group_by(year, region, fishery) %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Hatchery Catch` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T), `Enhanced Contribution` = `Total Hatchery Catch`/`Total Catch`) %>%
+  select(1:4, 9:11) %>%
+  distinct() %>%
+  filter(!`Enhanced Contribution` %in% c(Inf, 'NA'), `Enhanced Contribution` <1, `Total Catch` > 1) %>%
+  ungroup() %>%
+  group_by(region, fishery) %>%
+  summarise(mean_enhctr = mean(`Enhanced Contribution`), sd = sd(`Enhanced Contribution`))
+
+# Prepare data for plotting
+SBC_fishery_enhctr_CN <- Ext_catch_CN %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  group_by(year, region, type, fishery) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Hatchery Catch` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T)) %>%
+  select(1:4, 9:10) %>%
+  distinct() %>%
+  pivot_longer(5:6, names_to = "source", values_to = "catch") 
+
+
+# Calculate the expanded hatchery catch and non-hatch catch for ISC
+SBC_fishery_props_CN <- Ext_catch_CN %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  group_by(year, region, type, fishery) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `BC Hatchery` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T),Other = `Total Catch` - `BC Hatchery`) %>%
+  select(1:4, 9, 11) %>%
+  distinct() %>%
+  pivot_longer(5:6, names_to = "source", values_to = "catch") %>%
+  mutate(source = factor(source, levels = c("Other", "BC Hatchery"))) %>%
+  filter(catch > 0)
+
+
+# Create a plot of total catch by fishery with enhanced contribution below it for ISC and WCVI
+# Plot of total CN catch WCVI
+totcatch_WCVI_CN <- ggplot(subset(SBC_fishery_enhctr_CN, source == "Total Catch" & region == "WCVI"), aes(x = year, y = catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_WCVI_CN
+
+cols = hue_pal()(2)
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_WCVI_CN <- ggplot(subset(SBC_fishery_props_CN, region == "WCVI"), aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.key.size = unit(0.7, "line"),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_WCVI_CN
+
+# Combine to make Figure 16
+ggarrange(totcatch_WCVI_CN, hatch_props_WCVI_CN, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CN/WCVI_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+
+
+
+# Plot of total CN catch for ISC:
+totcatch_ISC_CN <- ggplot(subset(SBC_fishery_enhctr_CN, source == "Total Catch" & region == "ISC"), aes(x = year, y = catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_ISC_CN
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_ISC_CN <- ggplot(subset(SBC_fishery_props_CN, region == "ISC"), aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.key.size = unit(0.7, "line"),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_ISC_CN
+
+# Combine to make Figure 17
+ggarrange(totcatch_ISC_CN, hatch_props_ISC_CN, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CN/ISC_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+
+
+
+# ---- CO ----
+
+# Look at enhanced contribution to each fishery in each region
+# Get the numbers for a table first, then prepare data for plotting
+mean_enhctr_fishery_CO <- Ext_catch_CO %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  group_by(year, region, type, fishery) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Hatchery Catch` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T), `Enhanced Contribution` = `Total Hatchery Catch`/`Total Catch`) %>%
+  select(1:4, 9:11) %>%
+  distinct() %>%
+  filter(!`Enhanced Contribution` %in% c(Inf, 'NA'), `Enhanced Contribution` <1, `Total Catch` > 1) %>%
+  ungroup() %>%
+  group_by(region, fishery) %>%
+  summarise(mean_enhctr = mean(`Enhanced Contribution`), sd = sd(`Enhanced Contribution`))
+
+SBC_fishery_enhctr_CO <- SBC_catch_CO %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  group_by(year, region, type, fishery) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `Total Hatchery Catch` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T)) %>%
+  select(1:4, 9:10) %>%
+  distinct() %>%
+  pivot_longer(5:6, names_to = "source", values_to = "catch") 
+
+# Calculate the expanded hatchery catch and non-hatch catch
+SBC_fishery_props_CO <- SBC_catch_CO %>%
+  filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
+  mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
+  group_by(year, region, type, fishery) %>%
+  mutate(`CWT Catch` = sum(CWT_catch, na.rm = T), `BC Hatchery` = `CWT Catch`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T),Other = `Total Catch` - `BC Hatchery`) %>%
+  select(1:4, 9, 11) %>%
+  distinct() %>%
+  pivot_longer(5:6, names_to = "source", values_to = "catch") %>%
+  mutate(source = factor(source, levels = c("Other", "BC Hatchery"))) %>%
+  filter(catch > 0)
+
+
+
+# Create a plot of total catch by fishery with enhanced contribution below it for both WCVI and ISC
+# Plot of total CO catch for WCVI
+totcatch_WCVI_CO <- ggplot(subset(SBC_fishery_enhctr_CO, source == "Total Catch" & region == "WCVI"), aes(x = year, y = catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_WCVI_CO
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_WCVI_CO <- ggplot(subset(SBC_fishery_props_CO, region == "WCVI"), aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.key.size = unit(0.7, "line")) +
+  scale_fill_manual(values = rev(cols), labels = c("Other", "BC_Hatchery")) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_WCVI_CO
+
+# Combine to make Figure 18
+ggarrange(totcatch_WCVI_CO, hatch_props_WCVI_CO, nrow = 2, heights = c(4,5), align = "v")
+ggsave("../figs/harvest/CO/WCVI_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+
+
+
+# Plot total catches by fishery for ISC
+totcatch_ISC_CO <- ggplot(subset(SBC_fishery_enhctr_CO, source == "Total Catch" & region == "ISC"), aes(x = year, y = catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_ISC_CO
+
+# Plot the proportions of hatchery and non-hatchery catch for ISC CO
+hatch_props_ISC_CO <- ggplot(subset(SBC_fishery_props_CO, region == "ISC"), aes(x = year, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~fishery, scales = "free_y") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.key.size = unit(0.7, "line"),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = rev(cols), labels = c("Other", "BC_Hatchery")) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_ISC_CO
+
+# Combine to make Figure 19
+ggarrange(totcatch_ISC_CO, hatch_props_ISC_CO, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CO/ISC_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+
+```
+The following code generates the enhanced contribution figures for Chum (Figures 14 and 15 and )
+Note, these data are from Lynch et al (2020), however the data only pertain to net fisheries, not troll or rec.
+
+```{r CHUM Enhanced Contribution}
+chum_dist <- CM_dat %>%
+  mutate(region = case_when(area %in% c("2W,2E", "3,4,5", "1", "1,2W") ~ "NCST",
+                            area %in% c("7,8,9", "6",  "8,9,10",  "9,10", "10", "6,7") ~ "CCST",
+                            area %in% c("11", "14", "17", "18,19", "17,18", "15,16", "29") ~ "ISC",
+                            TRUE ~ "WCVI")) %>%
+  group_by(stock, recY, region) %>%
+  mutate(h_catch = sum(adj_catch))
+
+# Create summary table of catch by region - Manually broke the resulting csv into Tables A.6, A.9, A.12, and A.15 in Appendix A
+chum_tab <- chum_dist %>%
+  ungroup() %>%
+  select(region, recY, adj_catch, totcatch) %>%
+  group_by(region, recY) %>%
+  mutate(annual_adj_catch = sum(adj_catch, na.rm = T)) %>%
+  select(region, recY, annual_adj_catch, totcatch) %>%
+  distinct() %>%
+  group_by(region, recY) %>%
+  mutate(totcatch = sum(totcatch, na.rm = T)) %>%
+  distinct() %>%
+  mutate(enh_contr = annual_adj_catch/totcatch) %>%
+  mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC")))
+#write_csv(chum_tab, "../processed/harvest/CU/chum_annual_catch_byregion.csv")
+
+# Calculate the mean enhanced contribution by region over the entire time period 
+mean_enhctr_CM <- chum_tab %>%
+  group_by(region) %>%
+  summarise(mean_enhctr = mean(enh_contr, na.rm = T), sd = sd(enh_contr, na.rm = T))
+
+# Plot enhanced contribution to catch for each region
+ggplot(chum_tab, aes(x = recY, y = enh_contr)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(axis.title.x = element_blank()) +
+  labs(y = "Enhanced Contribution to Catch") +
+  scale_y_continuous(expand = c(0.01,0), limits = c(0, 1))
+#ggsave("../figs/harvest/totcatch/SBC_enhctr_byregion_CM.png", width = 20, height = 16, units = "cm")
+
+
+# Plot total and hatchery catch over time (Figure 11 in report)
+chum_tab1 <- chum_tab %>%
+  select(1:4) %>%
+  rename(Hatchery = annual_adj_catch, `Total Catch` = totcatch) %>%
+  mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) 
+
+# Plot expanded CWT recoveries, total hatchery catch, and total overall catch in same plot
+ggplot(chum_tab1, aes(x = recY)) +
+  geom_bar(aes(y = Hatchery, fill = "Hatchery"), stat = "identity", position = "dodge", color = "black", size = 0.1) +
+  geom_line(aes(y = `Total Catch`, colour = "Total Catch"), size = 0.4) +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        legend.position = "bottom",
+        legend.key.size = unit(0.7, "line"),
+        legend.title = element_blank()) +
+  scale_y_continuous(labels = comma) +
+  scale_color_manual(values = "#000000") +
+  scale_fill_manual(values = rev(cols)) +
+  labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
+#ggsave("../figs/harvest/CU/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+
+
+
+#Prepare data for showing hatch vs non-hatch catch in bar graphs for Figures 14 and 15
+chum_tab2 <- chum_tab %>%
+  mutate(Other = totcatch-annual_adj_catch) %>%
+  select(1:3,6) %>%
+  rename(`BC Hatchery` = annual_adj_catch) %>%
+  pivot_longer(cols = 3:4, names_to = "source", values_to = "catch") %>%
+  mutate(source = factor(source, levels = c("Other", "BC Hatchery")), region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
+  filter(catch > 1)
+
+## ---- NBC ---- ##
+# Plot of total CM catch
+totcatch_NBC_CM <- ggplot(subset(chum_tab, region %in% c("NCST", "CCST")), aes(x = recY, y = totcatch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_NBC_CM
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_NBC_CM <- ggplot(subset(chum_tab2, region %in% c("NCST", "CCST")), aes(x = recY, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_NBC_CM
+
+# Combine to create Figure 14 in report
+ggarrange(totcatch_NBC_CM, hatch_props_NBC_CM, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CU/NBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+
+
+
+## ---- SBC ---- ##
+# Plot of total CM catch
+totcatch_SBC_CM <- ggplot(subset(chum_tab, region %in% c("WCVI", "ISC")), aes(x = recY, y = totcatch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Total Catch")
+totcatch_SBC_CM
+
+# Set red and blue colours for figure
+cols = hue_pal()(2)
+
+# Plot the proportions of hatchery and non-hatchery catch
+hatch_props_SBC_CM <- ggplot(subset(chum_tab2, region %in% c("WCVI", "ISC")), aes(x = recY, y = catch, fill = source)) +
+  geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
+  facet_wrap(~region) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        strip.text.x = element_blank()) +
+  scale_fill_manual(values = rev(cols)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Catch")
+hatch_props_SBC_CM
+
+# Combine to create Figure 15 in report
+ggarrange(totcatch_SBC_CM, hatch_props_SBC_CM, nrow = 2, heights = c(4,5), align = "v")
+#ggsave("../figs/harvest/CU/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+
+
+```
+
+# CTC Method
+
+Exploration of estimating enhanced contribtution using data from the Chinook Technical Committee. Note these data are for Chinook only.
+THIS ANALYSIS WAS NOT INCLUDED IN THE REPORT
+
+## Data:
+
+__Total annual catch:__
+  *The Pacific Salmon Commission’s (PSC) Joint Chinook Technical Committee (CTC) Annual Report of Catch and Escapement contains tables of landed catch of Chinook salmon by region and gear type in Appendix A. The full dataset with all catch for all years was acquired through the CTC (downloaded by Andy from the CTC website)
+
+__Total enhanced catch:__
+  *Total annual returns of CWT Chinook were obtained from SEP’s EPAD (provided by Cheryl Lynch). Data were filtered to only include the stocks and stages used as CTC indicators to calculate an annual total indicator catch value and be able to match indicator catch to the total catch reported in the CTC reports.
+  *The PSC’s CTC annual Exploitation Rate Analysis reports contain tables of the percent distribution of landed catch for exploitation rate indicator stocks by calendar year in Appendix C. The full dataset with mortality distributions for all years for indicator stocks in BC was acquired from the CTC website
+  *Non-indicator catch: based off of hatchery release records from EPAD (provided by Joan Bateman), which were used to estimate the proportion of total hatchery releases that are CTC indicator releases
+  
+## Method: 
+To determine enhanced contribution to total catch, I used a combination of CTC and EPAD data. Total catch by region/fishery was obtained from the CTC’s Annual Report of Catch and Escapement, Appendix A. In these reports, the fisheries are grouped into “Troll”, “Net”, and “Sport”, and have been separated into AABM and ISBM fisheries per region (AABM: SEAK, NBC, WCVI; ISBM: NBC & CBC, SBC, N Falcon, S Falcon, WAC, Puget Sound; Terminal: SEAK, Canada, SUS). Note that the American regions/fisheries were grouped as follows:
+  
+  *SEAK = SEAK AABM + SEAK Term
+  *SUS = N Falcon ISBM + S Falcon ISBM + WAC ISBM + SUS Term
+
+There is no stock information associated with the total catch data, but I needed to figure out what proportion of that total catch was made up of the CWT-based CTC indicator stocks. To do this, I filtered the EPAD CWT returns to only include CTC indicator stocks and extracted total annual returns (catch + escapement). To allocate each year’s return to the appropriate fishery or escapement, I multiplied the returns by the % distributions in the CTC’s mortality distribution tables (these tables show what proportion of the indicator stocks were captured in each fishery or made it to escapement each year). This gave me total indicator catch per region/fishery. It should be noted however that it is not entirely clear which fisheries go into the CTC total catch. I have made my best guess using their fishery key, however not all fisheries listed in the key were provided in the mortality distribution tables, so there may be some discrepancies if key fisheries are missing (this is being discussed with members of the CTC).
+To account for hatchery catch of non-CTC indicators, I calculated the proportion of all hatchery releases that were indicator releases each year. I then plotted the figure and visually selected time periods where the proportion of releases that were indicators were similar. This resulted in the following proportions of indicators in releases:
+
+1972-1977:	0.29
+1978-1984:	0.87
+1985-2003:	0.65
+2004-2019:	0.76
+
+I then used these proportions to expand the total indicator catch to the total enhanced catch by dividing the returns in each year by the associated proportion. This was then divided by total catch to get enhanced contribution to catch.
+
+# CTC Code
+
+```{r Import CTC Data, echo = FALSE}
+# CTC CN catch
+CTC_catch <- read_csv(here("raw", "CTC_totcatch.csv"))
+
+# Mortality Distribution Tables from CN CTC
+CTC_MDT <- read_csv(here("raw", "Chinook_All Mort Tables Long.csv"))
+
+```
+
+
+```{r CTC Data Tidy}
+# Reformat CTC catch data
+CTC_dat <- CTC_catch %>%
+  rename(year = Year, region = Fishery) %>%
+  pivot_longer(cols = 3:8, names_to = "fishery", values_to = "overall_catch") %>%
+  mutate(region = case_when(region == "NC BC ISBM" ~ "NCBC ISBM",
+                            region == "PS -JDF" ~ "PS",
+                           TRUE ~ region))
+
+# Reformat mortality distribution table
+CTC_MDT1 <- CTC_MDT %>%
+  select(-c(2, 4:5, 34)) %>%
+  rename(year = Catch.Year, stock = Stock, escapement = Escapement) %>%
+  pivot_longer(cols = 3:30, names_to = "fishery", values_to = "catch") %>%
+  select(1:2, 4:5, 3) %>%
+  separate(fishery, c("type", "region", "fishery"), fill = "left") %>%
+  mutate(stock = case_when(stock == "Lower Shuswap" ~ "Shuswap R Low",
+                           stock == "Robertson" ~ "Robertson Cr",
+                           stock == "Quinsam" ~ "Quinsam R",
+                           stock == "Puntledge" ~ "Puntledge R",
+                           stock == "Phillips" ~ "Phillips R",
+                           stock == "Nicola" ~ "Nicola R", 
+                           stock == "Nanaimo" ~ "Nanaimo R",
+                           stock == "Middle Shuswap" ~ "Shuswap R Middle",
+                           stock == "Kitsumkalum" ~ "Kitsumkalum R",
+                           stock == "Harrison" ~ "Harrison R",
+                           stock == "Dome" ~ "Dome Cr", 
+                           stock == "Cowichan" ~ "Cowichan R",
+                           stock == "Chilliwack" ~ "Chilliwack R",
+                           stock == "Big Qualicum" ~ "Big Qualicum R",
+                           stock == "Atnarko" ~ "Atnarko R",
+                           TRUE ~ stock))
+
+```
+
+```{r Import EPAD Data, echo = FALSE}
+# Expanded CWT catch data by fishery for CN from EPAD - all
+CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
+
+# Expanded CWT catch data by fishery for CO from EPAD - all
+CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
+
+# Bring in release data from EPAD
+all_rel <- read_csv(here("raw", "All_SEP_releases2.csv")) 
+```
+
+
+```{r EPAD Data Tidy}
+# pull out total catch from EPAD
+CN_EPAD <- CN_dat %>%
+  select(project = PROJ_NAME, species = SPECIES_NAME, run = RUN_NAME, BY = BROOD_YEAR, stock = STOCK_NAME, CU = STOCK_CU_INDEX, facility = FACILITY_NAME, prod_area = PROD_AREA_CODE, stage = RELEASE_STAGE_NAME, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, surv_code = SURVIVAL_CODE, expl_code = EXPLOIT_CODE, bio_code = BIOSTND_CODE, tottagged = TotTagged, totrel = TotRelease, age = Age, year = RecovYear, totcatch = TotCatch, escape = Escape, returns = `TotCatch+Esc`) %>%
+  mutate(stock = case_when(stock %in% c("Atnarko R Low", "Atnarko R Up") ~ "Atnarko R", 
+                           stock %in% c("Kitsumkalum R", "Kitsum Abv Canyon", "Kitsum Bel Canyon") ~ "Kitsumkalum R",
+                           TRUE ~ stock)) %>%
+  mutate(stock = case_when((stock == "Kitsumkalum R" & stage == "Smolt 1+") ~ "Kitsumkalum.Yearling",
+                           (stock == "Atnarko R" & stage == "Smolt 1+") ~ "Atnarko.Yearling",
+                           TRUE ~ stock)) %>%
+  filter(!stage %in% c("Nat Sm 0+", "Seapen 0+", "Fed Fry", "Fed Fall", "Nat Fry", "Seapen 1+"), expl_code != "N")
+
+# Pull out the relevant/indicator stocks by joining catch with MDT
+CN_catch_dist <- left_join(CTC_MDT1, CN_EPAD[, c("stock", "stage", "year", "returns")], by = c("stock", "year")) %>%
+  mutate(catch = catch/100, escapement = escapement/100)
+
+# Isolate the stages that correspond with the indicators and then rejoin                           
+CN_catch_dist_yearling <- CN_catch_dist %>%
+  filter(stock %in% c("Kitsumkalum.Yearling", "Atnarko.Yearling", "Nicola R", "Dome Cr"))
+CN_catch_dist_indicators <- CN_catch_dist %>%
+  filter(stage != "Smolt 1+")
+CN_catch_dist1 <- rbind(CN_catch_dist_yearling, CN_catch_dist_indicators) %>%
+  mutate(type = replace_na(type, "AABM")) %>%
+  unite(col = region, region, type, sep = " ", remove = T, na.rm = T)
+
+# Ensure the EPAD catch and catch distribution have the same regions as the CTC catch data and then calculate tot catch and escapement using MDT values
+CN_catch_dist <- CN_catch_dist1 %>%
+  mutate(region = case_when(region %in% c("SEAK AABM", "SEAK Term") ~ "SEAK",
+                           region %in% c("NF ISBM", "SF ISBM", "WAC ISBM", "SUS Term") ~ "SUS",
+                           region == "PS ISBM" ~ "PS",
+                           region == "CAN Term" ~ "CDN Term",
+                           TRUE ~ region)) %>%
+  group_by(stock, year, region, fishery) %>%
+  mutate(totreturns = sum(returns), catch = sum(unique(catch))) %>%
+  select(-returns) %>%
+  distinct() %>%
+  rowwise() %>%
+  mutate(totcatch = catch*totreturns, totescape = escapement*totreturns) %>%
+  group_by(year, region, fishery) %>%
+  mutate(comb_ind_catch = sum(totcatch, na.rm = T))
+
+CN_ind_catch <- CN_catch_dist %>%
+  select(year, region, fishery, comb_ind_catch) %>%
+  distinct()
+
+# Estimate enhanced contribution of indicators to total catch
+CN_catch_indcontr <- left_join(CTC_dat, CN_ind_catch) %>%
+  mutate(ind_contr = comb_ind_catch/overall_catch) %>%
+  filter(ind_contr < Inf)
+
+ggplot(CN_catch_indcontr, aes(x = year, y = ind_contr, fill = fishery)) +
+  geom_bar(position = "dodge", stat = "identity") +
+  facet_wrap(~region, scales = "free_y")
+
+```
+
+```{r}
+rel <- all_rel %>%
+  select(species = SPECIES_NAME, stock = STOCK_NAME, stage = RELEASE_STAGE_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, tagged = TaggedNum, nonCWT_mark = NoTagNum, unmrk = UnmarkedNum, totrel = TotalRelease, exp_code = EXPLOIT_CODE) %>%
+  mutate(stock = case_when(stock %in% c("Atnarko R Low", "Atnarko R Up") ~ "Atnarko R", 
+                           stock %in% c("Kitsumkalum R", "Kitsum Abv Canyon", "Kitsum Bel Canyon") ~ "Kitsumkalum R",
+                           TRUE ~ stock)) %>%
+  mutate(stock = case_when((stock == "Kitsumkalum R" & stage == "Smolt 1+") ~ "Kitsumkalum.Yearling",
+                           (stock == "Atnarko R" & stage == "Smolt 1+") ~ "Atnarko.Yearling",
+                           TRUE ~ stock)) %>%
+  filter(species == "Chinook", exp_code != "N")
+
+# Isolate the stages that correspond to the indicators and then rejoin
+yearling_rel <- rel %>%
+  filter(stock %in% c("Kitsumkalum.Yearling", "Atnarko.Yearling", "Nicola R", "Dome Cr"), stage == "Smolt 1+")
+smolt_rel <- rel %>%
+  filter(stage == "Smolt 0+")
+rel2 <- rbind(yearling_rel, smolt_rel)
+
+# pull out indicator stocks and only look at those that were CWT'd
+ind_rel <- left_join(CTC_MDT1[, c("stock")], rel2, by = "stock") %>%
+  distinct() %>%
+  mutate(nonCWT_mark = as.numeric(nonCWT_mark), tagged = as.numeric(tagged)) %>%
+  replace_na(list(tagged = 0, nonCWT_mark = 0, unmrk = 0)) %>%
+  mutate(unmrk = nonCWT_mark + unmrk) %>%
+  mutate(mrk = totrel-unmrk) %>%
+  mutate(mark_type = case_when(startsWith(tagcode, "R") ~ "non-CWT",
+                               startsWith(tagcode, "NO") ~ "non-CWT",
+                               startsWith(tagcode, "L") ~ "non-CWT",
+                               startsWith(tagcode, "H") ~ "non-CWT",
+                               startsWith(tagcode, "D") ~ "non-CWT",
+                               startsWith(tagcode, "AD") ~ "non-CWT",
+                               startsWith(tagcode, "B") ~ "non-CWT",
+                               TRUE ~ "CWT")) %>%
+  filter(mark_type != "non-CWT") %>%
+  select(relY, totrel) %>%
+  group_by(relY) %>%
+  summarise(indrel = sum(totrel, na.rm = T)) %>%
+  filter(relY != 'NA')
+
+# annual releases overall
+all_rel <- rel %>%
+  select(relY, totrel) %>%
+  distinct() %>%
+  group_by(relY) %>%
+  summarise(totrel = sum(totrel, na.rm = T))
+
+# proportion of overall releases that were indicators, then look at how proportion changes over time and calculate median for various time periods
+ind_prop_releases <- full_join(ind_rel, all_rel) %>%
+  mutate(ind_prop = indrel/totrel) %>%
+  mutate(mean_prop = case_when(relY %in% c(1972:1977) ~ 0.29,
+                              relY %in% c(1978:1984) ~ 0.87,
+                              relY %in% c(1985:2003) ~ 0.65,
+                              relY %in% c(2004:2019) ~ 0.76)) %>%
+  #let's assume they mostly come back as 3 year olds to help line up the rel years and recovery years
+  mutate(year = relY + 3)
+
+# Plot proportion of releases that were indicators
+ggplot(ind_prop_releases, aes(x = relY, y = ind_prop)) +
+  geom_col()
+  
+# Now use the above proportion to estimate total enhanced contribution by region
+CN_catch_contr_region <- left_join(CN_catch_indcontr, ind_prop_releases[,c("year", "mean_prop")], by = "year") %>%
+  mutate(enhanced_catch = comb_ind_catch/mean_prop) %>%
+  group_by(year, region) %>%
+  mutate(tot_catch = sum(overall_catch), tot_hatch = sum(enhanced_catch)) %>%
+  select(year, region, tot_catch, tot_hatch) %>%
+  distinct() %>%
+  mutate(enhctr = tot_hatch/tot_catch) %>%
+  mutate(region = factor(region, levels = c("SEAK", "NBC AABM", "NCBC ISBM", "SBC ISBM", "WCVI AABM", "CDN Term", "PS", "SUS"))) %>%
+  filter(enhctr < 1)
+
+mean_enhctr_region_CTC <- CN_catch_contr_region %>%
+  group_by(region) %>%
+  summarise(mean_enhctr = mean(enhctr), sd = sd(enhctr))
+
+# Plot total enhanced contribution by region/fishery
+ggplot(CN_catch_contr_region, aes(x = year, y = enhctr)) +
+  geom_col() +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  labs(y = "Enhanced Contribution")
+ggsave("../figs/harvest/totcatch/CTC_enhctr_regional.png", width = 18, height = 14, units = "cm")
+
+
+
+# Now use the above proportion to estimate total enhanced catch of Chinook and calculate enhanced contribution to total catch by fishery (i.e. Net, Troll, Sport) by region
+CN_catch_contr <- left_join(CN_catch_indcontr, ind_prop_releases[,c("year", "mean_prop")], by = "year") %>%
+  mutate(enhanced_catch = comb_ind_catch/mean_prop) %>%
+  mutate(enhanced_contr = enhanced_catch/overall_catch) %>%
+  filter(enhanced_contr < 10)
+
+mean_enhctr_CTC <- CN_catch_contr %>%
+  #filter(enhanced_contr < 1) %>%
+  group_by(region, fishery) %>%
+  summarise(mean_enhctr = mean(enhanced_contr), sd = sd(enhanced_contr))
+  
+ggplot(CN_catch_contr, aes(x = year, y = enhanced_contr, fill = fishery)) +
+  geom_bar(position = "dodge", stat = "identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw()
+
+```
+
+
+
+

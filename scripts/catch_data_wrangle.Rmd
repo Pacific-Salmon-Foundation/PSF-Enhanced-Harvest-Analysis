@@ -1,0 +1,447 @@
+---
+title: "Catch Data Wrangle"
+output: html_notebook
+---
+
+This notebook combines total salmon catch data and hatchery catch data to be used in estimates of enhanced contribution to catch
+
+Commercial catch data:
+  *1996-present: current Commercial Salmon Logbook Program (provider: Jason Parsely, DFO)
+  *1990-1999: Archived data from Commercial Catch Statistics System (provider: Jason Parsley, DFO)
+  *1982-1989: Archived data from Commercial Catch Statistics System (provider: Jason Parsley, DFO)
+  *1975-1995: commercial catch data from RMIS (provider: Nick Komick, DFO)
+  
+Rec Data:
+  *2013-present: iREC (provider: Rob Houtman, DFO)
+  *1981-present: SBC Creel Survey (provider: John Davidson, DFO)
+  
+Chinook Technical Committee Catch Data:
+  *1975-2019
+  *mortality distribution tables based on indicator stocks
+
+Hatchery catch data:
+  *1972-present: EPAD, catch by statistical area (provider: Brock Ramshaw, DFO)
+  
+
+```{r Data Import, message = FALSE, include = FALSE}
+# Installing packages and loading the data
+
+library(tidyverse)
+library(here)
+
+
+
+# ---- Total Catch Data----
+# Commercial catch records from the Statistical Catch Unit
+comm_catch_new <- read_csv(here("raw", "commercial/Commercial_Salmon_Catch_combined.csv")) # From the current Commercial Salmon Logbook Program
+comm_catch_old1 <- read_csv(here("raw", "commercial/RMIS_historic_comm_catch.csv")) # From RMIS 
+comm_catch_old2 <- read_csv(here("raw", "commercial/commercial_catch_82-89.csv")) # From the archived Commercial Catch Statistics System (based on fish slips)
+comm_catch_old3 <- read_csv(here("raw", "commercial/commercial_catch_90-99.csv")) # From the archived Commercial Catch Statistics System (based on fish slips)
+
+
+# rec catch records from iREC from the Statistical Catch Unit and older records from SBC creel surveys
+irec_catch <- read_csv(here("raw", "rec_catch_data.csv"))
+irec_bias <- read_csv(here("raw", "rec/irec_bias_correction.csv"))
+SBC_creel1 <- read_csv(here("raw", "rec/SBC_creel_1981-1999.csv"))
+SBC_creel2 <- read_csv(here("raw", "rec/SBC_creel_2000-2010.csv"))
+SBC_creel3 <- read_csv(here("raw", "rec/SBC_creel_2011-2019.csv"))
+SBC_creel4 <- read_csv(here("raw", "rec/SBC_creel_2020-2021.csv"))
+
+
+
+# ---- Hatchery Catch Data ----
+# Expanded CWT catch data by stat area for CN from EPAD - summarized
+CN_dat_SA <- read_csv(here::here("raw", "CN_exp_recov_bySA.csv"))
+
+# Expanded CWT catch data by fishery for CN from EPAD - all
+CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
+
+# Expanded CWT catch data by stat area for CO from EPAD - summarized
+CO_dat_SA <- read_csv(here::here("raw", "CO_exp_recov_bySA.csv"))
+
+# Expanded CWT catch data by fishery for CO from EPAD - all
+CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
+
+
+# Enhanced contribution to escapement data from EPAD
+CN_CO_enhcontr_esc <- read_csv(here("raw", "CN_CO_enh_contr_esc.csv"))
+CM_PI_SO_enhcontr_esc <- read_csv(here("raw", "CM_PI_SO_enh_contr_esc.csv"))
+ALL_salmon_enhcontr_esc <- full_join(CN_CO_enhcontr_esc, CM_PI_SO_enhcontr_esc)
+
+```
+
+
+```{r commercial data}
+# Commercial catch data from RMIS for early years (1975-1980)
+comm_dat_old1 <- comm_catch_old1 %>%
+  select(year = YEAR, fishery = GEAR_NAME, type = FISHERY_TYPE, area = AREA_NAME, species = SPECIES_NAME, catch = CATCH_TOTAL) %>%
+  filter(year < 1982, !area %in% c("Washington + Oregon Waters (MRP AREA C)", "Alaskan Waters", "Stikine River", "Taku River")) %>%
+  mutate(fishery = case_when(fishery == "Gillnet" ~ "GN",
+                             fishery == "Seine" ~ "SN",
+                             fishery %in% c("Troll - Freezer", "Troll - General") ~ "T")) %>%
+  mutate(area = case_when(grepl("PFMA 1,", area) ~ 1,
+                          grepl("2E", area) ~ 2,
+                          grepl("2W", area) ~ 2,
+                          grepl("PFMA 3", area) ~ 3,
+                          grepl("PFMA 4", area) ~ 4,
+                          grepl("PFMA 5", area) ~ 5,
+                          grepl("PFMA 6,", area) ~ 6,
+                          grepl("PFMA 7,", area) ~ 7,
+                          grepl("PFMA 8,", area) ~ 8,
+                          grepl("PFMA 9,", area) ~ 9,
+                          grepl("PFMA 10,", area) ~ 10,
+                          grepl("PFMA 11,", area) ~ 11,
+                          grepl("PFMA 12", area) ~ 12,
+                          grepl("Quadra", area) ~ 13,
+                          grepl("PFMA 14", area) ~ 14,
+                          grepl("PFMA 15", area) ~ 15,
+                          grepl("PFMA 16", area) ~ 16,
+                          grepl("PFMA 17", area) ~ 17,
+                          grepl("PFMA 18", area) ~ 18,
+                          grepl("PFMA 19", area) ~ 19,
+                          grepl("PFMA 20", area) ~ 20,
+                          grepl("PFMA 21", area) ~ 21,
+                          grepl("PFMA 22", area) ~ 22,
+                          grepl("PFMA 23", area) ~ 23,
+                          grepl("PFMA 24", area) ~ 24,
+                          grepl("PFMA 25", area) ~ 25,
+                          grepl("PFMA 26", area) ~ 26,
+                          grepl("PFMA 27", area) ~ 27,
+                          grepl("PFMA 28", area) ~ 28,
+                          grepl("PFMA 29", area) ~ 29,
+                          grepl("PFMA 130", area) ~ 130)) %>%
+  group_by(year, area, species, fishery) %>%
+  mutate(catch = sum(catch, na.rm = T)) %>%
+  distinct()
+
+# Commercial data from the archived Commercial Catch Statistics System (1981-1999)
+comm_dat_old2 <- full_join(comm_catch_old2, comm_catch_old3)
+
+comm_dat_old3 <- comm_dat_old2 %>%
+  select(year = CATCH_YEAR, fishery = GEAR_CSS_CODE, area = STAT_AREA_CODE, species = SPECIES_CSS_CODE, catch = TOTAL_NUM_FISH) %>%
+  filter(species %in% c(10:18), year < 1996) %>%
+  mutate(species = case_when(species %in% c(10:14) ~ "Chinook",
+                             species == 15 ~ "Sockeye",
+                             species == 16 ~ "Coho",
+                             species == 17 ~ "Pink",
+                             species == 18 ~ "Chum")) %>%
+  mutate(fishery = case_when(fishery == 10 ~ "GN",
+                             fishery == 20 ~ "SN",
+                             fishery %in% c(30:31) ~ "T")) %>%
+  mutate(area = case_when(area == "160" ~ 16,
+                          area == "170" ~ 17,
+                          area == "180" ~ 18,
+                          area == "190" ~ 19,
+                          area == "200" ~ 20,
+                          area == "210" ~ 21,
+                          area == "220" ~ 22,
+                          area == "230" ~ 23,
+                          area == "240" ~ 24,
+                          area == "250" ~ 25,
+                          area == "260" ~ 26,
+                          area == "270" ~ 27,
+                          area %in% c("441", "442") ~ 400,
+                          area %in% c("791", "792", "793", "794") ~ 29,
+                          area == "010" ~ 1,
+                          area %in% c("021", "022") ~ 2,
+                          area %in% c("031", "032", "033") ~ 3,
+                          area == "040" ~ 4,
+                          area %in% c("050", "051", "052", "053", "054", "056") ~ 5,
+                          area == "060" ~ 6,
+                          area == "070" ~ 7,
+                          area == "080" ~ 8,
+                          area == "090" ~ 9,
+                          area == "100" ~ 10,
+                          area == "110" ~ 11,
+                          area == "120" ~ 12,
+                          area == "130" ~ 13,
+                          area == "140" ~ 14,
+                          area == "150" ~ 15,
+                          area == "300" ~ 130,
+                          area == "280" ~ 28)) %>%
+  filter(!area %in% c(400, 600, 450, 518)) %>%
+  mutate(type = "Commercial") %>%
+  group_by(year, area, species, fishery) %>%
+  mutate(catch = sum(catch, na.rm = T)) %>%
+  distinct() %>%
+  select(1:2, 6, 3:5)
+
+comm_dat_all_old <- full_join(comm_dat_old1, comm_dat_old3)
+
+# Commercial catch data from iREC
+comm_dat_new <- comm_catch_new %>%
+  select(year = CALENDAR_YEAR, area = MGMT_AREA, Sockeye = SOCKEYE_KEPT, Coho = COHO_KEPT, Pink = PINK_KEPT, Chum = CHUM_KEPT, Chinook = CHINOOK_KEPT, fishery = FISHERY) %>%
+  pivot_longer(cols = 3:7, values_to = "catch", names_to = "species") %>%
+  select(1:2, 4:5, 3) %>%
+  mutate(area = case_when(area == 101 ~ 1,
+                          area == 102 ~ 2,
+                          area == 103 ~ 3,
+                          area == 104 ~ 4, 
+                          area == 105 ~ 5,
+                          area == 106 ~ 6,
+                          area == 107 ~ 7, 
+                          area == 108 ~ 8,
+                          area == 109 ~ 9,
+                          area == 110 ~ 10,
+                          area == 111 ~ 11, 
+                          area == 121 ~ 21,
+                          area == 123 ~ 23,
+                          area == 124 ~ 24,
+                          area == 125 ~ 25,
+                          area == 126 ~ 26,
+                          area == 127 ~ 27,
+                          area == 142 ~ 2,
+                          TRUE ~ area)) %>%
+  mutate(fishery = case_when(grepl("GILL", fishery) ~ "GN",
+                             grepl("SEINE", fishery) ~ "SN",
+                             grepl("TROLL", fishery) ~ "T")) %>%
+  group_by(year, area, species, fishery) %>%
+  mutate(catch = sum(catch, na.rm = T)) %>%
+  mutate(type = "Commercial") %>%
+  distinct()
+
+# Combine datasets
+comm_dat_all <- full_join(comm_dat_all_old, comm_dat_new) %>%
+  arrange(species, fishery, type, area, year) 
+
+# Adding a grouping variable to consecutive years of data so that years with no data are not connected
+idx <- c(1, diff(comm_dat_all$year))
+i2 <- c(1,which(idx != 1), nrow(comm_dat_all)+1)
+comm_dat_all$grp <- rep(1:length(diff(i2)), diff(i2))
+
+ggplot(subset(comm_dat_all, species == "Chinook"), aes(x = year, y = catch, group = grp, color = fishery)) +
+  geom_line() +
+  facet_wrap(~area, scales = "free_y") +
+  theme_bw() +
+  labs(y = "Total Catch")
+#ggsave("../figs/harvest/totcatch/SBC_CN_totcatch.png", width = 28, height = 16, units = "cm")
+
+
+```
+
+```{r rec catch}
+# ---- iREC Catch Data ----
+# First need to add in the bias correction factor provided by Rob Houtman
+bias <- irec_bias %>%
+  select(ITEM = Species, YEAR = 'Licence Year', DISPOSITION = Disposition, BCF)
+
+irec_corr <- left_join(irec_catch, bias[,c(1:4)], by = c("ITEM", "YEAR", "DISPOSITION"))
+
+# tidy data
+rec_dat_new <- irec_corr %>%
+  select(year = YEAR, month = MONTH, area = AREA, endpt = DISPOSITION, species = ITEM, est = ESTIMATE, BCF) %>%
+  filter(endpt == "Kept") %>%
+  select(-endpt) %>%
+  mutate(area = case_when(area %in% c("Area 19 (JDF)", "Area 19 (GS)") ~ "Area 19",
+                          area %in% c("Area 23 (Barkley)", "Area 23 (Alberni Canal)") ~ "Area 23",
+                          area %in% c("Area 29 (Marine)", "Area 29 (In River)") ~ "Area 29",
+                          area %in% c("Area 2W", "Area 2E") ~ "Area 2",
+                          area %in% c("Area 20 (East)", "Area 20 (West") ~ "Area 20",
+                          TRUE ~ area)) %>%
+  separate(col = area, into = c("delete", "area"), " ") %>%
+  mutate(area = as.numeric(area)) %>%
+  select(-delete) %>%
+  mutate(area = case_when(area == 101 ~ 1,
+                          area == 102 ~ 2,
+                          area == 103 ~ 3,
+                          area == 104 ~ 4, 
+                          area == 105 ~ 5,
+                          area == 106 ~ 6,
+                          area == 107 ~ 7, 
+                          area == 108 ~ 8,
+                          area == 109 ~ 9,
+                          area == 110 ~ 10,
+                          area == 111 ~ 11, 
+                          area == 121 ~ 21,
+                          area == 123 ~ 23,
+                          area == 124 ~ 24,
+                          area == 125 ~ 25,
+                          area == 126 ~ 26,
+                          area == 127 ~ 27,
+                          area == 142 ~ 2,
+                          TRUE ~ area)) %>%
+  mutate(corr_catch = ifelse(!is.na(BCF), est/BCF, est)) %>%
+  group_by(year, area, species) %>%
+  mutate(catch = sum(corr_catch, na.rm = T), fishery = "Rec", type = "Rec") %>%
+  select(-c(month, est, corr_catch, BCF)) %>%
+  distinct() %>%
+  filter(year > 2012, year < 2021)
+
+# Calculate the total annual rec catch for each species from the irec data  
+annual_sum_irec <- rec_dat_new %>%
+  filter(species %in% c("Chinook", "Coho"), area %in% c(11:19, 28, 29)) %>%
+  group_by(year, species) %>%
+  summarise(catch = sum(catch))
+#write_csv(annual_sum_irec, "../processed/harvest/CN_CO_rec_catch_irec.csv")
+
+
+# ---- SBC Creel Survey Data ----
+# Now prepare the historical rec catch from the SBC Creel survey data provided by John Davidson
+rec_dat_creel1 <- full_join(SBC_creel1, SBC_creel2) %>%
+  full_join(SBC_creel3) %>%
+  full_join(SBC_creel4)
+
+rec_dat_creel <- rec_dat_creel1 %>%
+  select(year = Year, area = PFMA, endpt = DISPOSITION, species = SPECIES, catch = PIECE) %>%
+  separate(col = area, into = c("delete", "area"), " ") %>%
+  mutate(area = as.numeric(area)) %>%
+  select(-delete) %>%
+  filter(endpt == "Kept", species %in% c("CHINOOK SALMON", "COHO SALMON", "PINK SALMON", "SOCKEYE SALMON", "CHUM SALMON", "PACIFIC SALMON AND NATIVE TROUT")) %>%
+  mutate(species = case_when(species == "CHINOOK SALMON" ~ "Chinook",
+                             species == "COHO SALMON" ~ "Coho",
+                             species == "CHUM SALMON" ~ "Chum",
+                             species == "PINK SALMON" ~ "Pink",
+                             species == "SOCKEYE SALMON" ~ "Sockeye",
+                             species == "PACIFIC SALMON AND NATIVE TROUT" ~ "Unknown Salmon")) %>%
+  select(-endpt) %>%
+  mutate(fishery = "Rec", type = "Rec") %>%
+  mutate(area = case_when(area == 101 ~ 1,
+                          area == 102 ~ 2,
+                          area == 103 ~ 3,
+                          area == 104 ~ 4, 
+                          area == 105 ~ 5,
+                          area == 106 ~ 6,
+                          area == 107 ~ 7, 
+                          area == 108 ~ 8,
+                          area == 109 ~ 9,
+                          area == 110 ~ 10,
+                          area == 111 ~ 11, 
+                          area == 121 ~ 21,
+                          area == 123 ~ 23,
+                          area == 124 ~ 24,
+                          area == 125 ~ 25,
+                          area == 126 ~ 26,
+                          area == 127 ~ 27,
+                          area == 142 ~ 2,
+                          TRUE ~ area)) %>%
+  group_by(year, species, area, fishery) %>%
+  mutate(catch = sum(catch, na.rm = T)) %>%
+  distinct()  %>%
+  filter(year < 2013) # leave later years to iREC
+
+# Calculate the total annual rec catch for each species from the SBC creel survey data 
+annual_sum_creel <- rec_dat_creel %>%
+  filter(species %in% c("Chinook", "Coho"), area %in% c(11:19, 28, 29)) %>%
+  group_by(year, species) %>%
+  summarise(catch = sum(catch))
+#write_csv(annual_sum, "../processed/harvest/CN_CO_rec_catch_creel.csv")
+
+```
+
+```{r Combine Commercial and Rec}
+# Combine all comm and rec catch available for all areas
+all_catch <- full_join(rec_dat_new, rec_dat_creel) %>%
+  full_join(comm_dat_all) %>%
+  select(-grp) %>%
+  mutate(fishery = factor(fishery, levels = c("GN", "SN", "T", "Rec"))) %>%
+  arrange(species, fishery, type, area, year) %>%
+  group_by(species, area, fishery) %>%
+  mutate(area_catch = sum(catch, na.rm = T))
+
+write_csv(all_catch, "./processed/harvest/totcatch/total_catch.csv")
+```
+
+
+```{r EPAD hatchery catch}
+
+# ---- Chinook ----
+# Pull out the CWT expanded recoveries by stat area from EPAD and group them into regions (since many recovery areas span more than one stat area)
+CN_hatch <- CN_dat_SA %>%
+  select(-Escape, year = recY) %>%
+  filter(!area %in% c("FW", "AK", "SUS")) %>%
+  mutate(stat_area = as.character(stat_area)) %>%
+  mutate(fishery = case_when(endsWith(stat_area, "-N") ~ "Net",
+                            endsWith(stat_area, "-T") ~ "Troll",
+                            endsWith(stat_area, "-S") ~ "Rec",
+                            TRUE ~ "Other")) %>%
+  mutate(region = case_when(area %in% c("N BC",  "1", "1/101", "2", "2/102", "2/142", "3", "3/103", "4", "4/104", "5", "5/105", "101", "102", "103", "104", "105", "142") ~ "NCST",
+                            area %in% c("C BC", "6", "6/106", "7", "7/107", "8", "8/108", "9/109", "9", "10", "10/110", "106", "107", "108", "109", "110", "130") ~ "CCST",
+                            area %in% c("11", "11/111", "111", "NEVI", "12", "12/13", "13", "14", "15", "16", "17", "18", "19", "SOG", "Fraser", "28", "29") ~ "ISC",
+                            area %in% c("NWVI", "SWVI", "WVI", "20", "121", "21", "21/121", "22", "23", "123", "23/123", "24", "124", "24/124", "25", "125", "25/125", "26", "126", "26/126", "27", "127", "27/127") ~ "WCVI",
+                            TRUE ~ area)) %>%
+  group_by(year, region, fishery) %>%
+  summarise(CWT_catch = sum(catch, na.rm = T)) %>%
+  mutate(type = case_when(fishery %in% c("Net", "Troll") ~ "Commercial",
+                          fishery == "Rec" ~ "Rec",
+                          TRUE ~ fishery)) %>%
+  select(year, region, type, fishery, CWT_catch)
+
+#write_csv(CN_hatch, "./processed/harvest/totcatch/CN_total_hatchery_catch.csv")
+
+
+
+# ---- COHO ----
+# Pull out the CWT expanded recoveries by stat area from EPAD and group them into regions (since many recovery areas span more than one stat area)
+CO_hatch <- CO_dat_SA %>%
+  select(-Escape, year = recY) %>%
+  filter(!area %in% c("FW", "AK", "SUS")) %>%
+  mutate(stat_area = as.character(stat_area)) %>%
+  mutate(fishery = case_when(endsWith(stat_area, "-N") ~ "Net",
+                            endsWith(stat_area, "-T") ~ "Troll",
+                            endsWith(stat_area, "-S") ~ "Rec",
+                            TRUE ~ "Other")) %>%
+  mutate(region = case_when(area %in% c("N BC",  "1", "1/101", "2", "2/102", "2/142", "3", "3/103", "4", "4/104", "5", "5/105", "101", "102", "103", "104", "105", "142") ~ "NCST",
+                            area %in% c("C BC", "6", "6/106", "7", "7/107", "8", "8/108", "9/109", "9", "10", "10/110", "106", "107", "108", "109", "110", "130") ~ "CCST",
+                            area %in% c("11", "11/111", "111", "NEVI", "12", "12/13", "13", "14", "15", "16", "17", "18", "19", "SOG", "Fraser", "28", "29") ~ "ISC",
+                            area %in% c("NWVI", "SWVI", "WVI", "20", "121", "21", "21/121", "22", "23", "123", "23/123", "24", "124", "24/124", "25", "125", "25/125", "26", "126", "26/126", "27", "127", "27/127") ~ "WCVI",
+                            TRUE ~ area)) %>%
+  group_by(year, region, fishery) %>%
+  summarise(CWT_catch = sum(catch, na.rm = T)) %>%
+  mutate(type = case_when(fishery %in% c("Net", "Troll") ~ "Commercial",
+                          fishery == "Rec" ~ "Rec",
+                          TRUE ~ fishery)) %>%
+  select(year, region, type, fishery, CWT_catch)
+
+#write_csv(CO_hatch, "./processed/harvest/totcatch/CO_total_hatchery_catch.csv")
+```
+
+
+```{r Combine Total and Hatchery Catch}
+
+# Transform all_catch data into same groupings as hatch data (regions, combine GN and SN into N) for CN
+CN_totcatch <- all_catch %>%
+  ungroup() %>%
+  filter(species == "Chinook") %>%
+  select(-species) %>%
+  mutate(region = case_when(area %in% c(1:5) ~ "NCST",
+                            area %in% c(6:10, 130) ~ "CCST",
+                            area %in% c(11:19, 28:29) ~ "ISC",
+                            area %in% c(20:27) ~ "WCVI")) %>%
+  mutate(fishery = as.character(fishery)) %>%
+  mutate(fishery = case_when(fishery %in% c("GN", "SN") ~ "Net",
+                            fishery == "T" ~ "Troll",
+                            fishery == "rec" ~ "Rec",
+                            TRUE ~ fishery)) %>%
+  group_by(year, region, fishery, type) %>%
+  summarise(tot_catch = sum(catch, na.rm = T)) %>%
+  select(year, region, type, fishery, tot_catch)
+
+CN_combined_catch <- full_join(CN_hatch, CN_totcatch) 
+
+#write_csv(CN_combined_catch, "./processed/harvest/totcatch/CN_ALL_catch.csv")
+
+
+
+# Transform all_catch data into same groupings as hatch data (regions, combine GN and SN into N) for CN
+CO_totcatch <- all_catch %>%
+  ungroup() %>%
+  filter(species == "Coho") %>%
+  select(-species) %>%
+  mutate(region = case_when(area %in% c(1:5) ~ "NCST",
+                            area %in% c(6:10, 130) ~ "CCST",
+                            area %in% c(11:19, 28:29) ~ "ISC",
+                            area %in% c(20:27) ~ "WCVI")) %>%
+  mutate(fishery = as.character(fishery)) %>%
+  mutate(fishery = case_when(fishery %in% c("GN", "SN") ~ "Net",
+                            fishery == "T" ~ "Troll",
+                            fishery == "rec" ~ "Rec",
+                            TRUE ~ fishery)) %>%
+  group_by(year, region, fishery, type) %>%
+  summarise(tot_catch = sum(catch, na.rm = T)) %>%
+  select(year, region, type, fishery, tot_catch)
+
+CO_combined_catch <- full_join(CO_hatch, CO_totcatch)
+
+write_csv(CO_combined_catch, "./processed/harvest/totcatch/CO_ALL_catch.csv")
+```
+
