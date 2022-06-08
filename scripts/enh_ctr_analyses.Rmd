@@ -19,12 +19,12 @@ library(ggpubr)
 library(scales)
 
 # Read in data (data files generated in the 'catch_data_wrangle.Rmd' script)
-total_catch <- read_csv(here("processed", "harvest/totcatch/total_catch.csv"))
-CN_all_catch <- read_csv(here("processed", "harvest/totcatch/CN_ALL_catch.csv"))
-CO_all_catch <- read_csv(here("processed", "harvest/totcatch/CO_ALL_catch.csv"))
+total_catch <- read_csv(here("processed", "total_catch.csv"))
+CN_all_catch <- read_csv(here("processed", "CN_ALL_catch.csv"))
+CO_all_catch <- read_csv(here("processed", "CO_ALL_catch.csv"))
 
 # Chum dat from Lynch et al. 2020 (raw data processed in the 'chum_wrangle.Rmd' script)
-CM_dat <- read_csv(here("processed", "harvest/CU/chum_all.csv"))
+CM_dat <- read_csv(here("processed", "chum_all.csv"))
 
 ```
 
@@ -44,7 +44,7 @@ ggplot(subset(total_catch, species == "Chinook"), aes(x = year, y = catch, fill 
         legend.key.size = unit(0.8, "line")) +
   labs(y = "Total Catch", fill = "Fishery") +
   scale_y_continuous(labels = comma)
-#ggsave("../figs/harvest/totcatch/AllBC_CN_totcatch_bar.png", width = 20, height = 22, units = "cm")
+#ggsave("../figs/totcatch/AllBC_CN_totcatch_bar.png", width = 20, height = 22, units = "cm")
 
 
 ggplot(subset(total_catch, species == "Coho"), aes(x = year, y = catch, fill = fishery)) +
@@ -58,7 +58,7 @@ ggplot(subset(total_catch, species == "Coho"), aes(x = year, y = catch, fill = f
         legend.key.size = unit(0.8, "line")) +
   labs(y = "Total Catch", fill = "Fishery") +
   scale_y_continuous(labels = comma)
-#ggsave("../figs/harvest/totcatch/AllBC_CO_totcatch_bar.png", width = 20, height = 22, units = "cm")
+#ggsave("../figs/totcatch/AllBC_CO_totcatch_bar.png", width = 20, height = 22, units = "cm")
 
 ggplot(subset(total_catch, species == "Chum"), aes(x = year, y = catch, fill = fishery)) +
   geom_bar(stat = "identity", position = "stack", colour = "black", size = 0.2) +
@@ -71,7 +71,7 @@ ggplot(subset(total_catch, species == "Chum"), aes(x = year, y = catch, fill = f
         legend.key.size = unit(0.8, "line")) +
   labs(y = "Total Catch", fill = "Fishery") +
   scale_y_continuous(labels = comma)
-#ggsave("../figs/harvest/totcatch/AllBC_CM_totcatch_bar.png", width = 20, height = 22, units = "cm")
+#ggsave("../figs/totcatch/AllBC_CM_totcatch_bar.png", width = 20, height = 22, units = "cm")
 
 # Get summaries of the mean total annual catch for different time periods and regions
 avg_catch_time <- total_catch %>%
@@ -108,7 +108,7 @@ CN_totcatch <- total_catch %>%
   unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
   pivot_wider(names_from = region_fishery, values_from = catch) %>%
   select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
-#write_csv(CN_totcatch, "../processed/harvest/totcatch/CN_totcatch.csv")
+#write_csv(CN_totcatch, "../processed/outputs/CN_totcatch.csv")
 
 
 CO_totcatch <- total_catch %>%
@@ -131,9 +131,9 @@ CO_totcatch <- total_catch %>%
   unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
   pivot_wider(names_from = region_fishery, values_from = catch) %>%
   select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
-#write_csv(CO_totcatch, "../processed/harvest/totcatch/CO_totcatch.csv")
+#write_csv(CO_totcatch, "../processed/outputs/CO_totcatch.csv")
 
-CM_totcatch <- all_catch %>%
+CM_totcatch <- total_catch %>%
   ungroup() %>%
   filter(species == "Chum") %>%
   select(year, area, catch, fishery) %>%
@@ -153,29 +153,8 @@ CM_totcatch <- all_catch %>%
   unite(col = region_fishery, region, fishery, sep = "_", remove = T) %>%
   pivot_wider(names_from = region_fishery, values_from = catch) %>%
   select(year, NCST_Net, NCST_Troll, NCST_Rec, CCST_Net, CCST_Troll, CCST_Rec, WCVI_Net, WCVI_Troll, WCVI_Rec, ISC_Net, ISC_Troll, ISC_Rec)
-#write_csv(CM_totcatch, "../processed/harvest/totcatch/CM_totcatch.csv")
+#write_csv(CM_totcatch, "../processed/outputs/CM_totcatch.csv")
 
-
-# To get annual total and median catch by region
-CN_hatch_sum <- CN_hatch %>%
-  mutate(tperiod = case_when(year < 1996 ~ "Pre-96",
-                             year > 1995 ~ "Post-95")) %>%
-  group_by(region, year, tperiod) %>%
-  summarise(totcatch = sum(CWT_catch)) %>%
-  group_by(region, tperiod) %>%
-  summarise(medcatch = median(totcatch))
-    
-
-
-# To get annual total and median catch by region
-CO_hatch_sum <- CO_hatch %>%
-  ungroup() %>%
-  mutate(tperiod = case_when(year < 1996 ~ "Pre-96",
-                             year > 1995 ~ "Post-95")) %>%
-  group_by(region, year, tperiod) %>%
-  summarise(totcatch = sum(CWT_catch, na.rm = T)) %>%
-  group_by(region, tperiod) %>%
-  summarise(medcatch = median(totcatch))
 
 ```
 
@@ -207,12 +186,13 @@ regional_enhctr_CN <- Ext_catch_CN %>%
   distinct() %>%
   mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
   arrange(region)
-#write_csv(regional_enhctr_CN, "../processed/harvest/totcatch/CN_enhctr.csv")
+write_csv(regional_enhctr_CN, "../processed/outputs/CN_enhctr.csv")
 
 # Calculate the overall mean enhanced contribution per region
 mean_enhctr <- regional_enhctr_CN %>%
   group_by(region) %>%
   summarise(mean_enhctr = mean(`Enhanced Contribution`, na.rm = T), sd = sd(`Enhanced Contribution`, na.rm = T))
+
 
 
 # ---- COHO ----
@@ -235,12 +215,12 @@ regional_enhctr_CO <- Ext_catch_CO %>%
   distinct() %>%
   mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
   arrange(region) 
-#write_csv(SBC_regional_enhctr_CO, "../processed/harvest/totcatch/CO_enhctr.csv")
+write_csv(regional_enhctr_CO, "../processed/outputs/CO_enhctr.csv")
 
 # Calculate the overall mean enhanced contribution per region
-mean_enhctr_CO <- SBC_regional_enhctr_CO %>%
+mean_enhctr_CO <- regional_enhctr_CO %>%
   group_by(region) %>%
-  summarise(mean_enhctr = mean(exp_prop, na.rm = T), sd = sd(exp_prop, na.rm = T))
+  summarise(mean_enhctr = mean(`Enhanced Contribution`, na.rm = T), sd = sd(`Enhanced Contribution`, na.rm = T))
   
 ```
 
@@ -271,7 +251,7 @@ ggplot(hatch_catch_CN, aes(x = year, y = catch)) +
   scale_color_manual(values = "#000000") +
   scale_fill_manual(values = cols) +
   labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
-#ggsave("../figs/harvest/CN/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+ggsave("../figs/totcatch/total_hatch_catch_CN.png", width = 18, height = 13, units = "cm")
 
 
 # ---- CO -----
@@ -295,7 +275,7 @@ ggplot(hatch_catch_CO, aes(x = year, y = catch)) +
   scale_color_manual(values = "#000000") +
   scale_fill_manual(values = cols) +
   labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
-#ggsave("../figs/harvest/CO/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+ggsave("../figs/totcatch/total_hatch_catch_CO.png", width = 18, height = 13, units = "cm")
 
 ```
 
@@ -349,7 +329,7 @@ hatch_props_SBC_CN
 
 # Combine the two plots to make Figure 12
 ggarrange(totcatch_SBC_CN, hatch_props_SBC_CN, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CN/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+ggsave("../figs/SBC_totcatch_hatchprops_CN.png", width = 18, height = 14, units = "cm")
 
 
 
@@ -397,7 +377,7 @@ hatch_props_SBC_CO
 
 # Combine the two plots to make Figure 13 from Harvest Report
 ggarrange(totcatch_SBC_CO, hatch_props_SBC_CO, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CO/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+ggsave("../figs/SBC_totcatch_hatchprops_CO.png", width = 18, height = 14, units = "cm")
 
 
 
@@ -409,7 +389,7 @@ ggplot(regional_enhctr_CN, aes(x = year, y = `Enhanced Contribution`)) +
   theme(axis.title.x = element_blank()) +
   labs(y = "Enhanced Contribution to Catch") +
   scale_y_continuous(expand = c(0.01,0), limits = c(0, 1))
-ggsave("../figs/harvest/totcatch/SBC_enhctr_byregion_CN.png", width = 20, height = 12, units = "cm")
+ggsave("../figs/SBC_enhctr_byregion_CN.png", width = 20, height = 12, units = "cm")
 
 ```
 
@@ -487,7 +467,7 @@ hatch_props_WCVI_CN
 
 # Combine to make Figure 16
 ggarrange(totcatch_WCVI_CN, hatch_props_WCVI_CN, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CN/WCVI_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+ggsave("../figs/totcatch_hatchprops_WCVI_CN.png", width = 18, height = 12, units = "cm")
 
 
 
@@ -518,7 +498,7 @@ hatch_props_ISC_CN
 
 # Combine to make Figure 17
 ggarrange(totcatch_ISC_CN, hatch_props_ISC_CN, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CN/ISC_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+ggsave("../figs/totcatch_hatchprops_ISC_CN.png", width = 18, height = 12, units = "cm")
 
 
 
@@ -538,7 +518,7 @@ mean_enhctr_fishery_CO <- Ext_catch_CO %>%
   group_by(region, fishery) %>%
   summarise(mean_enhctr = mean(`Enhanced Contribution`), sd = sd(`Enhanced Contribution`))
 
-SBC_fishery_enhctr_CO <- SBC_catch_CO %>%
+SBC_fishery_enhctr_CO <- Ext_catch_CO %>%
   filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
   mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
   group_by(year, region, type, fishery) %>%
@@ -548,7 +528,7 @@ SBC_fishery_enhctr_CO <- SBC_catch_CO %>%
   pivot_longer(5:6, names_to = "source", values_to = "catch") 
 
 # Calculate the expanded hatchery catch and non-hatch catch
-SBC_fishery_props_CO <- SBC_catch_CO %>%
+SBC_fishery_props_CO <- Ext_catch_CO %>%
   filter(region %in% c("ISC", "WCVI"), year > 1980, fishery != "Other") %>%
   mutate(fishery = factor(fishery, levels = c("Net", "Troll", "Rec"))) %>%
   group_by(year, region, type, fishery) %>%
@@ -589,7 +569,7 @@ hatch_props_WCVI_CO
 
 # Combine to make Figure 18
 ggarrange(totcatch_WCVI_CO, hatch_props_WCVI_CO, nrow = 2, heights = c(4,5), align = "v")
-ggsave("../figs/harvest/CO/WCVI_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+ggsave("../figs/totcatch_hatchprops_WCVI_CO.png", width = 18, height = 12, units = "cm")
 
 
 
@@ -620,7 +600,7 @@ hatch_props_ISC_CO
 
 # Combine to make Figure 19
 ggarrange(totcatch_ISC_CO, hatch_props_ISC_CO, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CO/ISC_totcatch_hatchprops.png", width = 18, height = 12, units = "cm")
+ggsave("../figs/totcatch_hatchprops_ISC_CO.png", width = 18, height = 12, units = "cm")
 
 ```
 The following code generates the enhanced contribution figures for Chum (Figures 14 and 15 and )
@@ -648,7 +628,7 @@ chum_tab <- chum_dist %>%
   distinct() %>%
   mutate(enh_contr = annual_adj_catch/totcatch) %>%
   mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC")))
-#write_csv(chum_tab, "../processed/harvest/CU/chum_annual_catch_byregion.csv")
+write_csv(chum_tab, "../processed/outputs/chum_annual_catch_byregion.csv")
 
 # Calculate the mean enhanced contribution by region over the entire time period 
 mean_enhctr_CM <- chum_tab %>%
@@ -686,7 +666,7 @@ ggplot(chum_tab1, aes(x = recY)) +
   scale_color_manual(values = "#000000") +
   scale_fill_manual(values = rev(cols)) +
   labs(y = "Total Annual Catch", fill = "Hatchery Data Type")
-#ggsave("../figs/harvest/CU/total_hatch_catch.png", width = 18, height = 13, units = "cm")
+ggsave("../figs/totcatch/total_hatch_catch_CM.png", width = 18, height = 13, units = "cm")
 
 
 
@@ -730,7 +710,7 @@ hatch_props_NBC_CM
 
 # Combine to create Figure 14 in report
 ggarrange(totcatch_NBC_CM, hatch_props_NBC_CM, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CU/NBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+ggsave("../figs/totcatch_hatchprops_NBC_CM.png", width = 18, height = 14, units = "cm")
 
 
 
@@ -765,7 +745,7 @@ hatch_props_SBC_CM
 
 # Combine to create Figure 15 in report
 ggarrange(totcatch_SBC_CM, hatch_props_SBC_CM, nrow = 2, heights = c(4,5), align = "v")
-#ggsave("../figs/harvest/CU/SBC_totcatch_hatchprops.png", width = 18, height = 14, units = "cm")
+ggsave("../figs/totcatch_hatchprops_SBC_CM.png", width = 18, height = 14, units = "cm")
 
 
 ```
