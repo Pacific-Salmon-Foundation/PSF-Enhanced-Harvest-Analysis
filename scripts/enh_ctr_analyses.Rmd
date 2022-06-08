@@ -788,7 +788,7 @@ I then used these proportions to expand the total indicator catch to the total e
 CTC_catch <- read_csv(here("raw", "CTC_totcatch.csv"))
 
 # Mortality Distribution Tables from CN CTC
-CTC_MDT <- read_csv(here("raw", "Chinook_All Mort Tables Long.csv"))
+CTC_MDT <- read_csv(here("raw", "CTC_MDT.csv"))
 
 ```
 
@@ -836,7 +836,7 @@ CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
 CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
 
 # Bring in release data from EPAD
-all_rel <- read_csv(here("raw", "All_SEP_releases2.csv")) 
+all_rel <- read_csv(here("raw", "All_SEP_releases.csv")) 
 ```
 
 
@@ -896,7 +896,7 @@ ggplot(CN_catch_indcontr, aes(x = year, y = ind_contr, fill = fishery)) +
 
 ```
 
-```{r}
+```{r CTC Enh Contr}
 rel <- all_rel %>%
   select(species = SPECIES_NAME, stock = STOCK_NAME, stage = RELEASE_STAGE_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, tagged = TaggedNum, nonCWT_mark = NoTagNum, unmrk = UnmarkedNum, totrel = TotalRelease, exp_code = EXPLOIT_CODE) %>%
   mutate(stock = case_when(stock %in% c("Atnarko R Low", "Atnarko R Up") ~ "Atnarko R", 
@@ -977,7 +977,7 @@ ggplot(CN_catch_contr_region, aes(x = year, y = enhctr)) +
   facet_wrap(~region, scales = "free_y") +
   theme_bw() +
   labs(y = "Enhanced Contribution")
-ggsave("../figs/harvest/totcatch/CTC_enhctr_regional.png", width = 18, height = 14, units = "cm")
+#ggsave("../figs/harvest/totcatch/CTC_enhctr_regional.png", width = 18, height = 14, units = "cm")
 
 
 
