@@ -40,7 +40,7 @@ comm_catch_old3 <- read_csv(here("raw", "commercial/commercial_catch_90-99.csv")
 
 
 # rec catch records from iREC from the Statistical Catch Unit and older records from SBC creel surveys
-irec_catch <- read_csv(here("raw", "rec_catch_data.csv"))
+irec_catch <- read_csv(here("raw", "rec/rec_catch_data.csv"))
 irec_bias <- read_csv(here("raw", "rec/irec_bias_correction.csv"))
 SBC_creel1 <- read_csv(here("raw", "rec/SBC_creel_1981-1999.csv"))
 SBC_creel2 <- read_csv(here("raw", "rec/SBC_creel_2000-2010.csv"))
@@ -53,14 +53,8 @@ SBC_creel4 <- read_csv(here("raw", "rec/SBC_creel_2020-2021.csv"))
 # Expanded CWT catch data by stat area for CN from EPAD - summarized
 CN_dat_SA <- read_csv(here::here("raw", "CN_exp_recov_bySA.csv"))
 
-# Expanded CWT catch data by fishery for CN from EPAD - all
-CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
-
 # Expanded CWT catch data by stat area for CO from EPAD - summarized
 CO_dat_SA <- read_csv(here::here("raw", "CO_exp_recov_bySA.csv"))
-
-# Expanded CWT catch data by fishery for CO from EPAD - all
-CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
 
 
 # Enhanced contribution to escapement data from EPAD
@@ -338,7 +332,7 @@ all_catch <- full_join(rec_dat_new, rec_dat_creel) %>%
   group_by(species, area, fishery) %>%
   mutate(area_catch = sum(catch, na.rm = T))
 
-write_csv(all_catch, "./processed/harvest/totcatch/total_catch.csv")
+write_csv(all_catch, "../processed/total_catch.csv")
 ```
 
 
@@ -366,7 +360,7 @@ CN_hatch <- CN_dat_SA %>%
                           TRUE ~ fishery)) %>%
   select(year, region, type, fishery, CWT_catch)
 
-#write_csv(CN_hatch, "./processed/harvest/totcatch/CN_total_hatchery_catch.csv")
+write_csv(CN_hatch, "../processed/CN_total_hatchery_catch.csv")
 
 
 
@@ -392,7 +386,7 @@ CO_hatch <- CO_dat_SA %>%
                           TRUE ~ fishery)) %>%
   select(year, region, type, fishery, CWT_catch)
 
-#write_csv(CO_hatch, "./processed/harvest/totcatch/CO_total_hatchery_catch.csv")
+write_csv(CO_hatch, "../processed/CO_total_hatchery_catch.csv")
 ```
 
 
@@ -418,7 +412,7 @@ CN_totcatch <- all_catch %>%
 
 CN_combined_catch <- full_join(CN_hatch, CN_totcatch) 
 
-#write_csv(CN_combined_catch, "./processed/harvest/totcatch/CN_ALL_catch.csv")
+write_csv(CN_combined_catch, "../processed/CN_ALL_catch.csv")
 
 
 
@@ -442,6 +436,6 @@ CO_totcatch <- all_catch %>%
 
 CO_combined_catch <- full_join(CO_hatch, CO_totcatch)
 
-write_csv(CO_combined_catch, "./processed/harvest/totcatch/CO_ALL_catch.csv")
+write_csv(CO_combined_catch, "../processed/CO_ALL_catch.csv")
 ```
 
