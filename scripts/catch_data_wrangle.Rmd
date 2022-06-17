@@ -332,7 +332,7 @@ all_catch <- full_join(rec_dat_new, rec_dat_creel) %>%
   group_by(species, area, fishery) %>%
   mutate(area_catch = sum(catch, na.rm = T))
 
-write_csv(all_catch, "../processed/total_catch.csv")
+#write_csv(all_catch, "../processed/total_catch.csv")
 ```
 
 
@@ -412,7 +412,7 @@ CN_totcatch <- all_catch %>%
 
 CN_combined_catch <- full_join(CN_hatch, CN_totcatch) 
 
-write_csv(CN_combined_catch, "../processed/CN_ALL_catch.csv")
+#write_csv(CN_combined_catch, "../processed/CN_ALL_catch.csv")
 
 
 
@@ -436,6 +436,6 @@ CO_totcatch <- all_catch %>%
 
 CO_combined_catch <- full_join(CO_hatch, CO_totcatch)
 
-write_csv(CO_combined_catch, "../processed/CO_ALL_catch.csv")
+#write_csv(CO_combined_catch, "../processed/CO_ALL_catch.csv")
 ```
 
