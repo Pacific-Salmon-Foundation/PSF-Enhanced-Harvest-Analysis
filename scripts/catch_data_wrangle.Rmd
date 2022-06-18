@@ -56,6 +56,13 @@ CN_dat_SA <- read_csv(here::here("raw", "CN_exp_recov_bySA.csv"))
 # Expanded CWT catch data by stat area for CO from EPAD - summarized
 CO_dat_SA <- read_csv(here::here("raw", "CO_exp_recov_bySA.csv"))
 
+# Expanded CWT catch data for CN from EPAD
+CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
+CN_dat$TotCatch[is.na(CN_dat$TotCatch)] <- 0
+
+# Expanded CWT catch data for CO from EPAD
+CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
+CO_dat$TotCatch[is.na(CO_dat$TotCatch)] <- 0
 
 # Enhanced contribution to escapement data from EPAD
 CN_CO_enhcontr_esc <- read_csv(here("raw", "CN_CO_enh_contr_esc.csv"))
@@ -338,6 +345,14 @@ all_catch <- full_join(rec_dat_new, rec_dat_creel) %>%
 
 ```{r EPAD hatchery catch}
 # ---- Chinook ----
+# Tidying the EPAD recovery data
+CN_catch <- CN_dat %>%
+  rename("2ADFG" = "2Alaska Dept of Fish and Game (AK)", "2WDFW" = "2Washington Dept of Fisheries and Wildlife (WA)", "2ODFW" = "2Oregon Dept of Fish and Wildlife (OR)", "1Alberni Comm GN" = "1Alberni Inlet Commercial Gillnet and EO Fisheries", "1Nuu-chah-nulth" = "1Nuu-chah-nulth Aboriginal Fishery", "2NMFS AK" = "2National Marine Fisheries Service (AK)", "1SWVI Taaq-Wiihak" = "1South WCVI Taaq-wiihak Fishery", "1NWVI Taaq-Wiihak" = "1North WCVI Taaq-wiihak Fishery", "1WCVI S" = "1West Coast Vancouver Is Sport", "1SWVI N" = "1Southwest Vancouver Is Net", "1SWVI T" = "1Southwest Vancouver Is Troll", "1NWVI T" = "1Northwest Vancouver Is Troll", "1NWVI N" = "1Northwest Vancouver Is Net", "1North SOG S" = "1Georgia Strait Sport North", "1South SOG S" = "1Georgia Strait Sport South", "1SOG N" = "1Georgia Strait Net", "1SOG T" = "1Georgia Strait Troll", "1South Johnstone Strait S" = "1Johnstone Strait Sport South", "1PFMA8 Terminal N" = "1Central Net Terminal PFMA 8 2009+", "1Central SOG S" = "1Georgia Strait Sport Central", "1Maa-Nulth FSC" = "1Maa-Nulth FSC Barkley Sound ISBM", "1Fraser GN+FN (Spring-Sum)" = "1Fraser Gillnet & FN Spring Summer (1990+)", "1Fraser GN" = "1Fraser Gillnet (pre 1990 and 2008+)", "1Fraser GN+FN (Fall-Winter)" = "1Fraser Gillnet & FN Fall Winter Below Harrison (1990+)", "1Fraser FN (Fall-Winter)" = "1Fraser FN Fall Winter Below Harrison (2011+)", "1Fraser FN (Spring-Sum)" = "1Fraser FN Spring Summer (2011+)", "1Central N" = "1Central Net pre 2009", "1Central S" = "1Central Sport", "1Freshwater S" = "1Freshwater Sport", "1North Central T" = "1North Central Troll", "1Northern N" = "1Northern Net", "1Northern S" = "1Northern Sport", "1Northern T" = "1Northern Troll", "1South Central T" = "1South Central Troll", "1SOG N" = "1Georgia Strait Net", "1Johnstone Strait N" = "1Johnstone Strait Net", "1Juan de Fuca S" = "1Juan de Fuca Sport", "1Alberni Canal S" = "1Alberni Canal Sport", "1Juan de Fuca N" = "1Juan De Fuca Net", "1Fraser SN" = "1Fraser Seine", "3Terminal FN" = "3Terminal First Nations") %>%
+  select(species = SPECIES_NAME, run = RUN_NAME, BY = BROOD_YEAR, project = PROJ_NAME, stock = STOCK_NAME, stock_CU = STOCK_CU_INDEX, stock_type = STOCK_TYPE_CODE, facility = FACILITY_NAME, rel_site = RELEASE_SITE_NAME, prod_area = PROD_AREA_CODE, stage = RELEASE_STAGE_NAME, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, rel_start = START_DATE, rel_end = END_DATE, tot_tag = TotTagged, TotRelease = TotRelease, age = Age, recY = RecovYear, 45:129)
+
+write_csv(CN_catch, "../processed/CN_EPAD_tidy.csv")
+
+
 # Pull out the CWT expanded recoveries by stat area from EPAD and group them into regions (since many recovery areas span more than one stat area)
 CN_hatch <- CN_dat_SA %>%
   select(-Escape, year = recY) %>%
@@ -364,6 +379,14 @@ write_csv(CN_hatch, "../processed/CN_total_hatchery_catch.csv")
 
 
 # ---- COHO ----
+# Tidy up Coho recovery data from EPAD for subsequent analyses
+CO_catch <- CO_dat %>%
+  rename("2ADFG" = "2Alaska Dept of Fish and Game (AK)", "2WDFW" = "2Washington Dept of Fisheries and Wildlife (WA)", "2ODFW" = "2Oregon Dept of Fish and Wildlife (OR)", "1Alberni Comm GN" = "1Alberni Inlet Commercial Gillnet and EO Fisheries", "1Nuu-chah-nulth" = "1Nuu-chah-nulth Aboriginal Fishery", "2NMFS AK" = "2National Marine Fisheries Service (AK)", "1SWVI Taaq-Wiihak" = "1South WCVI Taaq-wiihak Fishery", "1NWVI Taaq-Wiihak" = "1North WCVI Taaq-wiihak Fishery", "1WCVI S" = "1West Coast Vancouver Is Sport", "1SWVI N" = "1Southwest Vancouver Is Net", "1SWVI T" = "1Southwest Vancouver Is Troll", "1NWVI T" = "1Northwest Vancouver Is Troll", "1NWVI N" = "1Northwest Vancouver Is Net", "1North SOG S" = "1Georgia Strait Sport North", "1South SOG S" = "1Georgia Strait Sport South", "1SOG T" = "1Georgia Strait Troll", "1SOG N" = "1Georgia Strait Net", "1South Johnstone Strait S" = "1Johnstone Strait Sport South", "1PFMA8 Terminal N" = "1Central Net Terminal PFMA 8 2009+", "1Central SOG S" = "1Georgia Strait Sport Central", "1Fraser GN+FN (Spring-Sum)" = "1Fraser Gillnet & FN Spring Summer (1990+)", "1Fraser GN" = "1Fraser Gillnet (pre 1990 and 2008+)", "1Fraser GN+FN (Fall-Winter)" = "1Fraser Gillnet & FN Fall Winter Below Harrison (1990+)", "1Fraser FN (Fall-Winter)" = "1Fraser FN Fall Winter Below Harrison (2011+)", "1Central N" = "1Central Net pre 2009", "1Central S" = "1Central Sport", "1Freshwater S" = "1Freshwater Sport", "1North Central T" = "1North Central Troll", "1Northern N" = "1Northern Net", "1Northern S" = "1Northern Sport", "1Northern T" = "1Northern Troll", "1South Central T" = "1South Central Troll", "1SOG N" = "1Georgia Strait Net", "1Johnstone Strait N" = "1Johnstone Strait Net", "1Juan de Fuca S" = "1Juan de Fuca Sport", "1Alberni Canal S" = "1Alberni Canal Sport", "1Juan de Fuca N" = "1Juan De Fuca Net", "1Fraser SN" = "1Fraser Seine", "3Terminal FN" = "3Terminal First Nations") %>%
+  select(species = SPECIES_NAME, run = RUN_NAME, BY = BROOD_YEAR, project = PROJ_NAME, stock = STOCK_NAME, stock_CU = STOCK_CU_INDEX, stock_type = STOCK_TYPE_CODE, facility = FACILITY_NAME, rel_site = RELEASE_SITE_NAME, prod_area = PROD_AREA_CODE, stage = RELEASE_STAGE_NAME, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, rel_start = START_DATE, rel_end = END_DATE, tot_tag = TotTagged, TotRelease = TotRelease, age = Age, recY = RecovYear, 45:116)
+
+write_csv(CO_catch, "../processed/CO_EPAD_tidy.csv")
+
+
 # Pull out the CWT expanded recoveries by stat area from EPAD and group them into regions (since many recovery areas span more than one stat area)
 CO_hatch <- CO_dat_SA %>%
   select(-Escape, year = recY) %>%
