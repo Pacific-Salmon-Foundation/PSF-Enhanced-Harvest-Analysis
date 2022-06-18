@@ -1184,7 +1184,7 @@ ggsave("../figs/distribution/BC_CWT_CO_catchdist_combo.png", width = 20, height 
 
 ```
 
-The following code produces area density plots for each species in each region (NCST, CCST, WCVI, and ISC) in Appendix B
+The following code produces area density plots for each species in each region (NCST, CCST, WCVI, and ISC) in Appendix B. (Chinook only, but can copy code for Coho)
 
 ```{r Catch Distributions Appendix B}
 CN_catchdist_sum <- CN_catchdist %>%
