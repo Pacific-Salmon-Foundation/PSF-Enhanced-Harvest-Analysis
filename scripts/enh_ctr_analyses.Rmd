@@ -224,15 +224,25 @@ Ext_catch_CO <- left_join(CO_all_catch, mark_props_CO, by = c("year", "region"))
 regional_enhctr_CO <- Ext_catch_CO %>%
   #filter(year > 1980) %>% # Need to filter to only look at 1981 onwards for enh contribution calcs since only commercial data prior to 1981, but show all data for hatchery plots in next code chunk
   group_by(year, region) %>%
-  mutate(`Exp CWT` = sum(CWT_catch, na.rm = T), `Total Hatchery` = `Exp CWT`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T), `Enhanced Contribution` = `Total Hatchery`/`Total Catch`) %>%
+  mutate(`Exp CWT` = sum(CWT_catch, na.rm = T), `Total Hatchery` = `Exp CWT`/CWT_rate, `Total Catch` = sum(tot_catch, na.rm = T)) %>%
+  mutate(`Total Hatchery` = case_when(`Total Hatchery` == Inf ~ `Exp CWT`,
+                                      TRUE ~ `Total Hatchery`)) %>%
+  mutate(`Enhanced Contribution` = `Total Hatchery`/`Total Catch`) %>%
   select(1:2, 8:11) %>%
   distinct() %>%
   mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
   arrange(region) 
 write_csv(regional_enhctr_CO, "../processed/outputs/CO_enhctr.csv")
 
-# Calculate the overall mean enhanced contribution per region
-mean_enhctr_CO <- regional_enhctr_CO %>%
+# Calculate the overall mean enhanced contribution for WCVI and ISC
+mean_enhctr_CO_SBC <- regional_enhctr_CO %>%
+  filter(region %in% c("WCVI", "ISC")) %>%
+  group_by(region) %>%
+  summarise(mean_enhctr = mean(`Enhanced Contribution`, na.rm = T), sd = sd(`Enhanced Contribution`, na.rm = T))
+
+# Calculate the mean enhanced contribution for NCST and CCST (has to be from 2013 onwards as these are the only years for which we have rec and commercial catch)
+mean_enhctr_CO_NBC <- regional_enhctr_CO %>%
+  filter(region %in% c("NCST", "CCST"), year > 2012) %>%
   group_by(region) %>%
   summarise(mean_enhctr = mean(`Enhanced Contribution`, na.rm = T), sd = sd(`Enhanced Contribution`, na.rm = T))
   
@@ -1152,7 +1162,7 @@ CO_catchdist <- CO_CatchbyFishery %>%
   complete(fishery, recY, fill = list(catch = 0)) %>%
   group_by(recY, prod_area, fishery) %>%
   summarise(totcatch = sum(catch)) %>%
-  group_by(recY) %>%
+  group_by(recY, prod_area) %>%
   mutate(percentage = totcatch / sum(totcatch)) %>%
   replace(is.na(.),0) %>%
   arrange(recY, fishery) 
@@ -1184,14 +1194,20 @@ ggsave("../figs/distribution/BC_CWT_CO_catchdist_combo.png", width = 20, height 
 
 ```
 
-The following code produces area density plots for each species in each region (NCST, CCST, WCVI, and ISC) in Appendix B. (Chinook only, but can copy code for Coho)
+The following code produces area density plots for each species in each region (NCST, CCST, WCVI, and ISC) in Appendix B. 
 
 ```{r Catch Distributions Appendix B}
+
+# Create a colour palette that's coloured by region from north to south with simplified fisheries 
+fishery_cols_simple <- c("AK" = "red1", "Northern N" = "blue4", "Northern T" = "deepskyblue", "Northern S" = "skyblue", "Central N" = "mediumpurple1", "Central T" = "purple", "Central S" = "darkmagenta", "ISC T" = "green4", "ISC N" = "palegreen2", "ISC S" = "chartreuse2", "WCVI S" = "yellow", "WCVI T" = "orange", "WCVI N" = "lemonchiffon", "SUS" = "gray90", "FW" = "peru", "Other" = "gray5")
+
+
+##---- CN ---- 
 CN_catchdist_sum <- CN_catchdist %>%
   group_by(recY, prod_area) %>%
   summarise(regional_catch = sum(totcatch))
 
-##---- NCST ----
+#--- NCST ---
 # Create a total catch plot for each region to go above the catch by fishery area plots
 NCST_CWT_catch <- ggplot(subset(CN_catchdist_sum, prod_area == "NCST"), aes(x = recY, y = regional_catch)) +
   geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
@@ -1222,7 +1238,7 @@ ggarrange(NCST_CWT_catch, NCST_areaplot, nrow = 2, heights = c(5, 10), align = "
 
 
 
-## ---- CCST ----
+# --- CCST ---
 CCST_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "CCST"), aes(x = recY, y = regional_catch)) +
   geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
   theme_bw() +
@@ -1251,7 +1267,7 @@ ggarrange(CCST_CWT_catch, CCST_areaplot, nrow = 2, heights = c(5, 10), align = "
 #ggsave("../figs/distribution/CCST_CN_catchdist_combo.png", width = 16, height = 16, units = "cm")
 
 
-## ---- WCVI ----
+# --- WCVI ---
 WCVI_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "WCVI"), aes(x = recY, y = regional_catch)) +
   geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
   theme_bw() +
@@ -1281,7 +1297,7 @@ ggsave("../figs/distribution/WCVI_CN_catchdist_combo.png", width = 16, height = 
 
 
 
-## ---- ISC ----
+# --- ISC ---
 ISC_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "ISC"), aes(x = recY, y = regional_catch)) +
   geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
   theme_bw() +
@@ -1308,6 +1324,131 @@ ISC_areaplot <- ggplot(subset(CN_catchdist, prod_area == "ISC"), aes(x = recY, y
 #Combine above total CWT catch plot with the catch by fishery area plot
 ggarrange(ISC_CWT_catch, ISC_areaplot, nrow = 2, heights = c(5, 10), align = "v")
 ggsave("../figs/distribution/ISC_CN_catchdist_combo.png", width = 16, height = 16, units = "cm")
+
+
+
+##---- CO ---- 
+CO_catchdist_sum <- CO_catchdist %>%
+  group_by(recY, prod_area) %>%
+  summarise(regional_catch = sum(totcatch))
+
+#--- NCST ---
+# Create a total catch plot for each region to go above the catch by fishery area plots
+NCST_CWT_catch <- ggplot(subset(CO_catchdist_sum, prod_area == "NCST"), aes(x = recY, y = regional_catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank()) +
+  labs(y = "Total Annual CWT Catch") +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0), limits = c(0,40000), labels = comma)
+NCST_CWT_catch
+
+NCST_areaplot <- ggplot(subset(CO_catchdist, prod_area == "NCST"), aes(x = recY, y = percentage, fill = fishery)) +
+  geom_area(alpha = 0.6, size = 0.4, colour = "black") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.8, "line"),
+        legend.title = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = fishery_cols_simple, limits = force) +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Annual CWT Catch")
+#ggsave("../figs/distribution/NCST_CO_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+
+#Combine above total CWT catch plot with the catch by fishery area plot
+ggarrange(NCST_CWT_catch, NCST_areaplot, nrow = 2, heights = c(5, 10), align = "v")
+#ggsave("../figs/distribution/NCST_CO_catchdist_combo.png", width = 16, height = 16, units = "cm")
+
+
+
+# --- CCST ---
+CCST_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "CCST"), aes(x = recY, y = regional_catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank()) +
+  labs(y = "Total Annual CWT Catch") +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) 
+  scale_y_continuous(expand = c(0,0), limits = c(0,30000), labels = comma)
+CCST_CWT_catch
+
+CCST_areaplot <- ggplot(subset(CO_catchdist, prod_area == "CCST"), aes(x = recY, y = percentage, fill = fishery)) +
+  geom_area(alpha = 0.6, size = 0.4, colour = "black") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.8, "line"),
+        legend.title = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = fishery_cols_simple, limits = force) +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Annual CWT Catch")
+#ggsave("../figs/distribution/CCST_CO_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+
+#Combine above total CWT catch plot with the catch by fishery area plot
+ggarrange(CCST_CWT_catch, CCST_areaplot, nrow = 2, heights = c(5, 10), align = "v")
+#ggsave("../figs/distribution/CCST_CO_catchdist_combo.png", width = 16, height = 16, units = "cm")
+
+
+# --- WCVI ---
+WCVI_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "WCVI"), aes(x = recY, y = regional_catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank()) +
+  labs(y = "Total Annual CWT Catch") +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0), limits = c(0,75000), labels = comma)
+WCVI_CWT_catch
+
+WCVI_areaplot <- ggplot(subset(CO_catchdist, prod_area == "WCVI"), aes(x = recY, y = percentage, fill = fishery)) +
+  geom_area(alpha = 0.6, size = 0.4, colour = "black") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.8, "line"),
+        legend.title = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = fishery_cols_simple, limits = force) +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Annual CWT Catch")
+#ggsave("../figs/distribution/WCVI_CO_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+
+#Combine above total CWT catch plot with the catch by fishery area plot
+ggarrange(WCVI_CWT_catch, WCVI_areaplot, nrow = 2, heights = c(5, 10), align = "v")
+#ggsave("../figs/distribution/WCVI_CO_catchdist_combo.png", width = 16, height = 16, units = "cm")
+
+
+
+# --- ISC ---
+ISC_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "ISC"), aes(x = recY, y = regional_catch)) +
+  geom_bar(stat = "identity", position = "dodge", colour = "black", size = 0.5) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank()) +
+  labs(y = "Total Annual CWT Catch") +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0), limits = c(0,650000), labels = comma)
+ISC_CWT_catch
+
+ISC_areaplot <- ggplot(subset(CO_catchdist, prod_area == "ISC"), aes(x = recY, y = percentage, fill = fishery)) +
+  geom_area(alpha = 0.6, size = 0.4, colour = "black") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.8, "line"),
+        legend.title = element_blank(),
+        axis.title.x = element_blank()) +
+  scale_fill_manual(values = fishery_cols_simple, limits = force) +
+  scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(y = "Proportion of Annual CWT Catch")
+#ggsave("../figs/distribution/ISC_CO_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+
+#Combine above total CWT catch plot with the catch by fishery area plot
+ggarrange(ISC_CWT_catch, ISC_areaplot, nrow = 2, heights = c(5, 10), align = "v")
+#ggsave("../figs/distribution/ISC_CO_catchdist_combo.png", width = 16, height = 16, units = "cm")
 
 
 ```
@@ -1355,6 +1496,31 @@ CN_data <- CN_dat %>%
 
 # Combine objectives with the catch data from EPAD (expanded catches)
 CN_obj_catch <- left_join(CN_data, CN_obj, by = c("proj", "stock", "run")) 
+
+
+# To calculate median and range catch efficiency for CN and CO in each region by objective since 2000 (recent efficiency)
+Eff_CN_sum <- CN_obj_catch %>%
+  filter(!prod_area %in% c("TRAN", "YUKN"), OEY > 1999) %>%
+  mutate(prod_area = case_when(prod_area %in% c("CCST", "RIVR") ~ "CCST",
+                               prod_area %in% c("NCST", "QCI", "SKNA", "NASS") ~ "NCST",
+                               prod_area %in% c("UPFR", "TOMF", "TOMM", "GSMS", "GSMN", "GSVI", "JNST", "LWFR", "OKAN") ~ "ISC",
+                               prod_area %in% c("SWVI", "NWVI") ~ "WCVI",
+                               TRUE ~ prod_area)) %>%
+  mutate(obj = case_when(is.na(obj) ~ "Unknown",
+                         TRUE ~ obj)) %>%
+  mutate(obj = factor(obj, levels = c("Assessment", "Harvest", "Rebuilding", "Conservation", "Stewardship & Education", "Unknown"))) %>%
+  group_by(prod_area, tagcode, obj, OEY) %>%
+  summarise(totrel = sum(unique(TotRelease)), totcatch = sum(unique(TotCatch), na.rm = T), totescape = sum(unique(Escape), na.rm = T), CPthousandR = (totcatch/(totrel/1000)), EPthousandR = totescape/(totrel/1000)) %>%
+  group_by(prod_area, obj) %>%
+  mutate(median_CPT = median(CPthousandR), min = min(CPthousandR), max = max(CPthousandR)) %>%
+  select(1, 3, 10:12) %>%
+  distinct() %>%
+  arrange(prod_area, obj) %>%
+  mutate(prod_area = factor(prod_area, levels = c("NCST", "CCST", "WCVI", "ISC")))
+# For the data in Table 4 of the report
+write_csv(Eff_CN_sum, "../processed/catch_eff_summary_CN.csv")
+
+
 
 # ANNUAL REGIONAL: Tidy data, group into areas, calculate catch per thousand releases per area per year
 Eff_CN_annual <- CN_obj_catch %>%
@@ -1442,10 +1608,33 @@ CO_obj <- PP %>%
 CO_data <- CO_dat %>%
   select(proj = project, species, run, stock, prod_area, tagcode, OEY, TotRelease, TotCatch, Escape) %>%
   distinct()
-                        
                          
 # Combine them with the CO_catch data from EPAD (expanded catches)
 CO_obj_catch <- left_join(CO_data, CO_obj, by = c("proj", "stock", "run")) 
+
+
+# To calculate median and range catch efficiency for CN and CO in each region by objective since 2000 (recent efficiency)
+Eff_CO_sum <- CO_obj_catch %>%
+  filter(!prod_area %in% c("TRAN", "YUKN"), OEY > 1999) %>%
+  mutate(prod_area = case_when(prod_area %in% c("CCST", "RIVR") ~ "CCST",
+                               prod_area %in% c("NCST", "QCI", "SKNA", "NASS") ~ "NCST",
+                               prod_area %in% c("UPFR", "TOMF", "TOMM", "GSMS", "GSMN", "GSVI", "JNST", "LWFR", "OKAN") ~ "ISC",
+                               prod_area %in% c("SWVI", "NWVI") ~ "WCVI",
+                               TRUE ~ prod_area)) %>%
+  mutate(obj = case_when(is.na(obj) ~ "Unknown",
+                         TRUE ~ obj)) %>%
+  mutate(obj = factor(obj, levels = c("Assessment", "Harvest", "Rebuilding", "Conservation", "Stewardship & Education", "Unknown"))) %>%
+  group_by(prod_area, tagcode, obj, OEY) %>%
+  summarise(totrel = sum(unique(TotRelease)), totcatch = sum(unique(TotCatch), na.rm = T), totescape = sum(unique(Escape), na.rm = T), CPthousandR = (totcatch/(totrel/1000)), EPthousandR = totescape/(totrel/1000)) %>%
+  group_by(prod_area, obj) %>%
+  mutate(median_CPT = median(CPthousandR), min = min(CPthousandR), max = max(CPthousandR)) %>%
+  select(1, 3, 10:12) %>%
+  distinct() %>%
+  arrange(prod_area, obj) %>%
+  mutate(prod_area = factor(prod_area, levels = c("NCST", "CCST", "WCVI", "ISC")))
+# For the data for Table 4 in the harvest report
+write_csv(Eff_CO_sum, "../processed/catch_eff_summary_CO.csv")
+
 
 # ANNUAL REGIONAL: Tidy data, group into areas, calculate catch per thousand releases per area per year
 Eff_CO_annual <- CO_obj_catch %>%
