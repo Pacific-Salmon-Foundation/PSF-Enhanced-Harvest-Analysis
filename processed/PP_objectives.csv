@@ -1,0 +1,2824 @@
+stat_area,project,stock,year,species,run,stage,obj,target_no
+29F,Deadman R,Deadman R,2014,Coho,Fall,Smolt 1+,Conservation,15000
+29J,Thompson R N,Dunn Cr,2014,Coho,Fall,Smolt 1+,Stewardship,20000
+29K,Kingfisher Cr/TOMF,Shuswap R Low,2014,Chinook,Summer,Fry,Stewardship,50000
+29F,Gates Sp Ch,Gates Cr,2014,Sockeye,Summer,Fry,Harvest,13500000
+29G,Horsefly Sp Ch,Horsefly Ch,2014,Sockeye,Summer,Fry,Harvest,22500000
+29I,Nadina Sp Ch,Nadina R,2014,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2014,Chinook,Summer,Smolt 0+,Assessment,530000
+29K,Shuswap R,Shuswap R Middle,2014,Chinook,Summer,Smolt 0+,Assessment,170000
+29K,Shuswap R,Shuswap R Middle,2014,Chinook,Summer,Smolt 1+,Rebuilding,20000
+29F,Spius Cr,Coldwater R,2014,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2014,Chinook,Spring,Smolt 1+,Rebuilding,65000
+29F,Spius Cr,Nicola R,2014,Chinook,Spring,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Nicola R,2014,Chinook,Spring,Smolt 1+,Assessment/Rebuilding,200000
+29K,Spius Cr,Salmon R/TOMF,2014,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2014,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Spius Cr,2014,Chinook,Spring,Smolt 1+,Rebuilding,65000
+29G,Spius Cr,Chilko R,2014,Chinook,Summer,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Coldwater R,2014,Coho,Fall,Fry,Assessment/Conservation,40000
+29F,Spius Cr,Coldwater R,2014,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29F,Spius Cr,Deadman R,2014,Coho,Fall,Fry,Conservation,20000
+29K,Spius Cr,Eagle R,2014,Coho,Fall,Fry,Assessment/Conservation,20000
+29K,Spius Cr,Eagle R,2014,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Salmon R/TOMF,2014,Coho,Fall,Fry,Conservation,30000
+29K,Spius Cr,Salmon R/TOMF,2014,Coho,Fall,Smolt 1+,Conservation,65000
+7,Emily Lk,Tankeeah R,2014,Sockeye,Summer,Fry,Rebuilding,80000
+7,Victor Cr,Lagoon Cr/CCST,2014,Sockeye,Fall,Fry,Rebuilding,65000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2014,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLaughlin Bay Cr,2014,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLaughlin Bay Cr,2014,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2014,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2014,Coho,Fall,Fry,Harvest,10000
+7,Kitasoo Cr,Kitasoo Cr,2014,Coho,Fall,Seapen,Harvest,43200
+1,Masset,Yakoun R,2014,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Masset,Mamin R,2014,Coho,Fall,Fry,Harvest,36000
+1,Masset,Yakoun R,2014,Coho,Fall,Smolt 1+,Harvest,90000
+9,Oweekeno,Wannock R,2014,Chum,Fall,Fry,Stewardship,45000
+4,Toboggan Cr,Bulkley R Up,2014,Chinook,Spring,Smolt 1+,Rebuilding,43000
+4,Toboggan Cr,Toboggan Cr,2014,Coho,Summer,Smolt 1+,Assessment,35000
+4,Terrace,Kitsum Abv Canyon,2014,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2014,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2014,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2014,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Fulton R,Fulton Ch #1,2014,Sockeye,Summer,Fry,Harvest,3300000
+4,Fulton R,Fulton Ch #2,2014,Sockeye,Summer,Fry,Harvest,87000000
+4,Fulton R,Fulton R,2014,Sockeye,Summer,Fry,Harvest,45000000
+6,Kitimat R,Hirsch Cr,2014,Chinook,Spring,Smolt 0+,Harvest,200000
+6,Kitimat R,Kitimat R,2014,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2014,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2014,Chum,Summer,Fry,Rebuilding,20000
+6,Kitimat R,Kitimat R,2014,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2014,Coho,Fall,Smolt 1+,Harvest,500000
+4,Pinkut Cr,Pinkut Ch,2014,Sockeye,Summer,Fry,Harvest,45000000
+4,Pinkut Cr,Pinkut Cr,2014,Sockeye,Summer,Fry,Harvest,4500000
+8,Snootli Cr,Atnarko R Low,2014,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2014,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+9,Snootli Cr,Chuckwalla R,2014,Chinook,Summer,Smolt 0+,Rebuilding,65000
+9,Snootli Cr,Kilbella R,2014,Chinook,Summer,Seapen,Rebuilding,65000
+8,Snootli Cr,Noosgulch R,2014,Chinook,Summer,Smolt 0+,Rebuilding,43000
+8,Snootli Cr,Nusatsum R,2014,Chinook,Summer,Smolt 0+,Rebuilding,86000
+8,Snootli Cr,Salloomt R,2014,Chinook,Summer,Smolt 0+,Rebuilding,86000
+9,Snootli Cr,Wannock R,2014,Chinook,Summer,Seapen,Harvest,225000
+9,Snootli Cr,Wannock R,2014,Chinook,Summer,Smolt 0+,Harvest,25000
+8,Snootli Cr,Fish Cr+Airport Ch,2014,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2014,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2014,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2014,Chum,Summer,Fry,Harvest,1656000
+9,Snootli Cr,Johnston Cr,2014,Coho,Fall,Seapen,Harvest,25000
+8,Snootli Cr,Salloomt R,2014,Coho,Fall,Smolt 1+,Harvest,25000
+8,Snootli Cr,Thorsen Cr/CCST,2014,Coho,Fall,Smolt 1+,Harvest,25000
+8,Snootli Cr,Atnarko R,2014,Pink,Fall,Fry,Rebuilding,450000
+8,Snootli Cr,Lonesome Lk,2014,Sockeye,Fall,Fry,Rebuilding,86000
+8,Snootli Cr,Atnarko R,2014,Sockeye,Summer,Fry,Rebuilding,86000
+23,Huu-ay-aht,Sugsaw Cr,2014,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2014,Coho,Fall,Fry,Rebuilding,20000
+24,Clayoquot,Kennedy R Low,2014,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2014,Chinook,Fall,Smolt 0+,Rebuilding,100000
+18,Cowichan R,Cowichan R,2014,Chinook,Fall,Fry,Assessment/Conservation,150000
+18,Cowichan R,Cowichan R,2014,Chinook,Fall,Smolt 0+,Assessment/Conservation,550000
+12,Gwa'ni,Nimpkish R Low,2014,Chinook,Fall,Smolt 0+,Rebuilding,112500
+12,Gwa'ni,Nimpkish R Low,2014,Chum,Fall,Fry,Rebuilding,9000000
+17,Nanaimo R,Chemainus R,2014,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2014,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2014,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2014,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Chemainus R,2014,Chum,Fall,Eyed Egg,Rebuilding,400000
+17,Nanaimo R,Nanaimo R,2014,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2014,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2014,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2014,Coho,Fall,Fry,Rebuilding,40000
+17,Nanaimo R,Nanaimo R,2014,Coho,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2014,Pink,Fall,Seapen,Harvest,1080000
+17,Nanaimo R,Nanaimo R,2014,Pink,Fall,Fry,Harvest,60000
+12,P Hardy/Quatse,Quatse R,2014,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2014,Coho,Fall,Fry,Rebuilding,30000
+12,P Hardy/Quatse,Cluxewe R,2014,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2014,Coho,Fall,Fry,Rebuilding,15000
+12,P Hardy/Quatse,Quatse R,2014,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2014,Coho,Fall,Fry,Rebuilding,30000
+27,P Hardy/Quatse,Waukwaas Cr,2014,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Cluxewe R,2014,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2014,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2014,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2014,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2014,Chum,Fall,Fry,Rebuilding,680000
+15,Powell R,Lang Cr,2014,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2014,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2014,Coho,Summer,Fry,Harvest,215000
+20,San Juan R,San Juan R,2014,Chinook,Fall,Seapen,Harvest,40000
+20,San Juan R,San Juan R,2014,Chinook,Fall,Smolt 0+,Rebuilding,860000
+20,San Juan R,San Juan R,2014,Chum,Fall,Fry,Rebuilding,36000
+20,San Juan R,San Juan R,2014,Coho,Fall,Fry,Harvest,165000
+16,Sechelt,Wilson Cr/GSMN,2014,Chum,Fall,Seapen,Rebuilding,500000
+28,Sechelt,Capilano R,2014,Coho,Fall,Seapen,Stewardship,25000
+16,Sechelt,Sechelt Cr,2014,Pink,Fall,Seapen,Harvest,200000
+15,Sliammon R,Sliammon R,2014,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2014,Chum,Fall,Fry,Harvest,2800000
+15,Sliammon R,Sliammon R,2014,Coho,Fall,Fry,Rebuilding,60000
+23,Thornton Cr,Thornton Cr,2014,Chinook,Fall,Smolt 0+,Harvest,280000
+23,Thornton Cr,Toquart R,2014,Chinook,Fall,Smolt 0+,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2014,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Toquart R,2014,Chum,Fall,Fry,Rebuilding,90000
+24,Thornton Cr,Twin R E,2014,Chum,Fall,Fry,Rebuilding,50000
+23,Thornton Cr,Thornton Cr,2014,Coho,Fall,Fry,Stewardship,10000
+29E,Chapman Cr,Chilliwack R,2014,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2014,Chum,Fall,Fry,Rebuilding,500000
+16,Chapman Cr,Chapman Cr,2014,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2014,Pink,Fall,Fry,Rebuilding,250000
+14,Englishman Enh,Englishman R,2014,Chinook,Fall,Fry,Rebuilding,100000
+14,Englishman Enh,Englishman R,2014,Pink,Fall,Fry,Harvest,950000
+22,Esquimalt Hb,Nitinat R,2014,Chinook,Fall,Smolt 0+,Stewardship,75000
+22,Esquimalt Hb,Nitinat R,2014,Chinook,Fall,Seapen,Stewardship,25000
+14,Fanny Bay/GSVI,Rosewall Cr,2014,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Coal Cr,2014,Coho,Fall,Smolt 1+,Stewardship,10000
+14,Fanny Bay/GSVI,Rosewall Cr,2014,Coho,Fall,Smolt 1+,Harvest,100000
+14,Fanny Bay/GSVI,Coal Cr,2014,Pink,Fall,Fry,Harvest,900000
+13,Gillard Pass,Phillips R,2014,Chinook,Fall,Smolt 0+,Assessment,150000
+13,Gillard Pass,Quinsam R,2014,Coho,Fall,Fry,Stewardship,10000
+13,Gillard Pass,Quinsam R,2014,Coho,Fall,Fry,Stewardship,12000
+19,Goldstream R,Goldstream R,2014,Chinook,Fall,Smolt 0+,Stewardship,240000
+19,Goldstream R,Goldstream R,2014,Chum,Fall,Fry,Harvest,675000
+19,Goldstream R,Goldstream R,2014,Chum,Fall,Fry,Stewardship,5000
+19,Goldstream R,Goldstream R,2014,Chum,Fall,Fry,Stewardship,50000
+19,Goldstream R,Goldstream R,2014,Coho,Fall,Smolt 1+,Assessment,150000
+17,Halalt Band,Chemainus R,2014,Chum,Fall,Fry,Rebuilding,100000
+14,Little R/GSVI,Little R/GSVI,2014,Chum,Fall,Fry,Rebuilding,190000
+14,Little R/GSVI,Puntledge R,2014,Chum,Fall,Fry,Stewardship,190000
+14,Little R/GSVI,Little R/GSVI,2014,Coho,Fall,Fry,Stewardship,20000
+14,Little R/GSVI,Little R/GSVI,2014,Coho,Fall,Smolt 1+,Rebuilding,30000
+13,Nile Cr,Quinsam R,2014,Pink,Fall,Seapen,Stewardship,250000
+13,Nile Cr,Quinsam R,2014,Pink,Fall,Fry,Harvest,900000
+25,Nootka Sd Wshd Soc,Burman R,2014,Chinook,Fall,Seapen,Harvest,350000
+25,Nootka Sd Wshd Soc,Gold R,2014,Chinook,Fall,Seapen,Harvest,150000
+16,Ouillet Cr,Sakinaw Lk,2014,Sockeye,Summer,Fry,Conservation,225000
+14,Oyster R,Oyster R,2014,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2014,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2014,Coho,Fall,Fry,Stewardship,90000
+14,Oyster R,Oyster R,2014,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2014,Pink,Fall,Fry,Harvest,2250000
+27,P Hardy/Marble,Colonial+Cayeghle,2014,Chinook,Fall,Smolt 0+,Stewardship,32000
+27,P Hardy/Marble,Marble R,2014,Chinook,Fall,Smolt 0+,Assessment/Harvest,910000
+27,P Hardy/Marble,Marble R,2014,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Colonial+Cayeghle,2014,Coho,Fall,Fry,Stewardship,51000
+27,P Hardy/Marble,Marble R,2014,Coho,Fall,Fry,Stewardship,32000
+27,P Hardy/Marble,Marble R,2014,Coho,Fall,Smolt 1+,Harvest,130000
+27,P Hardy/Marble,Washlawlis R,2014,Coho,Fall,Fry,Stewardship,40000
+27,P Hardy/Marble,Washlawlis R,2014,Coho,Fall,Smolt 1+,Harvest,85000
+13,Sayward F&G,Salmon R/JNST,2014,Chinook,Fall,Smolt 0+,Rebuilding,120000
+20,Sooke R,Sooke R,2014,Chinook,Fall,Smolt 0+,Harvest,225000
+20,Sooke R,Demamiel Cr,2014,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2014,Chinook,Fall,Seapen,Rebuilding,150000
+25,Tahsis R,Tahsis R,2014,Chinook,Fall,Seapen,Rebuilding,150000
+24,Tofino,Bedwell R,2014,Chinook,Fall,Smolt 0+,Assessment/Rebuilding,85000
+24,Tofino,Bedwell R,2014,Chinook,Fall,Seapen,Assessment/Rebuilding,85000
+24,Tofino,Cypre R,2014,Chinook,Fall,Seapen,Rebuilding,60000
+24,Tofino,Cypre R,2014,Chinook,Fall,Smolt 0+,Rebuilding,100000
+24,Tofino,Tranquil Cr,2014,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Cypre R,2014,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2014,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2014,Pink,Fall,Fry,Rebuilding,900000
+23,Barkley Sd Rndtbl S1 Sbct,Robertson Cr,2014,Chinook,Fall,Smolt 1+,Assessment,100000
+14,Big Qualicum R,Big Qualicum R,2014,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2014,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2014,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+25,Conuma R,Conuma R,2014,Chinook,Fall,Seapen,Harvest,2700000
+25,Conuma R,Gold R,2014,Chinook,Fall,Smolt 0+,Rebuilding,150000
+25,Conuma R,Sucwoa R,2014,Chinook,Fall,Seapen,Rebuilding,40000
+25,Conuma R,Tlupana R,2014,Chinook,Fall,Seapen,Rebuilding,40000
+25,Conuma R,Conuma R,2014,Chum,Fall,Fry,Rebuilding,250000
+25,Conuma R,Conuma R,2014,Chum,Fall,Seapen,Rebuilding,1500000
+25,Conuma R,Conuma R,2014,Chum,Fall,Fry,Rebuilding,500000
+25,Conuma R,Tlupana R,2014,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2014,Coho,Fall,Seapen,Harvest,50000
+25,Conuma R,Conuma R,2014,Coho,Fall,Fry,Rebuilding,52000
+14,L Qualicum R,L Qualicum R,2014,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,L Qualicum R,L Qualicum R,2014,Chum,Fall,Fry,Harvest,37500000
+22,Nitinat R,Nitinat R,2014,Chinook,Fall,Seapen,Harvest,4000000
+23,Nitinat R,Sarita R,2014,Chinook,Fall,Smolt 0+,Rebuilding,500000
+23,Nitinat R,Sarita R,2014,Chinook,Fall,Smolt 1+,Assessment,10000
+22,Nitinat R,Nitinat R,2014,Chum,Fall,Seapen,Harvest,25000000
+22,Nitinat R,Nitinat R,2014,Chum,Fall,Fry,Harvest,5000000
+22,Nitinat R,Nitinat R,2014,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2014,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2014,Coho,Fall,Smolt 1+,Assessment,100000
+14,Puntledge R,Puntledge R,2014,Chinook,Fall,Smolt 0+,Harvest,1600000
+14,Puntledge R,Puntledge R,2014,Chinook,Summer,Fry,Conservation,250000
+14,Puntledge R,Puntledge R,2014,Chinook,Summer,Smolt 0+,Assessment/Conservation,1200000
+14,Puntledge R,Puntledge R,2014,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2014,Coho,Fall,Fry,Rebuilding,520000
+14,Puntledge R,Puntledge R,2014,Coho,Fall,Fry,Rebuilding,280000
+14,Puntledge R,Puntledge R,2014,Pink,Fall,Fry,Harvest,2400000
+13,Quinsam R,Quinsam R,2014,Chinook,Fall,Seapen,Harvest,800000
+13,Quinsam R,Quinsam R,2014,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2014,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Campbell R,2014,Chum,Fall,Fry,Stewardship,100000
+13,Quinsam R,Quinsam R,2014,Coho,Fall,Fry,Stewardship,5000
+13,Quinsam R,Quinsam R,2014,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2014,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2014,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2014,Coho,Fall,Fry,Stewardship,750
+13,Quinsam R,Quinsam R,2014,Pink,Fall,Eyed Egg,Rebuilding,90000
+13,Quinsam R,Quinsam R,2014,Pink,Fall,Seapen,Harvest,700000
+13,Quinsam R,Quinsam R,2014,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2014,Chinook,Fall,Seapen,Conservation,60000
+23,Robertson Cr,Nahmint R,2014,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2014,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2014,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2014,Chinook,Fall,Smolt 1+,Assessment,100000
+23,Robertson Cr,Robertson Cr,2014,Chinook,Fall,Fry,Rebuilding,100000
+23,Robertson Cr,Robertson Cr,2014,Coho,Fall,Smolt 1+,Assessment,200000
+16,Rosewall Cr,Sakinaw Lk,2014,Sockeye,Summer,Fry,Conservation,600000
+29C,Seymour R,Alouette R S,2014,Chum,Fall,Fry,Rebuilding,20000
+29C,Seymour R,Alouette R S,2014,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2014,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Seymour R,Seymour R/GSMN,2014,Coho,Fall,Fry,Rebuilding,80000
+29C,Alouette R,Alouette R S,2014,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2014,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2014,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2014,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2014,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2014,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Kanaka Cr,Kanaka Cr,2014,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2014,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2014,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2014,Chum,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2014,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2014,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2014,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2014,Coho,Fall,Smolt 1+,Rebuilding,1000
+29B,L Campbell R,L Campbell R,2014,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2014,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2014,Coho,Fall,Fry,Stewardship,10000
+29B,Nicomekl R,Nicomekl R,2014,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2014,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2014,Coho,Fall,Fry,Stewardship,40000
+29B,Serpentine R,Serpentine R,2014,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2014,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2014,Coho,Fall,Fry,Stewardship,75000
+29E,Capilano R,Chilliwack R,2014,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2014,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2014,Chum,Fall,Fry,Harvest,90000
+28,Capilano R,Capilano R,2014,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2014,Coho,Fall,Fry,Rebuilding,3000
+29D,Chehalis R,Harrison R,2014,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2014,Chinook,Summer,Smolt 0+,Harvest,130000
+29D,Chehalis R,Chehalis R,2014,Chinook,Summer,Smolt 1+,Harvest,100000
+29G,Chehalis R,Chilko R,2014,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2014,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2014,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2014,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2014,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Harrison Sl,2014,Chum,Fall,Fry,Rebuilding,500000
+29D,Chehalis R,Chehalis R,2014,Coho,Fall,Smolt 1+,Harvest,400000
+29E,Chilliwack R,Chilliwack R,2014,Chinook,Fall,Smolt 0+,Assessment/Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2014,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2014,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2014,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2014,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2014,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2014,Coho,Fall,Fry,Harvest,100000
+29D,Inch Cr,Inch Cr,2014,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2014,Chum,Fall,Fry,Harvest,1000000
+29D,Inch Cr,Inch Cr,2014,Chum,Fall,Fry,Harvest,400000
+29D,Inch Cr,Inch Cr,2014,Chum,Fall,Fry,Harvest,50000
+29D,Inch Cr,Inch Cr,2014,Coho,Fall,Smolt 1+,Assessment/Harvest,150000
+29B,Inch Cr,L Campbell R,2014,Coho,Fall,Smolt 1+,Harvest,40000
+29B,Inch Cr,Nicomekl R,2014,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2014,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2014,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2014,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2014,Coho,Fall,Smolt 1+,Harvest,75000
+29D,Inch Sockeye Satellite,Cultus Lk,2014,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2014,Sockeye,Fall,Fry,Conservation,50000
+29D,Inch Sockeye Satellite,Cultus Lk,2014,Sockeye,Fall,Smolt 1+,Conservation,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2014,Sockeye,Summer,Fry,Harvest,2000000
+28,Tenderfoot Cr,Ashlu Cr,2014,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Cheakamus R,2014,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2014,Chinook,Summer,Smolt 1+,Rebuilding,40000
+28,Tenderfoot Cr,Mamquam R,2014,Chinook,Summer,Smolt 1+,Rebuilding,25000
+28,Tenderfoot Cr,Shovelnose Cr,2014,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Squamish R,2014,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Chum,Fall,Fry,Rebuilding,500000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2014,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2014,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Coho,Fall,Smolt 1+,Harvest,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2014,Coho,Fall,Fry,Rebuilding,200000
+29D,Weaver Sp Ch,Weaver Sp Ch,2014,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2014,Sockeye,Fall,Fry,Harvest,46800000
+29F,Deadman R,Deadman R,2015,Coho,Fall,Smolt 1+,Conservation,15000
+29F,Gates Sp Ch,Gates Cr,2015,Sockeye,Summer,Fry,Harvest,13500000
+29G,Horsefly Sp Ch,Horsefly Ch,2015,Sockeye,Summer,Fry,Harvest,22500000
+29K,Kingfisher Cr/TOMF,Shuswap R Low,2015,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2015,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2015,Chinook,Summer,Smolt 0+,Assessment,530000
+29K,Shuswap R,Shuswap R Middle,2015,Chinook,Summer,Smolt 0+,Assessment,170000
+29K,Shuswap R,Shuswap R Middle,2015,Chinook,Summer,Smolt 1+,Rebuilding,20000
+29F,Spius Cr,Coldwater R,2015,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2015,Chinook,Spring,Smolt 1+,Rebuilding,65000
+29F,Spius Cr,Nicola R,2015,Chinook,Spring,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Nicola R,2015,Chinook,Spring,Smolt 1+,Assessment/Rebuilding,200000
+29K,Spius Cr,Salmon R/TOMF,2015,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2015,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Spius Cr,2015,Chinook,Spring,Smolt 1+,Rebuilding,65000
+29G,Spius Cr,Chilko R,2015,Chinook,Summer,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Coldwater R,2015,Coho,Fall,Fry,Assessment/Conservation,40000
+29F,Spius Cr,Coldwater R,2015,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29F,Spius Cr,Deadman R,2015,Coho,Fall,Fry,Conservation,20000
+29K,Spius Cr,Eagle R,2015,Coho,Fall,Fry,Assessment/Conservation,20000
+29K,Spius Cr,Eagle R,2015,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Salmon R/TOMF,2015,Coho,Fall,Fry,Conservation,30000
+29K,Spius Cr,Salmon R/TOMF,2015,Coho,Fall,Smolt 1+,Conservation,65000
+29J,Thompson R N,Dunn Cr,2015,Coho,Fall,Smolt 1+,Stewardship,30000
+4,Fulton R,Fulton Ch #2,2015,Sockeye,Summer,Fry,Harvest,87000000
+4,Fulton R,Fulton R,2015,Sockeye,Summer,Fry,Harvest,45000000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2015,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2015,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2015,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2015,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2015,Coho,Fall,Fry,Harvest,10000
+7,Kitasoo Cr,Kitasoo Cr,2015,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Hirsch Cr,2015,Chinook,Spring,Smolt 0+,Harvest,200000
+6,Kitimat R,Kitimat R,2015,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2015,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2015,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2015,Coho,Fall,Smolt 1+,Harvest,500000
+1,Masset,Yakoun R,2015,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Masset,Mamin R,2015,Coho,Fall,Fry,Harvest,36000
+1,Masset,Yakoun R,2015,Coho,Fall,Smolt 1+,Harvest,90000
+9,Oweekeno,Wannock R,2015,Chum,Fall,Fry,Stewardship,45000
+4,Pinkut Cr,Pinkut Ch,2015,Sockeye,Summer,Fry,Harvest,45000000
+4,Pinkut Cr,Pinkut Cr,2015,Sockeye,Summer,Fry,Harvest,4500000
+8,Snootli Cr,Atnarko R Low,2015,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2015,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+9,Snootli Cr,Chuckwalla R,2015,Chinook,Summer,Smolt 0+,Rebuilding,65000
+9,Snootli Cr,Kilbella R,2015,Chinook,Summer,Seapen,Rebuilding,65000
+8,Snootli Cr,Noosgulch R,2015,Chinook,Summer,Smolt 0+,Rebuilding,43000
+8,Snootli Cr,Nusatsum R,2015,Chinook,Summer,Smolt 0+,Rebuilding,86000
+8,Snootli Cr,Salloomt R,2015,Chinook,Summer,Smolt 0+,Rebuilding,86000
+9,Snootli Cr,Wannock R,2015,Chinook,Summer,Seapen,Harvest,225000
+9,Snootli Cr,Wannock R,2015,Chinook,Summer,Smolt 0+,Harvest,25000
+8,Snootli Cr,Fish Cr+Airport Ch,2015,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2015,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2015,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2015,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2015,Coho,Fall,Smolt 1+,Harvest,25000
+8,Snootli Cr,Thorsen Cr/CCST,2015,Coho,Fall,Smolt 1+,Harvest,25000
+8,Snootli Cr,Lonesome Lk,2015,Sockeye,Fall,Fry,Rebuilding,86000
+8,Snootli Cr,Atnarko R,2015,Sockeye,Summer,Fry,Rebuilding,86000
+4,Terrace,Kitsum Abv Canyon,2015,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2015,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2015,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2015,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2015,Chinook,Spring,Smolt 1+,Rebuilding,43000
+4,Toboggan Cr,Toboggan Cr,2015,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2015,Sockeye,Fall,Fry,Rebuilding,65000
+14,Big Qualicum R,Big Qualicum R,2015,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2015,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2015,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2015,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2015,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2015,Coho,Fall,Smolt 1+,Harvest,50000
+13,Chapman Cr,Quinsam R,2015,Pink,Fall,Fry,Rebuilding,150000
+13,Chapman Cr,Quinsam R,2015,Pink,Fall,Seapen,Harvest,100000
+24,Clayoquot,Kennedy R Low,2015,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2015,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2015,Chinook,Fall,Seapen,Harvest,350000
+25,Conuma R,Conuma R,2015,Chinook,Fall,Seapen,Harvest,2700000
+25,Conuma R,Gold R,2015,Chinook,Fall,Seapen,Harvest,150000
+25,Conuma R,Gold R,2015,Chinook,Fall,Smolt 0+,Rebuilding,350000
+25,Conuma R,Canton Cr,2015,Chum,Fall,Fry,Rebuilding,500000
+25,Conuma R,Conuma R,2015,Chum,Fall,Fry,Rebuilding,500000
+25,Conuma R,Conuma R,2015,Chum,Fall,Seapen,Rebuilding,1500000
+25,Conuma R,Conuma R,2015,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2015,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2015,Coho,Fall,Seapen,Harvest,150000
+25,Conuma R,Conuma R,2015,Coho,Fall,Fry,Rebuilding,52000
+29E,Conuma R,Chilliwack R,2015,Pink,Fall,Seapen,Rebuilding,900000
+18,Cowichan R,Cowichan R,2015,Chinook,Fall,Smolt 0+,Assessment/Conservation,700000
+14,Englishman Enh,Englishman R,2015,Chinook,Fall,Fry,Rebuilding,100000
+14,Englishman Enh,Englishman R,2015,Pink,Fall,Fry,Harvest,900000
+14,Fanny Bay/GSVI,Rosewall Cr,2015,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Coal Cr,2015,Coho,Fall,Smolt 1+,Harvest,10000
+14,Fanny Bay/GSVI,Rosewall Cr,2015,Coho,Fall,Smolt 1+,Harvest,100000
+14,Fanny Bay/GSVI,Chef Cr,2015,Pink,Fall,Fry,Harvest,450000
+14,Fanny Bay/GSVI,Coal Cr,2015,Pink,Fall,Fry,Harvest,450000
+14,French Cr,French Cr,2015,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2015,Coho,Fall,Fry,Stewardship,30000
+13,Gillard Pass,Phillips R,2015,Chinook,Fall,Smolt 0+,Assessment,150000
+13,Gillard Pass,Ito Cr,2015,Coho,Fall,Fry,Stewardship,1000
+13,Gillard Pass,Ito Cr,2015,Coho,Fall,Fry,Stewardship,14000
+13,Gillard Pass,Ito Cr,2015,Coho,Fall,Fry,Stewardship,500
+13,Gillard Pass,Ito Cr,2015,Coho,Fall,Fry,Stewardship,2000
+13,Gillard Pass,Ito Cr,2015,Coho,Fall,Fry,Stewardship,8000
+19,Goldstream R,Goldstream R,2015,Chinook,Fall,Smolt 0+,Stewardship,45000
+22,Goldstream R,Nitinat R,2015,Chinook,Fall,Smolt 0+,Stewardship,100000
+19,Goldstream R,Goldstream R,2015,Chum,Fall,Fry,Harvest,675000
+19,Goldstream R,Goldstream R,2015,Chum,Fall,Fry,Stewardship,50000
+19,Goldstream R,Goldstream R,2015,Coho,Fall,Smolt 1+,Harvest,100000
+12,Gwa'ni,Nimpkish R,2015,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2015,Chum,Fall,Fry,Rebuilding,2000000
+17,Halalt Band,Chemainus R,2015,Chum,Fall,Fry,Rebuilding,100000
+23,Huu-ay-aht,Sugsaw Cr,2015,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2015,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2015,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,L Qualicum R,L Qualicum R,2015,Chum,Fall,Fry,Harvest,37500000
+14,Little R/GSVI,Little R/GSVI,2015,Chum,Fall,Fry,Rebuilding,190000
+14,Little R/GSVI,Little R/GSVI,2015,Coho,Fall,Fry,Stewardship,20000
+14,Little R/GSVI,Little R/GSVI,2015,Coho,Fall,Smolt 1+,Rebuilding,30000
+17,Nanaimo R,Chemainus R,2015,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2015,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2015,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2015,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Chemainus R,2015,Chum,Fall,Eyed Egg,Rebuilding,500000
+17,Nanaimo R,Nanaimo R,2015,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2015,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2015,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2015,Coho,Fall,Fry,Rebuilding,40000
+17,Nanaimo R,Nanaimo R,2015,Coho,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2015,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2015,Pink,Fall,Seapen,Harvest,200000
+14,Nile Cr,Nile Cr,2015,Pink,Fall,Fry,Harvest,900000
+13,Nile Cr,Quinsam R,2015,Pink,Fall,Seapen,Stewardship,250000
+13,Nile Cr,Quinsam R,2015,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2015,Chinook,Fall,Fry,Assessment/Harvest,2800000
+22,Nitinat R,Nitinat R,2015,Chinook,Fall,Seapen,Harvest,1200000
+23,Nitinat R,Sarita R,2015,Chinook,Fall,Smolt 0+,Rebuilding,500000
+22,Nitinat R,Nitinat R,2015,Chum,Fall,Seapen,Harvest,20000000
+22,Nitinat R,Nitinat R,2015,Chum,Fall,Fry,Harvest,10000000
+22,Nitinat R,Nitinat R,2015,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2015,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2015,Coho,Fall,Smolt 1+,Assessment,100000
+13,Orford R,Orford R,2015,Chum,Summer,Fry,Harvest,1000000
+16,Ouillet Cr,Sakinaw Lk,2015,Sockeye,Summer,Fry,Conservation,225000
+14,Oyster R,Oyster R,2015,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2015,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2015,Coho,Fall,Fry,Stewardship,90000
+14,Oyster R,Oyster R,2015,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2015,Pink,Fall,Fry,Rebuilding,2250000
+27,P Hardy/Marble,Colonial+Cayeghle,2015,Chinook,Fall,Smolt 0+,Stewardship,32000
+27,P Hardy/Marble,Marble R,2015,Chinook,Fall,Smolt 0+,Assessment/Harvest,910000
+27,P Hardy/Marble,Marble R,2015,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2015,Coho,Fall,Smolt 1+,Harvest,130000
+27,P Hardy/Marble,Washlawlis R,2015,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Quatse R,2015,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2015,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2015,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2015,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Cluxewe R,2015,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2015,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2015,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2015,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2015,Chum,Fall,Fry,Rebuilding,820000
+15,Powell R,Lang Cr,2015,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2015,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2015,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2015,Chinook,Fall,Smolt 0+,Harvest,1600000
+14,Puntledge R,Puntledge R,2015,Chinook,Summer,Fry,Conservation,250000
+14,Puntledge R,Puntledge R,2015,Chinook,Summer,Smolt 0+,Assessment/Conservation,1200000
+14,Puntledge R,Puntledge R,2015,Chum,Fall,Fry,Stewardship,75000
+14,Puntledge R,Puntledge R,2015,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2015,Coho,Fall,Fry,Harvest,556000
+14,Puntledge R,Puntledge R,2015,Coho,Fall,Fry,Harvest,50000
+14,Puntledge R,Puntledge R,2015,Coho,Fall,Fry,Harvest,194000
+14,Puntledge R,Puntledge R,2015,Pink,Fall,Fry,Harvest,2400000
+13,Quinsam R,Quinsam R,2015,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2015,Chinook,Fall,Seapen,Harvest,800000
+13,Quinsam R,Quinsam R,2015,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2015,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Menzies Cr,2015,Chum,Fall,Fry,Stewardship,100000
+13,Quinsam R,Quinsam R,2015,Coho,Fall,Fry,Stewardship,5000
+13,Quinsam R,Quinsam R,2015,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2015,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2015,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2015,Coho,Fall,Fry,Stewardship,750
+13,Quinsam R,Quinsam R,2015,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2015,Chinook,Fall,Seapen,Conservation,60000
+23,Robertson Cr,Nahmint R,2015,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2015,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2015,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2015,Chinook,Fall,Smolt 1+,Assessment,100000
+23,Robertson Cr,Robertson Cr,2015,Chinook,Fall,Fry,Rebuilding,100000
+23,Robertson Cr,Robertson Cr,2015,Coho,Fall,Smolt 1+,Assessment,200000
+29C,Rosewall Cr,Coquitlam R,2015,Sockeye,Fall,Smolt 1+,Assessment/Rebuilding,5000
+16,Rosewall Cr,Sakinaw Lk,2015,Sockeye,Summer,Fry,Conservation,625000
+20,San Juan R,San Juan R,2015,Chinook,Fall,Seapen,Harvest,40000
+20,San Juan R,San Juan R,2015,Chinook,Fall,Smolt 0+,Rebuilding,460000
+20,San Juan R,San Juan R,2015,Coho,Fall,Fry,Harvest,165000
+13,Sayward F&G,Salmon R/JNST,2015,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2015,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2015,Chum,Fall,Fry,Harvest,2800000
+15,Sliammon R,Sliammon R,2015,Coho,Fall,Fry,Rebuilding,60000
+20,Sooke R,Sooke R,2015,Chinook,Fall,Smolt 0+,Harvest,225000
+20,Sooke R,Demamiel Cr,2015,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2015,Chinook,Fall,Seapen,Rebuilding,150000
+25,Tahsis R,Tahsis R,2015,Chinook,Fall,Seapen,Rebuilding,150000
+25,Tahsis R,Leiner R,2015,Coho,Fall,Fry,Harvest,25000
+25,Tahsis R,Tahsis R,2015,Coho,Fall,Fry,Harvest,25000
+23,Thornton Cr,Thornton Cr,2015,Chinook,Fall,Smolt 0+,Harvest,280000
+23,Thornton Cr,Toquart R,2015,Chinook,Fall,Smolt 0+,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2015,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Toquart R,2015,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2015,Chum,Fall,Fry,Rebuilding,50000
+23,Thornton Cr,Thornton Cr,2015,Coho,Fall,Fry,Stewardship,10000
+24,Tofino,Bedwell R,2015,Chinook,Fall,Smolt 0+,Assessment/Rebuilding,85000
+24,Tofino,Bedwell R,2015,Chinook,Fall,Seapen,Assessment/Rebuilding,85000
+24,Tofino,Cypre R,2015,Chinook,Fall,Seapen,Rebuilding,160000
+24,Tofino,Cypre R,2015,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2015,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Tranquil Cr,2015,Chinook,Fall,Seapen,Rebuilding,65000
+24,Tofino,Cypre R,2015,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2015,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2015,Pink,Fall,Fry,Harvest,900000
+29C,Alouette R,Alouette R S,2015,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2015,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2015,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2015,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2015,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2015,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2015,Sockeye,Fall,Fry,Assessment/Rebuilding,25000
+29E,Capilano R,Chilliwack R,2015,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2015,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2015,Chum,Fall,Fry,Harvest,90000
+28,Capilano R,Capilano R,2015,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2015,Coho,Fall,Smolt 1+,Harvest,25000
+28,Capilano R,Capilano R,2015,Coho,Fall,Fry,Rebuilding,3000
+28,Capilano R,Capilano R,2015,Pink,Fall,Fry,Rebuilding,180000
+28,Capilano R,Cheakamus R,2015,Pink,Fall,Fry,Harvest,250000
+28,Capilano R,Cheakamus R,2015,Pink,Fall,Fry,Stewardship,90000
+29D,Chehalis R,Harrison R,2015,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2015,Chinook,Summer,Smolt 0+,Harvest,130000
+29D,Chehalis R,Chehalis R,2015,Chinook,Summer,Smolt 1+,Harvest,100000
+29G,Chehalis R,Chilko R,2015,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2015,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2015,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2015,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2015,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Harrison Sl,2015,Chum,Fall,Fry,Rebuilding,500000
+29D,Chehalis R,Chehalis R,2015,Coho,Fall,Smolt 1+,Harvest,400000
+29D,Chehalis R,Chehalis R,2015,Pink,Fall,Fry,Harvest,2000000
+29D,Chehalis R,Chehalis R,2015,Pink,Fall,Fry,Rebuilding,150000
+29D,Chehalis R,Chehalis R,2015,Pink,Fall,Fry,Rebuilding,500000
+29D,Chehalis R,Chehalis R,2015,Pink,Fall,Fry,Harvest/Rebuilding,500000
+29D,Chehalis R,Chehalis R,2015,Pink,Fall,Fry,Rebuilding,50000
+29D,Chehalis R,Weaver Sp Ch,2015,Pink,Fall,Fry,Harvest,2500000
+29E,Chilliwack R,Chilliwack R,2015,Chinook,Fall,Smolt 0+,Assessment/Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2015,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2015,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2015,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2015,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2015,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2015,Coho,Fall,Fry,Harvest,100000
+29E,Chilliwack R,Chilliwack R,2015,Pink,Fall,Eyed Egg,Assessment,5000
+29D,Inch Cr,Inch Cr,2015,Chum,Fall,Fry,Rebuilding,250000
+29D,Inch Cr,Inch Cr,2015,Chum,Fall,Fry,Harvest,1000000
+29D,Inch Cr,Inch Cr,2015,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2015,Coho,Fall,Smolt 1+,Assessment/Harvest,150000
+29B,Inch Cr,L Campbell R,2015,Coho,Fall,Smolt 1+,Harvest,40000
+29B,Inch Cr,Nicomekl R,2015,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2015,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2015,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2015,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2015,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2015,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2015,Sockeye,Fall,Fry,Conservation,50000
+29D,Inch Sockeye Satellite,Cultus Lk,2015,Sockeye,Fall,Smolt 1+,Conservation,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2015,Sockeye,Summer,Fry,Harvest,2000000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Rebuilding,45000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Rebuilding,30000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Eyed Egg,Rebuilding,10000
+29C,Kanaka Cr,Kanaka Cr,2015,Chum,Fall,Fry,Stewardship,30000
+29C,Kanaka Cr,Kanaka Cr,2015,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2015,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2015,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2015,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2015,Coho,Fall,Smolt 1+,Rebuilding,1000
+29C,Kanaka Cr,Kanaka Cr,2015,Pink,Fall,Fry,Rebuilding,130000
+29B,L Campbell R,L Campbell R,2015,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2015,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2015,Coho,Fall,Fry,Stewardship,10000
+29B,L Campbell R,L Campbell R,2015,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2015,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2015,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2015,Coho,Fall,Fry,Stewardship,40000
+29D,Nicomekl R,Chehalis R,2015,Pink,Fall,Fry,Stewardship,150000
+29B,Serpentine R,Serpentine R,2015,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2015,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2015,Coho,Fall,Fry,Stewardship,75000
+29C,Seymour R,Alouette R S,2015,Chum,Fall,Fry,Rebuilding,20000
+29C,Seymour R,Alouette R S,2015,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2015,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Seymour R,Seymour R/GSMN,2015,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Cheakamus R,2015,Pink,Fall,Fry,Rebuilding,450000
+28,Tenderfoot Cr,Ashlu Cr,2015,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2015,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2015,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2015,Chinook,Summer,Smolt 1+,Rebuilding,40000
+28,Tenderfoot Cr,Mamquam R,2015,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2015,Chinook,Summer,Smolt 1+,Rebuilding,25000
+28,Tenderfoot Cr,Shovelnose Cr,2015,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Shovelnose Cr,2015,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Squamish R,2015,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Squamish R,2015,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Chum,Fall,Fry,Rebuilding,500000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Chum,Fall,Seapen,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2015,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2015,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2015,Coho,Fall,Smolt 1+,Harvest,100000
+28,Tenderfoot Cr,Cheakamus R,2015,Pink,Fall,Seapen,Harvest,500000
+29D,Weaver Sp Ch,Weaver Sp Ch,2015,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2015,Sockeye,Fall,Fry,Harvest,46800000
+130,Snettisham,King Salmon Lk,2015,Sockeye,Summer,Fry,Harvest,225000
+120,Snettisham,Tahltan Lk,2015,Sockeye,Summer,Fry,Harvest,5000000
+130,Snettisham,Tatsamenie Lk,2015,Sockeye,Summer,Fry,Harvest,1775000
+130,Snettisham,Tatsamenie Lk,2015,Sockeye,Summer,Fry,Assessment/Harvest,225000
+29F,Deadman R,Deadman R,2016,Coho,Fall,Fry,Conservation,10000
+29F,Deadman R,Deadman R,2016,Coho,Fall,Smolt 1+,Conservation,20000
+29F,Gates Sp Ch,Gates Cr,2016,Sockeye,Summer,Fry,Harvest,13500000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2016,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2016,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2016,Chinook,Summer,Smolt 0+,Assessment,530000
+29K,Shuswap R,Shuswap R Middle,2016,Chinook,Summer,Smolt 0+,Assessment,170000
+29K,Shuswap R,Shuswap R Middle,2016,Chinook,Summer,Smolt 1+,Rebuilding,20000
+29F,Spius Cr,Coldwater R,2016,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2016,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2016,Chinook,Spring,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Nicola R,2016,Chinook,Spring,Smolt 1+,Assessment/Rebuilding,200000
+29K,Spius Cr,Salmon R/TOMF,2016,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2016,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Spius Cr,2016,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29G,Spius Cr,Chilko R,2016,Chinook,Summer,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Coldwater R,2016,Coho,Fall,Fry,Assessment/Conservation,40000
+29F,Spius Cr,Coldwater R,2016,Coho,Fall,Smolt 1+,Assessment/Conservation,185000
+29K,Spius Cr,Eagle R,2016,Coho,Fall,Fry,Assessment/Conservation,20000
+29K,Spius Cr,Eagle R,2016,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29J,Thompson R N,Dunn Cr,2016,Coho,Fall,Smolt 1+,Stewardship,30000
+7,Emily Lk,Howyette R,2016,Sockeye,Summer,Fry,Rebuilding,90000
+7,Emily Lk,Tankeeah R,2016,Sockeye,Summer,Fry,Harvest,80000
+4,Fulton R,Fulton Ch #1,2016,Sockeye,Summer,Fry,Harvest,30000000
+4,Fulton R,Fulton Ch #2,2016,Sockeye,Summer,Fry,Harvest,87000000
+4,Fulton R,Fulton R,2016,Sockeye,Summer,Fry,Harvest,45000000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2016,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2016,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2016,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2016,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2016,Coho,Fall,Fry,Harvest,10000
+7,Kitasoo Cr,Kitasoo Cr,2016,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2016,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2016,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2016,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2016,Coho,Fall,Smolt 1+,Harvest,400000
+1,Masset,Yakoun R,2016,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Masset,Mamin R,2016,Coho,Fall,Fry,Harvest,36000
+1,Masset,Yakoun R,2016,Coho,Fall,Smolt 1+,Harvest,90000
+9,Oweekeno,Wannock R,2016,Chum,Fall,Fry,Stewardship,45000
+4,Pinkut Cr,Pinkut Ch,2016,Sockeye,Summer,Fry,Harvest,45000000
+4,Pinkut Cr,Pinkut Cr,2016,Sockeye,Summer,Fry,Harvest,4500000
+9,Snootli Cr,Wannock R,2016,Chinook,Fall,Seapen,Harvest,225000
+9,Snootli Cr,Wannock R,2016,Chinook,Fall,Smolt 0+,Harvest,25000
+8,Snootli Cr,Atnarko R Low,2016,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2016,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+9,Snootli Cr,Chuckwalla R,2016,Chinook,Summer,Smolt 0+,Rebuilding,65000
+9,Snootli Cr,Kilbella R,2016,Chinook,Summer,Seapen,Rebuilding,65000
+8,Snootli Cr,Noosgulch R,2016,Chinook,Summer,Smolt 0+,Rebuilding,43000
+8,Snootli Cr,Nusatsum R,2016,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Salloomt R,2016,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Fish Cr+Airport Ch,2016,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2016,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2016,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2016,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2016,Sockeye,Summer,Fry,Rebuilding,86000
+8,Snootli Cr,Lonesome Lk,2016,Sockeye,Summer,Fry,Rebuilding,86000
+4,Terrace,Kitsum Abv Canyon,2016,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2016,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2016,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2016,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2016,Chinook,Spring,Smolt 1+,Rebuilding,43000
+4,Toboggan Cr,Toboggan Cr,2016,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2016,Sockeye,Fall,Fry,Rebuilding,45000
+14,Big Qualicum R,Big Qualicum R,2016,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2016,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2016,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2016,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2016,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2016,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2016,Coho,Fall,Smolt 1+,Harvest,20000
+16,Chapman Cr,Chapman Cr,2016,Pink,Fall,Fry,Rebuilding,250000
+24,Clayoquot,Kennedy R Low,2016,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2016,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2016,Chinook,Fall,Seapen,Harvest,350000
+25,Conuma R,Conuma R,2016,Chinook,Fall,Seapen,Harvest,2700000
+25,Conuma R,Gold R,2016,Chinook,Fall,Seapen,Harvest,150000
+25,Conuma R,Gold R,2016,Chinook,Fall,Smolt 0+,Rebuilding,350000
+25,Conuma R,Conuma R,2016,Chum,Fall,Fry,Rebuilding,500000
+25,Conuma R,Conuma R,2016,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Conuma R,2016,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2016,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2016,Coho,Fall,Seapen,Harvest,150000
+25,Conuma R,Conuma R,2016,Coho,Fall,Fry,Rebuilding,52000
+18,Cowichan R,Cowichan R,2016,Chinook,Fall,Smolt 0+,Assessment/Conservation,700000
+14,Englishman Enh,Englishman R,2016,Chinook,Fall,Fry,Rebuilding,100000
+14,Englishman Enh,Englishman R,2016,Pink,Fall,Fry,Harvest,950000
+14,Fanny Bay/GSVI,Rosewall Cr,2016,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Coal Cr,2016,Coho,Fall,Smolt 1+,Harvest,10000
+14,Fanny Bay/GSVI,Rosewall Cr,2016,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Coal Cr,2016,Pink,Fall,Fry,Harvest,900000
+14,French Cr,French Cr,2016,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2016,Coho,Fall,Fry,Stewardship,30000
+13,Gillard Pass,Phillips R,2016,Chinook,Fall,Smolt 0+,Assessment,150000
+13,Gillard Pass,Ritchie Pd S,2016,Coho,Fall,Fry,Stewardship,500
+13,Gillard Pass,Ritchie Pd S,2016,Coho,Fall,Fry,Stewardship,8000
+19,Goldstream R,Goldstream R,2016,Chinook,Fall,Smolt 0+,Stewardship,45000
+22,Goldstream R,Nitinat R,2016,Chinook,Fall,Seapen,Stewardship,100000
+19,Goldstream R,Goldstream R,2016,Chum,Fall,Fry,Harvest,675000
+19,Goldstream R,Goldstream R,2016,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2016,Chum,Fall,Fry,Stewardship,50000
+19,Goldstream R,Craigflower Cr,2016,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2016,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2016,Coho,Fall,Fry,Rebuilding,10000
+12,Gwa'ni,Nimpkish R,2016,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2016,Chum,Fall,Fry,Rebuilding,2000000
+17,Halalt Band,Chemainus R,2016,Chum,Fall,Fry,Rebuilding,100000
+23,Huu-ay-aht,Sugsaw Cr,2016,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2016,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2016,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,L Qualicum R,L Qualicum R,2016,Chum,Fall,Fry,Harvest,37500000
+14,Little R/GSVI,Little R/GSVI,2016,Chum,Fall,Fry,Rebuilding,190000
+14,Little R/GSVI,Little R/GSVI,2016,Coho,Fall,Smolt 1+,Rebuilding,35000
+17,Nanaimo R,Chemainus R,2016,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2016,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2016,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2016,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Chemainus R,2016,Chum,Fall,Eyed Egg,Rebuilding,500000
+17,Nanaimo R,Nanaimo R,2016,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2016,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2016,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2016,Coho,Fall,Fry,Rebuilding,40000
+17,Nanaimo R,Nanaimo R,2016,Coho,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2016,Pink,Fall,Seapen,Harvest,1080000
+17,Nanaimo R,Nanaimo R,2016,Pink,Fall,Fry,Harvest,60000
+13,Nile Cr,Quinsam R,2016,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2016,Chinook,Fall,Seapen,Assessment/Harvest,2000000
+22,Nitinat R,Nitinat R,2016,Chinook,Fall,Seapen,Harvest,1800000
+22,Nitinat R,Nitinat R,2016,Chinook,Fall,Seapen,Harvest,200000
+23,Nitinat R,Sarita R,2016,Chinook,Fall,Smolt 0+,Rebuilding,500000
+22,Nitinat R,Nitinat R,2016,Chum,Fall,Seapen,Harvest,20000000
+22,Nitinat R,Nitinat R,2016,Chum,Fall,Fry,Harvest,10000000
+22,Nitinat R,Nitinat R,2016,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2016,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2016,Coho,Fall,Smolt 1+,Assessment,100000
+13,Orford R,Orford R,2016,Chum,Summer,Fry,Harvest,1000000
+14,Oyster R,Oyster R,2016,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2016,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2016,Coho,Fall,Fry,Stewardship,60000
+14,Oyster R,Oyster R,2016,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2016,Pink,Fall,Fry,Harvest,2250000
+27,P Hardy/Marble,Colonial+Cayeghle,2016,Chinook,Fall,Smolt 0+,Stewardship,32000
+27,P Hardy/Marble,Marble R,2016,Chinook,Fall,Smolt 0+,Assessment/Harvest,910000
+27,P Hardy/Marble,Marble R,2016,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2016,Coho,Fall,Smolt 1+,Harvest,130000
+27,P Hardy/Marble,Washlawlis R,2016,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Quatse R,2016,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2016,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2016,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2016,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Cluxewe R,2016,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2016,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2016,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2016,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2016,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2016,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2016,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2016,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2016,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2016,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2016,Chinook,Summer,Fry,Conservation,250000
+14,Puntledge R,Puntledge R,2016,Chinook,Summer,Smolt 0+,Assessment/Conservation,1200000
+14,Puntledge R,Puntledge R,2016,Chum,Fall,Fry,Stewardship,75000
+14,Puntledge R,Puntledge R,2016,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2016,Coho,Fall,Fry,Harvest,556000
+14,Puntledge R,Puntledge R,2016,Coho,Fall,Fry,Harvest,50000
+14,Puntledge R,Puntledge R,2016,Coho,Fall,Fry,Harvest,194000
+14,Puntledge R,Puntledge R,2016,Pink,Fall,Fry,Harvest,2400000
+13,Quinsam R,Quinsam R,2016,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2016,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2016,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2016,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Menzies Cr,2016,Chum,Fall,Fry,Stewardship,100000
+13,Quinsam R,Quinsam R,2016,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2016,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2016,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2016,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2016,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2016,Chinook,Fall,Seapen,Conservation,60000
+23,Robertson Cr,Nahmint R,2016,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2016,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2016,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2016,Chinook,Fall,Smolt 1+,Assessment,200000
+23,Robertson Cr,Robertson Cr,2016,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2016,Sockeye,Summer,Fry,Conservation,625000
+20,San Juan R,San Juan R,2016,Chinook,Fall,Seapen,Harvest,40000
+20,San Juan R,San Juan R,2016,Chinook,Fall,Smolt 0+,Rebuilding,460000
+13,Sayward F&G,Salmon R/JNST,2016,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2016,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2016,Chum,Fall,Fry,Harvest,2800000
+15,Sliammon R,Sliammon R,2016,Coho,Fall,Fry,Rebuilding,60000
+22,Sooke R,Nitinat R,2016,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2016,Chinook,Fall,Smolt 0+,Harvest,212500
+20,Sooke R,Sooke R,2016,Chinook,Fall,Smolt 0+,Harvest,225000
+20,Sooke R,Demamiel Cr,2016,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2016,Chinook,Fall,Seapen,Rebuilding,300000
+23,Thornton Cr,Thornton Cr,2016,Chinook,Fall,Seapen,Harvest,100000
+23,Thornton Cr,Toquart R,2016,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2016,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Toquart R,2016,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2016,Chum,Fall,Fry,Rebuilding,50000
+23,Thornton Cr,Thornton Cr,2016,Coho,Fall,Fry,Stewardship,10000
+24,Tofino,Bedwell R,2016,Chinook,Fall,Seapen,Assessment/Rebuilding,85000
+24,Tofino,Cypre R,2016,Chinook,Fall,Seapen,Rebuilding,160000
+24,Tofino,Tranquil Cr,2016,Chinook,Fall,Seapen,Rebuilding,65000
+24,Tofino,Cypre R,2016,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2016,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2016,Pink,Fall,Fry,Rebuilding,900000
+29C,Alouette R,Alouette R S,2016,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2016,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2016,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2016,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2016,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2016,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2016,Sockeye,Fall,Fry,Assessment/Rebuilding,25000
+29E,Capilano R,Chilliwack R,2016,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2016,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2016,Chum,Fall,Fry,Rebuilding,90000
+28,Capilano R,Capilano R,2016,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2016,Coho,Fall,Seapen,Harvest,25000
+28,Capilano R,Capilano R,2016,Coho,Fall,Fry,Stewardship,1500
+28,Capilano R,Capilano R,2016,Coho,Fall,Fry,Rebuilding,3000
+29D,Chehalis R,Harrison R,2016,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2016,Chinook,Summer,Smolt 0+,Harvest,130000
+29D,Chehalis R,Chehalis R,2016,Chinook,Summer,Smolt 1+,Harvest,100000
+29G,Chehalis R,Chilko R,2016,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2016,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2016,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2016,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2016,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Harrison Sl,2016,Chum,Fall,Fry,Rebuilding,500000
+29D,Chehalis R,Chehalis R,2016,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2016,Coho,Fall,Smolt 1+,Harvest,400000
+29E,Chilliwack R,Chilliwack R,2016,Chinook,Fall,Smolt 0+,Assessment/Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2016,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2016,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2016,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2016,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2016,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2016,Coho,Fall,Fry,Harvest,100000
+29D,Inch Cr,Inch Cr,2016,Chum,Fall,Fry,Rebuilding,250000
+29D,Inch Cr,Inch Cr,2016,Chum,Fall,Fry,Harvest,1000000
+29D,Inch Cr,Inch Cr,2016,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2016,Coho,Fall,Smolt 1+,Assessment/Harvest,150000
+29B,Inch Cr,Nicomekl R,2016,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2016,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2016,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2016,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2016,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2016,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2016,Sockeye,Fall,Fry,Conservation,50000
+29D,Inch Sockeye Satellite,Cultus Lk,2016,Sockeye,Fall,Smolt 1+,Conservation,25000
+29D,Inch Sockeye Satellite,Weaver Sp Ch,2016,Sockeye,Fall,Smolt 1+,Rebuilding,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2016,Sockeye,Summer,Fry,Harvest,1000000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Rebuilding,45000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Rebuilding,30000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Eyed Egg,Rebuilding,10000
+29C,Kanaka Cr,Kanaka Cr,2016,Chum,Fall,Fry,Stewardship,30000
+29C,Kanaka Cr,Kanaka Cr,2016,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2016,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2016,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2016,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2016,Coho,Fall,Smolt 1+,Rebuilding,1000
+29B,L Campbell R,L Campbell R,2016,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2016,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2016,Coho,Fall,Fry,Stewardship,10000
+29B,L Campbell R,L Campbell R,2016,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2016,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2016,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2016,Coho,Fall,Fry,Stewardship,40000
+29B,Serpentine R,Serpentine R,2016,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2016,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2016,Coho,Fall,Fry,Stewardship,75000
+28,Seymour R,Seymour R/GSMN,2016,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2016,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2016,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2016,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Tenderfoot Cr,Ashlu Cr,2016,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2016,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2016,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2016,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2016,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2016,Chinook,Summer,Smolt 1+,Rebuilding,30000
+28,Tenderfoot Cr,Shovelnose Cr,2016,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Shovelnose Cr,2016,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Chum,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Chum,Fall,Seapen,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Chum,Fall,Fry,Rebuilding,500000
+28,Tenderfoot Cr,Mamquam R,2016,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2016,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2016,Coho,Fall,Smolt 1+,Harvest,100000
+29D,Weaver Sp Ch,Weaver Sp Ch,2016,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2016,Sockeye,Fall,Fry,Harvest,46800000
+130,Snettisham,King Salmon Lk,2016,Sockeye,Summer,Fry,Harvest,225000
+120,Snettisham,Tahltan Lk,2016,Sockeye,Summer,Fry,Harvest,5000000
+130,Snettisham,Tatsamenie Lk,2016,Sockeye,Summer,Fry,Harvest,1775000
+130,Snettisham,Tatsamenie Lk,2016,Sockeye,Summer,Fry,Assessment/Harvest,225000
+29F,Deadman R,Deadman R,2017,Coho,Fall,Fry,Conservation,10000
+29F,Deadman R,Deadman R,2017,Coho,Fall,Smolt 1+,Conservation,20000
+29F,Gates Sp Ch,Gates Cr,2017,Sockeye,Summer,Fry,Harvest,13500000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2017,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2017,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2017,Chinook,Summer,Smolt 0+,Assessment,530000
+29K,Shuswap R,Shuswap R Middle,2017,Chinook,Summer,Smolt 0+,Assessment,150000
+29K,Shuswap R,Shuswap R Middle,2017,Chinook,Summer,Smolt 1+,Rebuilding,20000
+29F,Spius Cr,Coldwater R,2017,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2017,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2017,Chinook,Spring,Smolt 1+,Assessment/Rebuilding,200000
+29F,Spius Cr,Nicola R,2017,Chinook,Spring,Fry,Assessment/Rebuilding,50000
+29K,Spius Cr,Salmon R/TOMF,2017,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2017,Chinook,Spring,Fry,Rebuilding,55000
+29G,Spius Cr,Chilko R,2017,Chinook,Summer,Fry,Assessment/Rebuilding,50000
+29F,Spius Cr,Coldwater R,2017,Coho,Fall,Fry,Assessment/Conservation,25000
+29F,Spius Cr,Coldwater R,2017,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Eagle R,2017,Coho,Fall,Fry,Assessment/Conservation,20000
+29K,Spius Cr,Eagle R,2017,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Salmon R/TOMF,2017,Coho,Fall,Fry,Conservation,30000
+29K,Spius Cr,Salmon R/TOMF,2017,Coho,Fall,Smolt 1+,Conservation,25000
+29J,Thompson R N,Dunn Cr,2017,Coho,Fall,Smolt 1+,Stewardship,30000
+7,Emily Lk,Tankeeah R,2017,Sockeye,Summer,Fry,Harvest,80000
+4,Fulton R,Fulton Ch #1,2017,Sockeye,Summer,Fry,Harvest,3700000
+4,Fulton R,Fulton Ch #2,2017,Sockeye,Summer,Fry,Harvest,72500000
+4,Fulton R,Fulton R,2017,Sockeye,Summer,Fry,Harvest,37500000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2017,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2017,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2017,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2017,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2017,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2017,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2017,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2017,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2017,Coho,Fall,Smolt 1+,Harvest,500000
+1,Old Massett,Yakoun R,2017,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Old Massett,Mamin R,2017,Coho,Fall,Fry,Harvest,36000
+1,Old Massett,Yakoun R,2017,Coho,Fall,Smolt 1+,Harvest,90000
+4,Pinkut Cr,Pinkut Ch,2017,Sockeye,Summer,Fry,Harvest,36500000
+4,Pinkut Cr,Pinkut Cr,2017,Sockeye,Summer,Fry,Harvest,3750000
+8,Snootli Cr,Atnarko R Low,2017,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2017,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Nusatsum R,2017,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Salloomt R,2017,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Fish Cr+Airport Ch,2017,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2017,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2017,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2017,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2017,Sockeye,Summer,Fry,Rebuilding,86000
+8,Snootli Cr,Lonesome Lk,2017,Sockeye,Summer,Fry,Rebuilding,86000
+4,Terrace,Kitsum Abv Canyon,2017,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2017,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2017,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2017,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2017,Chinook,Spring,Fry,Rebuilding,15000
+4,Toboggan Cr,Toboggan Cr,2017,Coho,Summer,Fry,Stewardship,15000
+4,Toboggan Cr,Toboggan Cr,2017,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2017,Sockeye,Fall,Fry,Harvest,45000
+14,Big Qualicum R,Big Qualicum R,2017,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2017,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2017,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2017,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2017,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2017,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2017,Coho,Fall,Smolt 1+,Harvest,20000
+28,Chapman Cr,Cheakamus R,2017,Pink,Fall,Fry,Harvest,100000
+24,Clayoquot,Kennedy R Low,2017,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2017,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2017,Chinook,Fall,Seapen,Harvest,350000
+25,Conuma R,Conuma R,2017,Chinook,Fall,Seapen,Harvest,2200000
+25,Conuma R,Conuma R,2017,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Gold R,2017,Chinook,Fall,Seapen,Harvest,150000
+25,Conuma R,Gold R,2017,Chinook,Fall,Smolt 0+,Rebuilding,350000
+25,Conuma R,Conuma R,2017,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Conuma R,2017,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Tlupana R,2017,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2017,Coho,Fall,Seapen,Harvest,150000
+25,Conuma R,Conuma R,2017,Coho,Fall,Fry,Rebuilding,52000
+18,Cowichan R,Cowichan R,2017,Chinook,Fall,Smolt 0+,Assessment/Conservation,700000
+14,Englishman Enh,Englishman R,2017,Chinook,Fall,Fry,Rebuilding,100000
+14,Englishman Enh,Englishman R,2017,Pink,Fall,Fry,Harvest,900000
+14,Fanny Bay/GSVI,Rosewall Cr,2017,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Coal Cr,2017,Coho,Fall,Smolt 1+,Harvest,10000
+14,Fanny Bay/GSVI,Rosewall Cr,2017,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Chef Cr,2017,Pink,Fall,Fry,Harvest,450000
+14,Fanny Bay/GSVI,Coal Cr,2017,Pink,Fall,Fry,Harvest,450000
+14,French Cr,French Cr,2017,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2017,Coho,Fall,Fry,Stewardship,30000
+13,Gillard Pass,Phillips R,2017,Chinook,Fall,Smolt 0+,Assessment,150000
+13,Gillard Pass,Ritchie Pd S,2017,Coho,Fall,Fry,Stewardship,100
+13,Gillard Pass,Ritchie Pd S,2017,Coho,Fall,Fry,Stewardship,500
+13,Gillard Pass,Ritchie Pd S,2017,Coho,Fall,Fry,Stewardship,8000
+22,Goldstream R,Nitinat R,2017,Chinook,Fall,Seapen,Stewardship,100000
+19,Goldstream R,Goldstream R,2017,Chum,Fall,Fry,Harvest,675000
+19,Goldstream R,Goldstream R,2017,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2017,Chum,Fall,Eyed Egg,Stewardship,25000
+19,Goldstream R,Goldstream R,2017,Chum,Fall,Fry,Stewardship,25000
+19,Goldstream R,Craigflower Cr,2017,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2017,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2017,Coho,Fall,Fry,Rebuilding,10000
+12,Gwa'ni,Nimpkish R,2017,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2017,Chum,Fall,Fry,Rebuilding,2000000
+17,Halalt Band,Chemainus R,2017,Chum,Fall,Fry,Rebuilding,100000
+23,Huu-ay-aht,Sugsaw Cr,2017,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2017,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2017,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,L Qualicum R,L Qualicum R,2017,Chum,Fall,Fry,Harvest,37500000
+14,Little R/GSVI,Little R/GSVI,2017,Chum,Fall,Fry,Rebuilding,190000
+14,Little R/GSVI,Little R/GSVI,2017,Coho,Fall,Smolt 1+,Rebuilding,35000
+17,Nanaimo R,Chemainus R,2017,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2017,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2017,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2017,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Chemainus R,2017,Chum,Fall,Eyed Egg,Rebuilding,500000
+17,Nanaimo R,Nanaimo R,2017,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2017,Coho,Fall,Fry,Rebuilding,20000
+17,Nanaimo R,Nanaimo R,2017,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2017,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2017,Coho,Fall,Fry,Rebuilding,30000
+17,Nanaimo R,Nanaimo R,2017,Coho,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2017,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2017,Pink,Fall,Seapen,Harvest,200000
+14,Nile Cr,Nile Cr,2017,Pink,Fall,Fry,Harvest,900000
+13,Nile Cr,Quinsam R,2017,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2017,Chinook,Fall,Seapen,Harvest,2000000
+22,Nitinat R,Nitinat R,2017,Chinook,Fall,Seapen,Harvest,1800000
+22,Nitinat R,Nitinat R,2017,Chinook,Fall,Seapen,Harvest,200000
+23,Nitinat R,Sarita R,2017,Chinook,Fall,Smolt 0+,Rebuilding,500000
+22,Nitinat R,Nitinat R,2017,Chum,Fall,Seapen,Harvest,20000000
+22,Nitinat R,Nitinat R,2017,Chum,Fall,Fry,Harvest,10000000
+22,Nitinat R,Nitinat R,2017,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2017,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2017,Coho,Fall,Smolt 1+,Harvest,100000
+13,Orford R,Orford R,2017,Chum,Summer,Fry,Rebuilding,1000000
+14,Oyster R,Oyster R,2017,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2017,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2017,Coho,Fall,Fry,Stewardship,40000
+14,Oyster R,Oyster R,2017,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2017,Pink,Fall,Fry,Rebuilding,2250000
+27,P Hardy/Marble,Marble R,2017,Chinook,Fall,Smolt 0+,Harvest,910000
+27,P Hardy/Marble,Marble R,2017,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2017,Coho,Fall,Smolt 1+,Harvest,130000
+27,P Hardy/Marble,Washlawlis R,2017,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Quatse R,2017,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2017,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2017,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2017,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Cluxewe R,2017,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2017,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2017,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2017,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2017,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2017,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2017,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2017,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2017,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2017,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2017,Chinook,Summer,Smolt 0+,Assessment/Conservation,1450000
+14,Puntledge R,Puntledge R,2017,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2017,Coho,Fall,Fry,Rebuilding,556000
+14,Puntledge R,Puntledge R,2017,Coho,Fall,Fry,Rebuilding,50000
+14,Puntledge R,Puntledge R,2017,Coho,Fall,Fry,Rebuilding,194000
+14,Puntledge R,Puntledge R,2017,Pink,Fall,Fry,Harvest,2400000
+13,Quinsam R,Quinsam R,2017,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2017,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2017,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2017,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Menzies Cr,2017,Chum,Fall,Fry,Stewardship,100000
+13,Quinsam R,Quinsam R,2017,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2017,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2017,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2017,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2017,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2017,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2017,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2017,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2017,Chinook,Fall,Smolt 1+,Assessment,100000
+23,Robertson Cr,Robertson Cr,2017,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2017,Sockeye,Summer,Fry,Conservation,1000000
+20,San Juan R,San Juan R,2017,Chinook,Fall,Seapen,Harvest,40000
+20,San Juan R,San Juan R,2017,Chinook,Fall,Smolt 0+,Rebuilding,460000
+13,Sayward F&G,Salmon R/JNST,2017,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2017,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2017,Chum,Fall,Fry,Harvest,1400000
+15,Sliammon R,Sliammon R,2017,Coho,Fall,Fry,Rebuilding,60000
+22,Sooke R,Nitinat R,2017,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2017,Chinook,Fall,Smolt 0+,Harvest,212500
+20,Sooke R,Sooke R,2017,Chinook,Fall,Smolt 0+,Harvest,225000
+20,Sooke R,Demamiel Cr,2017,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2017,Chinook,Fall,Seapen,Rebuilding,300000
+23,Thornton Cr,Thornton Cr,2017,Chinook,Fall,Smolt 0+,Harvest,100000
+23,Thornton Cr,Toquart R,2017,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2017,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Toquart R,2017,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2017,Chum,Fall,Fry,Rebuilding,50000
+23,Thornton Cr,Thornton Cr,2017,Coho,Fall,Fry,Stewardship,10000
+24,Tofino,Bedwell R,2017,Chinook,Fall,Seapen,Rebuilding,85000
+24,Tofino,Cypre R,2017,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2017,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Cypre R,2017,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kennedy R Up,2017,Coho,Fall,Fry,Rebuilding,35000
+24,Tofino,Kootowis Cr,2017,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2017,Pink,Fall,Fry,Harvest,900000
+29C,Alouette R,Alouette R S,2017,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2017,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2017,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2017,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2017,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2017,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2017,Pink,Fall,Fry,Rebuilding,125000
+29E,Capilano R,Chilliwack R,2017,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2017,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2017,Chum,Fall,Fry,Rebuilding,30000
+28,Capilano R,Capilano R,2017,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2017,Coho,Fall,Seapen,Harvest,25000
+28,Capilano R,Capilano R,2017,Coho,Fall,Fry,Stewardship,1500
+28,Capilano R,Capilano R,2017,Coho,Fall,Fry,Rebuilding,3000
+28,Capilano R,Capilano R,2017,Pink,Fall,Fry,Rebuilding,180000
+28,Capilano R,Cheakamus R,2017,Pink,Fall,Fry,Harvest,165000
+28,Capilano R,Cheakamus R,2017,Pink,Fall,Fry,Stewardship,90000
+29D,Chehalis R,Harrison R,2017,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2017,Chinook,Summer,Smolt 0+,Harvest,130000
+29D,Chehalis R,Chehalis R,2017,Chinook,Summer,Smolt 1+,Harvest,100000
+29G,Chehalis R,Chilko R,2017,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,65000
+29D,Chehalis R,Chehalis R,2017,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2017,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2017,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2017,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Chehalis R,2017,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2017,Coho,Fall,Smolt 1+,Harvest,400000
+29D,Chehalis R,Chehalis R,2017,Pink,Fall,Fry,Harvest,2000000
+29D,Chehalis R,Chehalis R,2017,Pink,Fall,Fry,Rebuilding,150000
+29D,Chehalis R,Chehalis R,2017,Pink,Fall,Fry,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2017,Chinook,Fall,Smolt 0+,Assessment/Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2017,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2017,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2017,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2017,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2017,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2017,Coho,Fall,Fry,Harvest,100000
+29F,Chilliwack R,Coldwater R,2017,Coho,Fall,Smolt 1+,Assessment/Conservation,120000
+29E,Chilliwack R,Chilliwack R,2017,Pink,Fall,Eyed Egg,Assessment,5000
+29G,Inch Cr,Chilko R,2017,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,32000
+29D,Inch Cr,Inch Cr,2017,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2017,Chum,Fall,Fry,Rebuilding,250000
+29D,Inch Cr,Inch Cr,2017,Chum,Fall,Fry,Assessment/Rebuilding,750000
+29D,Inch Cr,Inch Cr,2017,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2017,Coho,Fall,Smolt 1+,Assessment/Harvest,150000
+29B,Inch Cr,Nicomekl R,2017,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2017,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2017,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2017,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2017,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2017,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2017,Sockeye,Fall,Fry,Conservation,50000
+29D,Inch Sockeye Satellite,Cultus Lk,2017,Sockeye,Fall,Smolt 1+,Conservation,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2017,Sockeye,Summer,Fry,Harvest,1000000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Rebuilding,45000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Rebuilding,30000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Eyed Egg,Rebuilding,10000
+29C,Kanaka Cr,Kanaka Cr,2017,Chum,Fall,Fry,Stewardship,30000
+29C,Kanaka Cr,Kanaka Cr,2017,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2017,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2017,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2017,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2017,Coho,Fall,Smolt 1+,Rebuilding,1000
+29C,Kanaka Cr,Kanaka Cr,2017,Pink,Fall,Fry,Rebuilding,130000
+29B,L Campbell R,L Campbell R,2017,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2017,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2017,Coho,Fall,Fry,Stewardship,10000
+29B,L Campbell R,L Campbell R,2017,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2017,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2017,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2017,Coho,Fall,Fry,Stewardship,40000
+29D,Nicomekl R,Chehalis R,2017,Pink,Fall,Fry,Stewardship,150000
+29B,Serpentine R,Serpentine R,2017,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2017,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2017,Coho,Fall,Fry,Stewardship,75000
+28,Seymour R,Seymour R/GSMN,2017,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2017,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2017,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2017,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Seymour R,Cheakamus R,2017,Pink,Fall,Fry,Rebuilding,450000
+28,Seymour R,Seymour R/GSMN,2017,Pink,Fall,Fry,Stewardship,450000
+28,Tenderfoot Cr,Ashlu Cr,2017,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2017,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2017,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2017,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2017,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2017,Chinook,Summer,Smolt 1+,Rebuilding,30000
+29G,Tenderfoot Cr,Portage Cr,2017,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Shovelnose Cr,2017,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Shovelnose Cr,2017,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Chum,Fall,Fry,Rebuilding,400000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Chum,Fall,Seapen,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2017,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2017,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2017,Coho,Fall,Smolt 1+,Harvest,100000
+28,Tenderfoot Cr,Cheakamus R,2017,Pink,Fall,Fry,Harvest,250000
+29D,Weaver Sp Ch,Weaver Sp Ch,2017,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2017,Pink,Fall,Fry,Harvest,2500000
+29D,Weaver Sp Ch,Weaver Sp Ch,2017,Sockeye,Fall,Fry,Harvest,46800000
+120,Snettisham,Tahltan Lk,2017,Sockeye,Summer,Fry,Harvest,4000000
+130,Snettisham,Tatsamenie Lk,2017,Sockeye,Summer,Fry,Harvest,1375000
+130,Snettisham,Tatsamenie Lk,2017,Sockeye,Summer,Fry,Assessment/Harvest,225000
+130,Snettisham,Trapper Lk,2017,Sockeye,Summer,Fry,Harvest,200000
+29F,Deadman R,Deadman R,2018,Coho,Fall,Fry,Conservation,10000
+29F,Deadman R,Deadman R,2018,Coho,Fall,Smolt 1+,Conservation,20000
+29F,Gates Sp Ch,Gates Cr,2018,Sockeye,Summer,Fry,Harvest,13500000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2018,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2018,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2018,Chinook,Summer,Smolt 0+,Assessment,530000
+29K,Shuswap R,Shuswap R Middle,2018,Chinook,Summer,Smolt 0+,Assessment,150000
+29F,Spius Cr,Coldwater R,2018,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2018,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2018,Chinook,Spring,Smolt 1+,Assessment/Rebuilding,200000
+29F,Spius Cr,Nicola R,2018,Chinook,Spring,Fry,Assessment/Rebuilding,50000
+29K,Spius Cr,Salmon R/TOMF,2018,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2018,Chinook,Spring,Fry,Rebuilding,55000
+29G,Spius Cr,Chilko R,2018,Chinook,Summer,Fry,Assessment,50000
+29F,Spius Cr,Coldwater R,2018,Coho,Fall,Fry,Assessment/Conservation,25000
+29F,Spius Cr,Coldwater R,2018,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Eagle R,2018,Coho,Fall,Fry,Assessment/Conservation,20000
+29K,Spius Cr,Eagle R,2018,Coho,Fall,Smolt 1+,Assessment/Conservation,65000
+29K,Spius Cr,Salmon R/TOMF,2018,Coho,Fall,Fry,Conservation,30000
+29K,Spius Cr,Salmon R/TOMF,2018,Coho,Fall,Smolt 1+,Conservation,25000
+29J,Thompson R N,Dunn Cr,2018,Coho,Fall,Smolt 1+,Stewardship,30000
+7,Emily Lk,Tankeeah R,2018,Sockeye,Summer,Fry,Harvest,80000
+4,Fulton R,Fulton Ch #1,2018,Sockeye,Summer,Fry,Harvest,3700000
+4,Fulton R,Fulton Ch #2,2018,Sockeye,Summer,Fry,Harvest,72500000
+4,Fulton R,Fulton R,2018,Sockeye,Summer,Fry,Harvest,37500000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2018,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2018,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2018,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2018,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2018,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2018,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2018,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2018,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2018,Coho,Fall,Smolt 1+,Harvest,500000
+1,Old Massett,Yakoun R,2018,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Old Massett,Mamin R,2018,Coho,Fall,Fry,Harvest,36000
+1,Old Massett,Yakoun R,2018,Coho,Fall,Smolt 1+,Harvest,90000
+4,Pinkut Cr,Pinkut Ch,2018,Sockeye,Summer,Fry,Harvest,36500000
+4,Pinkut Cr,Pinkut Cr,2018,Sockeye,Summer,Fry,Harvest,3750000
+8,Snootli Cr,Atnarko R Low,2018,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2018,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Nusatsum R,2018,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Salloomt R,2018,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Fish Cr+Airport Ch,2018,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2018,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2018,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2018,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2018,Sockeye,Summer,Fry,Rebuilding,86000
+8,Snootli Cr,Lonesome Lk,2018,Sockeye,Summer,Fry,Rebuilding,86000
+4,Terrace,Kitsum Abv Canyon,2018,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2018,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2018,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2018,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2018,Chinook,Spring,Fry,Rebuilding,35000
+4,Toboggan Cr,Toboggan Cr,2018,Coho,Summer,Fry,Stewardship,15000
+4,Toboggan Cr,Toboggan Cr,2018,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2018,Sockeye,Fall,Fry,Harvest,45000
+14,Big Qualicum R,Big Qualicum R,2018,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2018,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2018,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2018,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2018,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2018,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2018,Coho,Fall,Smolt 1+,Harvest,20000
+16,Chapman Cr,Chapman Cr,2018,Pink,Fall,Fry,Rebuilding,250000
+24,Clayoquot,Kennedy R Low,2018,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2018,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2018,Chinook,Fall,Seapen,Harvest,350000
+25,Conuma R,Conuma R,2018,Chinook,Fall,Seapen,Harvest,2200000
+25,Conuma R,Conuma R,2018,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Gold R,2018,Chinook,Fall,Smolt 0+,Rebuilding,350000
+25,Conuma R,Conuma R,2018,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Conuma R,2018,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2018,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2018,Coho,Fall,Seapen,Harvest,150000
+18,Cowichan R,Cowichan R,2018,Chinook,Fall,Smolt 0+,Assessment/Conservation,700000
+14,Englishman Enh,Englishman R,2018,Chinook,Fall,Fry,Rebuilding,100000
+14,Englishman Enh,Englishman R,2018,Pink,Fall,Fry,Harvest,950000
+14,Fanny Bay/GSVI,Rosewall Cr,2018,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2018,Chum,Fall,Fry,Stewardship,45000
+14,Fanny Bay/GSVI,Rosewall Cr,2018,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2018,Coho,Fall,Smolt 1+,Harvest,10000
+14,French Cr,French Cr,2018,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2018,Coho,Fall,Fry,Stewardship,30000
+13,Gillard Pass,Phillips R,2018,Chinook,Fall,Smolt 0+,Assessment,150000
+13,Gillard Pass,Ritchie Pd S,2018,Coho,Fall,Fry,Stewardship,100
+13,Gillard Pass,Ritchie Pd S,2018,Coho,Fall,Fry,Stewardship,500
+13,Gillard Pass,Ritchie Pd S,2018,Coho,Fall,Fry,Stewardship,8000
+19,Goldstream R,Goldstream R,2018,Chum,Fall,Fry,Harvest,300000
+19,Goldstream R,Goldstream R,2018,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2018,Chum,Fall,Eyed Egg,Stewardship,25000
+19,Goldstream R,Goldstream R,2018,Chum,Fall,Fry,Stewardship,25000
+19,Goldstream R,Craigflower Cr,2018,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2018,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2018,Coho,Fall,Fry,Rebuilding,5000
+19,Goldstream R,Goldstream R,2018,Coho,Fall,Smolt 1+,Rebuilding,10000
+12,Gwa'ni,Nimpkish R,2018,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2018,Chum,Fall,Fry,Rebuilding,2000000
+17,Halalt Band,Chemainus R,2018,Chum,Fall,Fry,Rebuilding,100000
+23,Huu-ay-aht,Sugsaw Cr,2018,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2018,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2018,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,L Qualicum R,L Qualicum R,2018,Chum,Fall,Fry,Harvest,37500000
+14,Little R/GSVI,Little R/GSVI,2018,Chum,Fall,Fry,Rebuilding,90000
+14,Little R/GSVI,Little R/GSVI,2018,Coho,Fall,Smolt 1+,Rebuilding,20000
+17,Nanaimo R,Chemainus R,2018,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2018,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2018,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2018,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Nanaimo R,2018,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2018,Coho,Fall,Fry,Rebuilding,20000
+17,Nanaimo R,Nanaimo R,2018,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2018,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2018,Coho,Fall,Fry,Rebuilding,30000
+17,Nanaimo R,Nanaimo R,2018,Coho,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2018,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2018,Pink,Fall,Fry,Harvest,60000
+17,Nanaimo R,Nanaimo R,2018,Pink,Fall,Seapen,Harvest,200000
+13,Nile Cr,Quinsam R,2018,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2018,Chinook,Fall,Seapen,Harvest,2000000
+22,Nitinat R,Nitinat R,2018,Chinook,Fall,Seapen,Harvest,1500000
+22,Nitinat R,Nitinat R,2018,Chinook,Fall,Seapen,Harvest,500000
+23,Nitinat R,Sarita R,2018,Chinook,Fall,Fry,Rebuilding,250000
+23,Nitinat R,Sarita R,2018,Chinook,Fall,Smolt 0+,Rebuilding,250000
+22,Nitinat R,Nitinat R,2018,Chum,Fall,Seapen,Harvest,20000000
+22,Nitinat R,Nitinat R,2018,Chum,Fall,Fry,Harvest,10000000
+22,Nitinat R,Nitinat R,2018,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2018,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2018,Coho,Fall,Smolt 1+,Harvest,100000
+13,Orford R,Orford R,2018,Chum,Summer,Fry,Rebuilding,1000000
+14,Oyster R,Oyster R,2018,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2018,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2018,Coho,Fall,Fry,Stewardship,40000
+14,Oyster R,Oyster R,2018,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2018,Pink,Fall,Fry,Harvest,990000
+27,P Hardy/Marble,Marble R,2018,Chinook,Fall,Smolt 0+,Harvest,910000
+27,P Hardy/Marble,Marble R,2018,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2018,Coho,Fall,Smolt 1+,Harvest,130000
+27,P Hardy/Marble,Washlawlis R,2018,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Quatse R,2018,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2018,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2018,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2018,Coho,Fall,Smolt 1+,Harvest,50000
+12,P Hardy/Quatse,Cluxewe R,2018,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2018,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2018,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2018,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2018,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2018,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2018,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2018,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2018,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2018,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2018,Chinook,Summer,Smolt 0+,Assessment/Conservation,1450000
+14,Puntledge R,Puntledge R,2018,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2018,Coho,Fall,Fry,Rebuilding,500000
+14,Puntledge R,Puntledge R,2018,Coho,Fall,Fry,Rebuilding,50000
+14,Puntledge R,Puntledge R,2018,Coho,Fall,Smolt 1+,Harvest,100000
+14,Puntledge R,Puntledge R,2018,Coho,Fall,Fry,Rebuilding,190000
+14,Puntledge R,Trent R,2018,Coho,Fall,Fry,Stewardship,30000
+14,Puntledge R,Trent R,2018,Coho,Fall,Fry,Stewardship,20000
+13,Quinsam R,Quinsam R,2018,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2018,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2018,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2018,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Quinsam R,2018,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2018,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2018,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2018,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2018,Pink,Fall,Eyed Egg,Stewardship,2000
+13,Quinsam R,Quinsam R,2018,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2018,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2018,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2018,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2018,Chinook,Fall,Smolt 1+,Assessment,200000
+23,Robertson Cr,Robertson Cr,2018,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2018,Sockeye,Summer,Fry,Conservation,1000000
+20,San Juan R,San Juan R,2018,Chinook,Fall,Seapen,Harvest,40000
+20,San Juan R,San Juan R,2018,Chinook,Fall,Smolt 0+,Rebuilding,460000
+13,Sayward F&G,Salmon R/JNST,2018,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2018,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2018,Chum,Fall,Fry,Harvest,1400000
+15,Sliammon R,Sliammon R,2018,Coho,Fall,Fry,Rebuilding,60000
+22,Sooke R,Nitinat R,2018,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2018,Chinook,Fall,Smolt 0+,Stewardship,212500
+20,Sooke R,Sooke R,2018,Chinook,Fall,Smolt 0+,Stewardship,225000
+20,Sooke R,Demamiel Cr,2018,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2018,Chinook,Fall,Seapen,Rebuilding,300000
+23,Thornton Cr,Thornton Cr,2018,Chinook,Fall,Smolt 0+,Harvest,100000
+23,Thornton Cr,Toquart R,2018,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2018,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Thornton Cr,2018,Chum,Fall,Fry,Stewardship,100000
+23,Thornton Cr,Toquart R,2018,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2018,Chum,Fall,Fry,Rebuilding,50000
+23,Thornton Cr,Thornton Cr,2018,Coho,Fall,Fry,Stewardship,10000
+24,Tofino,Bedwell R,2018,Chinook,Fall,Seapen,Rebuilding,85000
+24,Tofino,Cypre R,2018,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2018,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Tranquil Cr,2018,Chum,Fall,Fry,Rebuilding,250000
+24,Tofino,Cypre R,2018,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kennedy R Up,2018,Coho,Fall,Fry,Rebuilding,35000
+24,Tofino,Kootowis Cr,2018,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2018,Pink,Fall,Fry,Rebuilding,900000
+29C,Alouette R,Alouette R S,2018,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2018,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2018,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2018,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2018,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2018,Coho,Fall,Smolt 1+,Harvest,25000
+29E,Capilano R,Chilliwack R,2018,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2018,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2018,Chum,Fall,Fry,Rebuilding,30000
+28,Capilano R,Capilano R,2018,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2018,Coho,Fall,Seapen,Harvest,25000
+28,Capilano R,Capilano R,2018,Coho,Fall,Fry,Rebuilding,3000
+29D,Chehalis R,Harrison R,2018,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2018,Chinook,Summer,Smolt 0+,Harvest,260000
+29G,Chehalis R,Chilko R,2018,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,65000
+29D,Chehalis R,Chehalis R,2018,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2018,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2018,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2018,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Chehalis R,2018,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2018,Coho,Fall,Smolt 1+,Harvest,400000
+29E,Chilliwack R,Chilliwack R,2018,Chinook,Fall,Smolt 0+,Assessment/Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2018,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2018,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2018,Chum,Fall,Fry,Rebuilding,100000
+29E,Chilliwack R,Chilliwack R,2018,Chum,Fall,Fry,Harvest,1800000
+29E,Chilliwack R,Chilliwack R,2018,Chum,Fall,Fry,Rebuilding,500000
+29E,Chilliwack R,Chilliwack R,2018,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2018,Coho,Fall,Fry,Harvest,100000
+29F,Chilliwack R,Coldwater R,2018,Coho,Fall,Smolt 1+,Assessment/Conservation,120000
+29G,Inch Cr,Chilko R,2018,Chinook,Summer,Smolt 1+,Assessment/Rebuilding,32000
+29D,Inch Cr,Inch Cr,2018,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2018,Chum,Fall,Fry,Rebuilding,250000
+29D,Inch Cr,Inch Cr,2018,Chum,Fall,Fry,Assessment/Rebuilding,750000
+29D,Inch Cr,Inch Cr,2018,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2018,Coho,Fall,Smolt 1+,Assessment/Harvest,150000
+29B,Inch Cr,Nicomekl R,2018,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2018,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2018,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2018,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2018,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2018,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2018,Sockeye,Fall,Fry,Conservation,50000
+29D,Inch Sockeye Satellite,Cultus Lk,2018,Sockeye,Fall,Smolt 1+,Conservation,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2018,Sockeye,Summer,Fry,Harvest,1000000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Fry,Rebuilding,45000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Eyed Egg,Rebuilding,10000
+29C,Kanaka Cr,Kanaka Cr,2018,Chum,Fall,Fry,Stewardship,30000
+29C,Kanaka Cr,Kanaka Cr,2018,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2018,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2018,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2018,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2018,Coho,Fall,Smolt 1+,Rebuilding,1000
+29B,L Campbell R,L Campbell R,2018,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2018,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2018,Coho,Fall,Fry,Stewardship,10000
+29B,L Campbell R,L Campbell R,2018,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2018,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2018,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2018,Coho,Fall,Fry,Stewardship,40000
+29B,Serpentine R,Serpentine R,2018,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2018,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2018,Coho,Fall,Fry,Stewardship,75000
+28,Seymour R,Seymour R/GSMN,2018,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2018,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2018,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2018,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Tenderfoot Cr,Ashlu Cr,2018,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2018,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2018,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2018,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2018,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2018,Chinook,Summer,Smolt 1+,Rebuilding,30000
+29G,Tenderfoot Cr,Portage Cr,2018,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Shovelnose Cr,2018,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Shovelnose Cr,2018,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Chum,Fall,Fry,Rebuilding,400000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2018,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2018,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2018,Coho,Fall,Smolt 1+,Harvest,100000
+29D,Weaver Sp Ch,Weaver Sp Ch,2018,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2018,Sockeye,Fall,Fry,Harvest,46800000
+120,Snettisham,Tahltan Lk,2018,Sockeye,Summer,Fry,Harvest,4000000
+130,Snettisham,Tatsamenie Lk,2018,Sockeye,Summer,Fry,Harvest,1375000
+130,Snettisham,Tatsamenie Lk,2018,Sockeye,Summer,Fry,Assessment/Harvest,225000
+130,Snettisham,Trapper Lk,2018,Sockeye,Summer,Fry,Harvest,200000
+29F,Deadman R,Deadman R,2019,Coho,Fall,Fry,Conservation,9000
+29F,Deadman R,Deadman R,2019,Coho,Fall,Smolt 1+,Conservation,19000
+29F,Gates Sp Ch,Gates Cr,2019,Sockeye,Summer,Fry,Harvest,13500000
+29G,Horsefly Sp Ch,Horsefly Ch,2019,Sockeye,Summer,Fry,Harvest,22500000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2019,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2019,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2019,Chinook,Summer,Smolt 0+,Assessment,550000
+29K,Shuswap R,Shuswap R Low,2019,Chinook,Summer,Eyed Egg,Assessment,5000
+29K,Shuswap R,Shuswap R Middle,2019,Chinook,Summer,Smolt 0+,Assessment,150000
+29I,Shuswap R,Bowron R,2019,Sockeye,Summer,Fry,Rebuilding,175000
+29I,Shuswap R,Stuart R,2019,Sockeye,Summer,Fry,Rebuilding,175000
+29F,Spius Cr,Bonaparte R,2019,Chinook,Spring,Fry,Conservation,50000
+29F,Spius Cr,Coldwater R,2019,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2019,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2019,Chinook,Spring,Smolt 1+,Assessment,200000
+29F,Spius Cr,Nicola R,2019,Chinook,Spring,Fry,Assessment,50000
+29K,Spius Cr,Salmon R/TOMF,2019,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2019,Chinook,Spring,Fry,Rebuilding,55000
+29G,Spius Cr,Chilko R,2019,Chinook,Summer,Fry,Assessment,50000
+29F,Spius Cr,Nahatlatch R,2019,Chinook,Summer,Fry,Conservation,50000
+29F,Spius Cr,Coldwater R,2019,Coho,Fall,Fry,Assessment,25000
+29F,Spius Cr,Coldwater R,2019,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Eagle R,2019,Coho,Fall,Fry,Assessment,20000
+29K,Spius Cr,Eagle R,2019,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Salmon R/TOMF,2019,Coho,Fall,Fry,Conservation,30000
+29K,Spius Cr,Salmon R/TOMF,2019,Coho,Fall,Smolt 1+,Conservation,25000
+29J,Thompson R N,Dunn Cr,2019,Coho,Fall,Smolt 1+,Stewardship,30000
+7,Emily Lk,Tankeeah R,2019,Sockeye,Summer,Fry,Harvest,80000
+4,Fulton R,Fulton Ch #1,2019,Sockeye,Summer,Fry,Harvest,3700000
+4,Fulton R,Fulton Ch #2,2019,Sockeye,Summer,Fry,Harvest,72500000
+4,Fulton R,Fulton R,2019,Sockeye,Summer,Fry,Harvest,37500000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2019,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2019,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2019,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2019,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2019,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2019,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2019,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2019,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2019,Coho,Fall,Smolt 1+,Harvest,500000
+1,Old Massett,Yakoun R,2019,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Old Massett,Mamin R,2019,Coho,Fall,Fry,Harvest,36000
+1,Old Massett,Yakoun R,2019,Coho,Fall,Smolt 1+,Harvest,90000
+4,Pinkut Cr,Pinkut Ch,2019,Sockeye,Summer,Fry,Harvest,36500000
+4,Pinkut Cr,Pinkut Cr,2019,Sockeye,Summer,Fry,Harvest,3750000
+8,Snootli Cr,Atnarko R Low,2019,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2019,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Nusatsum R,2019,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Salloomt R,2019,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Fish Cr+Airport Ch,2019,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Salloomt R,2019,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2019,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2019,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2019,Sockeye,Summer,Fry,Rebuilding,86000
+8,Snootli Cr,Lonesome Lk,2019,Sockeye,Summer,Fry,Rebuilding,86000
+4,Terrace,Kitsum Abv Canyon,2019,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2019,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2019,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2019,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2019,Chinook,Spring,Fry,Rebuilding,35000
+4,Toboggan Cr,Toboggan Cr,2019,Coho,Summer,Fry,Stewardship,15000
+4,Toboggan Cr,Toboggan Cr,2019,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2019,Sockeye,Fall,Fry,Harvest,45000
+14,Big Qualicum R,Big Qualicum R,2019,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2019,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2019,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2019,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Chapman Cr,2019,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2019,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2019,Coho,Fall,Smolt 1+,Harvest,20000
+28,Chapman Cr,Cheakamus R,2019,Pink,Fall,Fry,Harvest,100000
+24,Clayoquot,Kennedy R Low,2019,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2019,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2019,Chinook,Fall,Seapen,Harvest,200000
+25,Conuma R,Conuma R,2019,Chinook,Fall,Seapen,Harvest,2200000
+25,Conuma R,Conuma R,2019,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Gold R,2019,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Conuma R,2019,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Conuma R,2019,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2019,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2019,Coho,Fall,Seapen,Harvest,150000
+18,Cowichan R,Cowichan R,2019,Chinook,Fall,Smolt 0+,Assessment,700000
+14,Englishman Enh,Englishman R,2019,Chinook,Fall,Fry,Rebuilding,100000
+14,Fanny Bay/GSVI,Rosewall Cr,2019,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2019,Chum,Fall,Fry,Stewardship,45000
+14,Fanny Bay/GSVI,Rosewall Cr,2019,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2019,Coho,Fall,Smolt 1+,Harvest,10000
+14,French Cr,French Cr,2019,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2019,Coho,Fall,Fry,Stewardship,30000
+13,Gillard Pass,Phillips R,2019,Chinook,Fall,Smolt 0+,Assessment,100000
+13,Gillard Pass,Ritchie Pd S,2019,Coho,Fall,Fry,Stewardship,100
+13,Gillard Pass,Ritchie Pd S,2019,Coho,Fall,Fry,Stewardship,500
+13,Gillard Pass,Ritchie Pd S,2019,Coho,Fall,Fry,Stewardship,8000
+19,Goldstream R,Goldstream R,2019,Chum,Fall,Fry,Harvest,300000
+19,Goldstream R,Goldstream R,2019,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2019,Chum,Fall,Fry,Stewardship,25000
+19,Goldstream R,Craigflower Cr,2019,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2019,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2019,Coho,Fall,Fry,Rebuilding,5000
+19,Goldstream R,Goldstream R,2019,Coho,Fall,Fry,Stewardship,5000
+19,Goldstream R,Goldstream R,2019,Coho,Fall,Smolt 1+,Rebuilding,10000
+19,Goldstream R,Goldstream R,2019,Coho,Fall,Fry,Stewardship,10000
+12,Gwa'ni,Nimpkish R,2019,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2019,Chum,Fall,Fry,Rebuilding,2000000
+12,Gwa'ni,Nimpkish R,2019,Pink,Fall,Fry,Stewardship,100000
+17,Halalt Band,Chemainus R,2019,Chum,Fall,Fry,Rebuilding,100000
+23,Huu-ay-aht,Sugsaw Cr,2019,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2019,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2019,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,Little R/GSVI,Little R/GSVI,2019,Chum,Fall,Fry,Rebuilding,90000
+14,Little R/GSVI,Little R/GSVI,2019,Coho,Fall,Smolt 1+,Rebuilding,20000
+17,Nanaimo R,Chemainus R,2019,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2019,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2019,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2019,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Nanaimo R,2019,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2019,Coho,Fall,Fry,Rebuilding,20000
+17,Nanaimo R,Nanaimo R,2019,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2019,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2019,Coho,Fall,Fry,Rebuilding,30000
+17,Nanaimo R,Nanaimo R,2019,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2019,Pink,Fall,Seapen,Harvest,200000
+13,Nile Cr,Quinsam R,2019,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2019,Chinook,Fall,Seapen,Harvest,2000000
+22,Nitinat R,Nitinat R,2019,Chinook,Fall,Seapen,Harvest,1500000
+22,Nitinat R,Nitinat R,2019,Chinook,Fall,Seapen,Harvest,500000
+23,Nitinat R,Sarita R,2019,Chinook,Fall,Fry,Rebuilding,250000
+23,Nitinat R,Sarita R,2019,Chinook,Fall,Smolt 0+,Rebuilding,250000
+22,Nitinat R,Nitinat R,2019,Chum,Fall,Seapen,Harvest,15000000
+22,Nitinat R,Nitinat R,2019,Chum,Fall,Fry,Harvest,15000000
+22,Nitinat R,Nitinat R,2019,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2019,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2019,Coho,Fall,Smolt 1+,Harvest,100000
+13,Orford R,Orford R,2019,Chum,Summer,Fry,Rebuilding,1000000
+14,Oyster R,Oyster R,2019,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2019,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2019,Coho,Fall,Fry,Stewardship,40000
+14,Oyster R,Oyster R,2019,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2019,Pink,Fall,Fry,Rebuilding,2250000
+27,P Hardy/Marble,Marble R,2019,Chinook,Fall,Smolt 0+,Harvest,910000
+27,P Hardy/Marble,Marble R,2019,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2019,Coho,Fall,Smolt 1+,Harvest,130000
+12,P Hardy/Quatse,Quatse R,2019,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2019,Coho,Fall,Smolt 1+,Harvest,100000
+12,P Hardy/Quatse,Quatse R,2019,Coho,Fall,Smolt 1+,Harvest,100000
+27,P Hardy/Quatse,Waukwaas Cr,2019,Coho,Fall,Smolt 1+,Harvest,50000
+12,P Hardy/Quatse,Cluxewe R,2019,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2019,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2019,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2019,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2019,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2019,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2019,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2019,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2019,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2019,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2019,Chinook,Summer,Smolt 0+,Assessment/Conservation,500000
+14,Puntledge R,Puntledge R,2019,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2019,Coho,Fall,Fry,Rebuilding,500000
+14,Puntledge R,Puntledge R,2019,Coho,Fall,Fry,Rebuilding,50000
+14,Puntledge R,Puntledge R,2019,Coho,Fall,Smolt 1+,Harvest,100000
+14,Puntledge R,Puntledge R,2019,Coho,Fall,Fry,Rebuilding,190000
+14,Puntledge R,Trent R,2019,Coho,Fall,Fry,Stewardship,30000
+14,Puntledge R,Trent R,2019,Coho,Fall,Fry,Stewardship,20000
+13,Quinsam R,Quinsam R,2019,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2019,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2019,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2019,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Quinsam R,2019,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2019,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2019,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2019,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2019,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Nahmint R,2019,Chinook,Fall,Smolt 1+,Conservation,10000
+23,Robertson Cr,Robertson Cr,2019,Chinook,Fall,Seapen,Assessment/Harvest,200000
+23,Robertson Cr,Robertson Cr,2019,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2019,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2019,Sockeye,Summer,Fry,Conservation,700000
+16,Rosewall Cr,Sakinaw Lk,2019,Sockeye,Summer,Smolt 1+,Conservation,25000
+20,San Juan R,San Juan R,2019,Chinook,Fall,Smolt 0+,Rebuilding,500000
+13,Sayward F&G,Salmon R/JNST,2019,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2019,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2019,Chum,Fall,Fry,Harvest,1400000
+15,Sliammon R,Sliammon R,2019,Coho,Fall,Fry,Rebuilding,60000
+22,Sooke R,Nitinat R,2019,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2019,Chinook,Fall,Smolt 0+,Stewardship,212500
+20,Sooke R,Sooke R,2019,Chinook,Fall,Smolt 0+,Stewardship,225000
+20,Sooke R,Demamiel Cr,2019,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2019,Chinook,Fall,Seapen,Rebuilding,300000
+23,Thornton Cr,Thornton Cr,2019,Chinook,Fall,Smolt 0+,Harvest,100000
+23,Thornton Cr,Toquart R,2019,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2019,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Thornton Cr,2019,Chum,Fall,Fry,Stewardship,100000
+23,Thornton Cr,Toquart R,2019,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2019,Chum,Fall,Fry,Rebuilding,50000
+24,Thornton Cr,Kennedy R Up,2019,Coho,Fall,Fry,Rebuilding,35000
+23,Thornton Cr,Thornton Cr,2019,Coho,Fall,Smolt 1+,Stewardship,10000
+24,Tofino,Bedwell R,2019,Chinook,Fall,Seapen,Rebuilding,85000
+24,Tofino,Cypre R,2019,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2019,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Tranquil Cr,2019,Chum,Fall,Fry,Rebuilding,250000
+24,Tofino,Cypre R,2019,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2019,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2019,Pink,Fall,Fry,Harvest,900000
+29C,Alouette R,Alouette R S,2019,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2019,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2019,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2019,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2019,Chum,Fall,Eyed Egg,Stewardship,20000
+29C,Alouette R,Alouette R S,2019,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2019,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2019,Pink,Fall,Fry,Rebuilding,125000
+29E,Capilano R,Chilliwack R,2019,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2019,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2019,Chum,Fall,Fry,Rebuilding,30000
+28,Capilano R,Capilano R,2019,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2019,Coho,Fall,Fry,Rebuilding,3000
+28,Capilano R,Capilano R,2019,Pink,Fall,Fry,Rebuilding,180000
+28,Capilano R,Cheakamus R,2019,Pink,Fall,Fry,Harvest,165000
+28,Capilano R,Cheakamus R,2019,Pink,Fall,Fry,Stewardship,90000
+29D,Chehalis R,Harrison R,2019,Chinook,Fall,Smolt 0+,Assessment,300000
+29D,Chehalis R,Chehalis R,2019,Chinook,Summer,Smolt 0+,Harvest,325000
+29G,Chehalis R,Chilko R,2019,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Chehalis R,Maria Sl,2019,Chinook,Summer,Smolt 0+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2019,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2019,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2019,Chum,Fall,Fry,Stewardship,5000
+29D,Chehalis R,Chehalis R,2019,Chum,Fall,Fry,Stewardship,100000
+29D,Chehalis R,Chehalis R,2019,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Chehalis R,2019,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2019,Coho,Fall,Smolt 1+,Harvest,400000
+29D,Chehalis R,Chehalis R,2019,Pink,Fall,Fry,Harvest,2000000
+29D,Chehalis R,Chehalis R,2019,Pink,Fall,Fry,Rebuilding,150000
+29D,Chehalis R,Chehalis R,2019,Pink,Fall,Fry,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2019,Chinook,Fall,Smolt 0+,Assessment/Harvest,2000000
+29E,Chilliwack R,Chilliwack R,2019,Chinook,Spring,Smolt 0+,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2019,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2019,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2019,Chum,Fall,Fry,Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2019,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2019,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2019,Coho,Fall,Fry,Harvest,100000
+29F,Chilliwack R,Coldwater R,2019,Coho,Fall,Smolt 1+,Assessment/Conservation,120000
+29G,Inch Cr,Chilko R,2019,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Inch Cr,Inch Cr,2019,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2019,Chum,Fall,Fry,Rebuilding,250000
+29D,Inch Cr,Inch Cr,2019,Chum,Fall,Fry,Assessment/Rebuilding,750000
+29D,Inch Cr,Inch Cr,2019,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2019,Coho,Fall,Smolt 1+,Harvest,150000
+29B,Inch Cr,Nicomekl R,2019,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2019,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2019,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2019,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2019,Coho,Fall,Smolt 1+,Harvest,150000
+29C,Inch Sockeye Satellite,Coquitlam R,2019,Sockeye,Fall,Smolt 1+,Stewardship,10000
+29D,Inch Sockeye Satellite,Cultus Lk,2019,Sockeye,Fall,Fry,Conservation,25000
+29D,Inch Sockeye Satellite,Cultus Lk,2019,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2019,Sockeye,Fall,Smolt 1+,Conservation,50000
+29D,Inch Sockeye Satellite,Weaver Sp Ch,2019,Sockeye,Fall,Smolt 1+,Rebuilding,25000
+29C,Inch Sockeye Satellite,Pitt R Up,2019,Sockeye,Summer,Fry,Harvest,500000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Fry,Rebuilding,150000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Fry,Rebuilding,45000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Fry,Rebuilding,25000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Eyed Egg,Rebuilding,10000
+29C,Kanaka Cr,Kanaka Cr,2019,Chum,Fall,Fry,Stewardship,30000
+29C,Kanaka Cr,Kanaka Cr,2019,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2019,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2019,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2019,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2019,Coho,Fall,Smolt 1+,Rebuilding,1000
+29C,Kanaka Cr,Kanaka Cr,2019,Pink,Fall,Fry,Rebuilding,130000
+29B,L Campbell R,L Campbell R,2019,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2019,Coho,Fall,Fry,Stewardship,5000
+29B,L Campbell R,L Campbell R,2019,Coho,Fall,Fry,Stewardship,10000
+29B,L Campbell R,L Campbell R,2019,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2019,Chinook,Fall,Smolt 0+,Stewardship,45000
+29B,Nicomekl R,Nicomekl R,2019,Chum,Fall,Fry,Rebuilding,150000
+29B,Nicomekl R,Nicomekl R,2019,Coho,Fall,Fry,Stewardship,40000
+29D,Nicomekl R,Chehalis R,2019,Pink,Fall,Fry,Stewardship,150000
+29B,Serpentine R,Serpentine R,2019,Chinook,Fall,Smolt 0+,Stewardship,100000
+29B,Serpentine R,Serpentine R,2019,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2019,Coho,Fall,Fry,Stewardship,75000
+29B,Serpentine R,Serpentine R,2019,Coho,Fall,Smolt 1+,Stewardship,5000
+28,Seymour R,Seymour R/GSMN,2019,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2019,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2019,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2019,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Seymour R,Cheakamus R,2019,Pink,Fall,Fry,Rebuilding,450000
+28,Seymour R,Seymour R/GSMN,2019,Pink,Fall,Fry,Stewardship,450000
+28,Tenderfoot Cr,Ashlu Cr,2019,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2019,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2019,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2019,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2019,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2019,Chinook,Summer,Smolt 1+,Rebuilding,30000
+29G,Tenderfoot Cr,Portage Cr,2019,Chinook,Summer,Smolt 1+,Conservation,50000
+28,Tenderfoot Cr,Shovelnose Cr,2019,Chinook,Summer,Fry,Rebuilding,5000
+28,Tenderfoot Cr,Shovelnose Cr,2019,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Shovelnose Cr,2019,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Chum,Fall,Fry,Rebuilding,400000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2019,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2019,Coho,Fall,Smolt 1+,Harvest,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2019,Coho,Fall,Smolt 1+,Harvest,100000
+28,Tenderfoot Cr,Cheakamus R,2019,Pink,Fall,Eyed Egg,Stewardship,20000
+28,Tenderfoot Cr,Cheakamus R,2019,Pink,Fall,Fry,Harvest,250000
+29D,Weaver Sp Ch,Weaver Sp Ch,2019,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2019,Pink,Fall,Fry,Harvest,2500000
+29D,Weaver Sp Ch,Weaver Sp Ch,2019,Sockeye,Fall,Fry,Harvest,46800000
+120,Snettisham,Tahltan Lk,2019,Sockeye,Summer,Fry,Harvest,4000000
+130,Snettisham,Tatsamenie Lk,2019,Sockeye,Summer,Fry,Harvest,1375000
+130,Snettisham,Tatsamenie Lk,2019,Sockeye,Summer,Fry,Assessment/Harvest,225000
+130,Snettisham,Trapper Lk,2019,Sockeye,Summer,Fry,Harvest,200000
+29F,Deadman R,Deadman R,2020,Coho,Fall,Fry,Conservation,9000
+29F,Deadman R,Deadman R,2020,Coho,Fall,Smolt 1+,Conservation,19000
+29F,Gates Sp Ch,Gates Cr,2020,Sockeye,Summer,Fry,Harvest,13500000
+29G,Horsefly Sp Ch,Horsefly Ch,2020,Sockeye,Summer,Fry,Harvest,22500000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2020,Chinook,Summer,Fry,Stewardship,50000
+29I,Nadina Sp Ch,Nadina R,2020,Sockeye,Summer,Fry,Harvest,22500000
+29K,Shuswap R,Shuswap R Low,2020,Chinook,Summer,Smolt 0+,Assessment,550000
+29K,Shuswap R,Shuswap R Low,2020,Chinook,Summer,Eyed Egg,Assessment,5000
+29K,Shuswap R,Shuswap R Middle,2020,Chinook,Summer,Smolt 0+,Assessment,150000
+29I,Shuswap R,Stuart R,2020,Sockeye,Spring,Fry,Rebuilding,175000
+29I,Shuswap R,Bowron R,2020,Sockeye,Summer,Fry,Rebuilding,175000
+29F,Spius Cr,Bonaparte R,2020,Chinook,Spring,Fry,Conservation,50000
+29F,Spius Cr,Coldwater R,2020,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2020,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2020,Chinook,Spring,Smolt 1+,Assessment,200000
+29F,Spius Cr,Nicola R,2020,Chinook,Spring,Fry,Assessment,50000
+29K,Spius Cr,Salmon R/TOMF,2020,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2020,Chinook,Spring,Fry,Rebuilding,55000
+29G,Spius Cr,Chilko R,2020,Chinook,Summer,Fry,Assessment,50000
+29F,Spius Cr,Nahatlatch R,2020,Chinook,Summer,Fry,Conservation,50000
+29F,Spius Cr,Coldwater R,2020,Coho,Fall,Fry,Assessment,25000
+29F,Spius Cr,Coldwater R,2020,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Eagle R,2020,Coho,Fall,Fry,Assessment,20000
+29K,Spius Cr,Eagle R,2020,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Salmon R/TOMF,2020,Coho,Fall,Fry,Conservation,5000
+29K,Spius Cr,Salmon R/TOMF,2020,Coho,Fall,Smolt 1+,Conservation,25000
+29J,Thompson R N,Dunn Cr,2020,Coho,Fall,Smolt 1+,Stewardship,30000
+7,Emily Lk,Tankeeah R,2020,Sockeye,Summer,Fry,Harvest,80000
+4,Fulton R,Fulton Ch #1,2020,Sockeye,Summer,Fry,Harvest,3700000
+4,Fulton R,Fulton Ch #2,2020,Sockeye,Summer,Fry,Harvest,72500000
+4,Fulton R,Fulton R,2020,Sockeye,Summer,Fry,Harvest,37500000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2020,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2020,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2020,Coho,Fall,Seapen,Harvest,43200
+7,Kitasoo Cr,Kitasoo Cr,2020,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2020,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2020,Chinook,Spring,Smolt 0+,Harvest,2000000
+6,Kitimat R,Kitimat R,2020,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2020,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2020,Coho,Fall,Smolt 1+,Harvest,500000
+1,Old Massett,Yakoun R,2020,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Old Massett,Mamin R,2020,Coho,Fall,Fry,Harvest,36000
+1,Old Massett,Yakoun R,2020,Coho,Fall,Smolt 1+,Harvest,90000
+4,Pinkut Cr,Pinkut Ch,2020,Sockeye,Summer,Fry,Harvest,36500000
+4,Pinkut Cr,Pinkut Cr,2020,Sockeye,Summer,Fry,Harvest,3750000
+29G,Snootli Cr,Chilcotin R,2020,Chinook,Spring,Fry,Assessment,40000
+8,Snootli Cr,Atnarko R Low,2020,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2020,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Nusatsum R,2020,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Saloompt R,2020,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Atnarko R,2020,Chum,Fall,Fry,Conservation,40000
+8,Snootli Cr,Fish Cr+Airport Ch,2020,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Saloompt R,2020,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2020,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2020,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2020,Sockeye,Summer,Fry,Rebuilding,35000
+8,Snootli Cr,Atnarko R,2020,Sockeye,Summer,Smolt 1+,Rebuilding,50000
+8,Snootli Cr,Lonesome Lk,2020,Sockeye,Summer,Fry,Rebuilding,255000
+4,Terrace,Kitsum Abv Canyon,2020,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2020,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2020,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2020,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Toboggan Cr,Bulkley R Up,2020,Chinook,Spring,Fry,Rebuilding,35000
+4,Toboggan Cr,Toboggan Cr,2020,Coho,Summer,Fry,Stewardship,15000
+4,Toboggan Cr,Toboggan Cr,2020,Coho,Summer,Smolt 1+,Assessment,35000
+7,Victor Cr,Lagoon Cr/CCST,2020,Sockeye,Fall,Fry,Harvest,45000
+14,Big Qualicum R,Big Qualicum R,2020,Chinook,Fall,Smolt 0+,Assessment/Harvest,3500000
+14,Big Qualicum R,Big Qualicum R,2020,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2020,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29E,Chapman Cr,Chilliwack R,2020,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Angus Cr,2020,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2020,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2020,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2020,Pink,Fall,Fry,Rebuilding,250000
+24,Clayoquot,Kennedy R Low,2020,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2020,Chinook,Fall,Smolt 0+,Rebuilding,100000
+25,Conuma R,Burman R,2020,Chinook,Fall,Seapen,Harvest,200000
+25,Conuma R,Conuma R,2020,Chinook,Fall,Seapen,Harvest,2200000
+25,Conuma R,Conuma R,2020,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Gold R,2020,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Conuma R,2020,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Conuma R,2020,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2020,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2020,Coho,Fall,Seapen,Harvest,150000
+18,Cowichan R,Cowichan R,2020,Chinook,Fall,Smolt 0+,Assessment,700000
+14,Englishman Enh,Englishman R,2020,Chinook,Fall,Smolt 0+,Rebuilding,100000
+14,Fanny Bay/GSVI,Rosewall Cr,2020,Chum,Fall,Fry,Stewardship,225000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2020,Chum,Fall,Fry,Stewardship,45000
+14,Fanny Bay/GSVI,Rosewall Cr,2020,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2020,Coho,Fall,Smolt 1+,Harvest,10000
+14,French Cr,French Cr,2020,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2020,Coho,Fall,Fry,Stewardship,30000
+19,Goldstream R,Goldstream R,2020,Chum,Fall,Fry,Harvest,300000
+19,Goldstream R,Goldstream R,2020,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2020,Chum,Fall,Fry,Stewardship,25000
+19,Goldstream R,Craigflower Cr,2020,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2020,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2020,Coho,Fall,Fry,Rebuilding,5000
+19,Goldstream R,Goldstream R,2020,Coho,Fall,Fry,Stewardship,5000
+19,Goldstream R,Goldstream R,2020,Coho,Fall,Smolt 1+,Rebuilding,10000
+19,Goldstream R,Goldstream R,2020,Coho,Fall,Fry,Stewardship,10000
+12,Gwa'ni,Nimpkish R,2020,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2020,Chum,Fall,Fry,Rebuilding,2000000
+12,Gwa'ni,Nimpkish R,2020,Pink,Fall,Fry,Stewardship,100000
+23,Huu-ay-aht,Sugsaw Cr,2020,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2020,Coho,Fall,Fry,Rebuilding,20000
+14,L Qualicum R,L Qualicum R,2020,Chinook,Fall,Smolt 0+,Harvest,2250000
+14,Little R/GSVI,Little R/GSVI,2020,Chum,Fall,Fry,Rebuilding,90000
+14,Little R/GSVI,Little R/GSVI,2020,Coho,Fall,Smolt 1+,Rebuilding,20000
+17,Nanaimo R,Chemainus R,2020,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2020,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2020,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2020,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Nanaimo R,2020,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2020,Coho,Fall,Fry,Rebuilding,20000
+17,Nanaimo R,Nanaimo R,2020,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2020,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2020,Coho,Fall,Fry,Rebuilding,30000
+17,Nanaimo R,Nanaimo R,2020,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2020,Pink,Fall,Fry,Harvest,60000
+17,Nanaimo R,Nanaimo R,2020,Pink,Fall,Seapen,Harvest,200000
+13,Nile Cr,Quinsam R,2020,Pink,Fall,Fry,Harvest,900000
+22,Nitinat R,Nitinat R,2020,Chinook,Fall,Seapen,Harvest,2000000
+22,Nitinat R,Nitinat R,2020,Chinook,Fall,Seapen,Harvest,1500000
+22,Nitinat R,Nitinat R,2020,Chinook,Fall,Seapen,Harvest,500000
+23,Nitinat R,Sarita R,2020,Chinook,Fall,Fry,Harvest,250000
+23,Nitinat R,Sarita R,2020,Chinook,Fall,Smolt 0+,Harvest,250000
+22,Nitinat R,Nitinat R,2020,Chum,Fall,Seapen,Harvest,10000000
+22,Nitinat R,Nitinat R,2020,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2020,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2020,Coho,Fall,Smolt 1+,Harvest,100000
+14,Oyster R,Oyster R,2020,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2020,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2020,Coho,Fall,Fry,Stewardship,40000
+14,Oyster R,Oyster R,2020,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2020,Pink,Fall,Fry,Harvest,990000
+27,P Hardy/Marble,Marble R,2020,Chinook,Fall,Smolt 0+,Harvest,910000
+27,P Hardy/Marble,Marble R,2020,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2020,Coho,Fall,Smolt 1+,Harvest,130000
+12,P Hardy/Quatse,Quatse R,2020,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2020,Coho,Fall,Smolt 1+,Harvest,75000
+12,P Hardy/Quatse,Quatse R,2020,Coho,Fall,Smolt 1+,Harvest,75000
+12,P Hardy/Quatse,Cluxewe R,2020,Pink,Fall,Fry,Rebuilding,800000
+12,P Hardy/Quatse,Quatse R,2020,Pink,Fall,Fry,Harvest,1350000
+15,Powell R,Lang Cr,2020,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2020,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2020,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2020,Chum,Fall,Fry,Rebuilding,70000
+15,Powell R,Lang Cr,2020,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2020,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2020,Coho,Summer,Fry,Harvest,215000
+14,Puntledge R,Puntledge R,2020,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2020,Chinook,Summer,Smolt 0+,Assessment/Conservation,500000
+14,Puntledge R,Puntledge R,2020,Chinook,Summer,Smolt 1+,Conservation,10000
+14,Puntledge R,Puntledge R,2020,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2020,Coho,Fall,Fry,Rebuilding,500000
+14,Puntledge R,Puntledge R,2020,Coho,Fall,Fry,Rebuilding,50000
+14,Puntledge R,Puntledge R,2020,Coho,Fall,Smolt 1+,Harvest,100000
+14,Puntledge R,Puntledge R,2020,Coho,Fall,Fry,Rebuilding,190000
+14,Puntledge R,Trent R,2020,Coho,Fall,Fry,Stewardship,30000
+14,Puntledge R,Trent R,2020,Coho,Fall,Fry,Stewardship,20000
+13,Quinsam R,Quinsam R,2020,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2020,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2020,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2020,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Quinsam R,2020,Coho,Fall,Fry,Stewardship,500
+13,Quinsam R,Quinsam R,2020,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2020,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2020,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2020,Pink,Fall,Fry,Harvest,6100000
+23,Robertson Cr,Nahmint R,2020,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2020,Chinook,Fall,Seapen,Assessment/Harvest,300000
+23,Robertson Cr,Robertson Cr,2020,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2020,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2020,Sockeye,Summer,Fry,Conservation,700000
+16,Rosewall Cr,Sakinaw Lk,2020,Sockeye,Summer,Smolt 1+,Conservation,25000
+20,San Juan R,San Juan R,2020,Chinook,Fall,Smolt 0+,Rebuilding,500000
+13,Sayward F&G,Salmon R/JNST,2020,Chinook,Fall,Smolt 0+,Rebuilding,120000
+15,Sliammon R,Sliammon R,2020,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2020,Chum,Fall,Fry,Harvest,700000
+15,Sliammon R,Sliammon R,2020,Coho,Fall,Fry,Rebuilding,60000
+22,Sooke R,Nitinat R,2020,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2020,Chinook,Fall,Smolt 0+,Stewardship,212500
+20,Sooke R,Sooke R,2020,Chinook,Fall,Smolt 0+,Stewardship,225000
+20,Sooke R,Demamiel Cr,2020,Coho,Fall,Fry,Stewardship,135000
+25,Tahsis R,Leiner R,2020,Chinook,Fall,Seapen,Rebuilding,300000
+23,Thornton Cr,Thornton Cr,2020,Chinook,Fall,Smolt 0+,Harvest,100000
+23,Thornton Cr,Toquart R,2020,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2020,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Thornton Cr,2020,Chum,Fall,Fry,Stewardship,100000
+23,Thornton Cr,Toquart R,2020,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2020,Chum,Fall,Fry,Rebuilding,50000
+24,Thornton Cr,Kennedy R Up,2020,Coho,Fall,Fry,Rebuilding,35000
+23,Thornton Cr,Thornton Cr,2020,Coho,Fall,Smolt 1+,Stewardship,10000
+24,Tofino,Bedwell R,2020,Chinook,Fall,Seapen,Rebuilding,85000
+24,Tofino,Cypre R,2020,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2020,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Tranquil Cr,2020,Chum,Fall,Fry,Rebuilding,250000
+24,Tofino,Cypre R,2020,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2020,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2020,Pink,Fall,Fry,Rebuilding,900000
+29C,Alouette R,Alouette R S,2020,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2020,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2020,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2020,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2020,Chum,Fall,Eyed Egg,Stewardship,20000
+29C,Alouette R,Alouette R S,2020,Coho,Fall,Fry,Stewardship,45000
+29C,Alouette R,Alouette R S,2020,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2020,Sockeye,Fall,Fry,Rebuilding,10000
+29C,Alouette R,Alouette R,2020,Sockeye,Fall,Smolt 1+,Rebuilding,10000
+29E,Capilano R,Chilliwack R,2020,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2020,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2020,Chum,Fall,Fry,Rebuilding,30000
+28,Capilano R,Capilano R,2020,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2020,Coho,Fall,Fry,Rebuilding,3000
+29D,Chehalis R,Harrison R,2020,Chinook,Fall,Smolt 0+,Assessment,300000
+29I,Chehalis R,Bowron R,2020,Chinook,Spring,Fry,Conservation,130000
+29J,Chehalis R,Tete Jaune,2020,Chinook,Spring,Fry,Conservation,130000
+29I,Chehalis R,Willow R/UPFR,2020,Chinook,Spring,Fry,Conservation,130000
+29D,Chehalis R,Chehalis R,2020,Chinook,Summer,Smolt 0+,Harvest,325000
+29G,Chehalis R,Chilko R,2020,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Chehalis R,Maria Sl,2020,Chinook,Summer,Smolt 0+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2020,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2020,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2020,Chum,Fall,Fry,Stewardship,5000
+29D,Chehalis R,Chehalis R,2020,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Chehalis R,2020,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2020,Coho,Fall,Smolt 1+,Harvest,400000
+29E,Chilliwack R,Chilliwack R,2020,Chinook,Fall,Smolt 0+,Assessment/Harvest,2000000
+29E,Chilliwack R,Chilliwack R,2020,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2020,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2020,Chum,Fall,Fry,Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2020,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2020,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2020,Coho,Fall,Fry,Harvest,100000
+29F,Chilliwack R,Coldwater R,2020,Coho,Fall,Smolt 1+,Assessment/Conservation,120000
+29G,Inch Cr,Chilko R,2020,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Inch Cr,Inch Cr,2020,Chum,Fall,Fry,Rebuilding,50000
+29D,Inch Cr,Inch Cr,2020,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2020,Chum,Fall,Fry,Rebuilding,200000
+29D,Inch Cr,Inch Cr,2020,Chum,Fall,Fry,Assessment/Rebuilding,750000
+29D,Inch Cr,Inch Cr,2020,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2020,Coho,Fall,Smolt 1+,Harvest,150000
+29B,Inch Cr,Nicomekl R,2020,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2020,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2020,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2020,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2020,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2020,Sockeye,Fall,Fry,Conservation,25000
+29D,Inch Sockeye Satellite,Cultus Lk,2020,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2020,Sockeye,Fall,Smolt 1+,Conservation,50000
+29D,Inch Sockeye Satellite,Weaver Sp Ch,2020,Sockeye,Fall,Smolt 1+,Rebuilding,25000
+29I,Inch Sockeye Satellite,Stuart R,2020,Sockeye,Spring,Fry,Conservation,180000
+29C,Inch Sockeye Satellite,Pitt R Up,2020,Sockeye,Summer,Fry,Harvest,500000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Fry,Rebuilding,135000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Fry,Rebuilding,70000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Eyed Egg,Rebuilding,8000
+29C,Kanaka Cr,Kanaka Cr,2020,Chum,Fall,Fry,Stewardship,25000
+29C,Kanaka Cr,Kanaka Cr,2020,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2020,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2020,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2020,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2020,Coho,Fall,Smolt 1+,Rebuilding,1000
+29B,L Campbell R,L Campbell R,2020,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2020,Coho,Fall,Fry,Stewardship,3500
+29B,L Campbell R,L Campbell R,2020,Coho,Fall,Smolt 1+,Harvest,30000
+29B,Nicomekl R,Nicomekl R,2020,Chinook,Fall,Smolt 0+,Stewardship,45000
+29D,Nicomekl R,Chehalis R,2020,Chum,Fall,Fry,Stewardship,40000
+29B,Nicomekl R,Nicomekl R,2020,Chum,Fall,Fry,Rebuilding,150000
+29B,Serpentine R,Serpentine R,2020,Chinook,Fall,Smolt 0+,Stewardship,100000
+29D,Serpentine R,Chehalis R,2020,Chum,Fall,Fry,Stewardship,80000
+29B,Serpentine R,Serpentine R,2020,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2020,Coho,Fall,Smolt 1+,Stewardship,5000
+28,Seymour R,Seymour R/GSMN,2020,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2020,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2020,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2020,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Tenderfoot Cr,Ashlu Cr,2020,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Ashlu Cr,2020,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Cheakamus R,2020,Chinook,Summer,Fry,Rebuilding,80000
+28,Tenderfoot Cr,Cheakamus R,2020,Chinook,Summer,Smolt 1+,Rebuilding,50000
+28,Tenderfoot Cr,Mamquam R,2020,Chinook,Summer,Fry,Rebuilding,15000
+28,Tenderfoot Cr,Mamquam R,2020,Chinook,Summer,Smolt 1+,Rebuilding,30000
+29G,Tenderfoot Cr,Portage Cr,2020,Chinook,Summer,Smolt 1+,Conservation,50000
+28,Tenderfoot Cr,Shovelnose Cr,2020,Chinook,Summer,Fry,Rebuilding,5000
+28,Tenderfoot Cr,Shovelnose Cr,2020,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Shovelnose Cr,2020,Chinook,Summer,Smolt 1+,Rebuilding,15000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Chum,Fall,Fry,Rebuilding,400000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2020,Coho,Fall,Fry,Rebuilding,10000
+28,Tenderfoot Cr,Mamquam R,2020,Coho,Fall,Smolt 1+,Harvest,25000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2020,Coho,Fall,Smolt 1+,Harvest,100000
+29D,Weaver Sp Ch,Weaver Sp Ch,2020,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2020,Sockeye,Fall,Fry,Harvest,46800000
+120,Snettisham,Tahltan Lk,2020,Sockeye,Summer,Fry,Harvest,4000000
+130,Snettisham,Tatsamenie Lk,2020,Sockeye,Summer,Fry,Harvest,1375000
+130,Snettisham,Tatsamenie Lk,2020,Sockeye,Summer,Fry,Assessment/Harvest,225000
+130,Snettisham,Trapper Lk,2020,Sockeye,Summer,Fry,Harvest,200000
+4,A Rocha,Bulkley R Up,2021,Coho,Summer,Fry,Stewardship,9000
+29E,Abbotsford Sch,Chilliwack R,2021,Coho,Fall,Fry,Education,3000
+23,Alberni Enh Soc,Dry Cr/SWVI,2021,Chum,Fall,Fry,Stewardship,20000
+23,Alberni Enh Soc,Kitsuksis Cr,2021,Chum,Fall,Fry,Stewardship,20000
+23,Alberni Enh Soc,Kitsuksis Cr,2021,Chum,Fall,Fry,Stewardship,225000
+23,Alberni Enh Soc,Rogers Cr,2021,Chum,Fall,Fry,Stewardship,20000
+23,Alberni Enh Soc,Rogers Cr,2021,Chum,Fall,Fry,Stewardship,225000
+23,Alberni Enh Soc,Bear Cr/SWVI,2021,Coho,Fall,Fry,Stewardship,32400
+23,Alberni Enh Soc,Beaver Cr Low/SWVI,2021,Coho,Fall,Fry,Stewardship,13500
+23,Alberni Enh Soc,Deer Cr,2021,Coho,Fall,Fry,Stewardship,27000
+23,Alberni Enh Soc,Dry Cr/SWVI,2021,Coho,Fall,Fry,Stewardship,15000
+23,Alberni Enh Soc,Hal Cr,2021,Coho,Fall,Fry,Stewardship,12150
+23,Alberni Enh Soc,Kitsuksis Cr,2021,Coho,Fall,Fry,Stewardship,85000
+23,Alberni Enh Soc,Plested Cr,2021,Coho,Fall,Fry,Stewardship,13500
+23,Alberni Enh Soc,Rogers Cr,2021,Coho,Fall,Fry,Stewardship,45000
+23,Alberni Enh Soc,Spaht Cr,2021,Coho,Fall,Fry,Stewardship,8100
+23,Alberni Sch,Kitsuksis Cr,2021,Coho,Fall,Fry,Education,1500
+24,Alberni Sch,Kootowis Cr,2021,Coho,Fall,Fry,Education,400
+02E,Alliford Bay,Blaine Cr,2021,Coho,Fall,Fry,Stewardship,22500
+02E,Alliford Bay,Copper Cr,2021,Coho,Fall,Fry,Stewardship,22500
+02E,Alliford Bay,Haans Cr,2021,Coho,Fall,Fry,Stewardship,22500
+02E,Alliford Bay,Sachs Cr,2021,Coho,Fall,Fry,Stewardship,9000
+02E,Alliford Bay,Sachs Cr,2021,Coho,Fall,Fry,Stewardship,22500
+29C,Alouette R,Alouette R S,2021,Chinook,Fall,Smolt 0+,Harvest,25000
+29E,Alouette R,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Harvest,75000
+29E,Alouette R,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Harvest,50000
+29C,Alouette R,Alouette R S,2021,Chum,Fall,Fry,Rebuilding,400000
+29C,Alouette R,Alouette R S,2021,Coho,Fall,Fry,Stewardship,25000
+29C,Alouette R,Alouette R S,2021,Coho,Fall,Fry,Stewardship,10000
+29C,Alouette R,Alouette R S,2021,Coho,Fall,Smolt 1+,Harvest,25000
+29C,Alouette R,Alouette R,2021,Pink,Fall,Fry,Rebuilding,125000
+29C,Alouette R,Alouette R,2021,Sockeye,Fall,Fry,Rebuilding,10000
+29C,Alouette R,Alouette R,2021,Sockeye,Fall,Smolt 1+,Rebuilding,10000
+14,Big Qualicum R,Big Qualicum R,2021,Chinook,Fall,Smolt 0+,Assessment/Harvest,3000000
+14,Big Qualicum R,Big Qualicum R,2021,Chum,Fall,Fry,Harvest,49795200
+14,Big Qualicum R,Big Qualicum R,2021,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+29C,Brunette R,Brunette R,2021,Chum,Fall,Fry,Stewardship,2000
+29C,Brunette R,Brunette R,2021,Coho,Fall,Fry,Stewardship,30000
+4,Bulkley Val Sch,Babine R,2021,Chinook,Summer,Fry,Education,100
+4,Bulkley Val Sch,Fulton R,2021,Coho,Fall,Fry,Education,600
+4,Bulkley Val Sch,Toboggan Cr,2021,Coho,Summer,Fry,Education,1100
+29C,Burnaby Sch,Brunette R,2021,Chum,Fall,Fry,Education,2000
+29C,Burnaby Sch,Kanaka Cr,2021,Chum,Fall,Fry,Education,2000
+14,Campbell R Sch,Oyster R,2021,Coho,Fall,Fry,Education,100
+13,Campbell R Sch,Quinsam R,2021,Coho,Fall,Fry,Education,100
+13,Campbell R Sch,Quinsam R,2021,Coho,Fall,Fry,Education,300
+13,Campbell R Sch,Quinsam R,2021,Coho,Fall,Fry,Education,1000
+29E,Capilano R,Chilliwack R,2021,Chinook,Fall,Seapen,Harvest,100000
+29E,Capilano R,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Harvest,460000
+28,Capilano R,Capilano R,2021,Chum,Fall,Fry,Rebuilding,70000
+28,Capilano R,Capilano R,2021,Coho,Fall,Smolt 1+,Harvest,475000
+28,Capilano R,Capilano R,2021,Coho,Fall,Fry,Rebuilding,3000
+28,Capilano R,Capilano R,2021,Pink,Fall,Fry,Rebuilding,180000
+28,Capilano R,Cheakamus R,2021,Pink,Fall,Fry,Stewardship,450000
+29G,Car-Chilc (Williams) Sch,Chilko R,2021,Chinook,Summer,Fry,Education,100
+29I,Car-Chilc (Williams) Sch,Nechako R,2021,Chinook,Summer,Fry,Education,200
+9,Central Coast Sch,Wannock R,2021,Chinook,Fall,Fry,Education,25
+7,Central Coast Sch,Kitasoo Cr,2021,Coho,Fall,Fry,Education,50
+7,Central Coast Sch,McLoughlin Bay Cr,2021,Coho,Fall,Fry,Education,50
+8,Central Coast Sch,Snootli Cr,2021,Coho,Fall,Fry,Education,3200
+29E,Chapman Cr,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Harvest,65000
+16,Chapman Cr,Angus Cr,2021,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2021,Chum,Fall,Fry,Rebuilding,90000
+16,Chapman Cr,Chapman Cr,2021,Coho,Fall,Smolt 1+,Harvest,50000
+16,Chapman Cr,Chapman Cr,2021,Pink,Fall,Fry,Harvest,240000
+28,Cheakamus Centre,Cheakamus R,2021,Chum,Fall,Fry,Education,40000
+28,Cheakamus Centre,Cheakamus R,2021,Coho,Fall,Fry,Education,15000
+29D,Chehalis R,Harrison R,2021,Chinook,Fall,Smolt 0+,Assessment,300000
+29G,Chehalis R,Cariboo R Up,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29I,Chehalis R,Chilako R,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29G,Chehalis R,Chilcotin River (Upper),2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29I,Chehalis R,Endako R,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29G,Chehalis R,Horsefly R,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29I,Chehalis R,McGregor R,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29I,Chehalis R,Salmon R/UPFR,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29J,Chehalis R,Tete Jaune,2021,Chinook,Spring,Fry,Conservation,130000
+29H,Chehalis R,West Road R,2021,Chinook,Spring,Smolt 1+,Conservation,30000
+29D,Chehalis R,Chehalis R,2021,Chinook,Summer,Smolt 0+,Harvest,325000
+29G,Chehalis R,Chilko R,2021,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Chehalis R,Maria Sl,2021,Chinook,Summer,Smolt 0+,Assessment/Rebuilding,100000
+29D,Chehalis R,Chehalis R,2021,Chum,Fall,Fry,Harvest,3000000
+29D,Chehalis R,Chehalis R,2021,Chum,Fall,Fry,Stewardship,150000
+29D,Chehalis R,Chehalis R,2021,Chum,Fall,Fry,Stewardship,5000
+29D,Chehalis R,Chehalis R,2021,Chum,Fall,Fry,Stewardship,25000
+29D,Chehalis R,Chehalis R,2021,Coho,Fall,Fry,Harvest,50000
+29D,Chehalis R,Chehalis R,2021,Coho,Fall,Smolt 1+,Harvest,400000
+29D,Chehalis R,Chehalis R,2021,Pink,Fall,Fry,Harvest,2000000
+29D,Chehalis R,Chehalis R,2021,Pink,Fall,Fry,Rebuilding,150000
+29D,Chehalis R,Chehalis R,2021,Pink,Fall,Fry,Rebuilding,50000
+29E,Chilliwack R,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Assessment/Harvest,2000000
+29E,Chilliwack R,Chilliwack R,2021,Chinook,Summer,Smolt 0+,Harvest,500000
+29E,Chilliwack R,Chilliwack R,2021,Chum,Fall,Fry,Rebuilding,200000
+29E,Chilliwack R,Chilliwack R,2021,Chum,Fall,Fry,Harvest,1000000
+29E,Chilliwack R,Chilliwack R,2021,Chum,Fall,Fry,Rebuilding,1000000
+29E,Chilliwack R,Chilliwack R,2021,Coho,Fall,Smolt 1+,Harvest,800000
+29E,Chilliwack R,Chilliwack R,2021,Coho,Fall,Fry,Harvest,100000
+29F,Chilliwack R,Coldwater R,2021,Coho,Fall,Smolt 1+,Assessment/Conservation,120000
+29E,Chilliwack Sch,Chilliwack R,2021,Coho,Fall,Fry,Education,3000
+24,Clayoquot,Kennedy R Low,2021,Chinook,Fall,Smolt 0+,Rebuilding,380000
+24,Clayoquot,Kennedy R Low,2021,Chinook,Fall,Smolt 0+,Rebuilding,100000
+4,Coast Mtn (Hazelton) Sch,Mission Cr/SKNA,2021,Coho,Summer,Fry,Education,250
+4,Coast Mtn (Terrace) Sch,Kitsum Bel Canyon,2021,Chinook,Summer,Fry,Education,280
+6,Coast Mtn (Terrace) Sch,Kitimat R,2021,Coho,Fall,Fry,Education,1400
+4,Coast Mtn (Terrace) Sch,Lakelse R,2021,Coho,Fall,Fry,Education,2000
+3,Coast Mtn (Terrace) Sch,Rainy Cr,2021,Coho,Fall,Fry,Education,250
+4,Coast Mtn (Terrace) Sch,Zymacord R,2021,Coho,Fall,Fry,Education,250
+4,Coast Mtn (Terrace) Sch,Kitwanga R,2021,Coho,Summer,Fry,Education,280
+14,Comox Valley Sch,Big Qualicum R,2021,Coho,Fall,Fry,Education,100
+14,Comox Valley Sch,Little R/GSVI,2021,Coho,Fall,Fry,Education,300
+14,Comox Valley Sch,Oyster R,2021,Coho,Fall,Fry,Education,400
+14,Comox Valley Sch,Puntledge R,2021,Coho,Fall,Fry,Education,3000
+14,Comox Valley Sch,Rosewall Cr,2021,Coho,Fall,Fry,Education,2000
+25,Conuma R,Burman R,2021,Chinook,Fall,Seapen,Harvest,200000
+25,Conuma R,Conuma R,2021,Chinook,Fall,Seapen,Harvest,2200000
+25,Conuma R,Conuma R,2021,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Gold R,2021,Chinook,Fall,Smolt 0+,Harvest,500000
+25,Conuma R,Conuma R,2021,Chum,Fall,Seapen,Harvest,1500000
+25,Conuma R,Conuma R,2021,Chum,Fall,Fry,Harvest,500000
+25,Conuma R,Tlupana R,2021,Chum,Fall,Fry,Rebuilding,1000000
+25,Conuma R,Conuma R,2021,Coho,Fall,Seapen,Harvest,150000
+29C,Coquitlam Sch,Brunette R,2021,Chum,Fall,Fry,Stewardship/Education,900
+14,Courtenay,Trent R,2021,Coho,Fall,Fry,Stewardship,30000
+14,Courtenay,Trent R,2021,Coho,Fall,Fry,Stewardship,20000
+18,Cowichan Lk SES,Cowichan R,2021,Chum,Fall,Fry,Stewardship,50000
+18,Cowichan Lk SES,Beaver Cr/GSVI,2021,Coho,Fall,Fry,Stewardship,24300
+18,Cowichan R,Cowichan R,2021,Chinook,Fall,Smolt 0+,Assessment,700000
+17,Cowichan Valley Sch,Chemainus R,2021,Chum,Fall,Fry,Education,500
+18,Cowichan Valley Sch,Cowichan R,2021,Chum,Fall,Fry,Education,200
+18,Cowichan Valley Sch,Cowichan R,2021,Chum,Fall,Fry,Education,1300
+18,Cowichan Valley Sch,Cowichan R,2021,Chum,Fall,Fry,Education,400
+18,Cowichan Valley Sch,Cowichan R,2021,Chum,Fall,Fry,Education,100
+18,Cowichan Valley Sch,Cowichan R,2021,Chum,Fall,Fry,Education,600
+19,Cowichan Valley Sch,Goldstream R,2021,Coho,Fall,Fry,Education,500
+29F,Deadman R,Deadman R,2021,Coho,Fall,Fry,Conservation,9000
+29F,Deadman R,Deadman R,2021,Coho,Fall,Smolt 1+,Conservation,19000
+29B,Delta Sch,L Campbell R,2021,Coho,Fall,Fry,Education,4000
+4,Eby Street,Zymacord R,2021,Coho,Fall,Smolt 1+,Stewardship,25000
+7,Emily Lk,Tankeeah R,2021,Sockeye,Summer,Fry,Rebuilding,80000
+14,Englishman Enh,L Qualicum R,2021,Chinook,Fall,Smolt 0+,Rebuilding,100000
+14,Fanny Bay/GSVI,Rosewall Cr,2021,Chum,Fall,Fry,Stewardship,100000
+14,Fanny Bay/GSVI,Rosewall Cr,2021,Chum,Fall,Fry,Stewardship,150000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2021,Chum,Fall,Fry,Stewardship,45000
+14,Fanny Bay/GSVI,Rosewall Cr,2021,Coho,Fall,Smolt 1+,Harvest,50000
+14,Fanny Bay/GSVI,Wilfred Cr (Coal),2021,Coho,Fall,Fry,Stewardship,10000
+29D,Fraser-Cascade Sch,Chehalis R,2021,Coho,Fall,Fry,Education,250
+14,French Cr,Puntledge R,2021,Chum,Fall,Fry,Stewardship,90000
+14,French Cr,French Cr,2021,Coho,Fall,Fry,Stewardship,30000
+4,Fulton R,Fulton Ch #1,2021,Sockeye,Summer,Fry,Harvest,3700000
+4,Fulton R,Fulton Ch #2,2021,Sockeye,Summer,Fry,Harvest,72500000
+4,Fulton R,Fulton R,2021,Sockeye,Summer,Fry,Harvest,37500000
+29F,Gold Trail Sch,Deadman R,2021,Coho,Fall,Fry,Education,300
+29F,Gold Trail Sch,Gates Cr,2021,Coho,Fall,Fry,Education,900
+29G,Gold Trail Sch,Seton R,2021,Coho,Fall,Fry,Education,900
+19,Goldstream R,Goldstream R,2021,Chum,Fall,Fry,Harvest,300000
+19,Goldstream R,Goldstream R,2021,Chum,Fall,Eyed Egg,Stewardship,50000
+19,Goldstream R,Goldstream R,2021,Chum,Fall,Fry,Stewardship,1500
+19,Goldstream R,Goldstream R,2021,Chum,Fall,Fry,Stewardship,25000
+19,Goldstream R,Craigflower Cr,2021,Coho,Fall,Fry,Rebuilding,45000
+19,Goldstream R,Goldstream R,2021,Coho,Fall,Smolt 1+,Harvest,100000
+19,Goldstream R,Goldstream R,2021,Coho,Fall,Fry,Rebuilding,25000
+19,Goldstream R,Goldstream R,2021,Coho,Fall,Fry,Stewardship,5000
+19,Goldstream R,Goldstream R,2021,Coho,Fall,Smolt 1+,Rebuilding,10000
+19,Goldstream R,Goldstream R,2021,Coho,Fall,Fry,Stewardship,10000
+12,Gwa'ni,Woss R,2021,Chinook,Fall,Smolt 0+,Rebuilding,162500
+12,Gwa'ni,Nimpkish R Low,2021,Chum,Fall,Fry,Rebuilding,2000000
+12,Gwa'ni,Nimpkish R,2021,Pink,Fall,Fry,Stewardship,100000
+02E,Haida Gwaii Sch,Haans Cr,2021,Coho,Fall,Fry,Education,180
+02E,Haida Gwaii Sch,Honna R,2021,Coho,Fall,Fry,Education,450
+02E,Haida Gwaii Sch,Honna R,2021,Coho,Fall,Fry,Education,180
+1,Haida Gwaii Sch,Loon Lk Cr,2021,Coho,Fall,Fry,Education,180
+1,Haida Gwaii Sch,Mamin R,2021,Coho,Fall,Fry,Education,90
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Chum,Fall,Fry,Rebuilding,20000
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Coho,Fall,Smolt 1+,Harvest,30000
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Coho,Fall,Fry,Harvest,100000
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Coho,Fall,Fry,Harvest,60000
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Coho,Fall,Fry,Harvest,70000
+6,Hartley Bay Cr,Hartley Bay Cr,2021,Coho,Fall,Fry,Harvest,80000
+7,Heiltsuk,McLoughlin Bay Cr,2021,Chum,Fall,Seapen,Harvest,1800000
+7,Heiltsuk,McLoughlin Bay Cr,2021,Coho,Fall,Seapen,Harvest,43200
+27,Holberg In,Goodspeed R,2021,Chinook,Fall,Smolt 0+,Stewardship,32000
+27,Holberg In,Goodspeed R,2021,Chum,Fall,Fry,Stewardship,28800
+27,Holberg In,Goodspeed R,2021,Coho,Fall,Fry,Stewardship,34000
+27,Holberg In,San Josef R,2021,Coho,Fall,Fry,Stewardship,25500
+29G,Horsefly Sp Ch,Horsefly Ch,2021,Sockeye,Summer,Fry,Harvest,22500000
+28,Howe Sd Sch,Tenderfoot Cr,2021,Coho,Fall,Fry,Education,2800
+29C,Hoy Cr,Hoy Cr,2021,Chum,Fall,Fry,Stewardship,50000
+29C,Hoy Cr,Hoy Cr,2021,Coho,Fall,Fry,Stewardship,10000
+29C,Hoy Cr,Hoy Cr,2021,Coho,Fall,Smolt 1+,Stewardship,5000
+23,Huu-ay-aht,Sugsaw Cr,2021,Chum,Fall,Fry,Rebuilding,450000
+23,Huu-ay-aht,Pachena R,2021,Coho,Fall,Fry,Rebuilding,20000
+29C,Hyde Cr/LWFR,Hyde Cr/LWFR,2021,Chum,Fall,Fry,Stewardship,13000
+29C,Hyde Cr/LWFR,Hyde Cr/LWFR,2021,Coho,Fall,Fry,Stewardship,5000
+29C,Hyde Cr/LWFR,Hyde Cr/LWFR,2021,Coho,Fall,Smolt 1+,Harvest,15000
+29G,Inch Cr,Chilko R,2021,Chinook,Summer,Smolt 1+,Assessment,47500
+29D,Inch Cr,Inch Cr,2021,Chum,Fall,Fry,Rebuilding,50000
+29D,Inch Cr,Inch Cr,2021,Chum,Fall,Fry,Harvest,750000
+29D,Inch Cr,Inch Cr,2021,Chum,Fall,Fry,Rebuilding,200000
+29D,Inch Cr,Inch Cr,2021,Chum,Fall,Fry,Stewardship,50000
+29D,Inch Cr,Inch Cr,2021,Coho,Fall,Smolt 1+,Harvest,150000
+29B,Inch Cr,Nicomekl R,2021,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Norrish Cr,2021,Coho,Fall,Smolt 1+,Harvest,100000
+29B,Inch Cr,Serpentine R,2021,Coho,Fall,Smolt 1+,Harvest,50000
+29D,Inch Cr,Stave R,2021,Coho,Fall,Smolt 1+,Harvest,1000
+29D,Inch Cr,Stave R,2021,Coho,Fall,Smolt 1+,Harvest,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2021,Sockeye,Fall,Fry,Conservation,25000
+29D,Inch Sockeye Satellite,Cultus Lk,2021,Sockeye,Fall,Fry,Conservation,150000
+29D,Inch Sockeye Satellite,Cultus Lk,2021,Sockeye,Fall,Smolt 1+,Conservation,50000
+29I,Inch Sockeye Satellite,Bowron R,2021,Sockeye,Spring,Fry,Conservation,90000
+29I,Inch Sockeye Satellite,Stuart R,2021,Sockeye,Spring,Fry,Conservation,800000
+29C,Inch Sockeye Satellite,Pitt R Up,2021,Sockeye,Summer,Fry,Harvest,500000
+20,Juan de Fuca Salm Rest So,Sooke R,2021,Chinook,Fall,Smolt 0+,Stewardship,10000
+20,Juan de Fuca Salm Rest So,Sooke R,2021,Chum,Fall,Fry,Stewardship,10000
+20,Juan de Fuca Salm Rest So,Charters Cr,2021,Coho,Fall,Smolt 1+,Stewardship,10000
+29F,Kamloops Sch,Deadman R,2021,Coho,Fall,Fry,Education,90
+29J,Kamloops Sch,Dunn Cr,2021,Coho,Fall,Fry,Education,50
+29J,Kamloops Sch,Dunn Cr,2021,Coho,Fall,Fry,Education,180
+29J,Kamloops Sch,Dunn Cr,2021,Coho,Fall,Fry,Education,4450
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Fry,Rebuilding,135000
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Fry,Rebuilding,70000
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Fry,Rebuilding,5000
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Eyed Egg,Rebuilding,8000
+29C,Kanaka Cr,Kanaka Cr,2021,Chum,Fall,Fry,Stewardship,25000
+29C,Kanaka Cr,Kanaka Cr,2021,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,Kanaka Cr,Kanaka Cr,2021,Coho,Fall,Smolt 1+,Rebuilding,4000
+29C,Kanaka Cr,Kanaka Cr,2021,Coho,Fall,Fry,Rebuilding,40000
+29C,Kanaka Cr,Kanaka Cr,2021,Coho,Fall,Smolt 1+,Harvest,15000
+29C,Kanaka Cr,Kanaka Cr,2021,Coho,Fall,Smolt 1+,Rebuilding,1000
+29C,Kanaka Cr,Kanaka Cr,2021,Pink,Fall,Fry,Rebuilding,130000
+29K,Kingfisher Cr/TOMF,Kingfisher Cr/TOMF,2021,Chinook,Summer,Fry,Stewardship,50000
+7,Kitasoo Cr,Kitasoo Cr,2021,Chum,Fall,Seapen,Harvest,1080000
+7,Kitasoo Cr,Kitasoo Cr,2021,Coho,Fall,Seapen,Harvest,43200
+6,Kitimat R,Kitimat R,2021,Chinook,Spring,Smolt 0+,Harvest,1450000
+6,Kitimat R,Kitimat R,2021,Chum,Summer,Fry,Harvest,1700000
+6,Kitimat R,Kitimat R,2021,Coho,Fall,Fry,Harvest,100000
+6,Kitimat R,Kitimat R,2021,Coho,Fall,Smolt 1+,Harvest,500000
+4,Kitwanga R,Kitwanga R,2021,Sockeye,Fall,Smolt 1+,Conservation,45000
+15,Klahoose Band,Basil Brk,2021,Chum,Fall,Fry,Stewardship,45000
+15,Klahoose Band,Basil Brk,2021,Chum,Fall,Fry,Stewardship,20000
+120,Kluane Sch,Kluane R,2021,Chum,Summer,Fry,Stewardship/Education,300
+12,Knight Inlet Ldg,Glendale R,2021,Coho,Fall,Fry,Stewardship,4250
+12,Knight Inlet Ldg,Glendale R,2021,Pink,Fall,Fry,Stewardship,100000
+12,Kokish R,Kokish R,2021,Chinook,Fall,Smolt 0+,Stewardship,45000
+12,Kokish R,Kokish R,2021,Chum,Fall,Fry,Stewardship,67500
+12,Kokish R,Hyde Cr/JNST,2021,Coho,Fall,Fry,Stewardship,17000
+12,Kokish R,Kokish R,2021,Coho,Fall,Fry,Stewardship,90000
+12,Kokish R,Kokish R,2021,Pink,Fall,Fry,Stewardship,145000
+29B,L Campbell R,L Campbell R,2021,Chinook,Fall,Smolt 0+,Harvest,50000
+29B,L Campbell R,L Campbell R,2021,Coho,Fall,Fry,Stewardship,3500
+29B,L Campbell R,L Campbell R,2021,Coho,Fall,Smolt 1+,Harvest,30000
+29E,L Chilliwack,L Chilliwack R,2021,Chum,Fall,Fry,Stewardship,40000
+14,L Qualicum R,L Qualicum R,2021,Chinook,Fall,Smolt 0+,Harvest,2250000
+29B,Langley Sch,Nicomekl R,2021,Coho,Fall,Fry,Education,2000
+14,Lasqueti Is,Puntledge R,2021,Chum,Fall,Fry,Stewardship,25000
+14,Lasqueti Is,Puntledge R,2021,Chum,Fall,Fry,Stewardship,50000
+14,Little R/GSVI,Little R/GSVI,2021,Chum,Fall,Fry,Rebuilding,90000
+14,Little R/GSVI,Little R/GSVI,2021,Coho,Fall,Smolt 1+,Rebuilding,20000
+28,MacKay Cr,MacKay Cr,2021,Chum,Fall,Fry,Stewardship,45000
+29E,MacKay Cr,Chilliwack R,2021,Pink,Fall,Fry,Stewardship,40000
+29C,Maple Ridge Sch,Kanaka Cr,2021,Chum,Fall,Fry,Education,1000
+13,Menzies Cr,Menzies Cr,2021,Chum,Fall,Fry,Rebuilding,100000
+29C,Mission Sch,Kanaka Cr,2021,Chum,Fall,Fry,Education,1500
+13,Mohun Cr,Quinsam R,2021,Pink,Fall,Fry,Stewardship,50000
+120,Morley R Sch,Morley R,2021,Chinook,Spring,Fry,Stewardship/Education,150
+29C,Morten Cr,Alouette R S,2021,Chum,Fall,Fry,Stewardship,30000
+28,Morten Cr,Lynn Cr/GSMN,2021,Coho,Fall,Fry,Stewardship,6000
+29E,Morten Cr,Chilliwack R,2021,Pink,Fall,Fry,Stewardship,25000
+28,Mossom Cr,Mossom Cr,2021,Chum,Fall,Fry,Stewardship,25000
+28,Mossom Cr,Mossom Cr,2021,Coho,Fall,Fry,Stewardship,2000
+28,Mossom Cr,Mossom Cr,2021,Coho,Fall,Fry,Stewardship,4800
+29E,Mossom Cr,Chilliwack R,2021,Pink,Fall,Fry,Stewardship,85000
+29K,N Okanagan-Shuswap Sch,Shuswap R Low,2021,Chinook,Summer,Smolt 0+,Education,1200
+29F,N`Quatqua,Bridge R,2021,Chinook,Spring,Fry,Conservation,60000
+29I,Nadina Sp Ch,Nadina R,2021,Sockeye,Summer,Fry,Harvest,22500000
+17,Nanaimo R,Chemainus R,2021,Chinook,Fall,Fry,Rebuilding,67500
+17,Nanaimo R,Nanaimo R,2021,Chinook,Fall,Fry,Rebuilding,10000
+17,Nanaimo R,Nanaimo R,2021,Chinook,Fall,Smolt 0+,Rebuilding,415000
+17,Nanaimo R,First Lk/GSVI,2021,Chinook,Summer,Smolt 0+,Rebuilding,225000
+17,Nanaimo R,Nanaimo R,2021,Chum,Fall,Fry,Harvest,900000
+17,Nanaimo R,Nanaimo R,2021,Coho,Fall,Fry,Rebuilding,30000
+17,Nanaimo R,Nanaimo R,2021,Coho,Fall,Fry,Rebuilding,20000
+17,Nanaimo R,Nanaimo R,2021,Coho,Fall,Fry,Rebuilding,50000
+17,Nanaimo R,Nanaimo R,2021,Coho,Fall,Smolt 1+,Rebuilding,84000
+17,Nanaimo R,Nanaimo R,2021,Pink,Fall,Seapen,Harvest,400000
+17,Nanaimo R,Nanaimo R,2021,Pink,Fall,Seapen,Harvest,200000
+17,Nanaimo Sch,Bush Cr,2021,Chum,Fall,Fry,Education,100
+17,Nanaimo Sch,Holland Cr,2021,Chum,Fall,Fry,Education,300
+17,Nanaimo Sch,Nanaimo R,2021,Chum,Fall,Fry,Education,100
+17,Nanaimo Sch,Nanaimo R,2021,Coho,Fall,Fry,Education,100
+17,Nanaimo Sch,Nanaimo R,2021,Coho,Fall,Fry,Education,300
+17,Nanaimo Sch,Nanaimo R,2021,Coho,Fall,Fry,Education,500
+29I,Nechako Lks (Vanderh) Sch,Nechako R,2021,Chinook,Summer,Fry,Stewardship/Education,125
+29C,Nelson Cr,Alouette R S,2021,Chum,Fall,Fry,Stewardship/Education,90000
+28,Nelson Cr,Capilano R,2021,Coho,Fall,Fry,Stewardship,18000
+29C,New West Sch,Kanaka Cr,2021,Chum,Fall,Fry,Education,2000
+29F,Nicola-Similkameen Sch,Spius Cr,2021,Coho,Fall,Fry,Education,550
+29B,Nicomekl R,Nicomekl R,2021,Chinook,Fall,Smolt 0+,Stewardship,45000
+29D,Nicomekl R,Chehalis R,2021,Chum,Fall,Fry,Stewardship,40000
+29B,Nicomekl R,Nicomekl R,2021,Chum,Fall,Fry,Rebuilding,150000
+29D,Nicomekl R,Chehalis R,2021,Pink,Fall,Fry,Stewardship,150000
+13,Nile Cr,Quinsam R,2021,Pink,Fall,Fry,Harvest,900000
+3,Nisga'a (Nass Valley) Sch,Zolzap Cr,2021,Coho,Fall,Fry,Education,280
+22,Nitinat R,Nitinat R,2021,Chinook,Fall,Fry,Rebuilding,100000
+22,Nitinat R,Nitinat R,2021,Chinook,Fall,Seapen,Harvest,1500000
+22,Nitinat R,Nitinat R,2021,Chinook,Fall,Fry,Harvest,2000000
+22,Nitinat R,Nitinat R,2021,Chinook,Fall,Seapen,Harvest,500000
+23,Nitinat R,Sarita R,2021,Chinook,Fall,Fry,Harvest,250000
+23,Nitinat R,Sarita R,2021,Chinook,Fall,Smolt 0+,Harvest,250000
+22,Nitinat R,Nitinat R,2021,Chum,Fall,Seapen,Harvest,10000000
+22,Nitinat R,Nitinat R,2021,Coho,Fall,Fry,Harvest,12500
+22,Nitinat R,Nitinat R,2021,Coho,Fall,Fry,Harvest,25000
+22,Nitinat R,Nitinat R,2021,Coho,Fall,Smolt 1+,Harvest,100000
+28,Noons Cr,Noons Cr,2021,Chum,Fall,Fry,Stewardship,25000
+28,Noons Cr,Noons Cr,2021,Coho,Fall,Fry,Stewardship,2000
+28,Noons Cr,Noons Cr,2021,Coho,Fall,Smolt 1+,Stewardship,10000
+29C,North Van Sch,Alouette R S,2021,Chum,Fall,Fry,Education,5000
+02E,Northern Trollers,Crabapple Cr,2021,Chum,Fall,Fry,Stewardship,2700
+02E,Northern Trollers,Deena Cr,2021,Chum,Fall,Fry,Stewardship,22500
+02E,Northern Trollers,Deena Cr,2021,Chum,Fall,Fry,Stewardship,45000
+02E,Northern Trollers,Slatechuck Cr,2021,Chum,Fall,Fry,Stewardship,22500
+02E,Northern Trollers,Slatechuck Cr,2021,Chum,Fall,Fry,Stewardship,45000
+02E,Northern Trollers,Chinukundl Cr,2021,Coho,Fall,Fry,Stewardship,8100
+02E,Northern Trollers,Honna R,2021,Coho,Fall,Fry,Stewardship,450
+02E,Northern Trollers,Honna R,2021,Coho,Fall,Fry,Stewardship,4500
+02E,Northern Trollers,Honna R,2021,Coho,Fall,Fry,Stewardship,38000
+02E,Northern Trollers,Honna R,2021,Coho,Fall,Fry,Stewardship,3600
+02E,Northern Trollers,Jungle Cr,2021,Coho,Fall,Fry,Stewardship,4500
+02E,Northern Trollers,Jungle Cr,2021,Coho,Fall,Fry,Stewardship,13500
+02E,Northern Trollers,Tarundl Cr,2021,Coho,Fall,Fry,Stewardship,20700
+02E,Northern Trollers,Tlell R,2021,Pink,Fall,Fry,Rebuilding,45000
+130,Old Crow Sch,Porcupine R,2021,Chum,Fall,Fry,Stewardship/Education,150
+1,Old Massett,Yakoun R,2021,Chinook,Summer,Smolt 0+,Rebuilding,225000
+1,Old Massett,Mamin R,2021,Coho,Fall,Fry,Harvest,36000
+1,Old Massett,Yakoun R,2021,Coho,Fall,Smolt 1+,Harvest,90000
+4,Oldfield Cr,Kloiya Cr,2021,Chinook,Fall,Smolt 0+,Stewardship,45000
+5,Oldfield Cr,Kumealon Cr,2021,Chum,Fall,Fry,Rebuilding,25000
+4,Oldfield Cr,Diana Cr,2021,Coho,Fall,Fry,Stewardship,35000
+4,Oldfield Cr,Hays Cr,2021,Coho,Fall,Fry,Stewardship,12000
+4,Oldfield Cr,Oldfield Cr,2021,Coho,Fall,Smolt 1+,Stewardship,6000
+4,Oldfield Cr,Silver Cr/NCST,2021,Coho,Fall,Fry,Stewardship,18000
+4,Oona R,Oona R,2021,Coho,Fall,Fry,Stewardship,25000
+4,Oona R,Spiller R,2021,Coho,Fall,Fry,Stewardship,18000
+14,Oyster R,Oyster R,2021,Chinook,Fall,Smolt 0+,Rebuilding,55000
+14,Oyster R,Oyster R,2021,Chum,Fall,Fry,Rebuilding,320000
+14,Oyster R,Oyster R,2021,Coho,Fall,Fry,Stewardship,40000
+14,Oyster R,Oyster R,2021,Coho,Fall,Smolt 1+,Rebuilding,40000
+14,Oyster R,Oyster R,2021,Pink,Fall,Fry,Rebuilding,990000
+27,P Hardy/Marble,Marble R,2021,Chinook,Fall,Smolt 0+,Harvest,910000
+27,P Hardy/Marble,Marble R,2021,Chinook,Fall,Seapen,Harvest,90000
+27,P Hardy/Marble,Marble R,2021,Coho,Fall,Smolt 1+,Harvest,130000
+12,P Hardy/Quatse,Quatse R,2021,Chum,Fall,Fry,Stewardship,100000
+12,P Hardy/Quatse,Cluxewe R,2021,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Quatse R,2021,Coho,Fall,Smolt 1+,Harvest,85000
+12,P Hardy/Quatse,Cluxewe R,2021,Pink,Fall,Fry,Harvest,800000
+12,P Hardy/Quatse,Quatse R,2021,Pink,Fall,Fry,Harvest,1350000
+19,Pender Is Enh,Goldstream R,2021,Chum,Fall,Fry,Stewardship,35000
+4,Pinkut Cr,Pinkut Ch,2021,Sockeye,Summer,Fry,Harvest,36500000
+4,Pinkut Cr,Pinkut Cr,2021,Sockeye,Summer,Fry,Harvest,3750000
+29E,Poco Hatchery,Chilliwack R,2021,Chinook,Fall,Smolt 0+,Stewardship,25000
+29C,Poco Hatchery,Coquitlam R,2021,Coho,Fall,Fry,Stewardship,25000
+29C,Poco Hatchery,Coquitlam R,2021,Coho,Fall,Smolt 1+,Harvest,20000
+29C,Poco Hatchery,Coquitlam R,2021,Coho,Fall,Fry,Stewardship,10000
+29C,Poco Hatchery,Coquitlam R,2021,Sockeye,Fall,Fry,Stewardship,10000
+29C,Poco Hatchery,Coquitlam R,2021,Sockeye,Fall,Smolt 1+,Stewardship,15000
+15,Powell R,Lang Cr,2021,Chinook,Fall,Fry,Harvest,150000
+15,Powell R,Lang Cr,2021,Chinook,Fall,Smolt 0+,Harvest,680000
+15,Powell R,Lang Cr,2021,Chum,Fall,Fry,Rebuilding,560000
+15,Powell R,Lang Cr,2021,Chum,Fall,Fry,Stewardship,70000
+15,Powell R,Lang Cr,2021,Coho,Summer,Fry,Harvest,22500
+15,Powell R,Lang Cr,2021,Coho,Summer,Fry,Harvest,215000
+15,Powell R Sch,Sliammon R,2021,Coho,Fall,Fry,Education,400
+15,Powell R Sch,Lang Cr,2021,Coho,Summer,Fry,Education,540
+29I,Pr George (Mackenzie) Sch,Nechako R,2021,Chinook,Summer,Fry,Education,450
+4,Pr Rupert Sch,Oldfield Cr,2021,Coho,Fall,Fry,Education,1100
+14,Puntledge R,Puntledge R,2021,Chinook,Fall,Smolt 0+,Harvest,1800000
+14,Puntledge R,Puntledge R,2021,Chinook,Summer,Smolt 0+,Assessment/Conservation,500000
+14,Puntledge R,Puntledge R,2021,Chum,Fall,Fry,Harvest,2700000
+14,Puntledge R,Puntledge R,2021,Coho,Fall,Fry,Rebuilding,105000
+14,Puntledge R,Puntledge R,2021,Coho,Fall,Smolt 1+,Harvest,100000
+14,Puntledge R,Puntledge R,2021,Coho,Fall,Fry,Rebuilding,95000
+14,Qualicum Sch,Big Qualicum R,2021,Coho,Fall,Fry,Education,900
+14,Qualicum Sch,Big Qualicum R,2021,Coho,Fall,Fry,Education,100
+14,Qualicum Sch,French Cr,2021,Coho,Fall,Fry,Education,1000
+14,Qualicum Sch,Rosewall Cr,2021,Coho,Fall,Fry,Education,200
+29G,Quesnel R Research Centre,Cariboo R Up,2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,Chilako R,2021,Chinook,Spring,Fry,Conservation,32000
+29G,Quesnel R Research Centre,Chilcotin River (Upper),2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,Endako R,2021,Chinook,Spring,Fry,Conservation,32000
+29G,Quesnel R Research Centre,Horsefly R,2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,McGregor R,2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,Salmon R/UPFR,2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,Slim Cr,2021,Chinook,Spring,Fry,Conservation,35000
+29I,Quesnel R Research Centre,Torpy R,2021,Chinook,Spring,Fry,Conservation,35000
+29H,Quesnel R Research Centre,West Road R,2021,Chinook,Spring,Fry,Conservation,32000
+29I,Quesnel R Research Centre,Willow R/UPFR,2021,Chinook,Spring,Fry,Conservation,35000
+29G,Quesnel R Research Centre,Quesnel R,2021,Chinook,Summer,Eyed Egg,Education,3000
+29I,Quesnel Sch,Nechako R,2021,Chinook,Summer,Fry,Education,200
+13,Quinsam R,Quinsam R,2021,Chinook,Fall,Fry,Rebuilding,884000
+13,Quinsam R,Quinsam R,2021,Chinook,Fall,Seapen,Harvest,600000
+13,Quinsam R,Quinsam R,2021,Chinook,Fall,Fry,Harvest,200000
+13,Quinsam R,Quinsam R,2021,Chinook,Fall,Smolt 0+,Assessment/Harvest,1900000
+13,Quinsam R,Quinsam R,2021,Coho,Fall,Fry,Stewardship,2500
+13,Quinsam R,Quinsam R,2021,Coho,Fall,Fry,Rebuilding,170000
+13,Quinsam R,Quinsam R,2021,Coho,Fall,Smolt 1+,Assessment/Harvest,400000
+13,Quinsam R,Quinsam R,2021,Pink,Fall,Fry,Harvest,6100000
+29E,Ravine Pk,Chilliwack R,2021,Coho,Fall,Fry,Stewardship,15000
+29E,Ravine Pk,Chilliwack R,2021,Coho,Fall,Smolt 1+,Stewardship,10000
+29E,Reed Point/Ioco,Chilliwack R,2021,Chinook,Fall,Seapen,Harvest,40000
+28,Reed Point/Ioco,Mossom Cr,2021,Chum,Fall,Seapen,Stewardship,25000
+28,Reed Point/Ioco,Mossom Cr,2021,Coho,Fall,Seapen,Harvest,4000
+28,Reed Point/Ioco,Seymour R/GSMN,2021,Coho,Fall,Seapen,Harvest,7500
+29K,Revelstoke Sch,Shuswap R Low,2021,Chinook,Summer,Fry,Education,250
+29B,Richmond Sch,L Campbell R,2021,Coho,Fall,Fry,Education,1400
+29C,River Springs Enh,Coquitlam R,2021,Chum,Fall,Fry,Stewardship,8000
+29C,River Springs Enh,Coquitlam R,2021,Coho,Fall,Fry,Stewardship,20000
+9,Rivers Inlet,Wannock R,2021,Chinook,Fall,Seapen,Harvest,375000
+9,Rivers Inlet,Chuckwalla R,2021,Chinook,Summer,Smolt 0+,Rebuilding,65000
+9,Rivers Inlet,Kilbella R,2021,Chinook,Summer,Seapen,Rebuilding,65000
+9,Rivers Inlet,Wannock R,2021,Chum,Fall,Fry,Stewardship,45000
+23,Robertson Cr,Nahmint R,2021,Chinook,Fall,Smolt 0+,Conservation,165000
+23,Robertson Cr,Robertson Cr,2021,Chinook,Fall,Seapen,Assessment/Harvest,300000
+23,Robertson Cr,Robertson Cr,2021,Chinook,Fall,Smolt 0+,Assessment/Harvest,6100000
+23,Robertson Cr,Robertson Cr,2021,Coho,Fall,Smolt 1+,Assessment/Harvest,200000
+16,Rosewall Cr,Sakinaw Lk,2021,Sockeye,Summer,Smolt 1+,Assessment,10000
+16,Rosewall Cr,Sakinaw Lk,2021,Sockeye,Summer,Fry,Conservation,700000
+16,Rosewall Cr,Sakinaw Lk,2021,Sockeye,Summer,Smolt 1+,Conservation,25000
+14,Roy Cr,Roy Cr,2021,Coho,Fall,Fry,Rebuilding,50000
+19,Saanich Sch,Goldstream R,2021,Chum,Fall,Fry,Education,400
+19,Saanich Sch,Goldstream R,2021,Chum,Fall,Fry,Education,200
+19,Saanich Sch,Goldstream R,2021,Chum,Fall,Fry,Education,1800
+19,Saanich Sch,Goldstream R,2021,Coho,Fall,Fry,Education,200
+19,Saanich Sch,Goldstream R,2021,Coho,Fall,Fry,Education,2000
+19,Saanich Sch,Goldstream R,2021,Coho,Fall,Fry,Education,1000
+19,Saanich Sch,Goldstream R,2021,Coho,Fall,Fry,Education,400
+19,Saanich Sch,Goldstream R,2021,Coho,Fall,Fry,Education,1200
+19,Saanich Seapens,Goldstream R,2021,Coho,Fall,Seapen,Harvest,25000
+02E,Salmon Unltd Soc,Grouse Cr,2021,Coho,Fall,Fry,Stewardship,18000
+1,Salmon Unltd Soc,Loon Lk Cr,2021,Coho,Fall,Fry,Stewardship,4500
+1,Salmon Unltd Soc,Loon Lk Cr,2021,Coho,Fall,Fry,Stewardship,36000
+18,Saltspring Is,Cusheon Cr,2021,Coho,Fall,Fry,Stewardship,5000
+20,San Juan R,San Juan R,2021,Chinook,Fall,Smolt 0+,Rebuilding,500000
+19,Saturna Is,Goldstream R,2021,Chum,Fall,Fry,Stewardship,50000
+13,Sayward F&G,Salmon R/JNST,2021,Chinook,Fall,Smolt 0+,Rebuilding,120000
+29B,Serpentine R,Serpentine R,2021,Chinook,Fall,Smolt 0+,Stewardship,100000
+29D,Serpentine R,Chehalis R,2021,Chum,Fall,Fry,Stewardship,80000
+29B,Serpentine R,Serpentine R,2021,Chum,Fall,Fry,Stewardship,65000
+29B,Serpentine R,Serpentine R,2021,Coho,Fall,Smolt 1+,Stewardship,5000
+28,Seymour R,Seymour R/GSMN,2021,Chum,Fall,Fry,Rebuilding,20000
+28,Seymour R,Seymour R/GSMN,2021,Chum,Fall,Eyed Egg,Stewardship,20000
+28,Seymour R,Seymour R/GSMN,2021,Chum,Fall,Fry,Rebuilding,425000
+28,Seymour R,Seymour R/GSMN,2021,Coho,Fall,Fry,Rebuilding,140000
+28,Seymour R,Seymour R/GSMN,2021,Coho,Fall,Smolt 1+,Rebuilding,40000
+28,Seymour R,Seymour R/GSMN,2021,Pink,Fall,Fry,Stewardship,450000
+19,Shaw Centre,Goldstream R,2021,Chinook,Fall,Smolt 1+,Education,80
+19,Shawnigan Lk Sch,Shawnigan Cr,2021,Coho,Fall,Fry,Education,1400
+19,Shawnigan Lk Sch,Shawnigan Cr,2021,Coho,Fall,Fry,Education,25000
+19,Shawnigan Lk Sch,Shawnigan Cr,2021,Coho,Fall,Fry,Education,550
+29K,Shuswap R,Shuswap R Low,2021,Chinook,Summer,Smolt 0+,Assessment,550000
+29K,Shuswap R,Shuswap R Low,2021,Chinook,Summer,Eyed Egg,Assessment,5000
+29K,Shuswap R,Shuswap R Middle,2021,Chinook,Summer,Smolt 0+,Assessment,150000
+29I,Shuswap R,Stuart R,2021,Sockeye,Spring,Fry,Conservation,175000
+29I,Shuswap R,Bowron R,2021,Sockeye,Summer,Fry,Conservation,175000
+29G,Shuswap R,Taseko Lk,2021,Sockeye,Summer,Fry,Conservation,45000
+4,Skeena Meadows,Comeau Cr,2021,Coho,Summer,Fry,Stewardship,10000
+15,Sliammon R,Sliammon R,2021,Chinook,Fall,Smolt 0+,Harvest,100000
+15,Sliammon R,Sliammon R,2021,Chum,Fall,Fry,Harvest,700000
+15,Sliammon R,Sliammon R,2021,Coho,Fall,Fry,Rebuilding,60000
+120,Snettisham,Tahltan Lk,2021,Sockeye,Summer,Fry,Harvest,4000000
+130,Snettisham,Tatsamenie Lk,2021,Sockeye,Summer,Fry,Harvest,1375000
+130,Snettisham,Tatsamenie Lk,2021,Sockeye,Summer,Fry,Assessment/Harvest,225000
+130,Snettisham,Trapper Lk,2021,Sockeye,Summer,Fry,Harvest,200000
+29G,Snootli Cr,Chilcotin R,2021,Chinook,Spring,Fry,Assessment,40000
+8,Snootli Cr,Atnarko R Low,2021,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Atnarko R Up,2021,Chinook,Summer,Smolt 0+,Assessment/Harvest,950000
+8,Snootli Cr,Nusatsum R,2021,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Saloompt R,2021,Chinook,Summer,Smolt 0+,Rebuilding,50000
+8,Snootli Cr,Atnarko R,2021,Chum,Fall,Fry,Conservation,40000
+8,Snootli Cr,Fish Cr+Airport Ch,2021,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Saloompt R,2021,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Snootli Cr,2021,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Thorsen Cr/CCST,2021,Chum,Summer,Fry,Harvest,1656000
+8,Snootli Cr,Atnarko R,2021,Sockeye,Summer,Fry,Rebuilding,35000
+8,Snootli Cr,Atnarko R,2021,Sockeye,Summer,Smolt 1+,Rebuilding,50000
+8,Snootli Cr,Lonesome Lk,2021,Sockeye,Summer,Fry,Rebuilding,255000
+22,Sooke R,Nitinat R,2021,Chinook,Fall,Seapen,Harvest,70000
+22,Sooke R,Nitinat R,2021,Chinook,Fall,Smolt 0+,Rebuilding,212500
+20,Sooke R,Sooke R,2021,Chinook,Fall,Smolt 0+,Rebuilding,225000
+20,Sooke R,Demamiel Cr,2021,Coho,Fall,Fry,Stewardship,135000
+19,Sooke Sch,Goldstream R,2021,Chum,Fall,Fry,Education,1800
+19,Sooke Sch,Goldstream R,2021,Chum,Fall,Fry,Education,2400
+19,Sooke Sch,Goldstream R,2021,Chum,Fall,Fry,Education,400
+20,Sooke Sch,Demamiel Cr,2021,Coho,Fall,Fry,Education,1200
+29G,Spius Cr,Chilcotin R,2021,Chinook,Spring,Fry,Assessment,40000
+29F,Spius Cr,Coldwater R,2021,Chinook,Spring,Fry,Rebuilding,30000
+29F,Spius Cr,Coldwater R,2021,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29F,Spius Cr,Nicola R,2021,Chinook,Spring,Smolt 1+,Assessment,200000
+29F,Spius Cr,Nicola R,2021,Chinook,Spring,Fry,Assessment,50000
+29K,Spius Cr,Salmon R/TOMF,2021,Chinook,Spring,Fry,Rebuilding,70000
+29F,Spius Cr,Spius Cr,2021,Chinook,Spring,Smolt 1+,Rebuilding,55000
+29G,Spius Cr,Chilko R,2021,Chinook,Summer,Fry,Assessment,50000
+29F,Spius Cr,Nahatlatch R,2021,Chinook,Summer,Fry,Conservation,50000
+29F,Spius Cr,Coldwater R,2021,Coho,Fall,Fry,Assessment,25000
+29F,Spius Cr,Coldwater R,2021,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Eagle R,2021,Coho,Fall,Fry,Assessment,20000
+29K,Spius Cr,Eagle R,2021,Coho,Fall,Smolt 1+,Assessment,65000
+29K,Spius Cr,Salmon R/TOMF,2021,Coho,Fall,Fry,Conservation,5000
+29K,Spius Cr,Salmon R/TOMF,2021,Coho,Fall,Smolt 1+,Conservation,25000
+23,Sproat Lake ES,Sproat Lake Tribs,2021,Coho,Fall,Fry,Stewardship,10000
+29I,Spruce C Wldlf Ass,Bowron R,2021,Chinook,Spring,Fry,Conservation,28000
+29J,Spruce C Wldlf Ass,Swift Cr,2021,Chinook,Spring,Fry,Conservation,18000
+29I,Spruce C Wldlf Ass,Nechako R,2021,Chinook,Summer,Fry,Rebuilding,28000
+16,Sunshine Coast Sch,Chapman Cr,2021,Coho,Fall,Fry,Education,300
+29B,Surrey Sch,L Campbell R,2021,Coho,Fall,Fry,Education,1700
+29B,Surrey Sch,Nicomekl R,2021,Coho,Fall,Fry,Education,90
+29B,Surrey Sch,Serpentine R,2021,Coho,Fall,Fry,Education,1400
+25,Tahsis R,Leiner R,2021,Chinook,Fall,Seapen,Rebuilding,300000
+29I,Takla Nation Portable,Stuart R,2021,Sockeye,Spring,Fry,Conservation,90000
+28,Tenderfoot Cr,Ashlu Cr,2021,Chinook,Summer,Fry,Rebuilding,5000
+28,Tenderfoot Cr,Ashlu Cr,2021,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Cheakamus R,2021,Chinook,Summer,Fry,Rebuilding,70000
+28,Tenderfoot Cr,Cheakamus R,2021,Chinook,Summer,Smolt 1+,Rebuilding,35000
+28,Tenderfoot Cr,Mamquam R,2021,Chinook,Summer,Fry,Rebuilding,5000
+28,Tenderfoot Cr,Mamquam R,2021,Chinook,Summer,Smolt 1+,Rebuilding,10000
+29G,Tenderfoot Cr,Portage Cr,2021,Chinook,Summer,Smolt 1+,Conservation,50000
+28,Tenderfoot Cr,Shovelnose Cr,2021,Chinook,Summer,Fry,Rebuilding,5000
+28,Tenderfoot Cr,Shovelnose Cr,2021,Chinook,Summer,Smolt 1+,Rebuilding,10000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Chum,Fall,Fry,Rebuilding,400000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Chum,Fall,Fry,Rebuilding,100000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Chum,Fall,Fry,Rebuilding,300000
+28,Tenderfoot Cr,Mamquam R,2021,Coho,Fall,Fry,Rebuilding,10000
+28,Tenderfoot Cr,Mamquam R,2021,Coho,Fall,Smolt 1+,Harvest,25000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Coho,Fall,Fry,Rebuilding,50000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Coho,Fall,Fry,Rebuilding,200000
+28,Tenderfoot Cr,Tenderfoot Cr,2021,Coho,Fall,Smolt 1+,Harvest,100000
+28,Tenderfoot Cr,Cheakamus R,2021,Pink,Fall,Fry,Harvest,332500
+28,Tenderfoot Cr,Cheakamus R,2021,Pink,Fall,Fry,Rebuilding,617500
+28,Terminal Cr,Tenderfoot Cr,2021,Chum,Fall,Fry,Rebuilding,80000
+28,Terminal Cr,Capilano R,2021,Coho,Fall,Fry,Stewardship,2000
+28,Terminal Cr,Capilano R,2021,Coho,Fall,Fry,Stewardship/Education,2500
+4,Terrace,Kitsum Abv Canyon,2021,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Abv Canyon,2021,Chinook,Summer,Smolt 1+,Assessment,30000
+4,Terrace,Kitsum Bel Canyon,2021,Chinook,Summer,Fry,Assessment,100000
+4,Terrace,Kitsum Bel Canyon,2021,Chinook,Summer,Smolt 1+,Assessment,30000
+15,Texada Is Vol,Lang Cr,2021,Chum,Fall,Fry,Stewardship,70000
+29J,Thompson R N,Dunn Cr,2021,Coho,Fall,Smolt 1+,Stewardship,30000
+23,Thornton Cr,Thornton Cr,2021,Chinook,Fall,Smolt 0+,Harvest,100000
+23,Thornton Cr,Toquart R,2021,Chinook,Fall,Fry,Rebuilding,210000
+23,Thornton Cr,Salmon Cr/SWVI,2021,Chum,Fall,Fry,Rebuilding,500000
+23,Thornton Cr,Thornton Cr,2021,Chum,Fall,Fry,Stewardship,100000
+23,Thornton Cr,Toquart R,2021,Chum,Fall,Fry,Rebuilding,500000
+24,Thornton Cr,Twin R E,2021,Chum,Fall,Fry,Rebuilding,50000
+24,Thornton Cr,Kennedy R Up,2021,Coho,Fall,Fry,Rebuilding,35000
+23,Thornton Cr,Thornton Cr,2021,Coho,Fall,Smolt 1+,Stewardship,10000
+4,Toboggan Cr,Bulkley R Up,2021,Chinook,Spring,Smolt 1+,Conservation,35000
+4,Toboggan Cr,Toboggan Cr,2021,Coho,Summer,Fry,Stewardship,15000
+4,Toboggan Cr,Toboggan Cr,2021,Coho,Summer,Smolt 1+,Assessment,35000
+24,Tofino,Bedwell R,2021,Chinook,Fall,Seapen,Rebuilding,85000
+24,Tofino,Cypre R,2021,Chinook,Fall,Smolt 0+,Rebuilding,160000
+24,Tofino,Tranquil Cr,2021,Chinook,Fall,Smolt 0+,Rebuilding,65000
+24,Tofino,Tranquil Cr,2021,Chum,Fall,Fry,Stewardship,45000
+24,Tofino,Tranquil Cr,2021,Chum,Fall,Fry,Rebuilding,250000
+24,Tofino,Cypre R,2021,Coho,Fall,Fry,Stewardship,55000
+24,Tofino,Kootowis Cr,2021,Coho,Fall,Fry,Stewardship,35000
+14,Tsolum R,Tsolum R,2021,Pink,Fall,Fry,Rebuilding,100000
+12,Vanc Is North Sch,Nimpkish R Low,2021,Chum,Fall,Fry,Education,100
+12,Vanc Is North Sch,Hyde Cr/JNST,2021,Coho,Fall,Fry,Education,50
+12,Vanc Is North Sch,Hyde Cr/JNST,2021,Coho,Fall,Fry,Education,200
+12,Vanc Is North Sch,Nimpkish R,2021,Coho,Fall,Fry,Education,100
+12,Vanc Is North Sch,Quatse R,2021,Coho,Fall,Fry,Education,100
+12,Vanc Is North Sch,Quatse R,2021,Coho,Fall,Fry,Education,150
+12,Vanc Is North Sch,Quatse R,2021,Coho,Fall,Fry,Education,50
+12,Vanc Is North Sch,Quatse R,2021,Coho,Fall,Fry,Education,350
+25,Vanc Is West (Gold R) Sch,Conuma R,2021,Chum,Fall,Fry,Education,100
+25,Vanc Is West (Gold R) Sch,Conuma R,2021,Coho,Fall,Fry,Education,900
+25,Vanc Is West (Zeball) Sch,Zeballos R,2021,Chum,Fall,Fry,Education,70
+25,Vanc Is West (Zeball) Sch,Zeballos R,2021,Coho,Fall,Fry,Education,100
+29C,Vancouver Sch,Brunette R,2021,Chum,Fall,Fry,Education,3000
+29C,Vancouver Sch,Kanaka Cr,2021,Chum,Fall,Fry,Education,2000
+28,Vancouver Sch,Capilano R,2021,Coho,Fall,Fry,Education,3000
+29K,Vernon Sch,Shuswap R Low,2021,Chinook,Summer,Fry,Education,950
+7,Victor Cr,Mary Cv Cr,2021,Sockeye,Fall,Fry,Stewardship,30000
+7,Victor Cr,Mary Cv Cr,2021,Sockeye,Fall,Smolt 1+,Stewardship,15000
+19,Victoria Sch,Goldstream R,2021,Chum,Fall,Fry,Education,2100
+19,Victoria Sch,Goldstream R,2021,Chum,Fall,Fry,Education,8600
+19,Victoria Sch,Goldstream R,2021,Chum,Fall,Fry,Education,2000
+19,Victoria Sch,Goldstream R,2021,Coho,Fall,Fry,Education,1600
+19,Victoria Sch,Goldstream R,2021,Coho,Fall,Fry,Education,2000
+19,Victoria Sch,Goldstream R,2021,Coho,Fall,Fry,Education,200
+19,Victoria Sch,Goldstream R,2021,Coho,Fall,Fry,Education,300
+17,Walker Cr/GSVI,Bush Cr,2021,Chum,Fall,Fry,Stewardship,18000
+17,Walker Cr/GSVI,Chemainus R,2021,Chum,Fall,Fry,Stewardship,40000
+17,Walker Cr/GSVI,Holland Cr,2021,Chum,Fall,Fry,Stewardship,22000
+17,Walker Cr/GSVI,Stocking Cr,2021,Chum,Fall,Fry,Stewardship,30000
+17,Walker Cr/GSVI,Walker Cr/GSVI,2021,Chum,Fall,Fry,Stewardship,7200
+17,Walker Cr/GSVI,Bush Cr,2021,Coho,Fall,Fry,Stewardship,6500
+17,Walker Cr/GSVI,Holland Cr,2021,Coho,Fall,Fry,Stewardship,10000
+17,Walker Cr/GSVI,Stocking Cr,2021,Coho,Fall,Fry,Stewardship,5000
+29D,Weaver Sp Ch,Weaver Sp Ch,2021,Chum,Fall,Fry,Harvest,2700000
+29D,Weaver Sp Ch,Weaver Sp Ch,2021,Pink,Fall,Fry,Harvest,2500000
+29D,Weaver Sp Ch,Weaver Sp Ch,2021,Sockeye,Fall,Fry,Harvest,46800000
+29C,West Van Sch,Alouette R S,2021,Chum,Fall,Fry,Education,650
+28,West Van Sch,Seymour R/GSMN,2021,Chum,Fall,Fry,Education,1800
+120,Whitehorse,Yukon R,2021,Chinook,Spring,Smolt 0+,Rebuilding,30000
+120,Whitehorse,Yukon R,2021,Chinook,Spring,Smolt 0+,Rebuilding,80000
+120,Whitehorse,Yukon R,2021,Chinook,Spring,Smolt 0+,Rebuilding,10000
+120,Whitehorse Sch,Blind Cr,2021,Chinook,Spring,Fry,Stewardship/Education,300
+120,Whitehorse Sch,Klondike R N,2021,Chinook,Spring,Fry,Stewardship/Education,150
+120,Whitehorse Sch,Tatchun R,2021,Chinook,Spring,Fry,Stewardship/Education,150
+120,Whitehorse Sch,Yukon R,2021,Chinook,Spring,Fry,Stewardship/Education,1500
+12,Woss Comm H,Woss R,2021,Chinook,Fall,Smolt 0+,Stewardship,80000
+12,Woss Comm H,Nimpkish R,2021,Coho,Fall,Smolt 1+,Stewardship,5775
+12,Woss Comm H,Nimpkish R,2021,Coho,Fall,Smolt 1+,Stewardship,5900
+25,Zeballos R,Zeballos R,2021,Chum,Fall,Fry,Stewardship,20000

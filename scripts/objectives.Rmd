@@ -1,0 +1,82 @@
+---
+title: "Production Planning Objectives"
+author: "Sam James"
+date: "22/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r, include=FALSE, echo = FALSE}
+# install packages
+library(tidyverse)
+library(here)
+
+# Load data files
+PP2014 <- read_csv(here("raw", "PP/2014_PP.csv"))
+PP2015 <- read_csv(here("raw", "PP/2015_PP.csv"))
+PP2016 <- read_csv(here("raw", "PP/2016_PP.csv"))
+PP2017 <- read_csv(here("raw", "PP/2017_PP.csv"))
+PP2018 <- read_csv(here("raw", "PP/2018_PP.csv"))
+PP2019 <- read_csv(here("raw", "PP/2019_PP.csv"))
+PP2020 <- read_csv(here("raw", "PP/2020_PP.csv"))
+PP2021 <- read_csv(here("raw", "PP/2021_PP.csv"))
+
+```
+
+
+```{r, include=FALSE, echo = FALSE}
+PP2014 <- PP2014 %>%
+  mutate(year = '2014')
+
+PP2015 <- PP2015 %>%
+  mutate(year = '2015')
+
+PP2016 <- PP2016 %>%
+  mutate(year = '2016')
+
+PP2017 <- PP2017 %>%
+  mutate(year = '2017')
+
+PP2018 <- PP2018 %>%
+  mutate(year = '2018')
+
+PP2019 <- PP2019 %>%
+  mutate(year = '2019')
+
+PP2020 <- PP2020 %>%
+  mutate(year = '2020')
+
+PP2021 <- PP2021 %>%
+  mutate(year = '2021')
+
+# Combine data in PPs into one dataframe:
+all_PP <- rbind(PP2014, PP2015, PP2016, PP2017, PP2018, PP2019, PP2020, PP2021) 
+
+
+all_PP_sub <- all_PP %>%
+  filter(prod_activity == 'Release', target_no != "-", strat_lvl == "Primary") %>%
+  select(stat_area, project, stock, year, species, run, stage, obj, target_no) %>%
+  mutate(stage = case_when(stage %in% c("Fed Fry", "Unfed", "Chan Fry", "Fed Fall", "Nat Emerg") ~ "Fry",
+                           stage %in% c("Seapen 0+", "Seapen", "Seapen 1+") ~ "Seapen",
+                           TRUE ~ stage)) %>%
+  distinct() %>%
+  mutate_at(vars(9), readr::parse_number)
+write_csv(all_PP_sub, "../processed/PP_objectives.csv")
+
+# To create Table 1 in the appendix showing % of target releases for each objective for each life stage of each species
+obj_table <- all_PP_sub %>%
+  group_by(year, species, stage, obj) %>%
+  summarise(target_rel = sum(target_no, na.rm = T)) %>%
+  group_by(year, species) %>%
+  mutate(totrel = sum(target_rel), prop = target_rel/totrel)
+  group_by(species, stage, obj) %>%
+  summarise(mean_prop = mean(prop*100), sd_prop = sd(prop*100)) %>% 
+  pivot_wider(names_from = obj, values_from = c(mean_prop, sd_prop)) 
+write_csv(obj_table, "../processed/obj_summary_table_bystage.csv")
+
+```
+
