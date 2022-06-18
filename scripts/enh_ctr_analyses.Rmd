@@ -1319,7 +1319,6 @@ The following code produces figures 31 and 32 in the harvest report. Note there 
 ```{r Catch Efficiency}
 # Catch efficiency: catch per release
 
-
 ## ---- CN ----
 # Pull out CN production plan objectives from all years PPs. Some have multiple objectives so have manually assigned objectives for those specific stock-project-run combinations. Where there were >1 objective, I chose the one with the most target releases between 2014-2021.
 CN_obj <- PP %>%
