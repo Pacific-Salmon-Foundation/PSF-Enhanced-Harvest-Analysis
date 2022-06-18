@@ -11,24 +11,31 @@ See report for full description of methods.
 
 An alternate approach using CTC data is explored at the bottom, however this method was not pursued/included for the final report due to issues in properly assigning fisheries to catch.
 
-```{r}
+```{r import}
 library(tidyverse)
 library(here)
 library(RColorBrewer)
 library(ggpubr)
 library(scales)
 
-# Read in data (data files generated in the 'catch_data_wrangle.Rmd' script)
+# Read in catch data (total and hatchery) (data files generated in the 'catch_data_wrangle.Rmd' script)
 total_catch <- read_csv(here("processed", "total_catch.csv"))
 CN_all_catch <- read_csv(here("processed", "CN_ALL_catch.csv"))
 CO_all_catch <- read_csv(here("processed", "CO_ALL_catch.csv"))
 
+# Expanded CWT catch data by fishery for CN from EPAD
+CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
+
+# Expanded CWT catch by fishery data for CO from EPAD
+CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
+
 # Chum dat from Lynch et al. 2020 (raw data processed in the 'chum_wrangle.Rmd' script)
 CM_dat <- read_csv(here("processed", "chum_all.csv"))
 
+# Bring in production plan objectives (file generated in the 'objectives.Rmd' script)
+PP <- read_csv(here("processed", "PP_objectives.csv"))
+
 ```
-
-
 
 ```{r Total Catch}
 # Generate plots of total salmon catches by fishery for each stat area for each species
@@ -231,7 +238,7 @@ mean_enhctr_CO <- regional_enhctr_CO %>%
   
 ```
 
-The following code generates Figures 9-11 in the Harvest report showing expanded CWT catch, extended hatchery catch, and total catch
+The following code generates Figures 9-10 in the Harvest report showing expanded CWT catch, extended hatchery catch, and total catch
 
 ```{r Hatchery Catch}
 # First plot expanded CWT hatchery catch vs our extended hatchery catch vs total catch (Figures 9-10 in report)
@@ -496,7 +503,7 @@ ggsave("../figs/SBC_enhctr_byregion_CN.png", width = 20, height = 12, units = "c
 
 ```
 
-The following code generates Figures 16-19 in the Harvest Report
+The following code generates Figures 18-25 in the Harvest Report
 
 ```{r Enhanced Contribution by Fishery by Region}
 
@@ -571,7 +578,7 @@ hatch_props_NCST_CN <- ggplot(subset(fishery_props_CN, region == "NCST"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_NCST_CN
 
-# Combine to make Figure 17
+# Combine to make Figure 18
 ggarrange(totcatch_NCST_CN, hatch_props_NCST_CN, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_NCST_CN.png", width = 16, height = 11, units = "cm")
 
@@ -603,7 +610,7 @@ hatch_props_CCST_CN <- ggplot(subset(fishery_props_CN, region == "CCST"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_CCST_CN
 
-# Combine to make Figure 17
+# Combine to make Figure 19
 ggarrange(totcatch_CCST_CN, hatch_props_CCST_CN, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_CCST_CN.png", width = 16, height = 11, units = "cm")
 
@@ -637,7 +644,7 @@ hatch_props_WCVI_CN <- ggplot(subset(fishery_props_CN, region == "WCVI"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_WCVI_CN
 
-# Combine to make Figure 16
+# Combine to make Figure 20
 ggarrange(totcatch_WCVI_CN, hatch_props_WCVI_CN, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_WCVI_CN.png", width = 18, height = 12, units = "cm")
 
@@ -669,7 +676,7 @@ hatch_props_ISC_CN <- ggplot(subset(SBC_fishery_props_CN, region == "ISC"), aes(
   labs(y = "Proportion of Catch")
 hatch_props_ISC_CN
 
-# Combine to make Figure 17
+# Combine to make Figure 21
 ggarrange(totcatch_ISC_CN, hatch_props_ISC_CN, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_ISC_CN.png", width = 18, height = 12, units = "cm")
 
@@ -745,7 +752,7 @@ hatch_props_NCST_CO <- ggplot(subset(fishery_props_CO, region == "NCST"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_NCST_CO
 
-# Combine to make Figure 18
+# Combine to make Figure 22
 ggarrange(totcatch_NCST_CO, hatch_props_NCST_CO, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_NCST_CO.png", width = 18, height = 12, units = "cm")
 
@@ -777,7 +784,7 @@ hatch_props_CCST_CO <- ggplot(subset(fishery_props_CO, region == "CCST"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_CCST_CO
 
-# Combine to make Figure 18
+# Combine to make Figure 23
 ggarrange(totcatch_CCST_CO, hatch_props_CCST_CO, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_CCST_CO.png", width = 16, height = 11, units = "cm")
 
@@ -809,7 +816,7 @@ hatch_props_WCVI_CO <- ggplot(subset(fishery_props_CO, region == "WCVI"), aes(x 
   labs(y = "Proportion of Catch")
 hatch_props_WCVI_CO
 
-# Combine to make Figure 18
+# Combine to make Figure 24
 ggarrange(totcatch_WCVI_CO, hatch_props_WCVI_CO, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_WCVI_CO.png", width = 18, height = 12, units = "cm")
 
@@ -840,13 +847,13 @@ hatch_props_ISC_CO <- ggplot(subset(fishery_props_CO, region == "ISC"), aes(x = 
   labs(y = "Proportion of Catch")
 hatch_props_ISC_CO
 
-# Combine to make Figure 19
+# Combine to make Figure 25
 ggarrange(totcatch_ISC_CO, hatch_props_ISC_CO, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_ISC_CO.png", width = 18, height = 12, units = "cm")
 
 ```
 
-The following code generates the enhanced contribution figures for Chum (Figures 14 and 15 and )
+The following code generates the enhanced contribution figures for Chum (Figures 16 and 17 and )
 Note, these data are from Lynch et al (2020), however the data only pertain to net fisheries, not troll or rec.
 
 ```{r CHUM Enhanced Contribution}
@@ -913,7 +920,7 @@ ggsave("../figs/totcatch/total_hatch_catch_CM.png", width = 18, height = 13, uni
 
 
 
-#Prepare data for showing hatch vs non-hatch catch in bar graphs for Figures 14 and 15
+#Prepare data for showing hatch vs non-hatch catch in bar graphs for Figures 16 and 17
 chum_tab2 <- chum_tab %>%
   mutate(Other = totcatch-annual_adj_catch) %>%
   select(1:3,6) %>%
@@ -951,7 +958,7 @@ hatch_props_NBC_CM <- ggplot(subset(chum_tab2, region %in% c("NCST", "CCST")), a
   labs(y = "Proportion of Catch")
 hatch_props_NBC_CM
 
-# Combine to create Figure 14 in report
+# Combine to create Figure 16 in report
 ggarrange(totcatch_NBC_CM, hatch_props_NBC_CM, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_NBC_CM.png", width = 18, height = 14, units = "cm")
 
@@ -986,261 +993,202 @@ hatch_props_SBC_CM <- ggplot(subset(chum_tab2, region %in% c("WCVI", "ISC")), ae
   labs(y = "Proportion of Catch")
 hatch_props_SBC_CM
 
-# Combine to create Figure 15 in report
+# Combine to create Figure 17 in report
 ggarrange(totcatch_SBC_CM, hatch_props_SBC_CM, nrow = 2, heights = c(4,5), align = "v")
 ggsave("../figs/totcatch_hatchprops_SBC_CM.png", width = 18, height = 14, units = "cm")
 
 
 ```
 
-# CTC Method
-
-Exploration of estimating enhanced contribtution using data from the Chinook Technical Committee. Note these data are for Chinook only.
-THIS ANALYSIS WAS NOT INCLUDED IN THE REPORT
-
-## Data:
-
-__Total annual catch:__
-  *The Pacific Salmon Commission’s (PSC) Joint Chinook Technical Committee (CTC) Annual Report of Catch and Escapement contains tables of landed catch of Chinook salmon by region and gear type in Appendix A. The full dataset with all catch for all years was acquired through the CTC (downloaded by Andy from the CTC website)
-
-__Total enhanced catch:__
-  *Total annual returns of CWT Chinook were obtained from SEP’s EPAD (provided by Cheryl Lynch). Data were filtered to only include the stocks and stages used as CTC indicators to calculate an annual total indicator catch value and be able to match indicator catch to the total catch reported in the CTC reports.
-  *The PSC’s CTC annual Exploitation Rate Analysis reports contain tables of the percent distribution of landed catch for exploitation rate indicator stocks by calendar year in Appendix C. The full dataset with mortality distributions for all years for indicator stocks in BC was acquired from the CTC website
-  *Non-indicator catch: based off of hatchery release records from EPAD (provided by Joan Bateman), which were used to estimate the proportion of total hatchery releases that are CTC indicator releases
-  
-## Method: 
-To determine enhanced contribution to total catch, I used a combination of CTC and EPAD data. Total catch by region/fishery was obtained from the CTC’s Annual Report of Catch and Escapement, Appendix A. In these reports, the fisheries are grouped into “Troll”, “Net”, and “Sport”, and have been separated into AABM and ISBM fisheries per region (AABM: SEAK, NBC, WCVI; ISBM: NBC & CBC, SBC, N Falcon, S Falcon, WAC, Puget Sound; Terminal: SEAK, Canada, SUS). Note that the American regions/fisheries were grouped as follows:
-  
-  *SEAK = SEAK AABM + SEAK Term
-  *SUS = N Falcon ISBM + S Falcon ISBM + WAC ISBM + SUS Term
-
-There is no stock information associated with the total catch data, but I needed to figure out what proportion of that total catch was made up of the CWT-based CTC indicator stocks. To do this, I filtered the EPAD CWT returns to only include CTC indicator stocks and extracted total annual returns (catch + escapement). To allocate each year’s return to the appropriate fishery or escapement, I multiplied the returns by the % distributions in the CTC’s mortality distribution tables (these tables show what proportion of the indicator stocks were captured in each fishery or made it to escapement each year). This gave me total indicator catch per region/fishery. It should be noted however that it is not entirely clear which fisheries go into the CTC total catch. I have made my best guess using their fishery key, however not all fisheries listed in the key were provided in the mortality distribution tables, so there may be some discrepancies if key fisheries are missing (this is being discussed with members of the CTC).
-To account for hatchery catch of non-CTC indicators, I calculated the proportion of all hatchery releases that were indicator releases each year. I then plotted the figure and visually selected time periods where the proportion of releases that were indicators were similar. This resulted in the following proportions of indicators in releases:
-
-1972-1977:	0.29
-1978-1984:	0.87
-1985-2003:	0.65
-2004-2019:	0.76
-
-I then used these proportions to expand the total indicator catch to the total enhanced catch by dividing the returns in each year by the associated proportion. This was then divided by total catch to get enhanced contribution to catch.
-
-# CTC Code
-
-```{r Import CTC Data, echo = FALSE}
-# CTC CN catch
-CTC_catch <- read_csv(here("raw", "CTC_totcatch.csv"))
-
-# Mortality Distribution Tables from CN CTC
-CTC_MDT <- read_csv(here("raw", "CTC_MDT.csv"))
-
-```
+The following code produces figures 31 and 32 in the harvest report. Note there are several challenges in analysing data by production objective. Here, 'PP' is all Primary objectives for all Release lines of production from the 2014-2021 produciton plans combined. Upon manual inspection, there were several project-stock-run combinations that had more than one production objective over that time period. Therefore, I've manually assigned the objective that had the most releases to the relevant project-stock-run combination below. However, this means that some objectives will be under/over-represented in the figures.
 
 
-```{r CTC Data Tidy}
-# Reformat CTC catch data
-CTC_dat <- CTC_catch %>%
-  rename(year = Year, region = Fishery) %>%
-  pivot_longer(cols = 3:8, names_to = "fishery", values_to = "overall_catch") %>%
-  mutate(region = case_when(region == "NC BC ISBM" ~ "NCBC ISBM",
-                            region == "PS -JDF" ~ "PS",
-                           TRUE ~ region))
-
-# Reformat mortality distribution table
-CTC_MDT1 <- CTC_MDT %>%
-  select(-c(2, 4:5, 34)) %>%
-  rename(year = Catch.Year, stock = Stock, escapement = Escapement) %>%
-  pivot_longer(cols = 3:30, names_to = "fishery", values_to = "catch") %>%
-  select(1:2, 4:5, 3) %>%
-  separate(fishery, c("type", "region", "fishery"), fill = "left") %>%
-  mutate(stock = case_when(stock == "Lower Shuswap" ~ "Shuswap R Low",
-                           stock == "Robertson" ~ "Robertson Cr",
-                           stock == "Quinsam" ~ "Quinsam R",
-                           stock == "Puntledge" ~ "Puntledge R",
-                           stock == "Phillips" ~ "Phillips R",
-                           stock == "Nicola" ~ "Nicola R", 
-                           stock == "Nanaimo" ~ "Nanaimo R",
-                           stock == "Middle Shuswap" ~ "Shuswap R Middle",
-                           stock == "Kitsumkalum" ~ "Kitsumkalum R",
-                           stock == "Harrison" ~ "Harrison R",
-                           stock == "Dome" ~ "Dome Cr", 
-                           stock == "Cowichan" ~ "Cowichan R",
-                           stock == "Chilliwack" ~ "Chilliwack R",
-                           stock == "Big Qualicum" ~ "Big Qualicum R",
-                           stock == "Atnarko" ~ "Atnarko R",
-                           TRUE ~ stock))
-
-```
-
-```{r Import EPAD Data, echo = FALSE}
-# Expanded CWT catch data by fishery for CN from EPAD - all
-CN_dat <- read_csv(here("raw", "CN_expanded_all.csv"))
-
-# Expanded CWT catch data by fishery for CO from EPAD - all
-CO_dat <- read_csv(here("raw", "CO_expanded_all.csv"))
-
-# Bring in release data from EPAD
-all_rel <- read_csv(here("raw", "All_SEP_releases.csv")) 
-```
+```{r Catch Efficiency}
+# Catch efficiency: catch per release
 
 
-```{r EPAD Data Tidy}
-# pull out total catch from EPAD
-CN_EPAD <- CN_dat %>%
-  select(project = PROJ_NAME, species = SPECIES_NAME, run = RUN_NAME, BY = BROOD_YEAR, stock = STOCK_NAME, CU = STOCK_CU_INDEX, facility = FACILITY_NAME, prod_area = PROD_AREA_CODE, stage = RELEASE_STAGE_NAME, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, surv_code = SURVIVAL_CODE, expl_code = EXPLOIT_CODE, bio_code = BIOSTND_CODE, tottagged = TotTagged, totrel = TotRelease, age = Age, year = RecovYear, totcatch = TotCatch, escape = Escape, returns = `TotCatch+Esc`) %>%
-  mutate(stock = case_when(stock %in% c("Atnarko R Low", "Atnarko R Up") ~ "Atnarko R", 
-                           stock %in% c("Kitsumkalum R", "Kitsum Abv Canyon", "Kitsum Bel Canyon") ~ "Kitsumkalum R",
-                           TRUE ~ stock)) %>%
-  mutate(stock = case_when((stock == "Kitsumkalum R" & stage == "Smolt 1+") ~ "Kitsumkalum.Yearling",
-                           (stock == "Atnarko R" & stage == "Smolt 1+") ~ "Atnarko.Yearling",
-                           TRUE ~ stock)) %>%
-  filter(!stage %in% c("Nat Sm 0+", "Seapen 0+", "Fed Fry", "Fed Fall", "Nat Fry", "Seapen 1+"), expl_code != "N")
-
-# Pull out the relevant/indicator stocks by joining catch with MDT
-CN_catch_dist <- left_join(CTC_MDT1, CN_EPAD[, c("stock", "stage", "year", "returns")], by = c("stock", "year")) %>%
-  mutate(catch = catch/100, escapement = escapement/100)
-
-# Isolate the stages that correspond with the indicators and then rejoin                           
-CN_catch_dist_yearling <- CN_catch_dist %>%
-  filter(stock %in% c("Kitsumkalum.Yearling", "Atnarko.Yearling", "Nicola R", "Dome Cr"))
-CN_catch_dist_indicators <- CN_catch_dist %>%
-  filter(stage != "Smolt 1+")
-CN_catch_dist1 <- rbind(CN_catch_dist_yearling, CN_catch_dist_indicators) %>%
-  mutate(type = replace_na(type, "AABM")) %>%
-  unite(col = region, region, type, sep = " ", remove = T, na.rm = T)
-
-# Ensure the EPAD catch and catch distribution have the same regions as the CTC catch data and then calculate tot catch and escapement using MDT values
-CN_catch_dist <- CN_catch_dist1 %>%
-  mutate(region = case_when(region %in% c("SEAK AABM", "SEAK Term") ~ "SEAK",
-                           region %in% c("NF ISBM", "SF ISBM", "WAC ISBM", "SUS Term") ~ "SUS",
-                           region == "PS ISBM" ~ "PS",
-                           region == "CAN Term" ~ "CDN Term",
-                           TRUE ~ region)) %>%
-  group_by(stock, year, region, fishery) %>%
-  mutate(totreturns = sum(returns), catch = sum(unique(catch))) %>%
-  select(-returns) %>%
+## ---- CN ----
+# Pull out CN production plan objectives from all years PPs. Some have multiple objectives so have manually assigned objectives for those specific stock-project-run combinations. Where there were >1 objective, I chose the one with the most target releases between 2014-2021.
+CN_obj <- PP %>%
+  filter(species == "Chinook") %>%
+  select(proj = project, stock, run, obj) %>%
   distinct() %>%
-  rowwise() %>%
-  mutate(totcatch = catch*totreturns, totescape = escapement*totreturns) %>%
-  group_by(year, region, fishery) %>%
-  mutate(comb_ind_catch = sum(totcatch, na.rm = T))
+  mutate(obj = case_when(obj == "Assessment/Harvest" ~ "Harvest",
+                         obj == "Assessment/Rebuilding" ~ "Rebuilding",
+                         obj == "Assessment/Conservation" ~ "Conservation",
+                         obj %in% c("Stewardship", "Education", "Stewardship/Education") ~ "Stewardship & Education",
+                         TRUE ~ obj)) %>%
+  mutate(obj = case_when(stock == "Bulkley R Up" & proj == "Toboggan Cr" & run == "Spring" ~ "Rebuilding",
+                         stock == "Chilko R" & proj == "Chehalis R" & run == "Summer" ~ "Rebuilding",
+                         stock == "Chilko R" & proj == "Inch Cr" & run == "Summer" ~ "Assessment",
+                         stock == "Chilko R" & proj == "Spius Cr" & run == "Summer" ~ "Rebuilding",
+                         stock == "Cowichan R" & proj == "Cowichan R" & run == "Fall" ~ "Conservation",
+                         stock == "Gold R" & proj == "Conuma R" & run == "Fall" ~ "Harvest & Rebuilding",
+                         stock == "Nicola R" & proj == "Spius R" & run == "Spring" ~ "Rebuilding",
+                         stock == "Nitinat R" & proj == "Nitinat R" & run == "Fall" ~ "Harvest",
+                         stock == "Nitinat R" & proj == "Sooke R" & run == "Fall" ~ "Harvest",
+                         stock == "Portage R" & proj == "Tenderfoot Cr" & run == "Summer" ~ "Conservation",
+                         stock == "Quinsam R" & proj == "Quinsam R" & run == "Fall" ~ "Harvest",
+                         stock == "Robertson Cr" & proj == "Robertson Cr" & run == "Fall" ~ "Harvest",
+                         stock == "San Juan R" & proj == "San Juan R" & run == "Fall" ~ "Rebuilding",
+                         stock == "Sarita R" & proj == "Nitinat R" & run == "Fall" ~ "Rebuilding",
+                         stock == "Shuswap R Middle" & proj == "Shuswap R Middle" & run == "Summer" ~ "Assessment",
+                         stock == "Sooke R" & proj == "Sooke R" & run == "Fall" ~ "Harvest",
+                         TRUE ~ obj))
 
-CN_ind_catch <- CN_catch_dist %>%
-  select(year, region, fishery, comb_ind_catch) %>%
+# Tidy up hatchery catch data
+CN_data <- CN_dat %>%
+  select(proj = PROJ_NAME, species = SPECIES_NAME, run = RUN_NAME, stock = STOCK_NAME, prod_area = PROD_AREA_CODE, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, TotRelease, TotCatch, Escape) %>%
   distinct()
 
-# Estimate enhanced contribution of indicators to total catch
-CN_catch_indcontr <- left_join(CTC_dat, CN_ind_catch) %>%
-  mutate(ind_contr = comb_ind_catch/overall_catch) %>%
-  filter(ind_contr < Inf)
+# Combine objectives with the catch data from EPAD (expanded catches)
+CN_obj_catch <- left_join(CN_data, CN_obj, by = c("proj", "stock", "run")) 
 
-ggplot(CN_catch_indcontr, aes(x = year, y = ind_contr, fill = fishery)) +
-  geom_bar(position = "dodge", stat = "identity") +
-  facet_wrap(~region, scales = "free_y")
-
-```
-
-```{r CTC Enh Contr}
-rel <- all_rel %>%
-  select(species = SPECIES_NAME, stock = STOCK_NAME, stage = RELEASE_STAGE_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, tagged = TaggedNum, nonCWT_mark = NoTagNum, unmrk = UnmarkedNum, totrel = TotalRelease, exp_code = EXPLOIT_CODE) %>%
-  mutate(stock = case_when(stock %in% c("Atnarko R Low", "Atnarko R Up") ~ "Atnarko R", 
-                           stock %in% c("Kitsumkalum R", "Kitsum Abv Canyon", "Kitsum Bel Canyon") ~ "Kitsumkalum R",
-                           TRUE ~ stock)) %>%
-  mutate(stock = case_when((stock == "Kitsumkalum R" & stage == "Smolt 1+") ~ "Kitsumkalum.Yearling",
-                           (stock == "Atnarko R" & stage == "Smolt 1+") ~ "Atnarko.Yearling",
-                           TRUE ~ stock)) %>%
-  filter(species == "Chinook", exp_code != "N")
-
-# Isolate the stages that correspond to the indicators and then rejoin
-yearling_rel <- rel %>%
-  filter(stock %in% c("Kitsumkalum.Yearling", "Atnarko.Yearling", "Nicola R", "Dome Cr"), stage == "Smolt 1+")
-smolt_rel <- rel %>%
-  filter(stage == "Smolt 0+")
-rel2 <- rbind(yearling_rel, smolt_rel)
-
-# pull out indicator stocks and only look at those that were CWT'd
-ind_rel <- left_join(CTC_MDT1[, c("stock")], rel2, by = "stock") %>%
+# ANNUAL REGIONAL: Tidy data, group into areas, calculate catch per thousand releases per area per year
+Eff_CN_annual <- CN_obj_catch %>%
+  filter(!prod_area %in% c("TRAN", "YUKN")) %>%
+  mutate(prod_area = case_when(prod_area %in% c("CCST", "RIVR") ~ "CCST",
+                               prod_area %in% c("NCST", "QCI", "SKNA", "NASS") ~ "NCST",
+                               prod_area %in% c("UPFR", "TOMF", "TOMM", "GSMS", "GSMN", "GSVI", "JNST", "LWFR", "OKAN") ~ "ISC",
+                               prod_area %in% c("SWVI", "NWVI") ~ "WCVI",
+                               TRUE ~ prod_area)) %>%
+  mutate(obj = case_when(is.na(obj) ~ "Unknown",
+                         TRUE ~ obj)) %>%
+  mutate(obj = factor(obj, levels = c("Assessment", "Harvest", "Rebuilding", "Conservation", "Stewardship & Education", "Unknown"))) %>%
+  group_by(prod_area, tagcode, obj, OEY) %>%
+  summarise(totrel = sum(unique(TotRelease)), totcatch = sum(unique(TotCatch), na.rm = T), totescape = sum(unique(Escape), na.rm = T), CPthousandR = (totcatch/(totrel/1000)), EPthousandR = totescape/(totrel/1000)) %>%
+  group_by(prod_area, obj, OEY) %>%
+  mutate(median_CPT = median(CPthousandR), sd = sd(CPthousandR)) %>%
+  select(1, 3:4, 10:11) %>%
   distinct() %>%
-  mutate(nonCWT_mark = as.numeric(nonCWT_mark), tagged = as.numeric(tagged)) %>%
-  replace_na(list(tagged = 0, nonCWT_mark = 0, unmrk = 0)) %>%
-  mutate(unmrk = nonCWT_mark + unmrk) %>%
-  mutate(mrk = totrel-unmrk) %>%
-  mutate(mark_type = case_when(startsWith(tagcode, "R") ~ "non-CWT",
-                               startsWith(tagcode, "NO") ~ "non-CWT",
-                               startsWith(tagcode, "L") ~ "non-CWT",
-                               startsWith(tagcode, "H") ~ "non-CWT",
-                               startsWith(tagcode, "D") ~ "non-CWT",
-                               startsWith(tagcode, "AD") ~ "non-CWT",
-                               startsWith(tagcode, "B") ~ "non-CWT",
-                               TRUE ~ "CWT")) %>%
-  filter(mark_type != "non-CWT") %>%
-  select(relY, totrel) %>%
-  group_by(relY) %>%
-  summarise(indrel = sum(totrel, na.rm = T)) %>%
-  filter(relY != 'NA')
+  arrange(prod_area, obj, OEY) %>%
+  mutate(prod_area = factor(prod_area, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
+  filter(median_CPT < 100) %>%
+  arrange(obj, prod_area, OEY)
 
-# annual releases overall
-all_rel <- rel %>%
-  select(relY, totrel) %>%
-  distinct() %>%
-  group_by(relY) %>%
-  summarise(totrel = sum(totrel, na.rm = T))
 
-# proportion of overall releases that were indicators, then look at how proportion changes over time and calculate median for various time periods
-ind_prop_releases <- full_join(ind_rel, all_rel) %>%
-  mutate(ind_prop = indrel/totrel) %>%
-  mutate(mean_prop = case_when(relY %in% c(1972:1977) ~ 0.29,
-                              relY %in% c(1978:1984) ~ 0.87,
-                              relY %in% c(1985:2003) ~ 0.65,
-                              relY %in% c(2004:2019) ~ 0.76)) %>%
-  #let's assume they mostly come back as 3 year olds to help line up the rel years and recovery years
-  mutate(year = relY + 3)
+# Adding a grouping variable to consecutive years of data so that years with no data are not connected
+idx <- c(1, diff(Eff_CN_annual$OEY))
+i2 <- c(1,which(idx != 1), nrow(Eff_CN_annual)+1)
+Eff_CN_annual$grp <- rep(1:length(diff(i2)), diff(i2))
 
-# Plot proportion of releases that were indicators
-ggplot(ind_prop_releases, aes(x = relY, y = ind_prop)) +
-  geom_col()
-  
-# Now use the above proportion to estimate total enhanced contribution by region
-CN_catch_contr_region <- left_join(CN_catch_indcontr, ind_prop_releases[,c("year", "mean_prop")], by = "year") %>%
-  mutate(enhanced_catch = comb_ind_catch/mean_prop) %>%
-  group_by(year, region) %>%
-  mutate(tot_catch = sum(overall_catch), tot_hatch = sum(enhanced_catch)) %>%
-  select(year, region, tot_catch, tot_hatch) %>%
-  distinct() %>%
-  mutate(enhctr = tot_hatch/tot_catch) %>%
-  mutate(region = factor(region, levels = c("SEAK", "NBC AABM", "NCBC ISBM", "SBC ISBM", "WCVI AABM", "CDN Term", "PS", "SUS"))) %>%
-  filter(enhctr < 1)
 
-mean_enhctr_region_CTC <- CN_catch_contr_region %>%
-  group_by(region) %>%
-  summarise(mean_enhctr = mean(enhctr), sd = sd(enhctr))
+# Colour palette
+obj_cols <- c("Assessment" = "goldenrod3", "Harvest" = "steelblue", "Rebuilding" = "mediumseagreen", "Conservation" = "mediumpurple4", "Stewardship & Education" = "violetred2", "Unknown" = "grey50")
 
-# Plot total enhanced contribution by region/fishery
-ggplot(CN_catch_contr_region, aes(x = year, y = enhctr)) +
-  geom_col() +
-  facet_wrap(~region, scales = "free_y") +
+# Plot catch per thousand releases by obj by prod_area
+ggplot(Eff_CN_annual, aes(x = OEY, group = grp)) + 
+  geom_line(aes(y = median_CPT, color = obj), size = 1.5) +
+  geom_ribbon(aes(y = median_CPT, ymin = ifelse(median_CPT - sd < 0, 0, median_CPT - sd), ymax = median_CPT + sd, fill = obj), alpha = 0.3) +
+  facet_wrap(~prod_area, scales = "free_y") +
   theme_bw() +
-  labs(y = "Enhanced Contribution")
-#ggsave("../figs/harvest/totcatch/CTC_enhctr_regional.png", width = 18, height = 14, units = "cm")
+  theme(axis.title.x = element_blank(),
+        legend.title = element_blank(),
+        legend.position = "top",
+        legend.key.size = unit(0.9, "line"))+
+  labs(y = "Catch/1000 Released") +
+  scale_color_manual(values = obj_cols) +
+  scale_fill_manual(values = obj_cols) 
+# To produce Figure 31:
+ggsave("../figs/catch_efficiency_CN.png", width = 19, height = 15, units = "cm")
 
 
 
-# Now use the above proportion to estimate total enhanced catch of Chinook and calculate enhanced contribution to total catch by fishery (i.e. Net, Troll, Sport) by region
-CN_catch_contr <- left_join(CN_catch_indcontr, ind_prop_releases[,c("year", "mean_prop")], by = "year") %>%
-  mutate(enhanced_catch = comb_ind_catch/mean_prop) %>%
-  mutate(enhanced_contr = enhanced_catch/overall_catch) %>%
-  filter(enhanced_contr < 10)
+## ---- CO ----
+# Pull out CO production plan objectives
+CO_obj <- PP %>%
+  filter(species == "Coho") %>%
+  select(proj = project, stock, run, stage, obj) %>%
+  distinct() %>%
+  mutate(obj = case_when(obj == "Assessment/Harvest" ~ "Harvest",
+                         obj == "Assessment/Conservation" ~ "Conservation",
+                         obj %in% c("Stewardship", "Education", "Stewardship/Education") ~ "Stewardship & Education",
+                         TRUE ~ obj)) %>%
+  mutate(obj = case_when(stock == "Capilano R" & proj == "Capilano R" ~ "Harvest",
+                         stock == "Conuma R" & proj == "Conuma R" ~ "Harvest",
+                         stock == "Coal Cr" & proj == "Fanny B/GSVI" ~ "Harvest",
+                         stock == "Wilfred Cr (Coal)" & proj == "Fanny B/GSVI" ~ "Stewardship & Education",
+                         stock == "Goldstream R" & proj == "Goldstream R" ~ "Harvest",
+                         stock == "Kanaka Cr" & proj == "Kanaka Cr" ~ "Harvest",
+                         stock == "L Campgell R" & proj == "L Campbell R" ~ "Harvest",
+                         stock == "Little R/GSVI" & proj == "Little R/GSVI" ~ "Rebuilding",
+                         stock == "Nitinat R" & proj == "Nitinat R" ~ "Harvest",
+                         stock == "Oyster R" & proj == "Oyster R" ~ "Stewardship & Education",
+                         stock %in% c("Marble R", "Washlawlis R", "Cluxewe R", "Quatse R", "Waukwaas Cr") & proj == "P Hardy/Marble" ~ "Harvest",
+                         stock == "Coquitlan R" & proj == "Poco Hatchery" ~ "Stewardship & Education",
+                         stock == "Puntledge R" & proj == "Puntledge R" ~ "Rebuilding",
+                         stock == "Quinsam R" & proj == "Quinsam R" ~ "Harvest",
+                         stock == "Robertson Cr" & proj == "Robertson Cr" ~ "Harvest",
+                         stock %in% c("Coldwater R", "Eagle R") & proj == "Spius Cr" ~ "Conservation",
+                         stock == "Mamquam R" & proj == "Tenderfoot Cr" ~ "Harvest",
+                         stock == "Tenderfoot Cr" & proj == "Tenderfoot Cr" ~ "Rebuilding",
+                         stock == "Toboggan Cr" & proj == "Toboggan Cr" ~ "Assessment",
+                         TRUE ~ obj))
+ 
 
-mean_enhctr_CTC <- CN_catch_contr %>%
-  #filter(enhanced_contr < 1) %>%
-  group_by(region, fishery) %>%
-  summarise(mean_enhctr = mean(enhanced_contr), sd = sd(enhanced_contr))
-  
-ggplot(CN_catch_contr, aes(x = year, y = enhanced_contr, fill = fishery)) +
-  geom_bar(position = "dodge", stat = "identity") +
-  facet_wrap(~region, scales = "free_y") +
-  theme_bw()
+# Tidy up hatchery catch data
+CO_data <- CO_dat %>%
+  select(proj = PROJ_NAME, species = SPECIES_NAME, run = RUN_NAME, stock = STOCK_NAME, prod_area = PROD_AREA_CODE, tagcode = MRP_TAGCODE, OEY = RELEASE_YEAR, TotRelease, TotCatch, Escape) %>%
+  distinct()
+                        
+                         
+# Combine them with the CO_catch data from EPAD (expanded catches)
+CO_obj_catch <- left_join(CO_data, CO_obj, by = c("proj", "stock", "run")) 
+
+# ANNUAL REGIONAL: Tidy data, group into areas, calculate catch per thousand releases per area per year
+Eff_CO_annual <- CO_obj_catch %>%
+  filter(!prod_area %in% c("TRAN", "YUKN")) %>%
+  mutate(prod_area = case_when(prod_area %in% c("CCST", "RIVR") ~ "CCST",
+                               prod_area %in% c("NCST", "QCI", "SKNA", "NASS") ~ "NCST",
+                               prod_area %in% c("UPFR", "TOMF", "TOMM", "GSMS", "GSMN", "GSVI", "JNST", "LWFR", "OKAN") ~ "ISC",
+                               prod_area %in% c("SWVI", "NWVI") ~ "WCVI",
+                               TRUE ~ prod_area)) %>%
+  mutate(obj = case_when(is.na(obj) ~ "Unknown",
+                         TRUE ~ obj)) %>%
+  mutate(obj = factor(obj, levels = c("Assessment", "Harvest", "Rebuilding", "Conservation", "Stewardship & Education", "Unknown"))) %>%
+  group_by(prod_area, tagcode, obj, OEY) %>%
+  summarise(totrel = sum(unique(TotRelease)), totcatch = sum(TotCatch, na.rm = T), totescape = sum(Escape, na.rm = T), CPthousandR = (totcatch/(totrel/1000)), EPthousandR = totescape/(totrel/1000)) %>%
+  group_by(prod_area, obj, OEY) %>%
+  mutate(median_CPT = median(CPthousandR), sd = sd(CPthousandR)) %>%
+  select(1, 3:4, 10:11) %>%
+  distinct() %>%
+  arrange(prod_area, obj, OEY) %>%
+  mutate(prod_area = factor(prod_area, levels = c("NCST", "CCST", "WCVI", "ISC"))) %>%
+  filter(median_CPT < 100) %>%
+  arrange(obj, prod_area, OEY)
+
+# Adding a grouping variable to consecutive years of data so that years with no data are not connected
+idx <- c(1, diff(Eff_CO_annual$OEY))
+i2 <- c(1,which(idx != 1), nrow(Eff_CO_annual)+1)
+Eff_CO_annual$grp <- rep(1:length(diff(i2)), diff(i2))
+
+
+# Colour palette
+obj_cols <- c("Assessment" = "goldenrod3", "Harvest" = "steelblue", "Rebuilding" = "mediumseagreen", "Conservation" = "mediumpurple4", "Stewardship & Education" = "violetred2", "Unknown" = "grey50")
+
+# Plot catch per thousand releases by obj by prod_area
+CO_efficiency <- ggplot(Eff_CO_annual, aes(x = OEY, group = grp)) + 
+  geom_line(aes(y = median_CPT, color = obj), size = 1.5) +
+  geom_ribbon(aes(y = median_CPT, ymin = ifelse(median_CPT - sd < 0, 0, median_CPT - sd), ymax = median_CPT + sd, fill = obj), alpha = 0.3) +
+  facet_wrap(~prod_area, scales = "free_y") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        legend.title = element_blank(),
+        legend.position = "top",
+        legend.key.size = unit(0.9, "line"))+
+  labs(y = "Catch/1000 Released") +
+  scale_color_manual(values = obj_cols) +
+  scale_fill_manual(values = obj_cols) 
+CO_efficiency
+# To produce Figure 32
+ggsave("../figs/catch_efficiency_CO.png", width = 19, height = 15, units = "cm")
 
 ```
+
+
+
+
+
 
 
 
