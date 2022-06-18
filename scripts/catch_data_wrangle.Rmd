@@ -337,7 +337,6 @@ all_catch <- full_join(rec_dat_new, rec_dat_creel) %>%
 
 
 ```{r EPAD hatchery catch}
-
 # ---- Chinook ----
 # Pull out the CWT expanded recoveries by stat area from EPAD and group them into regions (since many recovery areas span more than one stat area)
 CN_hatch <- CN_dat_SA %>%
