@@ -12,4 +12,5 @@ mark_rates.Rmd: looks at hatchery releases to determine proportions released wit
 objectives.Rmd: brings in production plans from 2014-2021 and combines them, pulling out primary objectives for target releases  
   
 CTC_enh_ctr.Rmd: an exploratory look at Chinook Technical Committee (CTC) data on catch and mortality distributions to try to determine enhanced contributions  
+  
 enc_ctr_analyses.Rmd: contains the main analyses for the PSF Harvest Effectiveness Review and appendices, including plots/tables of total catch, total hatchery catch, enhanced contribution to catch, CWT catch distributions, and catch efficicency for Chinook and Coho, with a few analyses for Chum where possible.  
