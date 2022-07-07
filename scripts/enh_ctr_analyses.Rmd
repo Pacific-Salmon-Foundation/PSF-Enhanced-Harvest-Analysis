@@ -662,7 +662,7 @@ ggsave("../figs/totcatch_hatchprops_WCVI_CN.png", width = 18, height = 12, units
 
 ## --- ISC ---
 # Plot of total CN catch for ISC:
-totcatch_ISC_CN <- ggplot(subset(SBC_fishery_enhctr_CN, source == "Total Catch" & region == "ISC"), aes(x = year, y = catch)) +
+totcatch_ISC_CN <- ggplot(subset(fishery_enhctr_CN, source == "Total Catch" & region == "ISC"), aes(x = year, y = catch)) +
   geom_bar(stat = "identity", position = "dodge", colour = "white", size = 0.3) +
   facet_wrap(~fishery, scales = "free_y") +
   theme_bw() +
@@ -673,7 +673,7 @@ totcatch_ISC_CN <- ggplot(subset(SBC_fishery_enhctr_CN, source == "Total Catch" 
 totcatch_ISC_CN
 
 # Plot the proportions of hatchery and non-hatchery catch
-hatch_props_ISC_CN <- ggplot(subset(SBC_fishery_props_CN, region == "ISC"), aes(x = year, y = catch, fill = source)) +
+hatch_props_ISC_CN <- ggplot(subset(fishery_props_CN, region == "ISC"), aes(x = year, y = catch, fill = source)) +
   geom_bar(stat = "identity", position = "fill", colour = "white", size = 0.3) +
   facet_wrap(~fishery, scales = "free_y") +
   theme_bw() +
@@ -1070,9 +1070,9 @@ CN_catchdist <- CN_CatchbyFishery %>%
   mutate(fishery = factor(fishery, levels = c("AK", "Northern N", "Northern T", "Northern S", "Central N", "Central T", "Central S", "WCVI N", "WCVI T", "WCVI S", "ISC N", "ISC T", "ISC S", "FW", "SUS", "Other"))) %>%
   group_by(prod_area) %>%
   complete(fishery, recY, fill = list(catch = 0)) %>%
-  group_by(recY, prod_area, fishery) %>%
+  group_by(recY, fishery) %>%
   summarise(totcatch = sum(catch)) %>%
-  group_by(recY, prod_area) %>%
+  group_by(recY) %>%
   mutate(percentage = totcatch / sum(totcatch)) %>%
   replace(is.na(.),0) %>%
   arrange(recY, fishery) 
@@ -1097,7 +1097,7 @@ CN_areaplot <- ggplot(CN_catchdist, aes(x = recY, y = percentage, fill = fishery
   scale_y_continuous(expand = c(0,0)) +
   labs(y = "Proportion of Annual CWT Catch")
 CN_areaplot
-ggsave("../figs/harvest/CN/catch_by_fishery/BCwide_CN_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+ggsave("../figs/distribution/BCwide_CN_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
 
 #Combine above total CWT catch plot with the catch by fishery area plot to make Figure 29
 ggarrange(CN_CWT_catch, CN_areaplot, nrow = 2, heights = c(5, 10), align = "v")
@@ -1160,9 +1160,9 @@ CO_catchdist <- CO_CatchbyFishery %>%
   mutate(fishery = factor(fishery, levels = c("AK", "Northern N", "Northern T", "Northern S", "Central N", "Central T", "Central S", "WCVI N", "WCVI T", "WCVI S", "ISC N", "ISC T", "ISC S", "FW", "SUS", "Other"))) %>%
   group_by(prod_area) %>%
   complete(fishery, recY, fill = list(catch = 0)) %>%
-  group_by(recY, prod_area, fishery) %>%
+  group_by(recY, fishery) %>%
   summarise(totcatch = sum(catch)) %>%
-  group_by(recY, prod_area) %>%
+  group_by(recY) %>%
   mutate(percentage = totcatch / sum(totcatch)) %>%
   replace(is.na(.),0) %>%
   arrange(recY, fishery) 
@@ -1183,7 +1183,7 @@ CO_areaplot <- ggplot(CO_catchdist, aes(x = recY, y = percentage, fill = fishery
   scale_y_continuous(expand = c(0,0)) +
   labs(y = "Proportion of Annual CWT Catch")
 CO_areaplot
-ggsave("../figs/harvest/CN/catch_by_fishery/BCwide_CN_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
+ggsave("../figs/distribution/BCwide_CN_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
 
 
 #Combine above total CWT catch plot with the catch by fishery area plot
@@ -1203,7 +1203,34 @@ fishery_cols_simple <- c("AK" = "red1", "Northern N" = "blue4", "Northern T" = "
 
 
 ##---- CN ---- 
-CN_catchdist_sum <- CN_catchdist %>%
+# Group some of the fisheries together into broader categories
+CN_catchdist_byarea <- CN_CatchbyFishery %>%
+  mutate(fishery = case_when(fishery %in% c("BC Unknown Freshwater", "Freshwater S", "Kamloops Lake") ~ "FW",
+                             fishery %in% c("ADFG", "NMFS AK", "Alaskan Net (AK Catch, sampled by Canada)", "Alaskan Troll (Historical)") ~ "AK",
+                             fishery %in% c("PFMA8 Terminal N", "Central N") ~ "Central N",
+                             fishery %in% c("North Central T", "South Central T") ~ "Central T",
+                             fishery %in% c("Juan de Fuca S", "Alberni Canal S", "WCVI S") ~ "WCVI S",
+                             fishery %in% c("SWVI T", "NWVI T") ~ "WCVI T",
+                             fishery %in% c("NWVI N", "Southwest Vancouver Is Net (Exc Alberni Inlet)", "SWVI N", "Juan de Fuca N", "Alberni Comm GN") ~ "WCVI N",
+                             fishery %in% c("Fraser SN", "Fraser GN", "SOG N", "Johnstone Strait N") ~ "ISC N",
+                             fishery %in% c("South Johnstone Strait S", "North SOG S", "South SOG S", "Central SOG S") ~ "ISC S",
+                             fishery %in% c("Fraser FN (Fall-Winter)", "Fraser FN (Spring-Sum)", "Fraser FN Fall Winter Harrison to Thompson R (2011+)", "Fraser GN+FN (Fall-Winter)", "Fraser GN+FN (Spring-Sum)", "Bella Coola R FSC", "Cowichan R FSC", "Little Shuswap Lake FSC", "Lower Shuswap River FSC", "Middle Shuswap River FSC", "Alberni Inlet FSC Fishery", "Maa-Nulth FSC", "NWVI Taaq-Wiihak", "SWVI Taaq-Wiihak", "Other", "Terminal Other", "Terminal FN", "Nuu-chah-nulth", "BC Unknown Marine", "Skeena Test Fishery") ~ "Other",
+                             grepl("Comb", fishery) ~ "Other",
+                             fishery %in% c("ODFW", "WDFW", "WA Net (WA Catch, sampled by Canada)") ~ "SUS",
+                             fishery == "SOG T" ~ "ISC T",
+                             TRUE ~ fishery)) %>%
+  mutate(fishery = factor(fishery, levels = c("AK", "Northern N", "Northern T", "Northern S", "Central N", "Central T", "Central S", "WCVI N", "WCVI T", "WCVI S", "ISC N", "ISC T", "ISC S", "FW", "SUS", "Other"))) %>%
+  group_by(prod_area) %>%
+  complete(fishery, recY, fill = list(catch = 0)) %>%
+  group_by(recY, prod_area, fishery) %>%
+  summarise(totcatch = sum(catch)) %>%
+  group_by(recY, prod_area) %>%
+  mutate(percentage = totcatch / sum(totcatch)) %>%
+  replace(is.na(.),0) %>%
+  arrange(recY, fishery) 
+
+
+CN_catchdist_sum <- CN_catchdist_byarea %>%
   group_by(recY, prod_area) %>%
   summarise(regional_catch = sum(totcatch))
 
@@ -1219,7 +1246,7 @@ NCST_CWT_catch <- ggplot(subset(CN_catchdist_sum, prod_area == "NCST"), aes(x = 
   scale_y_continuous(expand = c(0,0), limits = c(0,16000), labels = comma)
 NCST_CWT_catch
 
-NCST_areaplot <- ggplot(subset(CN_catchdist, prod_area == "NCST"), aes(x = recY, y = percentage, fill = fishery)) +
+NCST_areaplot <- ggplot(subset(CN_catchdist_byarea, prod_area == "NCST"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1230,6 +1257,7 @@ NCST_areaplot <- ggplot(subset(CN_catchdist, prod_area == "NCST"), aes(x = recY,
   scale_x_continuous(expand = c(0,0), limits = c(1974, 2021)) +
   scale_y_continuous(expand = c(0,0)) +
   labs(y = "Proportion of Annual CWT Catch")
+NCST_areaplot
 #ggsave("../figs/distribution/NCST_CN_catchbyfishery_areaplot.png", width = 16, height = 12, units = "cm")
 
 #Combine above total CWT catch plot with the catch by fishery area plot
@@ -1249,7 +1277,7 @@ CCST_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "CCST"), aes(x = r
   scale_y_continuous(expand = c(0,0), limits = c(0,12000), labels = comma)
 CCST_CWT_catch
 
-CCST_areaplot <- ggplot(subset(CN_catchdist, prod_area == "CCST"), aes(x = recY, y = percentage, fill = fishery)) +
+CCST_areaplot <- ggplot(subset(CN_catchdist_byarea, prod_area == "CCST"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1278,7 +1306,7 @@ WCVI_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "WCVI"), aes(x = r
   scale_y_continuous(expand = c(0,0), limits = c(0,280000), labels = comma)
 WCVI_CWT_catch
 
-WCVI_areaplot <- ggplot(subset(CN_catchdist, prod_area == "WCVI"), aes(x = recY, y = percentage, fill = fishery)) +
+WCVI_areaplot <- ggplot(subset(CN_catchdist_byarea, prod_area == "WCVI"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1308,7 +1336,7 @@ ISC_CWT_catch<- ggplot(subset(CN_catchdist_sum, prod_area == "ISC"), aes(x = rec
   scale_y_continuous(expand = c(0,0), limits = c(0,120000), labels = comma)
 ISC_CWT_catch
 
-ISC_areaplot <- ggplot(subset(CN_catchdist, prod_area == "ISC"), aes(x = recY, y = percentage, fill = fishery)) +
+ISC_areaplot <- ggplot(subset(CN_catchdist_byarea, prod_area == "ISC"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1328,6 +1356,31 @@ ggsave("../figs/distribution/ISC_CN_catchdist_combo.png", width = 16, height = 1
 
 
 ##---- CO ---- 
+CO_catchdist_byarea <- CO_CatchbyFishery %>%
+  mutate(fishery = case_when(fishery %in% c("Central Terminal N", "Central N", "PFMA8 Terminal N") ~ "Central N",
+                             fishery %in% c("ADFG", "NMFS AK") ~ "AK",
+                             fishery %in% c("North Central T", "South Central T") ~ "Central T",
+                             fishery %in% c("Juan de Fuca S", "Alberni Canal S", "WCVI S") ~ "WCVI S",
+                             fishery %in% c("SWVI T", "NWVI T", "Juan De Fuca Troll") ~ "WCVI T",
+                             fishery %in% c("NWVI N", "SWVI N", "Juan de Fuca N", "Alberni Comm GN") ~ "WCVI N",
+                             fishery %in% c("Fraser SN", "Fraser GN", "SOG N", "Johnstone Strait N") ~ "ISC N",
+                             fishery %in% c("South Johnstone Strait S", "North SOG S", "South SOG S", "Central SOG S") ~ "ISC S",
+                             fishery %in% c("Fraser FN (Fall-Winter)", "Fraser GN+FN (Fall-Winter)", "Fraser GN+FN (Spring-Sum)", "FSC", "NWVI Taaq-Wiihak", "SWVI Taaq-Wiihak", "Other", "Terminal Other", "Terminal FN", "Nuu-chah-nulth", "Skeena Test Fishery") ~ "Other",
+                             fishery %in% c("ODFW", "Washington", "WDFW", "WA/OR Troll (Historical)", "California Dept of Fish and Game (CA)") ~ "SUS",
+                             fishery == "SOG T" ~ "ISC T",
+                             fishery == "Freshwater S" ~ "FW",
+                             TRUE ~ fishery)) %>%
+  mutate(fishery = factor(fishery, levels = c("AK", "Northern N", "Northern T", "Northern S", "Central N", "Central T", "Central S", "WCVI N", "WCVI T", "WCVI S", "ISC N", "ISC T", "ISC S", "FW", "SUS", "Other"))) %>%
+  group_by(prod_area) %>%
+  complete(fishery, recY, fill = list(catch = 0)) %>%
+  group_by(recY, prod_area, fishery) %>%
+  summarise(totcatch = sum(catch)) %>%
+  group_by(recY, prod_area) %>%
+  mutate(percentage = totcatch / sum(totcatch)) %>%
+  replace(is.na(.),0) %>%
+  arrange(recY, fishery) 
+
+
 CO_catchdist_sum <- CO_catchdist %>%
   group_by(recY, prod_area) %>%
   summarise(regional_catch = sum(totcatch))
@@ -1344,7 +1397,7 @@ NCST_CWT_catch <- ggplot(subset(CO_catchdist_sum, prod_area == "NCST"), aes(x = 
   scale_y_continuous(expand = c(0,0), limits = c(0,40000), labels = comma)
 NCST_CWT_catch
 
-NCST_areaplot <- ggplot(subset(CO_catchdist, prod_area == "NCST"), aes(x = recY, y = percentage, fill = fishery)) +
+NCST_areaplot <- ggplot(subset(CO_catchdist_byarea, prod_area == "NCST"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1374,7 +1427,7 @@ CCST_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "CCST"), aes(x = r
   scale_y_continuous(expand = c(0,0), limits = c(0,30000), labels = comma)
 CCST_CWT_catch
 
-CCST_areaplot <- ggplot(subset(CO_catchdist, prod_area == "CCST"), aes(x = recY, y = percentage, fill = fishery)) +
+CCST_areaplot <- ggplot(subset(CO_catchdist_byarea, prod_area == "CCST"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1403,7 +1456,7 @@ WCVI_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "WCVI"), aes(x = r
   scale_y_continuous(expand = c(0,0), limits = c(0,75000), labels = comma)
 WCVI_CWT_catch
 
-WCVI_areaplot <- ggplot(subset(CO_catchdist, prod_area == "WCVI"), aes(x = recY, y = percentage, fill = fishery)) +
+WCVI_areaplot <- ggplot(subset(CO_catchdist_byarea, prod_area == "WCVI"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -1433,7 +1486,7 @@ ISC_CWT_catch<- ggplot(subset(CO_catchdist_sum, prod_area == "ISC"), aes(x = rec
   scale_y_continuous(expand = c(0,0), limits = c(0,650000), labels = comma)
 ISC_CWT_catch
 
-ISC_areaplot <- ggplot(subset(CO_catchdist, prod_area == "ISC"), aes(x = recY, y = percentage, fill = fishery)) +
+ISC_areaplot <- ggplot(subset(CO_catchdist_byarea, prod_area == "ISC"), aes(x = recY, y = percentage, fill = fishery)) +
   geom_area(alpha = 0.6, size = 0.4, colour = "black") +
   theme_bw() +
   theme(legend.position = "bottom",
