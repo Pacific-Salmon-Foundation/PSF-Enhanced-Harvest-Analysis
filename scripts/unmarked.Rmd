@@ -1,0 +1,286 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r include = FALSE}
+# Installing packages and loading the data
+
+library(tidyverse)
+library(here)
+library(scales)
+
+```
+
+```{r include = FALSE}
+# Bring in release data from EPAD
+all_rel <- read_csv(here("raw", "All_SEP_releases2.csv")) 
+```
+
+```{r Regional Summary}
+options(scipen = 999)
+# Calculate the proportion of releases marked vs unmarked by region
+marked_rel <- all_rel %>%
+  select(species = SPECIES_NAME, stock = STOCK_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, tagged = TaggedNum, nonCWT_mark = NoTagNum, unmrk = UnmarkedNum, totrel = TotalRelease) %>%
+  mutate(nonCWT_mark = as.numeric(nonCWT_mark), tagged = as.numeric(tagged)) %>%
+  replace_na(list(tagged = 0, nonCWT_mark = 0, unmrk = 0)) %>%
+  mutate(unmrk = nonCWT_mark + unmrk) %>%
+  mutate(mrk = totrel-unmrk) %>%
+  mutate(mark_type = case_when(startsWith(tagcode, "R") ~ "non-CWT",
+                               startsWith(tagcode, "NO") ~ "non-CWT",
+                               startsWith(tagcode, "L") ~ "non-CWT",
+                               startsWith(tagcode, "H") ~ "non-CWT",
+                               startsWith(tagcode, "D") ~ "non-CWT",
+                               startsWith(tagcode, "AD") ~ "non-CWT",
+                               startsWith(tagcode, "B") ~ "non-CWT",
+                               TRUE ~ "CWT")) %>%
+  group_by(species, region) %>%
+  mutate(regional_tot = sum(totrel, na.rm = TRUE)) %>%
+  group_by(mark_type, species, region, regional_tot) %>%
+  summarise(regional_mrk = sum(mrk, na.rm = TRUE), regional_unmrk = sum(unmrk, na.rm = TRUE), mark_prop = (regional_mrk/regional_tot)*100, unmrk_prop = (regional_unmrk/regional_tot)*100) %>%
+  distinct() %>%
+  ungroup()
+
+# overall proportion of CWT-related releases for each region
+marks <- marked_rel %>%
+  select(1:3, 5:6) %>%
+  rename(mrk = regional_mrk, unmrk = regional_unmrk) %>%
+  filter(species %in% c("Chinook", "Coho", "Chum")) %>%
+  pivot_longer(cols = 4:5, values_to = "releases", names_to = "type") %>%
+  mutate(species = factor(species, levels = c("Chinook", "Coho", "Chum")),
+         region = factor(region, levels = c("YUKN","TRAN", "NCST", "NASS", "SKNA", "QCI", "CCST", "RIVR", "JNST", "NWVI", "SWVI", "GSVI", "GSMN", "GSMS", "LWFR", "OKAN", "UPFR", "TOMF", "TOMM"))) %>%
+  mutate(mark_type = case_when(mark_type == "CWT" & type == "mrk" ~ "CWT_mrk",
+                               mark_type == "CWT" & type == "unmrk" ~ "CWT_unmrk",
+                               mark_type == "non-CWT" & type == "mrk" ~ "nonCWT_mrk",
+                               mark_type == "non-CWT" & type == "unmrk" ~ "nonCWT_unmrk")) %>%
+  group_by(species, region, mark_type) %>%
+  mutate(releases = sum(releases)) %>%
+  select(-type) %>%
+  distinct()
+
+cols = c("firebrick3", "lightcoral", "deepskyblue4", "steelblue1")
+ 
+ggplot(marks, aes(x = region, y = releases, fill = mark_type)) +
+  geom_bar(position = "fill", stat = "identity") +
+  theme_bw() +
+  facet_wrap(~species) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        axis.title.x = element_blank(),
+        legend.title = element_blank(),
+        legend.position = "top") +
+  scale_y_continuous(expand = c(0, 0.01)) +
+  scale_fill_manual(values = cols) +
+  labs(y = "Proportion of Releases")
+#ggsave("../figs/harvest/mark_unmark.png", width = 22, height = 12, units = "cm")
+
+
+unmrk_rel_table <- marked_rel %>%
+  filter(mark_type == "non-CWT") %>%
+  mutate(percent_unmrk = sum(mark_prop, unmrk_prop)) %>%
+  ungroup() %>%
+  select(2, 3, 9) %>%
+  filter(species %in% c("Chinook", "Coho", "Chum")) %>%
+  pivot_wider(names_from = "species", values_from = "percent_unmrk")
+#write_csv(unmrk_rel_table, "../processed/harvest/percent_unmarked_releases.csv")
+
+```
+
+```{r Annual summaries}
+# Calculating mark rate on an annual scale
+annual_marked_rel <- all_rel %>%
+  select(species = SPECIES_NAME, stock = STOCK_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, totrel = TotalRelease) %>%
+  filter(species %in% c("Chinook", "Coho", "Chum"), !region %in% c("YUKN", "TRAN")) %>%
+  mutate(mark_type = case_when(startsWith(tagcode, "R") ~ "non-CWT",
+                               startsWith(tagcode, "NO") ~ "non-CWT",
+                               startsWith(tagcode, "L") ~ "non-CWT",
+                               startsWith(tagcode, "H") ~ "non-CWT",
+                               startsWith(tagcode, "D") ~ "non-CWT",
+                               startsWith(tagcode, "AD") ~ "non-CWT",
+                               startsWith(tagcode, "B") ~ "non-CWT",
+                               TRUE ~ "CWT")) %>%
+  select(species, relY, mark_type, totrel) %>%
+  distinct() %>%
+  group_by(species, relY, mark_type) %>%
+  summarise(totrel = sum(totrel, na.rm = T)) %>%
+  pivot_wider(names_from = "mark_type", values_from = "totrel") %>%
+  replace(is.na(.), 0) %>%
+  mutate(CWT_rate = CWT/(CWT+`non-CWT`))
+
+ggplot(subset(annual_marked_rel, species == "Chinook"), aes(x = relY, y = CWT_rate)) + 
+  geom_col()
+
+ggplot(subset(annual_marked_rel, species == "Coho"), aes(x = relY, y = CWT_rate)) + 
+  geom_col()
+
+
+# plot annual releases and show ratio of CWT-related and non-CWT releases
+release_type <- annual_marked_rel %>%
+  select(-"CWT_rate") %>%
+  pivot_longer(cols = 3:4, names_to = "type", values_to = "releases")
+
+ggplot(subset(release_type, species == "Chinook"), aes(x = relY, y = releases, fill = type)) +
+  geom_bar(position="stack", stat="identity") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma, expand = c(0,200000), limits = c(0, 70000000)) +
+  labs(y = "Chinook Released")
+ggsave("../figs/releases/Chinook_releases.png", width = 15, height = 9, units = "cm")
+
+ggplot(subset(release_type, species == "Coho"), aes(x = relY, y = releases, fill = type)) +
+  geom_bar(position="stack", stat="identity") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma, expand = c(0,100000), limits = c(0, 26000000)) +
+  labs(y = "Coho Released")
+ggsave("../figs/releases/Coho_releases.png", width = 15, height = 9, units = "cm")
+
+ggplot(subset(release_type, species == "Chum"), aes(x = relY, y = releases, fill = type)) +
+  geom_bar(position="stack", stat="identity") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma, expand = c(0,1000000), limits = c(0, 210000000)) +
+  labs(y = "Chum Released")
+ggsave("../figs/releases/Chum_releases.png", width = 15, height = 9, units = "cm")
+  
+```
+
+```{r Annual Regional Summaries}
+# Look at proportion of marked and non-mark related releases on annual AND regional scale
+annual_regional_marked_rel <- all_rel %>%
+  select(species = SPECIES_NAME, stock = STOCK_NAME, region = STOCK_PROD_AREA_CODE, relY = RELEASE_YEAR, tagcode = MRP_TAGCODE, totrel = TotalRelease) %>%
+  filter(!region %in% c("YUKN", "TRAN")) %>%
+  mutate(mark_type = case_when(startsWith(tagcode, "R") ~ "non-CWT",
+                               startsWith(tagcode, "NO") ~ "non-CWT",
+                               startsWith(tagcode, "L") ~ "non-CWT",
+                               startsWith(tagcode, "H") ~ "non-CWT",
+                               startsWith(tagcode, "D") ~ "non-CWT",
+                               startsWith(tagcode, "AD") ~ "non-CWT",
+                               startsWith(tagcode, "B") ~ "non-CWT",
+                               TRUE ~ "CWT")) %>%
+  mutate(region = case_when(region %in% c("SKNA", "NCST", "NASS", "QCI") ~ "NCST",
+                            region %in% c("CCST", "RIVR") ~ "CCST",
+                            region %in% c("SWVI", "NWVI") ~ "WCVI",
+                            region %in% c("GSVI", "JNST", "LWFR", "GSMN", "UPFR", "ROMF", "TOMM", "TOMF", "GSMS", "OKAN") ~ "ISC")) %>%
+  select(species, relY, region, mark_type, totrel) %>%
+  distinct() %>%
+  group_by(species, relY, region, mark_type) %>%
+  summarise(totrel = sum(totrel, na.rm = T)) %>%
+  mutate(region = factor(region, levels = c("NCST", "CCST", "WCVI", "ISC")))
+
+#To calculate proportion of CWT-associated releases
+props <- annual_regional_marked_rel %>%
+  pivot_wider(names_from = "mark_type", values_from = "totrel") %>%
+  replace(is.na(.), 0) %>%
+  mutate(CWT_rate = CWT/(CWT+`non-CWT`)) %>%
+  select(1:3, 6) 
+write_csv(props, "../processed/mark_props.csv")
+
+
+# Chinook
+ggplot(subset(annual_regional_marked_rel, species == "Chinook"), aes(x = relY, y = totrel, fill = mark_type)) +
+  geom_bar(position="stack", stat="identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        legend.position = "top",
+        legend.justification = "right",
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Releases")
+#ggsave("../figs/releases/Chinook_releases_regional.png", width = 18, height = 14, units = "cm")
+
+# Now for COHO
+ggplot(subset(annual_regional_marked_rel, species == "Coho"), aes(x = relY, y = totrel, fill = mark_type)) +
+  geom_bar(position="stack", stat="identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        legend.position = "top",
+        legend.justification = "right",
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Releases")
+#ggsave("../figs/releases/Coho_releases_regional.png", width = 18, height = 14, units = "cm")
+
+# Now for CHUM
+ggplot(subset(annual_regional_marked_rel, species == "Chum"), aes(x = relY, y = totrel, fill = mark_type)) +
+  geom_bar(position="stack", stat="identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        legend.position = "top",
+        legend.justification = "right",
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Releases")
+#ggsave("../figs/releases/Chum_releases_regional.png", width = 18, height = 14, units = "cm")
+
+# Pink
+ggplot(subset(annual_regional_marked_rel, species == "Pink"), aes(x = relY, y = totrel, fill = mark_type)) +
+  geom_bar(position="stack", stat="identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        legend.position = "top",
+        legend.justification = "right",
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Releases")
+#ggsave("../figs/releases/Pink_releases_regional.png", width = 18, height = 14, units = "cm")
+
+# Sockeye
+ggplot(subset(annual_regional_marked_rel, species == "Sockeye"), aes(x = relY, y = totrel, fill = mark_type)) +
+  geom_bar(position="stack", stat="identity") +
+  facet_wrap(~region, scales = "free_y") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(0.8, "line"),
+        legend.position = "top",
+        legend.justification = "right",
+        axis.title.x = element_blank()) +
+  scale_y_continuous(label = comma) +
+  labs(y = "Releases")
+#ggsave("../figs/releases/Sockeye_releases_regional.png", width = 18, height = 14, units = "cm")
+
+
+```
+
+
+```{r SBC Mark Rate}
+SBC_CN_markrate <- marks %>%
+  filter(species == "Chinook", !region %in% c("CCST", "NASS", "NCST", "QCI", "RIVR", "SKNA", "TRAN", "YUKN")) %>%
+  mutate(type = case_when(mark_type %in% c("CWT_mrk", "CWT_unmrk") ~ "CWT",
+                          mark_type %in% c("nonCWT_mrk", "nonCWT_unmrk") ~ "nonCWT")) %>%
+  group_by(type) %>%
+  mutate(totrel = sum(releases)) %>%
+  ungroup() %>%
+  select(type, totrel) %>%
+  distinct() %>%
+  pivot_wider(names_from = "type", values_from = "totrel") %>%
+  mutate(totrel = sum(CWT, nonCWT, na.rm = T), markrate = CWT/totrel)
+
+SBC_CO_markrate <- marks %>%
+  filter(species == "Coho", !region %in% c("CCST", "NASS", "NCST", "QCI", "RIVR", "SKNA", "TRAN", "YUKN")) %>%
+  mutate(type = case_when(mark_type %in% c("CWT_mrk", "CWT_unmrk") ~ "CWT",
+                          mark_type %in% c("nonCWT_mrk", "nonCWT_unmrk") ~ "nonCWT")) %>%
+  group_by(type) %>%
+  mutate(totrel = sum(releases)) %>%
+  ungroup() %>%
+  select(type, totrel) %>%
+  distinct() %>%
+  pivot_wider(names_from = "type", values_from = "totrel") %>%
+  mutate(totrel = sum(CWT, nonCWT, na.rm = T), markrate = CWT/totrel)
+```
+
